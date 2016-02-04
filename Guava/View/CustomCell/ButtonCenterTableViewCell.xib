@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="128" id="KGk-i7-Jjw" customClass="ButtonCenterTableViewCell" customModule="Guava" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRr-aI-GzK">
+                        <rect key="frame" x="0.0" y="24" width="379" height="80"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbP-x1-CJY">
+                                <rect key="frame" x="75" y="10" width="229" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zbP-x1-CJY" secondAttribute="trailing" constant="75" id="DFh-dr-F2a"/>
+                            <constraint firstAttribute="height" constant="80" id="Kse-NK-RwY"/>
+                            <constraint firstAttribute="bottom" secondItem="zbP-x1-CJY" secondAttribute="bottom" constant="10" id="Vvv-6z-D73"/>
+                            <constraint firstItem="zbP-x1-CJY" firstAttribute="top" secondItem="wRr-aI-GzK" secondAttribute="top" constant="10" id="ciH-TG-aFX"/>
+                            <constraint firstItem="zbP-x1-CJY" firstAttribute="leading" secondItem="wRr-aI-GzK" secondAttribute="leading" constant="75" id="gVS-d3-8dZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="wRr-aI-GzK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="7UC-jj-tE4"/>
+                    <constraint firstItem="wRr-aI-GzK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cP7-cn-8s0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wRr-aI-GzK" secondAttribute="trailing" constant="-7" id="h1H-Tf-K4D"/>
+                    <constraint firstItem="wRr-aI-GzK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lE5-eW-pNe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="buttonCenter" destination="zbP-x1-CJY" id="aDf-0F-qvV"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="584"/>
+        </tableViewCell>
+    </objects>
+</document>
