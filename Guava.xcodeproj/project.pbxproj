@@ -25,6 +25,7 @@
 		D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */; };
 		D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
+		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCenterTableViewCell.swift; path = CustomCell/ButtonCenterTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonCenterTableViewCell.xib; path = CustomCell/ButtonCenterTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B53267F11C606D2F008297CF /* LoginVC.swift */,
+				D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				D3F326B81C6397860092427F /* UITableExtension.swift in Sources */,
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
 				D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */,
+				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,

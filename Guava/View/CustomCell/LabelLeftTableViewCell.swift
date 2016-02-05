@@ -13,7 +13,7 @@ class LabelLeftTableViewCell: UITableViewCell {
     @IBOutlet weak var leftLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.selectionStyle = UITableViewCellSelectionStyle.None
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

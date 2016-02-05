@@ -1,22 +1,22 @@
 //
-//  LoginVC.swift
+//  SignUpVC.swift
 //  Guava
 //
-//  Created by Susim Samanta on 02/02/16.
+//  Created by Marko Budal on 05/02/16.
 //  Copyright © 2016 LordAlexWorks. All rights reserved.
 //
 
 import UIKit
 
-class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
+class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
 
-     var signDelegate: SignInTableViewDelegate?
+    var signDelegate: SignInTableViewDelegate?
     
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.view.backgroundColor = UIColor.blackColor()
         signDelegate = self
         
         setNibCell()
@@ -37,62 +37,58 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
-    }
-    
+
     //MARK: UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9
     }
-
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("SIGNUP", delegate: signDelegate!)
+            cell.setup("LOGIN", delegate: signDelegate!)
             
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("LabelCenterTableViewCell", forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("Goyava",sizeLabel: 30)
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.CenterLabel.rawValue, forIndexPath: indexPath) as! LabelCenterTableViewCell
+            cell.setup("Goyava", sizeLabel: 30)
             
             return cell
         case 2:
-            let cell = tableView.dequeueReusableCellWithIdentifier("LabelLeftTableViewCell", forIndexPath: indexPath) as! LabelLeftTableViewCell
-            cell.setup("WELCOME BACK.")
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.LeftLabel.rawValue, forIndexPath: indexPath) as! LabelLeftTableViewCell
+            cell.setup("WE JUST NEED A FEW DETAILS")
             
             return cell
         case 3:
-            let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldTableViewCell", forIndexPath: indexPath) as! TextFieldTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
             cell.setup("EMAIL")
             
             return cell
         case 4:
-            let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldTableViewCell", forIndexPath: indexPath) as! TextFieldTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
             cell.setup("PASSWORD")
             
             return cell
         case 5:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN", buttonType: "LOGIN")
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
+            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN")
             
             return cell
         case 6:
-            let cell = tableView.dequeueReusableCellWithIdentifier("LabelCenterTableViewCell", forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("OR",sizeLabel: 10)
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.CenterLabel.rawValue, forIndexPath: indexPath) as! LabelCenterTableViewCell
+            cell.setup("OR", sizeLabel: 10)
             
             return cell
         case 7:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH FACEBOOK", buttonType: "FB")
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
+            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB")
             
             return cell
         case 8:
-            let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH TWITTER", buttonType: "TWITTER")
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
+            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER")
             
             return cell
         default:
@@ -101,6 +97,7 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
         switch indexPath.row {
         case 0, 3, 4, 6:
             return 50
@@ -117,8 +114,8 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     
     //MARK: SignInTableViewDelegate
     func signInButtonTapped(sender: UIButton) {
-        performSegueWithIdentifier("signInToSingUpSegue", sender: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-
+    
 }
