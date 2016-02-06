@@ -8,7 +8,11 @@
 
 import UIKit
 
-class TextFieldTableViewCell: UITableViewCell {
+enum TextFieldType {
+    case EmailType
+    case PassowrdType
+}
+class TextFieldTableViewCell: UITableViewCell,UITextFieldDelegate {
 
     @IBOutlet weak var textField: UITextField!
     
@@ -19,12 +23,24 @@ class TextFieldTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
-    func setup(placeholderText:String) {
-        textField.text = placeholderText
+    func setup(placeholderText:String, fieldType: TextFieldType) {
+        textField.delegate = self
+        textField.placeholder = placeholderText
+        switch (fieldType) {
+            case .EmailType:
+                textField.keyboardType = .EmailAddress
+            break
+            case .PassowrdType:
+                textField.secureTextEntry = true
+            break
+        }
     }
     
+    //MARK: TextField Delegate 
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

@@ -63,12 +63,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("EMAIL")
+            cell.setup("EMAIL", fieldType: .EmailType)
             
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("PASSWORD")
+            cell.setup("PASSWORD", fieldType: .PassowrdType)
             
             return cell
         case 5:
