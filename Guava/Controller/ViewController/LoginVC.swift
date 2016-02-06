@@ -15,10 +15,8 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationController?.view.backgroundColor = UIColor.blackColor()
         signDelegate = self
-        
         setNibCell()
     }
     
@@ -36,10 +34,6 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func preferredStatusBarStyle() -> UIStatusBarStyle {
-        return UIStatusBarStyle.LightContent
     }
     
     //MARK: UITableViewDataSource
