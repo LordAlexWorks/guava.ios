@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
+class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate,ButtonCenterTableViewDelegate {
 
     var signDelegate: SignInTableViewDelegate?
     
@@ -73,7 +73,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN")
+            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN",delegate: self)
             
             return cell
         case 6:
@@ -83,12 +83,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB")
+            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB",delegate: self)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER")
+            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER",delegate: self)
             
             return cell
         default:
@@ -116,6 +116,13 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
     func signInButtonTapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    
+    //MARK: Login navigation
+    func loginButtonTapped() {
+        goToScannerView()
+    }
+    func goToScannerView(){
+        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
+        self.navigationController?.pushViewController(qrscannerVc, animated: true)
+    }
     
 }

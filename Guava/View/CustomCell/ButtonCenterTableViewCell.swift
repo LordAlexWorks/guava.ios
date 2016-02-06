@@ -8,9 +8,14 @@
 
 import UIKit
 
+protocol ButtonCenterTableViewDelegate {
+    func loginButtonTapped()
+}
+
 class ButtonCenterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var buttonCenter: UIButton!
+    var delegate: ButtonCenterTableViewDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,8 +28,8 @@ class ButtonCenterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(buttonTitle: String, buttonType: String) {
-        
+    func setup(buttonTitle: String, buttonType: String, delegate:ButtonCenterTableViewDelegate) {
+        self.delegate = delegate
         buttonCenter.setTitle(buttonTitle, forState: .Normal)
         buttonCenter.layer.cornerRadius = 30
         buttonCenter.layer.borderWidth = 1
@@ -48,5 +53,7 @@ class ButtonCenterTableViewCell: UITableViewCell {
         }
 
     }
-    
+    @IBAction func loginButtonTapped(sender: UIButton) {
+        delegate?.loginButtonTapped()
+    }
 }

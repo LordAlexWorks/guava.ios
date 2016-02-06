@@ -115,6 +115,48 @@
             </objects>
             <point key="canvasLocation" x="967" y="429"/>
         </scene>
+        <!--ScannerVC-->
+        <scene sceneID="o0e-Jg-9tz">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerVC" id="H9u-2Q-EgO" customClass="QRScannerVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9r-5T-jyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDE-HL-vZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Olt-DN-ORg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt2-ob-DqP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-Yz-Mph">
+                                <rect key="frame" x="20" y="40" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="H9u-2Q-EgO" eventType="touchUpInside" id="xBE-rN-UrW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wt2-ob-DqP" secondAttribute="trailing" id="5eP-X9-rWd"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" constant="20" id="6qw-ks-Y07"/>
+                            <constraint firstItem="dDE-HL-vZn" firstAttribute="top" secondItem="Wt2-ob-DqP" secondAttribute="bottom" constant="-20" id="Qgr-b6-4sd"/>
+                            <constraint firstItem="Wt2-ob-DqP" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" id="bdA-Ct-5Vv"/>
+                            <constraint firstItem="Wt2-ob-DqP" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" id="eIp-kC-TwZ"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" constant="20" id="orZ-cy-JYX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="Wt2-ob-DqP" id="SDn-cj-pM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXf-iu-5Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="1140"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg" width="640" height="1136"/>

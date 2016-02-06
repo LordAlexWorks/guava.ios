@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
+class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate ,ButtonCenterTableViewDelegate{
 
      var signDelegate: SignInTableViewDelegate?
     
@@ -71,7 +71,7 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN", buttonType: "LOGIN")
+            cell.setup("LOGIN", buttonType: "LOGIN",delegate: self)
             
             return cell
         case 6:
@@ -81,12 +81,12 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH FACEBOOK", buttonType: "FB")
+            cell.setup("LOGIN WITH FACEBOOK", buttonType: "FB",delegate: self)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH TWITTER", buttonType: "TWITTER")
+            cell.setup("LOGIN WITH TWITTER", buttonType: "TWITTER",delegate: self)
             
             return cell
         default:
@@ -114,5 +114,15 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         performSegueWithIdentifier("signInToSingUpSegue", sender: nil)
     }
     
+    //MARK: Login navigation
+    func loginButtonTapped() {
+        goToScannerView()
+    }
+    func goToScannerView(){
+        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
+        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+            
+        }
+    }
 
 }
