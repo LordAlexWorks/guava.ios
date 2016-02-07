@@ -41,6 +41,24 @@
 		B53267F31C606D41008297CF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
+		B599F6D21C66DE080013E89E /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
+		B599F6D31C66DE080013E89E /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
+		B599F6D41C66DE080013E89E /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		B599F6D61C66DE080013E89E /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
+		B599F6D81C66DE080013E89E /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
+		B599F6D91C66DE080013E89E /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		B599F6DA1C66DE080013E89E /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
+		B599F6DB1C66DE080013E89E /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
+		B599F6DC1C66DE080013E89E /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
+		B599F6DD1C66DE080013E89E /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
+		B599F6DE1C66DE080013E89E /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
+		B599F6DF1C66DE080013E89E /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
+		B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
+		B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
+		B599F6E21C66DE080013E89E /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
+		B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
+		B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
+		B599F6E61C66DE080013E89E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -70,6 +88,7 @@
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
+				B599F6D01C66DE080013E89E /* fastlane */,
 				B53267CE1C60632B008297CF /* Guava */,
 				B53267CD1C60632B008297CF /* Products */,
 			);
@@ -165,6 +184,63 @@
 			path = QRScanner;
 			sourceTree = "<group>";
 		};
+		B599F6D01C66DE080013E89E /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				B599F6D11C66DE080013E89E /* actions */,
+				B599F6D21C66DE080013E89E /* Appfile */,
+				B599F6D31C66DE080013E89E /* Deliverfile */,
+				B599F6D41C66DE080013E89E /* Fastfile */,
+				B599F6D51C66DE080013E89E /* metadata */,
+				B599F6E51C66DE080013E89E /* screenshots */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		B599F6D11C66DE080013E89E /* actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		B599F6D51C66DE080013E89E /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				B599F6D61C66DE080013E89E /* copyright.txt */,
+				B599F6D71C66DE080013E89E /* en-US */,
+				B599F6DF1C66DE080013E89E /* primary_category.txt */,
+				B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */,
+				B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */,
+				B599F6E21C66DE080013E89E /* secondary_category.txt */,
+				B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */,
+				B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */,
+			);
+			path = metadata;
+			sourceTree = "<group>";
+		};
+		B599F6D71C66DE080013E89E /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				B599F6D81C66DE080013E89E /* description.txt */,
+				B599F6D91C66DE080013E89E /* keywords.txt */,
+				B599F6DA1C66DE080013E89E /* marketing_url.txt */,
+				B599F6DB1C66DE080013E89E /* name.txt */,
+				B599F6DC1C66DE080013E89E /* privacy_url.txt */,
+				B599F6DD1C66DE080013E89E /* release_notes.txt */,
+				B599F6DE1C66DE080013E89E /* support_url.txt */,
+			);
+			path = "en-US";
+			sourceTree = "<group>";
+		};
+		B599F6E51C66DE080013E89E /* screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				B599F6E61C66DE080013E89E /* README.txt */,
+			);
+			path = screenshots;
+			sourceTree = "<group>";
+		};
 		D3DDC2CD1C621C360093EBEA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +308,7 @@
 				TargetAttributes = {
 					B53267CB1C60632B008297CF = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JY7SW47P2C;
 					};
 				};
 			};
@@ -401,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
@@ -412,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
