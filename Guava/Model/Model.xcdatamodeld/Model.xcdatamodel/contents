@@ -9,7 +9,7 @@
         <attribute name="qrid" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="point" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="qrid" inverseEntity="Point" syncable="YES"/>
         <relationship name="shop" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Shop" inverseName="qrid" inverseEntity="Shop" syncable="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="qrids" inverseEntity="User" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="scannedqrids" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="Shop" syncable="YES">
         <attribute name="shopId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -23,12 +23,12 @@
         <attribute name="useEmail" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="userPassword" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="qrids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QRID" inverseName="user" inverseEntity="QRID" syncable="YES"/>
+        <relationship name="scannedqrids" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QRID" inverseName="user" inverseEntity="QRID" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-560" positionY="-279" width="128" height="133"/>
         <element name="Point" positionX="-18" positionY="-306" width="128" height="88"/>
         <element name="QRID" positionX="-299" positionY="-333" width="128" height="103"/>
         <element name="Shop" positionX="-263" positionY="-153" width="128" height="103"/>
+        <element name="User" positionX="-560" positionY="-279" width="128" height="133"/>
     </elements>
 </model>
