@@ -16,6 +16,8 @@
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
+		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
+		B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -30,6 +32,16 @@
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B599F72E1C682C000013E89E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53267C41C60632B008297CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53267CB1C60632B008297CF;
+			remoteInfo = Guava;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +73,10 @@
 		B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
 		B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
 		B599F6E61C66DE080013E89E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		B599F7291C682BFF0013E89E /* GuavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
+		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -84,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B599F7261C682BFF0013E89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +115,7 @@
 			children = (
 				B599F6D01C66DE080013E89E /* fastlane */,
 				B53267CE1C60632B008297CF /* Guava */,
+				B599F72A1C682BFF0013E89E /* GuavaUITests */,
 				B53267CD1C60632B008297CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				B53267CC1C60632B008297CF /* Guava.app */,
+				B599F7291C682BFF0013E89E /* GuavaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -244,6 +269,16 @@
 			path = screenshots;
 			sourceTree = "<group>";
 		};
+		B599F72A1C682BFF0013E89E /* GuavaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B599F72B1C682C000013E89E /* GuavaUITests.swift */,
+				B599F72D1C682C000013E89E /* Info.plist */,
+				B599F7331C682DBF0013E89E /* SnapshotHelper.swift */,
+			);
+			path = GuavaUITests;
+			sourceTree = "<group>";
+		};
 		D3DDC2CD1C621C360093EBEA /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +334,24 @@
 			productReference = B53267CC1C60632B008297CF /* Guava.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B599F7281C682BFF0013E89E /* GuavaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B599F7321C682C000013E89E /* Build configuration list for PBXNativeTarget "GuavaUITests" */;
+			buildPhases = (
+				B599F7251C682BFF0013E89E /* Sources */,
+				B599F7261C682BFF0013E89E /* Frameworks */,
+				B599F7271C682BFF0013E89E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B599F72F1C682C000013E89E /* PBXTargetDependency */,
+			);
+			name = GuavaUITests;
+			productName = GuavaUITests;
+			productReference = B599F7291C682BFF0013E89E /* GuavaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -312,6 +365,10 @@
 					B53267CB1C60632B008297CF = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = JY7SW47P2C;
+					};
+					B599F7281C682BFF0013E89E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B53267CB1C60632B008297CF;
 					};
 				};
 			};
@@ -329,6 +386,7 @@
 			projectRoot = "";
 			targets = (
 				B53267CB1C60632B008297CF /* Guava */,
+				B599F7281C682BFF0013E89E /* GuavaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,6 +404,13 @@
 				D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */,
 				D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */,
 				D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B599F7271C682BFF0013E89E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +438,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B599F7251C682BFF0013E89E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */,
+				B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B599F72F1C682C000013E89E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53267CB1C60632B008297CF /* Guava */;
+			targetProxy = B599F72E1C682C000013E89E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B53267E81C606C78008297CF /* LaunchScreen.storyboard */ = {
@@ -502,6 +584,30 @@
 			};
 			name = Release;
 		};
+		B599F7301C682C000013E89E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Guava;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B599F7311C682C000013E89E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GuavaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Guava;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -522,6 +628,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B599F7321C682C000013E89E /* Build configuration list for PBXNativeTarget "GuavaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B599F7301C682C000013E89E /* Debug */,
+				B599F7311C682C000013E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 
