@@ -18,6 +18,17 @@
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
+		B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */; };
+		B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */; };
+		B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */; };
+		B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */; };
+		B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */; };
+		B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */; };
+		B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */; };
+		B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */; };
+		B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */; };
+		B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */; };
+		B599F74B1C6869F10013E89E /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = B599F7401C6869F10013E89E /* screenshots.html */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -77,6 +88,17 @@
 		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
 		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-01LoginScreen.png"; sourceTree = "<group>"; };
+		B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-02SignupScreen.png"; sourceTree = "<group>"; };
+		B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-01LoginScreen.png"; sourceTree = "<group>"; };
+		B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-02SignupScreen.png"; sourceTree = "<group>"; };
+		B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-01LoginScreen.png"; sourceTree = "<group>"; };
+		B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-02SignupScreen.png"; sourceTree = "<group>"; };
+		B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-01LoginScreen.png"; sourceTree = "<group>"; };
+		B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-02SignupScreen.png"; sourceTree = "<group>"; };
+		B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-01LoginScreen.png"; sourceTree = "<group>"; };
+		B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-02SignupScreen.png"; sourceTree = "<group>"; };
+		B599F7401C6869F10013E89E /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -264,6 +286,8 @@
 		B599F6E51C66DE080013E89E /* screenshots */ = {
 			isa = PBXGroup;
 			children = (
+				B599F7351C6869F10013E89E /* en-US */,
+				B599F7401C6869F10013E89E /* screenshots.html */,
 				B599F6E61C66DE080013E89E /* README.txt */,
 			);
 			path = screenshots;
@@ -277,6 +301,23 @@
 				B599F7331C682DBF0013E89E /* SnapshotHelper.swift */,
 			);
 			path = GuavaUITests;
+			sourceTree = "<group>";
+		};
+		B599F7351C6869F10013E89E /* en-US */ = {
+			isa = PBXGroup;
+			children = (
+				B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */,
+				B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */,
+				B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */,
+				B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */,
+				B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */,
+				B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */,
+				B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */,
+				B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */,
+				B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */,
+				B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */,
+			);
+			path = "en-US";
 			sourceTree = "<group>";
 		};
 		D3DDC2CD1C621C360093EBEA /* Storyboards */ = {
@@ -411,6 +452,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */,
+				B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */,
+				B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */,
+				B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */,
+				B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */,
+				B599F74B1C6869F10013E89E /* screenshots.html in Resources */,
+				B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */,
+				B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */,
+				B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */,
+				B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */,
+				B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
