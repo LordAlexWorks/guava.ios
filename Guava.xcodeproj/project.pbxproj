@@ -29,6 +29,7 @@
 		B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */; };
 		B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */; };
 		B599F74B1C6869F10013E89E /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = B599F7401C6869F10013E89E /* screenshots.html */; };
+		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -99,6 +100,7 @@
 		B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-01LoginScreen.png"; sourceTree = "<group>"; };
 		B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-02SignupScreen.png"; sourceTree = "<group>"; };
 		B599F7401C6869F10013E89E /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
+		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -349,8 +351,9 @@
 		D3F326B61C6397310092427F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D3F326B71C6397860092427F /* UITableExtension.swift */,
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
+				D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */,
+				D3F326B71C6397860092427F /* UITableExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F326B81C6397860092427F /* UITableExtension.swift in Sources */,
+				D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */,
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
 				D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
@@ -688,6 +692,7 @@
 				B599F7311C682C000013E89E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

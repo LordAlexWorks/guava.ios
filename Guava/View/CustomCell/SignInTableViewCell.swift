@@ -35,6 +35,12 @@ class SignInTableViewCell: UITableViewCell {
         self.delegate = delegate
     }
     
+    func setup(buttonText: String, textFontWeight: FontWeight, textSize: CGFloat, delegate: SignInTableViewDelegate) {
+        button.setTitle(buttonText, forState: .Normal)
+        button.titleLabel?.font = UIFont.avenir(textFontWeight, size: textSize)
+        self.delegate = delegate
+    }
+    
     @IBAction func buttonTapped(sender: UIButton) {
         delegate?.signInButtonTapped(sender)
     }

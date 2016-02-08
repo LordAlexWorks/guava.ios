@@ -73,7 +73,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN",delegate: self)
+//            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN",delegate: self)
             
             return cell
         case 6:
@@ -83,12 +83,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB",delegate: self)
+//            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB",delegate: self)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER",delegate: self)
+//            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER",delegate: self)
             
             return cell
         default:
