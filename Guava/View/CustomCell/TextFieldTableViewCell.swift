@@ -27,4 +27,9 @@ class TextFieldTableViewCell: UITableViewCell {
         textField.text = placeholderText
     }
     
+    func setup(placeholderText:String, textFontWeight: FontWeight, textSize: CGFloat) {
+        textField.placeholder = placeholderText
+        textField.font = UIFont.avenir(textFontWeight, size: textSize)
+    }
+    
 }

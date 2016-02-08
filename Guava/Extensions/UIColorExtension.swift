@@ -24,10 +24,10 @@ extension UIColor {
     }
     
     class func facebookColor() -> UIColor{
-        return UIColor(hex: 0x2E3D8D)
+        return UIColor(hex: 0x3E549C)
     }
     
     class func twitterColor() -> UIColor{
-        return UIColor(hex: 0x1CA4D4)
+        return UIColor(hex: 0x27B4DA)
     }
 }

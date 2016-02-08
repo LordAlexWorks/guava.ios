@@ -48,51 +48,51 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("SIGNUP", delegate: signDelegate!)
+            cell.setup("SIGNUP", textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: signDelegate!)
             
             return cell
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("LabelCenterTableViewCell", forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("Goyava",sizeLabel: 30)
+            cell.setup("Goyava", textFontWeight: FontWeight.AHeavy, textSize: 34)
             
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("LabelLeftTableViewCell", forIndexPath: indexPath) as! LabelLeftTableViewCell
-            cell.setup("WELCOME BACK.")
+            cell.setup("WELCOME BACK", textFontWeight: FontWeight.AHeavy, textSize: 12)
             
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldTableViewCell", forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("EMAIL")
+            cell.setup("EMAIL", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier("TextFieldTableViewCell", forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("PASSWORD")
+            cell.setup("PASSWORD", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN", buttonType: "LOGIN")
+            cell.setup("LOGIN", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 6:
             let cell = tableView.dequeueReusableCellWithIdentifier("LabelCenterTableViewCell", forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("OR",sizeLabel: 10)
+            cell.setup("OR", textFontWeight: FontWeight.ABlack, textSize: 8)
             
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH FACEBOOK", buttonType: "FB")
+            cell.setup("LOGIN WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH TWITTER", buttonType: "TWITTER")
+            cell.setup("LOGIN WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         default:
