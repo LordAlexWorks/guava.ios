@@ -25,6 +25,10 @@ class LabelLeftTableViewCell: UITableViewCell {
     func setup(labelName: String){
         self.leftLabel.text = labelName
         self.leftLabel.font = UIFont(name: "Helvetica", size: 12)
-        
+    }
+    
+    func setup(labelName: String, textFontWeight: FontWeight, textSize: CGFloat) {
+        leftLabel.text = labelName
+        leftLabel.font = UIFont.avenir(textFontWeight, size: textSize)
     }
 }
