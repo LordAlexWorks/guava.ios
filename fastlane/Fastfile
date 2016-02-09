@@ -17,7 +17,7 @@ platform :ios do
     config_env(options)
     prepare(remote_branch: options[:remote_branch])
     increment_build_number
-    match(type: "development")
+    match(type: "adhoc")
     gym(scheme: "Guava") # Build your app - more options available
     pilot
   end
