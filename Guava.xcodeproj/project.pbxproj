@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = git_checkout.rb; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E21C606C78008297CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,6 +138,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0A9F791C69DDD6003292B1 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +251,7 @@
 		B599F6D01C66DE080013E89E /* fastlane */ = {
 			isa = PBXGroup;
 			children = (
-				B599F6D11C66DE080013E89E /* actions */,
+				1C0A9F791C69DDD6003292B1 /* actions */,
 				B599F6D21C66DE080013E89E /* Appfile */,
 				B599F6D31C66DE080013E89E /* Deliverfile */,
 				B599F6D41C66DE080013E89E /* Fastfile */,
@@ -250,13 +260,6 @@
 				B599F6E51C66DE080013E89E /* screenshots */,
 			);
 			path = fastlane;
-			sourceTree = "<group>";
-		};
-		B599F6D11C66DE080013E89E /* actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = actions;
 			sourceTree = "<group>";
 		};
 		B599F6D51C66DE080013E89E /* metadata */ = {
@@ -445,6 +448,7 @@
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
+				1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,

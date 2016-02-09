@@ -13,9 +13,9 @@ platform :ios do
 
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
-  lane :dailybuild do |options|
+  lane :dailybuild do
     config_env(options)
-    prepare(remote_branch: options[:remote_branch])
+    prepare(remote_branch: development)
     ensure_git_branch(
         branch: 'development'
     )
@@ -27,9 +27,9 @@ platform :ios do
 
     desc "Submit a new weekly build to Apple TestFlight"
     desc "A weekly build is sent to Guava team by default"
-    lane :weeklybuild do |options|
+    lane :weeklybuild do
         config_env(options)
-        prepare(remote_branch: options[:remote_branch])
+        prepare(remote_branch: master)
         ensure_git_branch(
             branch: 'master'
         )
