@@ -26,6 +26,14 @@ class LabelCenterTableViewCell: UITableViewCell {
     func setup(labelName: String, sizeLabel: CGFloat){
         self.centerLabel.text = labelName
         self.centerLabel.font = UIFont(name: "Helvetica", size: sizeLabel)
+<<<<<<< HEAD
+=======
+    }
+    
+    func setup(labelName: String, textFontWeight: FontWeight, textSize: CGFloat) {
+        self.centerLabel.text = labelName
+        self.centerLabel.font = UIFont.avenir(textFontWeight, size: textSize)
+>>>>>>> master
     }
     
     func setup(labelName: String, textFontWeight: FontWeight, textSize: CGFloat) {

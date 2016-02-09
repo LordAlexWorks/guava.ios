@@ -21,6 +21,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vgi-8b-6iq">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="B2o-Ec-Z4V">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                    </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yms-NI-PBX">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -32,10 +35,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.22352941179999999" green="0.10980392160000001" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B2o-Ec-Z4V" secondAttribute="trailing" id="6g0-wJ-YEb"/>
                                     <constraint firstAttribute="bottom" secondItem="yms-NI-PBX" secondAttribute="bottom" id="9w9-8F-M2M"/>
                                     <constraint firstItem="yms-NI-PBX" firstAttribute="top" secondItem="Vgi-8b-6iq" secondAttribute="top" id="A0p-FM-Kow"/>
+                                    <constraint firstItem="B2o-Ec-Z4V" firstAttribute="leading" secondItem="Vgi-8b-6iq" secondAttribute="leading" id="QSJ-cZ-9Dj"/>
                                     <constraint firstItem="yms-NI-PBX" firstAttribute="leading" secondItem="Vgi-8b-6iq" secondAttribute="leading" id="fBH-sO-IEs"/>
+                                    <constraint firstAttribute="bottom" secondItem="B2o-Ec-Z4V" secondAttribute="bottom" id="kG5-I9-QNb"/>
                                     <constraint firstAttribute="trailing" secondItem="yms-NI-PBX" secondAttribute="trailing" id="mui-UG-Qtd"/>
+                                    <constraint firstItem="B2o-Ec-Z4V" firstAttribute="top" secondItem="Vgi-8b-6iq" secondAttribute="top" id="wne-Cj-kHA"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -71,6 +78,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymv-Ao-maL">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="5zP-UZ-Vcu">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
+                                    </imageView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BF0-Qx-9HN">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="580"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -81,7 +91,11 @@
                                     <constraint firstItem="BF0-Qx-9HN" firstAttribute="leading" secondItem="ymv-Ao-maL" secondAttribute="leading" id="1Me-IG-kxb"/>
                                     <constraint firstAttribute="bottom" secondItem="BF0-Qx-9HN" secondAttribute="bottom" id="2h8-Q2-sze"/>
                                     <constraint firstAttribute="trailing" secondItem="BF0-Qx-9HN" secondAttribute="trailing" id="2qU-tu-LoM"/>
+                                    <constraint firstAttribute="trailing" secondItem="5zP-UZ-Vcu" secondAttribute="trailing" id="9ko-R9-IWU"/>
                                     <constraint firstItem="BF0-Qx-9HN" firstAttribute="top" secondItem="ymv-Ao-maL" secondAttribute="top" id="T2c-0C-1XF"/>
+                                    <constraint firstItem="5zP-UZ-Vcu" firstAttribute="top" secondItem="ymv-Ao-maL" secondAttribute="top" id="fpS-8G-iFx"/>
+                                    <constraint firstItem="5zP-UZ-Vcu" firstAttribute="leading" secondItem="ymv-Ao-maL" secondAttribute="leading" id="nGy-HT-kME"/>
+                                    <constraint firstAttribute="bottom" secondItem="5zP-UZ-Vcu" secondAttribute="bottom" id="vS9-VH-hWz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -101,6 +115,7 @@
             </objects>
             <point key="canvasLocation" x="967" y="429"/>
         </scene>
+<<<<<<< HEAD
         <!--My CardsVC-->
         <scene sceneID="ga5-qB-B9D">
             <objects>
@@ -145,6 +160,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WFF-0Y-vHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="967" y="1155"/>
+=======
+        <!--ScannerVC-->
+        <scene sceneID="o0e-Jg-9tz">
+            <objects>
+                <viewController storyboardIdentifier="QRScannerVC" id="H9u-2Q-EgO" customClass="QRScannerVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n9r-5T-jyK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dDE-HL-vZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Olt-DN-ORg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wt2-ob-DqP">
+                                <rect key="frame" x="0.0" y="20" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-Yz-Mph">
+                                <rect key="frame" x="20" y="40" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="H9u-2Q-EgO" eventType="touchUpInside" id="xBE-rN-UrW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Wt2-ob-DqP" secondAttribute="trailing" id="5eP-X9-rWd"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" constant="20" id="6qw-ks-Y07"/>
+                            <constraint firstItem="dDE-HL-vZn" firstAttribute="top" secondItem="Wt2-ob-DqP" secondAttribute="bottom" constant="-20" id="Qgr-b6-4sd"/>
+                            <constraint firstItem="Wt2-ob-DqP" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" id="bdA-Ct-5Vv"/>
+                            <constraint firstItem="Wt2-ob-DqP" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" id="eIp-kC-TwZ"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" constant="20" id="orZ-cy-JYX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scannerView" destination="Wt2-ob-DqP" id="SDn-cj-pM2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXf-iu-5Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="1140"/>
+>>>>>>> master
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="640" height="1136"/>
+    </resources>
 </document>

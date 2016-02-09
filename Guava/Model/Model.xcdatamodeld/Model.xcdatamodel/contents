@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 7.0">
+    <entity name="Merchant" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="merchantId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="merchantLogoLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="merchantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="qrid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QRCode" inverseName="merchant" inverseEntity="QRCode" syncable="YES"/>
+    </entity>
+    <entity name="QRCode" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="point" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="qrid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchant" inverseName="qrid" inverseEntity="Merchant" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="scannedqrcodes" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="fbId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitterId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="useEmail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userPassword" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="scannedqrcodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QRCode" inverseName="user" inverseEntity="QRCode" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="QRCode" positionX="-299" positionY="-333" width="128" height="135"/>
+        <element name="Merchant" positionX="-317" positionY="-135" width="128" height="135"/>
+        <element name="User" positionX="-578" positionY="-333" width="128" height="135"/>
+    </elements>
+</model>
