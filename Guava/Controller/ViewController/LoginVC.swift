@@ -95,15 +95,28 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+//        switch indexPath.row {
+//        case 0, 3, 4, 6:
+//            return 50
+//        case 1:
+//            return 150
+//        case 2:
+//            return 30
+//        case 5,7,8:
+//            return 75
+//        default:
+//            return 0
+//        }
+        
         switch indexPath.row {
         case 0, 3, 4, 6:
-            return 50
+            return view.bounds.height * 0.08    //50
         case 1:
-            return 150
+            return view.bounds.height * 0.245   //150
         case 2:
-            return 30
+            return view.bounds.height * 0.049   //30
         case 5,7,8:
-            return 75
+            return view.bounds.height * 0.120   //75
         default:
             return 0
         }
