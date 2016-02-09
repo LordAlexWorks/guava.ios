@@ -25,9 +25,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <action selector="loginButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EC3-6R-CoI"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -43,6 +40,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="wRr-aI-GzK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="7UC-jj-tE4"/>
+                    <constraint firstItem="wRr-aI-GzK" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cP7-cn-8s0"/>
                     <constraint firstAttribute="trailingMargin" secondItem="wRr-aI-GzK" secondAttribute="trailing" constant="-7" id="h1H-Tf-K4D"/>
                     <constraint firstItem="wRr-aI-GzK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lE5-eW-pNe"/>
                 </constraints>
