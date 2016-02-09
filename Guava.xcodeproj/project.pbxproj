@@ -625,8 +625,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 7;
-				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
+				CURRENT_PROJECT_VERSION = 9;
+				INFOPLIST_FILE = Guava/Configurations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -639,8 +639,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 7;
-				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
+				CURRENT_PROJECT_VERSION = 9;
+				INFOPLIST_FILE = Guava/Configurations/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
