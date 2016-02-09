@@ -9,6 +9,34 @@
 /* Begin PBXBuildFile section */
 		1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
 		1C0AA3991C69EC00003292B1 /* fastlane_config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 1C0AA3981C69EC00003292B1 /* fastlane_config.yaml */; };
+		1C0AA39F1C6A1988003292B1 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
+		1C0AA3A01C6A1988003292B1 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
+		1C0AA3A11C6A1988003292B1 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		1C0AA3A21C6A1988003292B1 /* LabelLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */; };
+		1C0AA3A31C6A1988003292B1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
+		1C0AA3A41C6A1988003292B1 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
+		1C0AA3A51C6A1988003292B1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
+		1C0AA3A61C6A1988003292B1 /* ButtonCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */; };
+		1C0AA3A71C6A1988003292B1 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */; };
+		1C0AA3A81C6A1988003292B1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
+		1C0AA3A91C6A1988003292B1 /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
+		1C0AA3AA1C6A1988003292B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
+		1C0AA3AB1C6A1988003292B1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
+		1C0AA3AC1C6A1988003292B1 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
+		1C0AA3AD1C6A1988003292B1 /* LabelCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */; };
+		1C0AA3B01C6A1988003292B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
+		1C0AA3B11C6A1988003292B1 /* LabelLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */; };
+		1C0AA3B21C6A1988003292B1 /* fastlane_config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 1C0AA3981C69EC00003292B1 /* fastlane_config.yaml */; };
+		1C0AA3B31C6A1988003292B1 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
+		1C0AA3B41C6A1988003292B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
+		1C0AA3B51C6A1988003292B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
+		1C0AA3B61C6A1988003292B1 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */; };
+		1C0AA3B71C6A1988003292B1 /* LabelCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */; };
+		1C0AA3B81C6A1988003292B1 /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
+		1C0AA3B91C6A1988003292B1 /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = B57CC7011C699262000B5DDD /* Matchfile */; };
+		1C0AA3BA1C6A1988003292B1 /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
+		1C0AA3C21C6A19D9003292B1 /* Guava-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C0AA3C01C6A19D9003292B1 /* Guava-Info.plist */; };
+		1C0AA3C31C6A19D9003292B1 /* GuavaBeta-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C0AA3C11C6A19D9003292B1 /* GuavaBeta-Info.plist */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -61,9 +89,11 @@
 /* Begin PBXFileReference section */
 		1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = git_checkout.rb; sourceTree = "<group>"; };
 		1C0AA3981C69EC00003292B1 /* fastlane_config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fastlane_config.yaml; sourceTree = "<group>"; };
+		1C0AA3BE1C6A1988003292B1 /* Guava-Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guava-Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0AA3C01C6A19D9003292B1 /* Guava-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-Info.plist"; sourceTree = "<group>"; };
+		1C0AA3C11C6A19D9003292B1 /* GuavaBeta-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuavaBeta-Info.plist"; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B53267E21C606C78008297CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53267E91C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53267EB1C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +153,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C0AA3AE1C6A1988003292B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53267C91C60632B008297CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,6 +200,7 @@
 			children = (
 				B53267CC1C60632B008297CF /* Guava.app */,
 				B599F7291C682BFF0013E89E /* GuavaUITests.xctest */,
+				1C0AA3BE1C6A1988003292B1 /* Guava-Beta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,7 +223,8 @@
 		B53267E11C606C78008297CF /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				B53267E21C606C78008297CF /* Info.plist */,
+				1C0AA3C01C6A19D9003292B1 /* Guava-Info.plist */,
+				1C0AA3C11C6A19D9003292B1 /* GuavaBeta-Info.plist */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -370,6 +409,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C0AA39D1C6A1988003292B1 /* Guava-Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C0AA3BB1C6A1988003292B1 /* Build configuration list for PBXNativeTarget "Guava-Beta" */;
+			buildPhases = (
+				1C0AA39E1C6A1988003292B1 /* Sources */,
+				1C0AA3AE1C6A1988003292B1 /* Frameworks */,
+				1C0AA3AF1C6A1988003292B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guava-Beta";
+			productName = Guava;
+			productReference = 1C0AA3BE1C6A1988003292B1 /* Guava-Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B53267CB1C60632B008297CF /* Guava */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53267DE1C60632B008297CF /* Build configuration list for PBXNativeTarget "Guava" */;
@@ -439,19 +495,40 @@
 			projectRoot = "";
 			targets = (
 				B53267CB1C60632B008297CF /* Guava */,
+				1C0AA39D1C6A1988003292B1 /* Guava-Beta */,
 				B599F7281C682BFF0013E89E /* GuavaUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C0AA3AF1C6A1988003292B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0AA3B01C6A1988003292B1 /* LaunchScreen.storyboard in Resources */,
+				1C0AA3B11C6A1988003292B1 /* LabelLeftTableViewCell.xib in Resources */,
+				1C0AA3B21C6A1988003292B1 /* fastlane_config.yaml in Resources */,
+				1C0AA3B31C6A1988003292B1 /* git_checkout.rb in Resources */,
+				1C0AA3B41C6A1988003292B1 /* Assets.xcassets in Resources */,
+				1C0AA3B51C6A1988003292B1 /* Main.storyboard in Resources */,
+				1C0AA3B61C6A1988003292B1 /* TextFieldTableViewCell.xib in Resources */,
+				1C0AA3B71C6A1988003292B1 /* LabelCenterTableViewCell.xib in Resources */,
+				1C0AA3B81C6A1988003292B1 /* ButtonCenterTableViewCell.xib in Resources */,
+				1C0AA3B91C6A1988003292B1 /* Matchfile in Resources */,
+				1C0AA3BA1C6A1988003292B1 /* SignInTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53267CA1C60632B008297CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C0AA3C31C6A19D9003292B1 /* GuavaBeta-Info.plist in Resources */,
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
 				1C0AA3991C69EC00003292B1 /* fastlane_config.yaml in Resources */,
+				1C0AA3C21C6A19D9003292B1 /* Guava-Info.plist in Resources */,
 				1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
@@ -484,6 +561,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C0AA39E1C6A1988003292B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0AA39F1C6A1988003292B1 /* UITableExtension.swift in Sources */,
+				1C0AA3A01C6A1988003292B1 /* UIFontExtension.swift in Sources */,
+				1C0AA3A11C6A1988003292B1 /* Login.swift in Sources */,
+				1C0AA3A21C6A1988003292B1 /* LabelLeftTableViewCell.swift in Sources */,
+				1C0AA3A31C6A1988003292B1 /* Model.xcdatamodeld in Sources */,
+				1C0AA3A41C6A1988003292B1 /* QRScannerVC.swift in Sources */,
+				1C0AA3A51C6A1988003292B1 /* SignUpVC.swift in Sources */,
+				1C0AA3A61C6A1988003292B1 /* ButtonCenterTableViewCell.swift in Sources */,
+				1C0AA3A71C6A1988003292B1 /* TextFieldTableViewCell.swift in Sources */,
+				1C0AA3A81C6A1988003292B1 /* LoginVC.swift in Sources */,
+				1C0AA3A91C6A1988003292B1 /* SSQRScanner.swift in Sources */,
+				1C0AA3AA1C6A1988003292B1 /* AppDelegate.swift in Sources */,
+				1C0AA3AB1C6A1988003292B1 /* UIColorExtension.swift in Sources */,
+				1C0AA3AC1C6A1988003292B1 /* SignInTableViewCell.swift in Sources */,
+				1C0AA3AD1C6A1988003292B1 /* LabelCenterTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B53267C81C60632B008297CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,6 +644,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1C0AA3BC1C6A1988003292B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 11;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/GuavaBeta-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1C0AA3BD1C6A1988003292B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 11;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/GuavaBeta-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		B53267DC1C60632B008297CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -634,9 +761,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 11;
-				INFOPLIST_FILE = Guava/Configurations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -648,9 +775,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 11;
-				INFOPLIST_FILE = Guava/Configurations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -683,6 +810,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C0AA3BB1C6A1988003292B1 /* Build configuration list for PBXNativeTarget "Guava-Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C0AA3BC1C6A1988003292B1 /* Debug */,
+				1C0AA3BD1C6A1988003292B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B53267C71C60632B008297CF /* Build configuration list for PBXProject "Guava" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
