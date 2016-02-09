@@ -100,13 +100,13 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         
         switch indexPath.row {
         case 0, 3, 4, 6:
-            return view.bounds.height * 0.08    //50
+            return 50
         case 1:
-            return view.bounds.height * 0.245   //150
+            return 150
         case 2:
-            return view.bounds.height * 0.049   //30
+            return 30
         case 5,7,8:
-            return view.bounds.height * 0.120   //75
+            return 75
         default:
             return 0
         }
