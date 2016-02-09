@@ -1,0 +1,4 @@
+dailybuild:
+            remote_branch: development # Project's reference branch to checkout
+weeklybuild:
+            remote_branch: master
