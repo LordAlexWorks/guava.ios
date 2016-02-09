@@ -14,9 +14,9 @@ platform :ios do
   desc "Submit a new daily build to TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :development do |options|
-    increment_build_number
     config_env(options)
     prepare(remote_branch: options[:remote_branch])
+    increment_build_number
     cert
     sigh
     gym(scheme: "Guava") # Build your app - more options available
