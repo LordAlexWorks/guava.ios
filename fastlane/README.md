@@ -15,9 +15,16 @@ Runs all the tests
 ```
 fastlane ios dailybuild
 ```
-Submit a new daily build to TestFlight
+Submit a new daily build to Apple TestFlight
 
 A daily build is sent to Guava team by default
+### ios weeklybuild
+```
+fastlane ios weeklybuild
+```
+Submit a new weekly build to Apple TestFlight
+
+A weekly build is sent to Guava team by default
 ### ios beta
 ```
 fastlane ios beta
