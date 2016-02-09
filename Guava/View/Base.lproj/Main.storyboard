@@ -159,6 +159,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="640" height="1136"/>
+        <image name="bg" width="750" height="1334"/>
     </resources>
 </document>
