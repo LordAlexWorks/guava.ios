@@ -11,6 +11,18 @@ platform :ios do
     scan
   end
 
+  desc "Submit a new daily build to TestFlight"
+  desc "A daily build is sent to Guava team by default"
+  lane :development do |options|
+    increment_build_number
+    config_env(options)
+    prepare(remote_branch: options[:remote_branch])
+    cert
+    sigh
+    gym(scheme: "Guava") # Build your app - more options available
+    pilot
+  end
+
   desc "Submit a new Beta Build to Apple TestFlight"
   desc "This will also make sure the profile is up to date"
   lane :beta do
@@ -30,7 +42,25 @@ platform :ios do
     deliver(force: true)
   end
 
-  # You can define as many lanes as you want
+# PRIVATE LANES
+
+    private_lane :config_env do |options|
+        # Select proper xcode tool
+        xcode = options[:xcode_select]
+    end
+
+    private_lane :prepare do |options|
+        ensure_git_status_clean
+        current_branch = git_branch
+
+        # # Checkout remote branch if needed
+        if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
+            puts "Checkout new branch #{options[:remote_branch]}"
+            git_checkout(remote_branch: options[:remote_branch])
+        else
+            git_pull
+        end
+    end
 
   after_all do |lane|
     # This block is called, only if the executed lane was successful
