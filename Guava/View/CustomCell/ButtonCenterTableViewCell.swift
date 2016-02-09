@@ -14,14 +14,9 @@ enum ButtonType: String {
     case TWITTER = "twitter"
 }
 
-protocol ButtonCenterTableViewDelegate {
-    func loginButtonTapped()
-}
-
 class ButtonCenterTableViewCell: UITableViewCell {
 
     @IBOutlet weak var buttonCenter: UIButton!
-    var delegate: ButtonCenterTableViewDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,9 +29,8 @@ class ButtonCenterTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setup(buttonTitle: String, buttonType: ButtonType, textFontWeight: FontWeight, textSize: CGFloat, delegate:ButtonCenterTableViewDelegate) {
-
-        self.delegate = delegate
+    func setup(buttonTitle: String, buttonType: ButtonType, textFontWeight: FontWeight, textSize: CGFloat) {
+        
         buttonCenter.setTitle(buttonTitle, forState: .Normal)
         buttonCenter.titleLabel?.font = UIFont.avenir(textFontWeight, size: textSize)
         buttonCenter.layer.cornerRadius = 30
@@ -57,11 +51,8 @@ class ButtonCenterTableViewCell: UITableViewCell {
                 buttonCenter.layer.borderColor = UIColor.twitterColor().CGColor
         default:
             print("Error - setup")
-
         }
-
-    }
-    @IBAction func loginButtonTapped(sender: UIButton) {
-        delegate?.loginButtonTapped()
     }
 }
+
+

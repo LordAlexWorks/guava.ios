@@ -13,23 +13,7 @@
 		B53267EF1C606C78008297CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
 		B53267F21C606D2F008297CF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
 		B53267F41C606D41008297CF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
-		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
-		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
-		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
-		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
-		B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
-		B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */; };
-		B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */; };
-		B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */; };
-		B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */; };
-		B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */; };
-		B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */; };
-		B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */; };
-		B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */; };
-		B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */; };
-		B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */; };
-		B599F74B1C6869F10013E89E /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = B599F7401C6869F10013E89E /* screenshots.html */; };
-		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
+		D30B1EEA1C68E43600C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EE91C68E43600C73183 /* UIFontExtension.swift */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -43,17 +27,10 @@
 		D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
+		D3F5FC3E1C6508C200861E2D /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3D1C6508C200861E2D /* MyCardsVC.swift */; };
+		D3F5FC421C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC401C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.swift */; };
+		D3F5FC431C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F5FC411C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.xib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B599F72E1C682C000013E89E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B53267C41C60632B008297CF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B53267CB1C60632B008297CF;
-			remoteInfo = Guava;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,43 +41,7 @@
 		B53267EB1C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53267F11C606D2F008297CF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B53267F31C606D41008297CF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
-		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
-		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		B599F6D21C66DE080013E89E /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
-		B599F6D31C66DE080013E89E /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
-		B599F6D41C66DE080013E89E /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
-		B599F6D61C66DE080013E89E /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
-		B599F6D81C66DE080013E89E /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
-		B599F6D91C66DE080013E89E /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
-		B599F6DA1C66DE080013E89E /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
-		B599F6DB1C66DE080013E89E /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
-		B599F6DC1C66DE080013E89E /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
-		B599F6DD1C66DE080013E89E /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
-		B599F6DE1C66DE080013E89E /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
-		B599F6DF1C66DE080013E89E /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
-		B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E21C66DE080013E89E /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
-		B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E61C66DE080013E89E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		B599F7291C682BFF0013E89E /* GuavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
-		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F7401C6869F10013E89E /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
-		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		D30B1EE91C68E43600C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFontExtension.swift; path = Extensions/UIFontExtension.swift; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -114,17 +55,13 @@
 		D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonCenterTableViewCell.xib; path = CustomCell/ButtonCenterTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D3F5FC3D1C6508C200861E2D /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
+		D3F5FC401C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeftRightButtonCenterLabelTableViewCell.swift; path = CustomCell/LeftRightButtonCenterLabelTableViewCell.swift; sourceTree = "<group>"; };
+		D3F5FC411C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LeftRightButtonCenterLabelTableViewCell.xib; path = CustomCell/LeftRightButtonCenterLabelTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B53267C91C60632B008297CF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B599F7261C682BFF0013E89E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,9 +74,7 @@
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
-				B599F6D01C66DE080013E89E /* fastlane */,
 				B53267CE1C60632B008297CF /* Guava */,
-				B599F72A1C682BFF0013E89E /* GuavaUITests */,
 				B53267CD1C60632B008297CF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				B53267CC1C60632B008297CF /* Guava.app */,
-				B599F7291C682BFF0013E89E /* GuavaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,11 +90,10 @@
 		B53267CE1C60632B008297CF /* Guava */ = {
 			isa = PBXGroup;
 			children = (
+				D3F326B61C6397310092427F /* Extensions */,
 				B53267D61C60632B008297CF /* Assets.xcassets */,
 				B53267E11C606C78008297CF /* Configurations */,
 				B53267E31C606C78008297CF /* Controller */,
-				D3F326B61C6397310092427F /* Extensions */,
-				B599F6C71C65ABC30013E89E /* External */,
 				B53267E41C606C78008297CF /* Main */,
 				B53267E61C606C78008297CF /* Model */,
 				B53267E71C606C78008297CF /* View */,
@@ -196,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				B53267F31C606D41008297CF /* Login.swift */,
-				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,111 +147,9 @@
 			children = (
 				B53267F11C606D2F008297CF /* LoginVC.swift */,
 				D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */,
-				B599F6CB1C65AC580013E89E /* QRScannerVC.swift */,
+				D3F5FC3D1C6508C200861E2D /* MyCardsVC.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		B599F6C71C65ABC30013E89E /* External */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6C81C65ABC30013E89E /* QRScanner */,
-			);
-			path = External;
-			sourceTree = "<group>";
-		};
-		B599F6C81C65ABC30013E89E /* QRScanner */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6C91C65ABC30013E89E /* SSQRScanner.swift */,
-			);
-			path = QRScanner;
-			sourceTree = "<group>";
-		};
-		B599F6D01C66DE080013E89E /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6D11C66DE080013E89E /* actions */,
-				B599F6D21C66DE080013E89E /* Appfile */,
-				B599F6D31C66DE080013E89E /* Deliverfile */,
-				B599F6D41C66DE080013E89E /* Fastfile */,
-				B599F6D51C66DE080013E89E /* metadata */,
-				B599F6E51C66DE080013E89E /* screenshots */,
-			);
-			path = fastlane;
-			sourceTree = "<group>";
-		};
-		B599F6D11C66DE080013E89E /* actions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = actions;
-			sourceTree = "<group>";
-		};
-		B599F6D51C66DE080013E89E /* metadata */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6D61C66DE080013E89E /* copyright.txt */,
-				B599F6D71C66DE080013E89E /* en-US */,
-				B599F6DF1C66DE080013E89E /* primary_category.txt */,
-				B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */,
-				B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */,
-				B599F6E21C66DE080013E89E /* secondary_category.txt */,
-				B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */,
-				B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */,
-			);
-			path = metadata;
-			sourceTree = "<group>";
-		};
-		B599F6D71C66DE080013E89E /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6D81C66DE080013E89E /* description.txt */,
-				B599F6D91C66DE080013E89E /* keywords.txt */,
-				B599F6DA1C66DE080013E89E /* marketing_url.txt */,
-				B599F6DB1C66DE080013E89E /* name.txt */,
-				B599F6DC1C66DE080013E89E /* privacy_url.txt */,
-				B599F6DD1C66DE080013E89E /* release_notes.txt */,
-				B599F6DE1C66DE080013E89E /* support_url.txt */,
-			);
-			path = "en-US";
-			sourceTree = "<group>";
-		};
-		B599F6E51C66DE080013E89E /* screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				B599F7351C6869F10013E89E /* en-US */,
-				B599F7401C6869F10013E89E /* screenshots.html */,
-				B599F6E61C66DE080013E89E /* README.txt */,
-			);
-			path = screenshots;
-			sourceTree = "<group>";
-		};
-		B599F72A1C682BFF0013E89E /* GuavaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B599F72B1C682C000013E89E /* GuavaUITests.swift */,
-				B599F72D1C682C000013E89E /* Info.plist */,
-				B599F7331C682DBF0013E89E /* SnapshotHelper.swift */,
-			);
-			path = GuavaUITests;
-			sourceTree = "<group>";
-		};
-		B599F7351C6869F10013E89E /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */,
-				B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */,
-				B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */,
-				B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */,
-				B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */,
-				B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */,
-				B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */,
-				B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */,
-				B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */,
-				B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */,
-			);
-			path = "en-US";
 			sourceTree = "<group>";
 		};
 		D3DDC2CD1C621C360093EBEA /* Storyboards */ = {
@@ -340,6 +170,8 @@
 				D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */,
 				D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */,
 				D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */,
+				D3F5FC401C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.swift */,
+				D3F5FC411C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.xib */,
 				D3F326B21C6391030092427F /* SignInTableViewCell.swift */,
 				D3F326B31C6391030092427F /* SignInTableViewCell.xib */,
 				D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */,
@@ -352,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
-				D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */,
+				D30B1EE91C68E43600C73183 /* UIFontExtension.swift */,
 				D3F326B71C6397860092427F /* UITableExtension.swift */,
 			);
 			name = Extensions;
@@ -378,24 +210,6 @@
 			productReference = B53267CC1C60632B008297CF /* Guava.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B599F7281C682BFF0013E89E /* GuavaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B599F7321C682C000013E89E /* Build configuration list for PBXNativeTarget "GuavaUITests" */;
-			buildPhases = (
-				B599F7251C682BFF0013E89E /* Sources */,
-				B599F7261C682BFF0013E89E /* Frameworks */,
-				B599F7271C682BFF0013E89E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B599F72F1C682C000013E89E /* PBXTargetDependency */,
-			);
-			name = GuavaUITests;
-			productName = GuavaUITests;
-			productReference = B599F7291C682BFF0013E89E /* GuavaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -408,11 +222,6 @@
 				TargetAttributes = {
 					B53267CB1C60632B008297CF = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = JY7SW47P2C;
-					};
-					B599F7281C682BFF0013E89E = {
-						CreatedOnToolsVersion = 7.2;
-						TestTargetID = B53267CB1C60632B008297CF;
 					};
 				};
 			};
@@ -430,7 +239,6 @@
 			projectRoot = "";
 			targets = (
 				B53267CB1C60632B008297CF /* Guava */,
-				B599F7281C682BFF0013E89E /* GuavaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -441,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
+				D3F5FC431C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.xib in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
@@ -448,24 +257,6 @@
 				D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */,
 				D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */,
 				D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B599F7271C682BFF0013E89E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */,
-				B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */,
-				B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */,
-				B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */,
-				B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */,
-				B599F74B1C6869F10013E89E /* screenshots.html in Resources */,
-				B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */,
-				B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */,
-				B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */,
-				B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */,
-				B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,41 +268,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3F326B81C6397860092427F /* UITableExtension.swift in Sources */,
-				D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */,
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
 				D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */,
-				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
-				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
+				D3F5FC421C6512B100861E2D /* LeftRightButtonCenterLabelTableViewCell.swift in Sources */,
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
+				D3F5FC3E1C6508C200861E2D /* MyCardsVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
-				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
+				D30B1EEA1C68E43600C73183 /* UIFontExtension.swift in Sources */,
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */,
 				D3F326BC1C63AB560092427F /* LabelCenterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B599F7251C682BFF0013E89E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */,
-				B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B599F72F1C682C000013E89E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B53267CB1C60632B008297CF /* Guava */;
-			targetProxy = B599F72E1C682C000013E89E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B53267E81C606C78008297CF /* LaunchScreen.storyboard */ = {
@@ -620,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
@@ -632,35 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B599F7301C682C000013E89E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GuavaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Guava;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		B599F7311C682C000013E89E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = GuavaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Guava;
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -685,29 +432,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B599F7321C682C000013E89E /* Build configuration list for PBXNativeTarget "GuavaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B599F7301C682C000013E89E /* Debug */,
-				B599F7311C682C000013E89E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */,
-			);
-			currentVersion = B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B53267C41C60632B008297CF /* Project object */;
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate,ButtonCenterTableViewDelegate {
+class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
 
     var signDelegate: SignInTableViewDelegate?
     
@@ -48,32 +48,32 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("LOGIN", delegate: signDelegate!)
+            cell.setup("LOGIN", textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: signDelegate!)
             
             return cell
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.CenterLabel.rawValue, forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("Goyava", sizeLabel: 30)
+            cell.setup("Goyava", textFontWeight: FontWeight.AHeavy, textSize: 34)
             
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.LeftLabel.rawValue, forIndexPath: indexPath) as! LabelLeftTableViewCell
-            cell.setup("WE JUST NEED A FEW DETAILS")
+            cell.setup("WE JUST NEED A FEW DETAILS", textFontWeight: FontWeight.AHeavy, textSize: 12)
             
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("EMAIL", fieldType: .EmailType)
+            cell.setup("EMAIL", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("PASSWORD", fieldType: .PassowrdType)
+            cell.setup("PASSWORD", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN",delegate: self)
+            cell.setup("CREATE ACCOUNT", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 6:
@@ -83,12 +83,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB",delegate: self)
+//            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB")
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER",delegate: self)
+//            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER")
             
             return cell
         default:
@@ -116,13 +116,6 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
     func signInButtonTapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-    //MARK: Login navigation
-    func loginButtonTapped() {
-        goToScannerView()
-    }
-    func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.navigationController?.pushViewController(qrscannerVc, animated: true)
-    }
+    
     
 }

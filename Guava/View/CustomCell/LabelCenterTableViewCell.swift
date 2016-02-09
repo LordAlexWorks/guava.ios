@@ -32,5 +32,5 @@ class LabelCenterTableViewCell: UITableViewCell {
         self.centerLabel.text = labelName
         self.centerLabel.font = UIFont.avenir(textFontWeight, size: textSize)
     }
-    
+
 }

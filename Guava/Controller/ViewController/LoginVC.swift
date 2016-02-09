@@ -8,15 +8,17 @@
 
 import UIKit
 
-class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate ,ButtonCenterTableViewDelegate{
+class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, SignInTableViewDelegate {
 
      var signDelegate: SignInTableViewDelegate?
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+
         navigationController?.view.backgroundColor = UIColor.blackColor()
         signDelegate = self
+        
         setNibCell()
     }
     
@@ -36,13 +38,17 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         // Dispose of any resources that can be recreated.
     }
     
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return UIStatusBarStyle.LightContent
+    }
+    
     //MARK: UITableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 9
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
@@ -71,7 +77,7 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("LOGIN", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 6:
@@ -81,12 +87,12 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("LOGIN WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier("ButtonCenterTableViewCell", forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("LOGIN WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("LOGIN WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         default:
@@ -114,15 +120,5 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         performSegueWithIdentifier("signInToSingUpSegue", sender: nil)
     }
     
-    //MARK: Login navigation
-    func loginButtonTapped() {
-        goToScannerView()
-    }
-    func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-            
-        }
-    }
 
 }

@@ -11,6 +11,7 @@ import UIKit
 enum FontWeight: String {
     case ABlack = "Avenir-Black"
     case AHeavy = "Avenir-Heavy"
+    
 }
 
 extension UIFont {
