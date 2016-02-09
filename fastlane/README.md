@@ -11,9 +11,9 @@ sudo gem install fastlane
 fastlane ios test
 ```
 Runs all the tests
-### ios development
+### ios dailybuild
 ```
-fastlane ios development
+fastlane ios dailybuild
 ```
 Submit a new daily build to TestFlight
 

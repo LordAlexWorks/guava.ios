@@ -11,13 +11,16 @@ platform :ios do
     scan
   end
 
-  desc "Submit a new daily build to TestFlight"
+  desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
-  lane :development do |options|
-    config_env(options)
-    prepare(remote_branch: options[:remote_branch])
+  lane :dailybuild do |options|
+#config_env(options)
+#prepare(remote_branch: options[:remote_branch])
+    ensure_git_branch(
+        branch: 'development'
+    )
     increment_build_number
-    match(type: "adhoc")
+    match(type: "appstore")
     gym(scheme: "Guava") # Build your app - more options available
     pilot
   end
