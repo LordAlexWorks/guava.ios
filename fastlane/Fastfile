@@ -16,10 +16,7 @@ platform :ios do
   lane :dailybuild do |options|
     config_env(options)
     prepare(remote_branch: options[:remote_branch])
-    ensure_git_branch(
-        branch: 'development'
-    )
-    increment_build_number
+
     match(type: "appstore")
     gym(scheme: "Guava") # Build your app - more options available
     pilot
@@ -29,13 +26,11 @@ platform :ios do
     desc "A weekly build is sent to Guava team by default"
     lane :weeklybuild do |options|
         config_env(options)
+
         prepare(remote_branch: options[:remote_branch])
-        ensure_git_branch(
-            branch: 'master'
-        )
-        increment_build_number
-        match(type: "appstore")
-        gym(scheme: "Guava") # Build your app - more options available
+
+        #match(type: "appstore")
+        #gym(scheme: "Guava") # Build your app - more options available
         pilot
     end
 
