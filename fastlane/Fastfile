@@ -71,21 +71,22 @@ platform :ios do
   )
 
   # Generate release notes from CHANGELOG
-  release_notes = latest_version.split("\n")[1..-1].join("\n")
+  note = latest_version.split("\n")[1..-1].join("\n")
+  release_notes = "#{changelog_from_git_commits}#{changelog_from_git_commits}"
 
     #match(type: "appstore")
     gym(scheme: "Guava-Beta") # Build your app - more options available
     #pilot
 
 
-  # Make sure our directory is clean, except for changes Fastlane has made
-  clean_build_artifacts
+    # Make sure our directory is clean, except for changes Fastlane has made
+   clean_build_artifacts
 
-  # Tag release and push to GitHub
-  commit_version_bump message: "Deploying version #{version_number}."
-  add_git_tag tag: version_number
-  push_to_git_remote
-    end
+    # Tag release and push to GitHub
+   commit_version_bump message: "Deploying version #{version_number}."
+   add_git_tag tag: version_number
+    push_to_git_remote
+  end
 
 
   desc "Submit a new Beta Build to Apple TestFlight"
