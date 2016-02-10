@@ -122,7 +122,9 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.navigationController?.pushViewController(qrscannerVc, animated: true)
+        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+            
+        }
     }
     
 }

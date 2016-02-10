@@ -54,8 +54,6 @@
 		B5FBEB6B1C6AD4EC006DCC12 /* LabelCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */; };
 		B5FBEB6C1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
 		B5FBEB6D1C6AD4EC006DCC12 /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
-		B5FBEB751C6AD553006DCC12 /* Guava-Beta-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FBEB731C6AD553006DCC12 /* Guava-Beta-info.plist */; };
-		B5FBEB761C6AD553006DCC12 /* Guava-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5FBEB741C6AD553006DCC12 /* Guava-info.plist */; };
 		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
@@ -500,9 +498,7 @@
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
-				B5FBEB761C6AD553006DCC12 /* Guava-info.plist in Resources */,
 				D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */,
-				B5FBEB751C6AD553006DCC12 /* Guava-Beta-info.plist in Resources */,
 				D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */,
 				D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */,
 			);
