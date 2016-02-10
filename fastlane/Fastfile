@@ -11,6 +11,15 @@ platform :ios do
     scan
   end
 
+  desc "Creates new screenshots and uploads them to iTunes Connect"
+  lane :screens do
+    cocoapods
+    match(app_identifier: "com.acast.app.debug", type: "development")
+    snapshot
+    frameit
+    deliver(app: 925311796, app_identifier: "com.acast.app.native.production", skip_metadata: true, force: true)
+  end
+
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
@@ -18,12 +27,26 @@ platform :ios do
 
     prepare(remote_branch: options[:remote_branch])
 
-   # increment_build_number
+    # Increment build number to current date
+    build_number = Time.new.strftime("%Y.%m.%d")
+    increment_build_number build_number: build_number
+
+    # Generate release notes from CHANGELOG
+    #release_notes = latest_version.split("\n")[1..-1].join("\n")
 
     #match(type: "appstore")
     gym(scheme: "Guava-Beta") # Build your app - more options available
     #pilot
-  end
+
+     # Make sure our directory is clean, except for changes Fastlane has made
+    clean_build_artifacts
+
+    # push to GitHub
+     git_commit(path: ".",
+              message: "Deploying build #{build_number}.")
+
+    push_to_git_remote
+   end
 
     desc "Submit a new weekly build to Apple TestFlight"
     desc "A weekly build is sent to Guava team by default"
@@ -35,6 +58,32 @@ platform :ios do
         #match(type: "appstore")
         #gym(scheme: "Guava") # Build your app - more options available
         #pilot
+
+          # Set version number to the one at the top of the CHANGELOG
+  readme = File.read("../README.md")
+  latest_version = readme.split("\n## ").first
+  first_line = latest_version.split("\n").first
+  version_number = first_line.split(" ")[1]
+
+  increment_version_number(
+   version_number: version_number # Set a specific version number
+  )
+
+  # Generate release notes from CHANGELOG
+  release_notes = latest_version.split("\n")[1..-1].join("\n")
+
+    #match(type: "appstore")
+    gym(scheme: "Guava-Beta") # Build your app - more options available
+    #pilot
+
+
+  # Make sure our directory is clean, except for changes Fastlane has made
+  clean_build_artifacts
+
+  # Tag release and push to GitHub
+  commit_version_bump message: "Deploying version #{version_number}."
+  add_git_tag tag: version_number
+  push_to_git_remote
     end
 
 
@@ -81,14 +130,14 @@ platform :ios do
 
     # This block is called, only if the executed lane was successful
     # Make sure our directory is clean, except for changes Fastlane has made
-    clean_build_artifacts
+    #clean_build_artifacts
 
     #add all files
-    git_add(path: ".")
+    #git_add(path: ".")
 
     # Commit new build and push to git
-    commit_version_bump
-    push_to_git_remote
+   # commit_version_bump
+  #  push_to_git_remote
 
   end
 

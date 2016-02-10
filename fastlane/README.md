@@ -11,6 +11,11 @@ sudo gem install fastlane
 fastlane ios test
 ```
 Runs all the tests
+### ios screens
+```
+fastlane ios screens
+```
+Creates new screenshots and uploads them to iTunes Connect
 ### ios dailybuild
 ```
 fastlane ios dailybuild

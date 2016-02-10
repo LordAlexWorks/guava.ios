@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -19,17 +18,6 @@
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
-		B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */; };
-		B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */; };
-		B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */; };
-		B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */; };
-		B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */; };
-		B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */; };
-		B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */; };
-		B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */; };
-		B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */; };
-		B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */; };
-		B599F74B1C6869F10013E89E /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = B599F7401C6869F10013E89E /* screenshots.html */; };
 		B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
 		B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
 		B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
@@ -51,7 +39,6 @@
 		B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */; };
 		B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
 		B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */; };
-		B5FBEB671C6AD4EC006DCC12 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
 		B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
 		B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */; };
@@ -87,7 +74,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = git_checkout.rb; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,37 +84,10 @@
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		B599F6D41C66DE080013E89E /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
-		B599F6D61C66DE080013E89E /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
-		B599F6D81C66DE080013E89E /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
-		B599F6D91C66DE080013E89E /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
-		B599F6DA1C66DE080013E89E /* marketing_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = marketing_url.txt; sourceTree = "<group>"; };
-		B599F6DB1C66DE080013E89E /* name.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = name.txt; sourceTree = "<group>"; };
-		B599F6DC1C66DE080013E89E /* privacy_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = privacy_url.txt; sourceTree = "<group>"; };
-		B599F6DD1C66DE080013E89E /* release_notes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = release_notes.txt; sourceTree = "<group>"; };
-		B599F6DE1C66DE080013E89E /* support_url.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = support_url.txt; sourceTree = "<group>"; };
-		B599F6DF1C66DE080013E89E /* primary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_category.txt; sourceTree = "<group>"; };
-		B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_first_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = primary_second_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E21C66DE080013E89E /* secondary_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_category.txt; sourceTree = "<group>"; };
-		B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_first_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = secondary_second_sub_category.txt; sourceTree = "<group>"; };
-		B599F6E61C66DE080013E89E /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B599F7291C682BFF0013E89E /* GuavaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuavaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
 		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPadRetina-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone4s-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone5-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-01LoginScreen.png"; sourceTree = "<group>"; };
-		B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-02SignupScreen.png"; sourceTree = "<group>"; };
-		B599F7401C6869F10013E89E /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
 		B5D112D11C6AFBE600F66AB6 /* MyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCard.swift; path = CustomCell/MyCard.swift; sourceTree = "<group>"; };
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
 		B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guava-Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,18 +135,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C0A9F791C69DDD6003292B1 /* actions */ = {
-			isa = PBXGroup;
-			children = (
-				1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */,
-			);
-			path = actions;
-			sourceTree = "<group>";
-		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
-				B599F6D01C66DE080013E89E /* fastlane */,
 				B53267CE1C60632B008297CF /* Guava */,
 				B599F72A1C682BFF0013E89E /* GuavaUITests */,
 				B53267CD1C60632B008297CF /* Products */,
@@ -289,56 +239,6 @@
 			path = QRScanner;
 			sourceTree = "<group>";
 		};
-		B599F6D01C66DE080013E89E /* fastlane */ = {
-			isa = PBXGroup;
-			children = (
-				1C0A9F791C69DDD6003292B1 /* actions */,
-				B599F6D41C66DE080013E89E /* Fastfile */,
-				B599F6D51C66DE080013E89E /* metadata */,
-				B599F6E51C66DE080013E89E /* screenshots */,
-			);
-			path = fastlane;
-			sourceTree = "<group>";
-		};
-		B599F6D51C66DE080013E89E /* metadata */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6D61C66DE080013E89E /* copyright.txt */,
-				B599F6D71C66DE080013E89E /* en-US */,
-				B599F6DF1C66DE080013E89E /* primary_category.txt */,
-				B599F6E01C66DE080013E89E /* primary_first_sub_category.txt */,
-				B599F6E11C66DE080013E89E /* primary_second_sub_category.txt */,
-				B599F6E21C66DE080013E89E /* secondary_category.txt */,
-				B599F6E31C66DE080013E89E /* secondary_first_sub_category.txt */,
-				B599F6E41C66DE080013E89E /* secondary_second_sub_category.txt */,
-			);
-			path = metadata;
-			sourceTree = "<group>";
-		};
-		B599F6D71C66DE080013E89E /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				B599F6D81C66DE080013E89E /* description.txt */,
-				B599F6D91C66DE080013E89E /* keywords.txt */,
-				B599F6DA1C66DE080013E89E /* marketing_url.txt */,
-				B599F6DB1C66DE080013E89E /* name.txt */,
-				B599F6DC1C66DE080013E89E /* privacy_url.txt */,
-				B599F6DD1C66DE080013E89E /* release_notes.txt */,
-				B599F6DE1C66DE080013E89E /* support_url.txt */,
-			);
-			path = "en-US";
-			sourceTree = "<group>";
-		};
-		B599F6E51C66DE080013E89E /* screenshots */ = {
-			isa = PBXGroup;
-			children = (
-				B599F7351C6869F10013E89E /* en-US */,
-				B599F7401C6869F10013E89E /* screenshots.html */,
-				B599F6E61C66DE080013E89E /* README.txt */,
-			);
-			path = screenshots;
-			sourceTree = "<group>";
-		};
 		B599F72A1C682BFF0013E89E /* GuavaUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,23 +247,6 @@
 				B599F7331C682DBF0013E89E /* SnapshotHelper.swift */,
 			);
 			path = GuavaUITests;
-			sourceTree = "<group>";
-		};
-		B599F7351C6869F10013E89E /* en-US */ = {
-			isa = PBXGroup;
-			children = (
-				B599F7361C6869F10013E89E /* iPadRetina-01LoginScreen.png */,
-				B599F7371C6869F10013E89E /* iPadRetina-02SignupScreen.png */,
-				B599F7381C6869F10013E89E /* iPhone4s-01LoginScreen.png */,
-				B599F7391C6869F10013E89E /* iPhone4s-02SignupScreen.png */,
-				B599F73A1C6869F10013E89E /* iPhone5-01LoginScreen.png */,
-				B599F73B1C6869F10013E89E /* iPhone5-02SignupScreen.png */,
-				B599F73C1C6869F10013E89E /* iPhone6-01LoginScreen.png */,
-				B599F73D1C6869F10013E89E /* iPhone6-02SignupScreen.png */,
-				B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */,
-				B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */,
-			);
-			path = "en-US";
 			sourceTree = "<group>";
 		};
 		D3DDC2CD1C621C360093EBEA /* Storyboards */ = {
@@ -506,7 +389,6 @@
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
-				1C0A9F7B1C69DDD6003292B1 /* git_checkout.rb in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
@@ -521,17 +403,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B599F7421C6869F10013E89E /* iPadRetina-02SignupScreen.png in Resources */,
-				B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */,
-				B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */,
-				B599F7441C6869F10013E89E /* iPhone4s-02SignupScreen.png in Resources */,
-				B599F7461C6869F10013E89E /* iPhone5-02SignupScreen.png in Resources */,
-				B599F74B1C6869F10013E89E /* screenshots.html in Resources */,
-				B599F7481C6869F10013E89E /* iPhone6-02SignupScreen.png in Resources */,
-				B599F7431C6869F10013E89E /* iPhone4s-01LoginScreen.png in Resources */,
-				B599F7471C6869F10013E89E /* iPhone6-01LoginScreen.png in Resources */,
-				B599F7411C6869F10013E89E /* iPadRetina-01LoginScreen.png in Resources */,
-				B599F7451C6869F10013E89E /* iPhone5-01LoginScreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,7 +412,6 @@
 			files = (
 				B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */,
 				B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */,
-				B5FBEB671C6AD4EC006DCC12 /* git_checkout.rb in Resources */,
 				B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */,
 				B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */,
 				B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */,
@@ -730,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 2016.02.10;
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
@@ -744,7 +614,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 2016.02.10;
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
@@ -782,7 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 2016.02.10;
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
@@ -796,7 +666,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CURRENT_PROJECT_VERSION = 14;
+				CURRENT_PROJECT_VERSION = 2016.02.10;
 				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
