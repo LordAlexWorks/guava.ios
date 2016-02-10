@@ -15,11 +15,14 @@ platform :ios do
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
     config_env(options)
-    prepare(remote_branch: options[:remote_branch])
 
-    match(type: "appstore")
-    gym(scheme: "Guava") # Build your app - more options available
-    pilot
+#    prepare(remote_branch: options[:remote_branch])
+
+   # increment_build_number
+
+    #match(type: "appstore")
+    #gym(scheme: "Guava") # Build your app - more options available
+    #pilot
   end
 
     desc "Submit a new weekly build to Apple TestFlight"
@@ -31,7 +34,7 @@ platform :ios do
 
         #match(type: "appstore")
         #gym(scheme: "Guava") # Build your app - more options available
-        pilot
+        #pilot
     end
 
 
@@ -62,7 +65,7 @@ platform :ios do
     end
 
     private_lane :prepare do |options|
-        ensure_git_status_clean
+        #ensure_git_status_clean
         current_branch = git_branch
 
         # # Checkout remote branch if needed
@@ -75,8 +78,21 @@ platform :ios do
     end
 
   after_all do |lane|
-    # This block is called, only if the executed lane was successful
 
+    mailgun(
+            postmaster: "postmaster@sandboxbae4a29878b5419688a3027753f01b70.mailgun.org",
+            apikey: "key-a10ec12adb09cd6d76d605261dd2b0a7",
+            to: "bolo@lordalexworks.com",
+            success: true,
+            message: "Successfully deployed new #{lane} build (#{Actions.lane_context[SharedValues::BUILD_NUMBER]})."
+    )
+    # This block is called, only if the executed lane was successful
+    # Make sure our directory is clean, except for changes Fastlane has made
+    clean_build_artifacts
+
+    # Commit new build and push to git
+    git_commit
+    push_to_git_remote
 
   end
 
