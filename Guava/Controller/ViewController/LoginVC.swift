@@ -122,7 +122,6 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-            
         }
     }
     //MARK: Background Tap

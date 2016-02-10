@@ -157,8 +157,100 @@
             </objects>
             <point key="canvasLocation" x="940" y="1140"/>
         </scene>
+        <!--My CardsVC-->
+        <scene sceneID="Alp-ru-xHZ">
+            <objects>
+                <viewController storyboardIdentifier="MyCardsVC" id="eYq-37-RmF" customClass="MyCardsVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HoN-33-efT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Usm-ov-IqE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L3T-In-gOt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Z-bu-ieP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-mQ-Uhd">
+                                        <rect key="frame" x="15" y="5" width="41" height="35"/>
+                                        <state key="normal" image="QR"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-Vo-i8i">
+                                        <rect key="frame" x="559" y="5" width="26" height="35"/>
+                                        <state key="normal" image="Gridicon"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="leading" secondItem="w5Z-bu-ieP" secondAttribute="leading" constant="15" id="1Nu-Od-Day"/>
+                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="FEE-fr-E6Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="8x0-Vo-i8i" secondAttribute="trailing" constant="15" id="MXJ-BC-AzS"/>
+                                    <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="Rp5-oF-cCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="8x0-Vo-i8i" secondAttribute="bottom" constant="5" id="dhN-Xr-yfW"/>
+                                    <constraint firstAttribute="bottom" secondItem="TbQ-mQ-Uhd" secondAttribute="bottom" constant="5" id="nMv-fg-mmx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17q-NF-nyZ">
+                                <rect key="frame" x="0.0" y="561" width="600" height="39"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-U1-gTL">
+                                        <rect key="frame" x="15" y="5" width="25" height="29"/>
+                                        <state key="normal" image="Logout"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bQL-U1-gTL" firstAttribute="leading" secondItem="17q-NF-nyZ" secondAttribute="leading" constant="15" id="7AQ-eO-mwl"/>
+                                    <constraint firstItem="bQL-U1-gTL" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="top" constant="5" id="GNh-UD-ECd"/>
+                                    <constraint firstAttribute="bottom" secondItem="bQL-U1-gTL" secondAttribute="bottom" constant="5" id="s89-mb-9v8"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
+                                <rect key="frame" x="0.0" y="45" width="600" height="516"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="jxG-yc-wBM">
+                                    <size key="itemSize" width="120" height="120"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eYq-37-RmF" id="SDK-GN-9hI"/>
+                                    <outlet property="delegate" destination="eYq-37-RmF" id="UeL-Pm-cbd"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w5Z-bu-ieP" secondAttribute="trailing" id="IzE-oy-Sq9"/>
+                            <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="bottom" id="JFM-tc-VzP"/>
+                            <constraint firstAttribute="trailing" secondItem="17q-NF-nyZ" secondAttribute="trailing" id="KQf-eh-chG"/>
+                            <constraint firstItem="17q-NF-nyZ" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="Mxe-d2-oP9"/>
+                            <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="bottom" id="NG9-GH-ouw"/>
+                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="QOb-JU-GWj"/>
+                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="top" secondItem="HoN-33-efT" secondAttribute="bottom" id="V3D-ez-06P"/>
+                            <constraint firstAttribute="trailing" secondItem="LhH-hY-m28" secondAttribute="trailing" id="XGZ-lj-mbq"/>
+                            <constraint firstItem="17q-NF-nyZ" firstAttribute="top" secondItem="LhH-hY-m28" secondAttribute="bottom" id="XZy-RQ-r8b"/>
+                            <constraint firstItem="Usm-ov-IqE" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="bottom" id="hzp-0o-0M9"/>
+                            <constraint firstItem="LhH-hY-m28" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="sSW-OK-aNQ"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="LhH-hY-m28" id="QNh-wW-0AR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f15-oJ-OjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563" y="1127"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Gridicon" width="26" height="25"/>
+        <image name="Logout" width="25" height="29"/>
+        <image name="QR" width="41" height="35"/>
         <image name="bg" width="750" height="1334"/>
     </resources>
 </document>
