@@ -125,7 +125,7 @@ private_lane :prepare do |options|
     puts "current_branch new branch #{current_branch}"
     git_pull
 
-    cocoapods
+    #cocoapods
 end
 
   after_all do |lane|
