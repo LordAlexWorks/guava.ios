@@ -94,22 +94,22 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
             return UITableViewCell()
         }
     }
+
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.row {
         case 0, 3, 4, 6:
-            return 50
+            return view.bounds.height * 0.075
         case 1:
-            return 150
+            return view.bounds.height * 0.24
         case 2:
-            return 30
+            return view.bounds.height * 0.048
         case 5,7,8:
-            return 75
+            return view.bounds.height * 0.12
         default:
             return 0
         }
     }
-    
     //MARK: SignInTableViewDelegate
     func signInButtonTapped(sender: UIButton) {
         performSegueWithIdentifier("signInToSingUpSegue", sender: nil)
