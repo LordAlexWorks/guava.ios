@@ -1,0 +1,8 @@
+development:
+  remote_branch: development # Project's reference branch to checkout
+  configuration: development # Project's configuration to use when "build"
+
+weeklybuild:
+  remote_branch: master
+  configuration: weeklybuild
+
