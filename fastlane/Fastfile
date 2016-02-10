@@ -119,7 +119,7 @@ private_lane :prepare do |options|
     # # Checkout remote branch if needed
     if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
       puts "Checkout new branch #{options[:remote_branch]}"
-      git_checkout(remote_branch: options[:remote_branch])
+      git_checkout(remote_branch: "development")
     end
 
     puts "current_branch new branch #{current_branch}"
