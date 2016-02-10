@@ -112,7 +112,7 @@ private_lane :prepare do |options|
 
     current_branch = git_branch
 
-    puts "current_branch new branch #{current_branch}"
+    puts "current branch #{current_branch}"
 
     ensure_git_status_clean
 
