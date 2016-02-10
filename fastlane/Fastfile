@@ -23,29 +23,29 @@ platform :ios do
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-    config_env(options)
-
     prepare(remote_branch: options[:remote_branch])
 
+   # prepare(remote_branch: options[:remote_branch])
+
     # Increment build number to current date
-    build_number = Time.new.strftime("%Y.%m.%d")
-    increment_build_number build_number: build_number
+    #build_number = Time.new.strftime("%Y.%m.%d")
+    #increment_build_number build_number: build_number
 
     # Generate release notes from CHANGELOG
     #release_notes = latest_version.split("\n")[1..-1].join("\n")
 
     #match(type: "appstore")
-    gym(scheme: "Guava-Beta") # Build your app - more options available
+    #gym(scheme: "Guava-Beta") # Build your app - more options available
     #pilot
 
      # Make sure our directory is clean, except for changes Fastlane has made
-    clean_build_artifacts
+    #clean_build_artifacts
 
     # push to GitHub
-     git_commit(path: ".",
-              message: "Deploying build #{build_number}.")
+    #git_commit(path: ".",
+    #          message: "Deploying build #{build_number}.")
 
-    push_to_git_remote
+    #push_to_git_remote
    end
 
     desc "Submit a new weekly build to Apple TestFlight"
@@ -108,23 +108,22 @@ platform :ios do
 
 # PRIVATE LANES
 
-    private_lane :config_env do |options|
-        # Select proper xcode tool
-        xcode = options[:xcode_select]
+private_lane :prepare do |options|
+    ensure_git_status_clean
+
+    current_branch = git_branch
+
+    # # Checkout remote branch if needed
+    if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
+      puts "Checkout new branch #{options[:remote_branch]}"
+      git_checkout(remote_branch: options[:remote_branch])
     end
 
-    private_lane :prepare do |options|
-        #ensure_git_status_clean
-        current_branch = git_branch
+    puts "current_branch new branch #{current_branch}"
+    git_pull
 
-        # # Checkout remote branch if needed
-        if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
-            puts "Checkout new branch #{options[:remote_branch]}"
-            git_checkout(remote_branch: options[:remote_branch])
-        else
-            git_pull
-        end
-    end
+    cocoapods
+end
 
   after_all do |lane|
 
