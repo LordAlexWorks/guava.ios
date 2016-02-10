@@ -180,14 +180,24 @@
                                         <rect key="frame" x="559" y="5" width="26" height="35"/>
                                         <state key="normal" image="Gridicon"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="My Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URb-iF-sEo">
+                                        <rect key="frame" x="71" y="5" width="473" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.90196078431372551" green="0.75294117647058822" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="leading" secondItem="w5Z-bu-ieP" secondAttribute="leading" constant="15" id="1Nu-Od-Day"/>
+                                    <constraint firstItem="URb-iF-sEo" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="1n0-A7-bGd"/>
+                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="leading" secondItem="URb-iF-sEo" secondAttribute="trailing" constant="15" id="6GW-Qf-lyt"/>
                                     <constraint firstItem="8x0-Vo-i8i" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="FEE-fr-E6Z"/>
+                                    <constraint firstItem="URb-iF-sEo" firstAttribute="leading" secondItem="TbQ-mQ-Uhd" secondAttribute="trailing" constant="15" id="MWf-a2-LHQ"/>
                                     <constraint firstAttribute="trailing" secondItem="8x0-Vo-i8i" secondAttribute="trailing" constant="15" id="MXJ-BC-AzS"/>
                                     <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="Rp5-oF-cCv"/>
                                     <constraint firstAttribute="bottom" secondItem="8x0-Vo-i8i" secondAttribute="bottom" constant="5" id="dhN-Xr-yfW"/>
+                                    <constraint firstAttribute="bottom" secondItem="URb-iF-sEo" secondAttribute="bottom" constant="5" id="mOm-RX-zcE"/>
                                     <constraint firstAttribute="bottom" secondItem="TbQ-mQ-Uhd" secondAttribute="bottom" constant="5" id="nMv-fg-mmx"/>
                                 </constraints>
                             </view>
