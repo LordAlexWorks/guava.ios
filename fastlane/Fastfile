@@ -51,7 +51,10 @@ platform :ios do
     lane :weeklybuild do |options|
         config_env(options)
 
-        prepare(remote_branch: options[:remote_branch])
+    ensure_git_status_clean
+    git_checkout(remote_branch: "development")
+    puts "current_branch new branch #{git_branch}"
+    git_pull
 
         #match(type: "appstore")
         #gym(scheme: "Guava") # Build your app - more options available
