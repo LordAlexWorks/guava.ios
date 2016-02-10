@@ -117,10 +117,8 @@ private_lane :prepare do |options|
     ensure_git_status_clean
 
     # # Checkout remote branch if needed
-    if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
-      puts "Checkout new branch #{options[:remote_branch]}"
-      git_checkout(remote_branch: "development")
-    end
+    puts "Checkout new branch #{options[:remote_branch]}"
+    git_checkout(remote_branch: "development")
 
     puts "current_branch new branch #{current_branch}"
     git_pull
