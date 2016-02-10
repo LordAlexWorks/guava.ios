@@ -28,6 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+<<<<<<< HEAD
          <TestableReference
             skipped = "NO">
             <BuildableReference
@@ -38,6 +39,8 @@
                ReferencedContainer = "container:Guava.xcodeproj">
             </BuildableReference>
          </TestableReference>
+=======
+>>>>>>> 2bb1dbefa04596e22bd4a8eab9a4713a63157828
       </Testables>
       <MacroExpansion>
          <BuildableReference
