@@ -23,7 +23,7 @@ platform :ios do
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-    prepare(remote_branch: options[:remote_branch])
+    prepare(remote_branch: "development")
 
    # prepare(remote_branch: options[:remote_branch])
 
@@ -108,21 +108,11 @@ platform :ios do
 
 # PRIVATE LANES
 
-private_lane :prepare do |options|
-
-    current_branch = git_branch
-
-    puts "current branch #{current_branch}"
+private_lane :prepare do |branch|
 
     ensure_git_status_clean
-
-    # # Checkout remote branch if needed
-    if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
-      puts "Checkout new branch #{options[:remote_branch]}"
-      git_checkout(remote_branch: options[:remote_branch])
-    end
-
-    puts "current_branch new branch #{current_branch}"
+    git_checkout(remote_branch: branch)
+    puts "current_branch new branch #{git_branch}"
     git_pull
 
     #cocoapods
