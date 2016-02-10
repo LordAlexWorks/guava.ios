@@ -109,9 +109,12 @@ platform :ios do
 # PRIVATE LANES
 
 private_lane :prepare do |options|
-    ensure_git_status_clean
 
     current_branch = git_branch
+
+    puts "current_branch new branch #{current_branch}"
+
+    ensure_git_status_clean
 
     # # Checkout remote branch if needed
     if !options[:remote_branch].nil? && options[:remote_branch] != current_branch
