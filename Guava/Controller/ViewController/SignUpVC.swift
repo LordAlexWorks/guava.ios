@@ -20,6 +20,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         signDelegate = self
         
         setNibCell()
+        addBackgroundTapGesture()
     }
     
     func setNibCell() {
@@ -122,7 +123,17 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.navigationController?.pushViewController(qrscannerVc, animated: true)
+        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+            
+        }
+    }
+    //MARK: Background Tap
+    func addBackgroundTapGesture(){
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        self.tableView.addGestureRecognizer(gestureRecognizer)
+    }
+    func handleTap(gestureRecognizer: UIGestureRecognizer) {
+        self.view.endEditing(true)
     }
     
 }

@@ -14,7 +14,6 @@
 		B53267EF1C606C78008297CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
 		B53267F21C606D2F008297CF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
 		B53267F41C606D41008297CF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
-		B57CC7021C699262000B5DDD /* Matchfile in Resources */ = {isa = PBXBuildFile; fileRef = B57CC7011C699262000B5DDD /* Matchfile */; };
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
@@ -31,6 +30,36 @@
 		B599F7491C6869F10013E89E /* iPhone6Plus-01LoginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */; };
 		B599F74A1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */; };
 		B599F74B1C6869F10013E89E /* screenshots.html in Resources */ = {isa = PBXBuildFile; fileRef = B599F7401C6869F10013E89E /* screenshots.html */; };
+		B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
+		B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
+		B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
+		B5D112D61C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
+		B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
+		B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
+		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		B5FBEB571C6AD4EC006DCC12 /* LabelLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */; };
+		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
+		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
+		B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
+		B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */; };
+		B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */; };
+		B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
+		B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
+		B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
+		B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
+		B5FBEB611C6AD4EC006DCC12 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
+		B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */; };
+		B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
+		B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */; };
+		B5FBEB671C6AD4EC006DCC12 /* git_checkout.rb in Resources */ = {isa = PBXBuildFile; fileRef = 1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */; };
+		B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
+		B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
+		B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */; };
+		B5FBEB6B1C6AD4EC006DCC12 /* LabelCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */; };
+		B5FBEB6C1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
+		B5FBEB6D1C6AD4EC006DCC12 /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
+		B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
+		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
@@ -61,18 +90,14 @@
 		1C0A9F7A1C69DDD6003292B1 /* git_checkout.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = git_checkout.rb; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Guava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B53267E21C606C78008297CF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53267E91C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53267EB1C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53267F11C606D2F008297CF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B53267F31C606D41008297CF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		B57CC7011C699262000B5DDD /* Matchfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Matchfile; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		B599F6D21C66DE080013E89E /* Appfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Appfile; sourceTree = "<group>"; };
-		B599F6D31C66DE080013E89E /* Deliverfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Deliverfile; sourceTree = "<group>"; };
 		B599F6D41C66DE080013E89E /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
 		B599F6D61C66DE080013E89E /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = copyright.txt; sourceTree = "<group>"; };
 		B599F6D81C66DE080013E89E /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
@@ -104,6 +129,12 @@
 		B599F73E1C6869F10013E89E /* iPhone6Plus-01LoginScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-01LoginScreen.png"; sourceTree = "<group>"; };
 		B599F73F1C6869F10013E89E /* iPhone6Plus-02SignupScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6Plus-02SignupScreen.png"; sourceTree = "<group>"; };
 		B599F7401C6869F10013E89E /* screenshots.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = screenshots.html; sourceTree = "<group>"; };
+		B5D112D11C6AFBE600F66AB6 /* MyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCard.swift; path = CustomCell/MyCard.swift; sourceTree = "<group>"; };
+		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
+		B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guava-Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5FBEB731C6AD553006DCC12 /* Guava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-Beta-info.plist"; sourceTree = "<group>"; };
+		B5FBEB741C6AD553006DCC12 /* Guava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-info.plist"; sourceTree = "<group>"; };
+		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
@@ -129,6 +160,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B599F7261C682BFF0013E89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FBEB631C6AD4EC006DCC12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -161,6 +199,7 @@
 			children = (
 				B53267CC1C60632B008297CF /* Guava.app */,
 				B599F7291C682BFF0013E89E /* GuavaUITests.xctest */,
+				B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,7 +222,8 @@
 		B53267E11C606C78008297CF /* Configurations */ = {
 			isa = PBXGroup;
 			children = (
-				B53267E21C606C78008297CF /* Info.plist */,
+				B5FBEB731C6AD553006DCC12 /* Guava-Beta-info.plist */,
+				B5FBEB741C6AD553006DCC12 /* Guava-info.plist */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -228,6 +268,7 @@
 				B53267F11C606D2F008297CF /* LoginVC.swift */,
 				D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */,
 				B599F6CB1C65AC580013E89E /* QRScannerVC.swift */,
+				B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -252,10 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				1C0A9F791C69DDD6003292B1 /* actions */,
-				B599F6D21C66DE080013E89E /* Appfile */,
-				B599F6D31C66DE080013E89E /* Deliverfile */,
 				B599F6D41C66DE080013E89E /* Fastfile */,
-				B57CC7011C699262000B5DDD /* Matchfile */,
 				B599F6D51C66DE080013E89E /* metadata */,
 				B599F6E51C66DE080013E89E /* screenshots */,
 			);
@@ -350,6 +388,8 @@
 				D3F326B31C6391030092427F /* SignInTableViewCell.xib */,
 				D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */,
 				D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */,
+				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
+				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
 			);
 			name = CusomCell;
 			sourceTree = "<group>";
@@ -402,6 +442,23 @@
 			productReference = B599F7291C682BFF0013E89E /* GuavaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5FBEB6E1C6AD4EC006DCC12 /* Build configuration list for PBXNativeTarget "Guava-Beta" */;
+			buildPhases = (
+				B5FBEB531C6AD4EC006DCC12 /* Sources */,
+				B5FBEB631C6AD4EC006DCC12 /* Frameworks */,
+				B5FBEB641C6AD4EC006DCC12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guava-Beta";
+			productName = Guava;
+			productReference = B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -436,6 +493,7 @@
 			projectRoot = "";
 			targets = (
 				B53267CB1C60632B008297CF /* Guava */,
+				B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */,
 				B599F7281C682BFF0013E89E /* GuavaUITests */,
 			);
 		};
@@ -454,8 +512,8 @@
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
 				D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */,
 				D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */,
-				B57CC7021C699262000B5DDD /* Matchfile in Resources */,
 				D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */,
+				B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +535,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5FBEB641C6AD4EC006DCC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */,
+				B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */,
+				B5FBEB671C6AD4EC006DCC12 /* git_checkout.rb in Resources */,
+				B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */,
+				B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */,
+				B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */,
+				B5FBEB6B1C6AD4EC006DCC12 /* LabelCenterTableViewCell.xib in Resources */,
+				B5FBEB6C1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.xib in Resources */,
+				B5FBEB6D1C6AD4EC006DCC12 /* SignInTableViewCell.xib in Resources */,
+				B5D112D61C6AFBE600F66AB6 /* MyCard.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -489,7 +564,9 @@
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
 				D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
+				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
+				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
@@ -508,6 +585,30 @@
 			files = (
 				B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */,
 				B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5FBEB531C6AD4EC006DCC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */,
+				B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */,
+				B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */,
+				B5FBEB571C6AD4EC006DCC12 /* LabelLeftTableViewCell.swift in Sources */,
+				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
+				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,
+				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
+				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
+				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
+				B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */,
+				B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */,
+				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
+				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
+				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
+				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
+				B5FBEB611C6AD4EC006DCC12 /* SignInTableViewCell.swift in Sources */,
+				B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,9 +731,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 14;
-				INFOPLIST_FILE = Guava/Configurations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -644,9 +745,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CURRENT_PROJECT_VERSION = 14;
-				INFOPLIST_FILE = Guava/Configurations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.Guava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -676,6 +777,34 @@
 			};
 			name = Release;
 		};
+		B5FBEB6F1C6AD4EC006DCC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 14;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Beta-info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		B5FBEB701C6AD4EC006DCC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CURRENT_PROJECT_VERSION = 14;
+				INFOPLIST_FILE = "$(SRCROOT)/Guava/Configurations/Guava-Beta-info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -702,6 +831,15 @@
 			buildConfigurations = (
 				B599F7301C682C000013E89E /* Debug */,
 				B599F7311C682C000013E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5FBEB6E1C6AD4EC006DCC12 /* Build configuration list for PBXNativeTarget "Guava-Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5FBEB6F1C6AD4EC006DCC12 /* Debug */,
+				B5FBEB701C6AD4EC006DCC12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

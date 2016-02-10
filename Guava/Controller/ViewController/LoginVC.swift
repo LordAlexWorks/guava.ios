@@ -18,6 +18,7 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         navigationController?.view.backgroundColor = UIColor.blackColor()
         signDelegate = self
         setNibCell()
+        addBackgroundTapGesture()
     }
     
     func setNibCell() {
@@ -121,8 +122,14 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-            
         }
     }
-
+    //MARK: Background Tap
+    func addBackgroundTapGesture(){
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        self.tableView.addGestureRecognizer(gestureRecognizer)
+    }
+    func handleTap(gestureRecognizer: UIGestureRecognizer) {
+        self.view.endEditing(true)
+    }
 }

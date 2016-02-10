@@ -26,6 +26,9 @@ class QRScannerVC: UIViewController {
                 let result = obj as! String
                 print(result)
                 self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDelegate.window?.rootViewController = myCardsVc
                 })
             }
             if((error) != nil) {
