@@ -51,20 +51,20 @@ platform :ios do
     desc "Submit a new weekly build to Apple TestFlight"
     desc "A weekly build is sent to Guava team by default"
     lane :weeklybuild do |options|
-      prepare(remote_branch: "master")
+     # prepare(remote_branch: "master")
 
       increment_version_number
 
       #match(type: "appstore")
       gym(scheme: "Guava") # Build your app - more options available
-      pilot
+     # pilot
 
+      version_number = get_version_number(xcodeproj: "Guava.xcodeproj")
 
       # Make sure our directory is clean, except for changes Fastlane has made
       clean_build_artifacts
 
       # Tag release and push to GitHub
-      version_number = get_version_number(xcodeproj: "Project.xcodeproj")
       commit_version_bump message: "Deploying version #{version_number}."
       add_git_tag tag: version_number
       push_to_git_remote
