@@ -26,7 +26,7 @@ platform :ios do
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-    prepare(remote_branch: "development")
+    #prepare(remote_branch: "development")
 
     # Increment build number to current date
     build_number = Time.new.strftime("%Y.%m.%d")
@@ -35,7 +35,7 @@ platform :ios do
     # Generate release notes from CHANGELOG
     #release_notes = latest_version.split("\n")[1..-1].join("\n")
 
-    match(type: "appstore")
+    #match(type: "appstore")
     gym(scheme: "Guava-Beta") # Build your app - more options available
     pilot
 
