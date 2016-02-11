@@ -14,18 +14,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" image="Gridicon" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="84"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="82"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 global points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-V0-Hs9">
-                        <rect key="frame" x="0.0" y="86" width="120" height="16"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <rect key="frame" x="0.0" y="84" width="120" height="20"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 points this week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI4-Iv-jHH">
-                        <rect key="frame" x="0.0" y="102" width="120" height="16"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <rect key="frame" x="0.0" y="104" width="120" height="14"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="10"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -47,7 +47,4 @@
             </constraints>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="Gridicon" width="26" height="25"/>
-    </resources>
 </document>

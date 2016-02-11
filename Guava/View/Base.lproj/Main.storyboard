@@ -170,35 +170,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Z-bu-ieP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-mQ-Uhd">
-                                        <rect key="frame" x="15" y="5" width="41" height="35"/>
+                                        <rect key="frame" x="15" y="5" width="41" height="47"/>
                                         <state key="normal" image="QR"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-Vo-i8i">
-                                        <rect key="frame" x="559" y="5" width="26" height="35"/>
+                                        <rect key="frame" x="559" y="5" width="26" height="47"/>
                                         <state key="normal" image="Gridicon"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="My Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URb-iF-sEo">
-                                        <rect key="frame" x="71" y="5" width="473" height="35"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <color key="textColor" red="0.90196078431372551" green="0.75294117647058822" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="71" y="16" width="473" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="NDr-5d-37m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" red="0.90980392156862744" green="0.75686274509803919" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="leading" secondItem="w5Z-bu-ieP" secondAttribute="leading" constant="15" id="1Nu-Od-Day"/>
-                                    <constraint firstItem="URb-iF-sEo" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="1n0-A7-bGd"/>
-                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="leading" secondItem="URb-iF-sEo" secondAttribute="trailing" constant="15" id="6GW-Qf-lyt"/>
+                                    <constraint firstItem="URb-iF-sEo" firstAttribute="leading" secondItem="TbQ-mQ-Uhd" secondAttribute="trailing" constant="15" id="4G0-ck-rpG"/>
                                     <constraint firstItem="8x0-Vo-i8i" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="FEE-fr-E6Z"/>
-                                    <constraint firstItem="URb-iF-sEo" firstAttribute="leading" secondItem="TbQ-mQ-Uhd" secondAttribute="trailing" constant="15" id="MWf-a2-LHQ"/>
+                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="leading" secondItem="URb-iF-sEo" secondAttribute="trailing" constant="15" id="KSV-c1-t4k"/>
                                     <constraint firstAttribute="trailing" secondItem="8x0-Vo-i8i" secondAttribute="trailing" constant="15" id="MXJ-BC-AzS"/>
                                     <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="Rp5-oF-cCv"/>
                                     <constraint firstAttribute="bottom" secondItem="8x0-Vo-i8i" secondAttribute="bottom" constant="5" id="dhN-Xr-yfW"/>
-                                    <constraint firstAttribute="bottom" secondItem="URb-iF-sEo" secondAttribute="bottom" constant="5" id="mOm-RX-zcE"/>
                                     <constraint firstAttribute="bottom" secondItem="TbQ-mQ-Uhd" secondAttribute="bottom" constant="5" id="nMv-fg-mmx"/>
+                                    <constraint firstAttribute="bottom" secondItem="URb-iF-sEo" secondAttribute="bottom" constant="15" id="q3c-Kp-r7G"/>
+                                    <constraint firstItem="URb-iF-sEo" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="16" id="xB8-L5-fUq"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17q-NF-nyZ">
@@ -217,7 +220,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
-                                <rect key="frame" x="0.0" y="45" width="600" height="516"/>
+                                <rect key="frame" x="0.0" y="57" width="600" height="504"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="jxG-yc-wBM">
                                     <size key="itemSize" width="120" height="120"/>
