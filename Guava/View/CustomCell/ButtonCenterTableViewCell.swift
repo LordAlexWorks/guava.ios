@@ -55,8 +55,6 @@ class ButtonCenterTableViewCell: UITableViewCell {
                 buttonCenter.setTitleColor(.whiteColor(), forState: .Normal)
                 buttonCenter.backgroundColor = UIColor.twitterColor()
                 buttonCenter.layer.borderColor = UIColor.twitterColor().CGColor
-        default:
-            print("Error - setup")
 
         }
 
