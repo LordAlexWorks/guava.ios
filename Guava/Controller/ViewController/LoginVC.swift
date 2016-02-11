@@ -30,6 +30,7 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         tableView.addNib(CustomCell.LeftLabel)
         tableView.addNib(CustomCell.TextField)
         tableView.addNib(CustomCell.ButtonCenter)
+        tableView.addNib(CustomCell.ImageCenter)
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,17 +48,17 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("SIGNUP", textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: signDelegate!)
+            cell.setup("SIGNUP", textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: signDelegate!)
             
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier("LabelCenterTableViewCell", forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("Goyava", textFontWeight: FontWeight.AHeavy, textSize: 34)
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ImageCenter.rawValue, forIndexPath: indexPath) as! ImageCenterTableViewCell
+//            cell.setup("Goyava", textFontWeight: FontWeight.AHeavy, textSize: 35)
             
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("LabelLeftTableViewCell", forIndexPath: indexPath) as! LabelLeftTableViewCell
-            cell.setup("WELCOME BACK", textFontWeight: FontWeight.AHeavy, textSize: 12)
+            cell.setup("WELCOME BACK.", textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 3:
@@ -99,13 +100,13 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.row {
         case 0, 3, 4, 6:
-            return view.bounds.height * 0.075
+            return view.bounds.height * 0.073
         case 1:
-            return view.bounds.height * 0.24
+            return view.bounds.height * 0.238
         case 2:
-            return view.bounds.height * 0.048
+            return view.bounds.height * 0.045
         case 5,7,8:
-            return view.bounds.height * 0.12
+            return view.bounds.height * 0.118
         default:
             return 0
         }

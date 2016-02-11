@@ -48,6 +48,8 @@
 		B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
+		D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */; };
+		D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -95,6 +97,8 @@
 		B5FBEB741C6AD553006DCC12 /* Guava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-info.plist"; sourceTree = "<group>"; };
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCenterTableViewCell.swift; path = CustomCell/ImageCenterTableViewCell.swift; sourceTree = "<group>"; };
+		D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCenterTableViewCell.xib; path = CustomCell/ImageCenterTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -263,16 +267,18 @@
 			children = (
 				D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */,
 				D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */,
+				D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */,
+				D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */,
 				D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */,
 				D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */,
 				D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */,
 				D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */,
+				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
+				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
 				D3F326B21C6391030092427F /* SignInTableViewCell.swift */,
 				D3F326B31C6391030092427F /* SignInTableViewCell.xib */,
 				D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */,
 				D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */,
-				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
-				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
 			);
 			name = CusomCell;
 			sourceTree = "<group>";
@@ -389,6 +395,7 @@
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
+				D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
@@ -439,6 +446,7 @@
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
+				D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
