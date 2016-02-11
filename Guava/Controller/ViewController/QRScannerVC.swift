@@ -21,20 +21,24 @@ class QRScannerVC: UIViewController {
     }
     func loadQRCodeScanner() {
         self.qrScanner = SSQRScanner()
-        self.qrScanner!.createQRScannerOnCompletion(self.scannerView, scannerHandler: { (obj, error) -> Void in
+        self.qrScanner!.createQRScannerOnCompletion(self.scannerView, scannerHandler: {[weak self] (obj, error) -> Void in
             if((obj) != nil) {
                 let result = obj as! String
                 print(result)
-                self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                    let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
-                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                    appDelegate.window?.rootViewController = myCardsVc
-                })
+                if self != nil {
+                    self!.dismissViewControllerAnimated(true, completion: { () -> Void in
+                        let myCardsVc = self!.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                        appDelegate.window?.rootViewController = myCardsVc
+                    })
+                }
             }
             if((error) != nil) {
                 print(error)
-                self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                })
+                if self != nil {
+                    self!.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    })
+                }
             }
         })
     }

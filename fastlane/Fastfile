@@ -1,3 +1,6 @@
+require 'yaml'
+require 'ostruct'
+
 fastlane_version "1.57.0"
 
 default_platform :ios
@@ -23,8 +26,7 @@ platform :ios do
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-    prepare(remote_branch: "development")
-
+    #prepare(remote_branch: "development")
 
     # Increment build number to current date
     build_number = Time.new.strftime("%Y.%m.%d")
@@ -33,9 +35,9 @@ platform :ios do
     # Generate release notes from CHANGELOG
     #release_notes = latest_version.split("\n")[1..-1].join("\n")
 
-    match(type: "appstore")
+    #match(type: "appstore")
     gym(scheme: "Guava-Beta") # Build your app - more options available
-    #pilot
+    pilot
 
      # Make sure our directory is clean, except for changes Fastlane has made
     clean_build_artifacts
@@ -49,43 +51,24 @@ platform :ios do
     desc "Submit a new weekly build to Apple TestFlight"
     desc "A weekly build is sent to Guava team by default"
     lane :weeklybuild do |options|
-        config_env(options)
+     # prepare(remote_branch: "master")
 
-    ensure_git_status_clean
-    git_checkout(remote_branch: "development")
-    puts "current_branch new branch #{git_branch}"
-    git_pull
+      increment_version_number
 
-        #match(type: "appstore")
-        #gym(scheme: "Guava") # Build your app - more options available
-        #pilot
+      match(type: "appstore")
+      gym(scheme: "Guava") # Build your app - more options available
+     # pilot
 
-          # Set version number to the one at the top of the CHANGELOG
-  readme = File.read("../README.md")
-  latest_version = readme.split("\n## ").first
-  first_line = latest_version.split("\n").first
-  version_number = first_line.split(" ")[1]
+      version_number = get_version_number(xcodeproj: "Guava.xcodeproj")
 
-  increment_version_number(
-   version_number: version_number # Set a specific version number
-  )
+      # Make sure our directory is clean, except for changes Fastlane has made
+      clean_build_artifacts
 
-  # Generate release notes from CHANGELOG
-  release_notes = latest_version.split("\n")[1..-1].join("\n")
-
-    #match(type: "appstore")
-    gym(scheme: "Guava-Beta") # Build your app - more options available
-    #pilot
-
-
-  # Make sure our directory is clean, except for changes Fastlane has made
-  clean_build_artifacts
-
-  # Tag release and push to GitHub
-  commit_version_bump message: "Deploying version #{version_number}."
-  add_git_tag tag: version_number
-  push_to_git_remote
-    end
+      # Tag release and push to GitHub
+      commit_version_bump message: "Deploying version #{version_number}."
+      add_git_tag tag: version_number
+      push_to_git_remote
+  end
 
 
   desc "Submit a new Beta Build to Apple TestFlight"
@@ -109,10 +92,18 @@ platform :ios do
 
 # PRIVATE LANES
 
-private_lane :prepare do |branch|
 
-    ensure_git_status_clean
-    git_checkout(remote_branch: branch)
+  private_lane :project_warm_up do |options|
+    # Get configurations
+    config = YAML.load(open(File.join(File.dirname(__FILE__), "fastlane_config.yaml")))
+    settings = OpenStruct.new(config)
+    lane_setting = settings[options[:lane_name]]
+  end
+
+private_lane :prepare do |options|
+
+   # ensure_git_status_clean
+    git_checkout(remote_branch: options[:remote_branch])
     puts "current_branch new branch #{git_branch}"
     git_pull
 
