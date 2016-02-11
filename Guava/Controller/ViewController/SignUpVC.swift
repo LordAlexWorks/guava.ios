@@ -49,7 +49,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("LOGIN", delegate: signDelegate!)
+            cell.setup("LOGIN", textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: signDelegate!)
             
             return cell
         case 1:
@@ -74,22 +74,22 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("CREATE ACCOUNT", buttonType: "LOGIN",delegate: self)
+            cell.setup("CREATE ACCOUNT", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
             
             return cell
         case 6:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.CenterLabel.rawValue, forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("OR", sizeLabel: 10)
+            cell.setup("OR", textFontWeight: FontWeight.ABlack, textSize: 8)
             
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("SIGNUP WITH FACEBOOK", buttonType: "FB",delegate: self)
+            cell.setup("SIGNUP WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-//            cell.setup("SIGNUO WITH TWITTER", buttonType: "TWITTER",delegate: self)
+            cell.setup("SIGNUO WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
             
             return cell
         default:
