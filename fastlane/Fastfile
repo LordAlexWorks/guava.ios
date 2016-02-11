@@ -55,7 +55,7 @@ platform :ios do
 
       increment_version_number
 
-      #match(type: "appstore")
+      match(type: "appstore")
       gym(scheme: "Guava") # Build your app - more options available
      # pilot
 
