@@ -9,10 +9,16 @@
 import UIKit
 
 class MyCard: UICollectionViewCell {
-
+    
+    @IBOutlet weak var iconImageView :  UIImageView!
+    @IBOutlet weak var globalPointLabel : UILabel!
+    @IBOutlet weak var weeklyPointLabel : UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+    }
+    
+    func refreshUIWithDatasource(){
+        
     }
 
 }

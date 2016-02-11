@@ -173,14 +173,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-mQ-Uhd">
-                                        <rect key="frame" x="15" y="5" width="41" height="49"/>
+                                        <rect key="frame" x="15" y="13" width="41" height="35"/>
                                         <state key="normal" image="QR"/>
                                         <connections>
                                             <action selector="scanButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="Vh5-4O-vQo"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-Vo-i8i">
-                                        <rect key="frame" x="559" y="5" width="26" height="49"/>
+                                        <rect key="frame" x="559" y="16" width="26" height="25"/>
                                         <state key="normal" image="Gridicon"/>
                                         <connections>
                                             <action selector="gridButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="79Q-ER-N1s"/>
@@ -200,12 +200,12 @@
                                 <constraints>
                                     <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="leading" secondItem="w5Z-bu-ieP" secondAttribute="leading" constant="15" id="1Nu-Od-Day"/>
                                     <constraint firstItem="URb-iF-sEo" firstAttribute="leading" secondItem="TbQ-mQ-Uhd" secondAttribute="trailing" constant="15" id="4G0-ck-rpG"/>
-                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="FEE-fr-E6Z"/>
+                                    <constraint firstItem="8x0-Vo-i8i" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="16" id="FEE-fr-E6Z"/>
                                     <constraint firstItem="8x0-Vo-i8i" firstAttribute="leading" secondItem="URb-iF-sEo" secondAttribute="trailing" constant="15" id="KSV-c1-t4k"/>
                                     <constraint firstAttribute="trailing" secondItem="8x0-Vo-i8i" secondAttribute="trailing" constant="15" id="MXJ-BC-AzS"/>
-                                    <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="5" id="Rp5-oF-cCv"/>
-                                    <constraint firstAttribute="bottom" secondItem="8x0-Vo-i8i" secondAttribute="bottom" constant="5" id="dhN-Xr-yfW"/>
-                                    <constraint firstAttribute="bottom" secondItem="TbQ-mQ-Uhd" secondAttribute="bottom" constant="5" id="nMv-fg-mmx"/>
+                                    <constraint firstItem="TbQ-mQ-Uhd" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="13" id="Rp5-oF-cCv"/>
+                                    <constraint firstAttribute="bottom" secondItem="8x0-Vo-i8i" secondAttribute="bottom" constant="18" id="dhN-Xr-yfW"/>
+                                    <constraint firstAttribute="bottom" secondItem="TbQ-mQ-Uhd" secondAttribute="bottom" constant="11" id="nMv-fg-mmx"/>
                                     <constraint firstAttribute="bottom" secondItem="URb-iF-sEo" secondAttribute="bottom" constant="15" id="q3c-Kp-r7G"/>
                                     <constraint firstItem="URb-iF-sEo" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="top" constant="16" id="xB8-L5-fUq"/>
                                 </constraints>
