@@ -9,7 +9,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -170,20 +170,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Z-bu-ieP">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="57"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbQ-mQ-Uhd">
-                                        <rect key="frame" x="15" y="5" width="41" height="47"/>
+                                        <rect key="frame" x="15" y="5" width="41" height="49"/>
                                         <state key="normal" image="QR"/>
+                                        <connections>
+                                            <action selector="scanButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="Vh5-4O-vQo"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x0-Vo-i8i">
-                                        <rect key="frame" x="559" y="5" width="26" height="47"/>
+                                        <rect key="frame" x="559" y="5" width="26" height="49"/>
                                         <state key="normal" image="Gridicon"/>
+                                        <connections>
+                                            <action selector="gridButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="79Q-ER-N1s"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="My Cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URb-iF-sEo">
-                                        <rect key="frame" x="71" y="16" width="473" height="26"/>
+                                        <rect key="frame" x="71" y="16" width="473" height="28"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="26" id="NDr-5d-37m"/>
+                                            <constraint firstAttribute="height" constant="28" id="NDr-5d-37m"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="25"/>
                                         <color key="textColor" red="0.90980392156862744" green="0.75686274509803919" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,6 +216,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQL-U1-gTL">
                                         <rect key="frame" x="15" y="5" width="25" height="29"/>
                                         <state key="normal" image="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="m3e-bI-xqt"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,7 +229,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
-                                <rect key="frame" x="0.0" y="57" width="600" height="504"/>
+                                <rect key="frame" x="0.0" y="59" width="600" height="502"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="jxG-yc-wBM">
                                     <size key="itemSize" width="120" height="120"/>

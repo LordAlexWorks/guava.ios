@@ -117,12 +117,21 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     
     //MARK: Login navigation
     func loginButtonTapped() {
-        goToScannerView()
+        #if (arch(i386) || arch(x86_64)) && os(iOS)
+            goToMyCard()
+        #else
+            goToScannerView()
+        #endif
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in
         }
+    }
+    func goToMyCard(){
+        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = myCardsVc
     }
     //MARK: Background Tap
     func addBackgroundTapGesture(){
@@ -132,4 +141,5 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
         self.view.endEditing(true)
     }
+    
 }
