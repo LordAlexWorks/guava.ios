@@ -39,8 +39,8 @@ class ButtonCenterTableViewCell: UITableViewCell {
         self.delegate = delegate
         buttonCenter.setTitle(buttonTitle, forState: .Normal)
         buttonCenter.titleLabel?.font = UIFont.avenir(textFontWeight, size: textSize)
-        buttonCenter.layer.cornerRadius = 28
-        buttonCenter.layer.borderWidth = 1
+        buttonCenter.layer.cornerRadius = 29
+        buttonCenter.layer.borderWidth = 2
         
         switch buttonType {
             case .LOG:
