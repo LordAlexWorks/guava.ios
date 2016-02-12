@@ -30,7 +30,7 @@ class MyCardsVC: UIViewController {
         let itemWidth = floor((view.bounds.size.width - CGFloat(column - 1)) / CGFloat(column))
         layout.minimumInteritemSpacing = 0.0
         layout.minimumLineSpacing = 0.0
-        layout.itemSize = CGSizeMake(itemWidth,itemWidth-20)
+        layout.itemSize = CGSizeMake(itemWidth,itemWidth)
         self.collectionView.setCollectionViewLayout(layout, animated: false) { (isAnimated) -> Void in
             self.collectionView.reloadData()
         }
