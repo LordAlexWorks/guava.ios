@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Guava.xcodeproj">
+      location = "self:/Users/Michelin/Documents/Coding/LordAlexWorks/us/Guava/Goyava.xcodeproj">
    </FileRef>
 </Workspace>
