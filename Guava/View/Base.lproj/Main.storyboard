@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -132,7 +132,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-Yz-Mph">
-                                <rect key="frame" x="20" y="40" width="66" height="66"/>
+                                <rect key="frame" x="20" y="40" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="BSQ-70-1Lb"/>
+                                    <constraint firstAttribute="height" constant="46" id="ZAn-V3-gdh"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="back_button"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="H9u-2Q-EgO" eventType="touchUpInside" id="xBE-rN-UrW"/>
@@ -142,11 +146,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Wt2-ob-DqP" secondAttribute="trailing" id="5eP-X9-rWd"/>
-                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" constant="20" id="6qw-ks-Y07"/>
                             <constraint firstItem="dDE-HL-vZn" firstAttribute="top" secondItem="Wt2-ob-DqP" secondAttribute="bottom" constant="-20" id="Qgr-b6-4sd"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" constant="20" id="RAK-57-Gsh"/>
                             <constraint firstItem="Wt2-ob-DqP" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" id="bdA-Ct-5Vv"/>
+                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="top" secondItem="n9r-5T-jyK" secondAttribute="bottom" constant="20" id="eBO-vT-Pcl"/>
                             <constraint firstItem="Wt2-ob-DqP" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" id="eIp-kC-TwZ"/>
-                            <constraint firstItem="BmA-Yz-Mph" firstAttribute="leading" secondItem="Olt-DN-ORg" secondAttribute="leading" constant="20" id="orZ-cy-JYX"/>
                         </constraints>
                     </view>
                     <connections>
