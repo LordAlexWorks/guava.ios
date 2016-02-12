@@ -709,7 +709,7 @@
 				CURRENT_PROJECT_VERSION = 2023;
 				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = services.proactives.goyava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = Goyava;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -724,7 +724,7 @@
 				CURRENT_PROJECT_VERSION = 2023;
 				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = services.proactives.goyava;
+				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = Goyava;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -788,7 +788,7 @@
 				CURRENT_PROJECT_VERSION = 2023;
 				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "services.proactives.goyava-beta";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -804,7 +804,7 @@
 				CURRENT_PROJECT_VERSION = 2023;
 				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "services.proactives.goyava-beta";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
