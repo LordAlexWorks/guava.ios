@@ -23,10 +23,13 @@ class GuavaUITests: XCTestCase {
     }
     
     func testExample() {
-        snapshot("01LoginScreen")
         let tablesQuery = XCUIApplication().tables
         tablesQuery.buttons["SIGNUP"].tap()
-        snapshot("02SignupScreen")
+        snapshot("01SignupScreen")
+        tablesQuery.buttons["LOGIN"].tap()
+        snapshot("02LoginScreen")
+        tablesQuery.buttons["LOGIN"].tap()
+        snapshot("03MyCardScreen")
     }
     
 }

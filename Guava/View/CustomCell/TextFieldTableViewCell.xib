@@ -16,19 +16,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-od-MTX">
-                        <rect key="frame" x="0.0" y="38" width="380" height="50"/>
+                        <rect key="frame" x="0.0" y="43" width="380" height="40"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c7D-Hd-ro7">
-                                <rect key="frame" x="45" y="5" width="290" height="40"/>
+                                <rect key="frame" x="45" y="0.0" width="290" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="lkk-ge-dFf"/>
+                                    <constraint firstAttribute="height" constant="35" id="lkk-ge-dFf"/>
                                 </constraints>
                                 <color key="textColor" red="0.36078431372549019" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ld-Zcg">
-                                <rect key="frame" x="45" y="44" width="290" height="1"/>
+                                <rect key="frame" x="45" y="30" width="290" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Azv-5w-F3A"/>
@@ -39,13 +39,19 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="r6D-Ld-Zcg" secondAttribute="trailing" constant="45" id="367-oo-u8H"/>
                             <constraint firstItem="r6D-Ld-Zcg" firstAttribute="leading" secondItem="6pw-od-MTX" secondAttribute="leading" constant="45" id="AP5-mC-mY8"/>
-                            <constraint firstAttribute="height" constant="50" id="GPp-Ps-rHE"/>
+                            <constraint firstAttribute="height" constant="40" id="GPp-Ps-rHE"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="centerY" secondItem="6pw-od-MTX" secondAttribute="centerY" id="Gcz-6z-Hub"/>
                             <constraint firstAttribute="trailing" secondItem="c7D-Hd-ro7" secondAttribute="trailing" constant="45" id="KI1-bz-qTm"/>
-                            <constraint firstItem="r6D-Ld-Zcg" firstAttribute="top" secondItem="c7D-Hd-ro7" secondAttribute="bottom" constant="-1" id="L8v-2w-GPb"/>
+                            <constraint firstItem="r6D-Ld-Zcg" firstAttribute="top" secondItem="c7D-Hd-ro7" secondAttribute="bottom" constant="-5" id="L8v-2w-GPb"/>
+                            <constraint firstItem="c7D-Hd-ro7" firstAttribute="top" secondItem="6pw-od-MTX" secondAttribute="top" id="bHn-0e-qqe"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="leading" secondItem="6pw-od-MTX" secondAttribute="leading" constant="45" id="eEw-5H-KcQ"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="centerX" secondItem="6pw-od-MTX" secondAttribute="centerX" id="hSS-9D-UKu"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gcz-6z-Hub"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

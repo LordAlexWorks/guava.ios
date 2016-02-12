@@ -15,6 +15,7 @@ enum CustomCell:String {
     case TextField = "TextFieldTableViewCell"
     case ButtonCenter = "ButtonCenterTableViewCell"
     case LeftRightButtonCenterLabel = "LeftRightButtonCenterLabelTableViewCell"
+    case ImageCenter = "ImageCenterTableViewCell"
 }
 
 extension UITableView {

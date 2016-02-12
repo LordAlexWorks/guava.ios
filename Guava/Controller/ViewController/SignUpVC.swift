@@ -32,6 +32,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         tableView.addNib(CustomCell.LeftLabel)
         tableView.addNib(CustomCell.TextField)
         tableView.addNib(CustomCell.ButtonCenter)
+        tableView.addNib(CustomCell.ImageCenter)
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,13 +54,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             
             return cell
         case 1:
-            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.CenterLabel.rawValue, forIndexPath: indexPath) as! LabelCenterTableViewCell
-            cell.setup("Goyava", sizeLabel: 30)
+            let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ImageCenter.rawValue, forIndexPath: indexPath) as! ImageCenterTableViewCell
             
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.LeftLabel.rawValue, forIndexPath: indexPath) as! LabelLeftTableViewCell
-            cell.setup("WE JUST NEED A FEW DETAILS")
+            cell.setup("WE JUST NEED A FEW DETAILS.", textFontWeight: FontWeight.AHeavy, textSize: 13)
             
             return cell
         case 3:

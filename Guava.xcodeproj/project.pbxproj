@@ -22,6 +22,11 @@
 		B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
 		B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
 		B5D112D61C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
+		B5D112D71C6D798D00F66AB6 /* ImageCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */; };
+		B5D112D81C6D79D400F66AB6 /* ImageCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */; };
+		B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
+		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
+		B5D112EB1C6D7C4100F66AB6 /* GuavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GuavaBetaUITests-Info.plist */; };
 		B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
 		B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
@@ -48,6 +53,8 @@
 		B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
+		D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */; };
+		D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */; };
 		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
 		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
@@ -71,6 +78,27 @@
 			remoteGlobalIDString = B53267CB1C60632B008297CF;
 			remoteInfo = Guava;
 		};
+		B5D112D91C6D7BE000F66AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53267C41C60632B008297CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FBEB521C6AD4EC006DCC12;
+			remoteInfo = "Guava-Beta";
+		};
+		B5D112DD1C6D7BEE00F66AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53267C41C60632B008297CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B53267CB1C60632B008297CF;
+			remoteInfo = Guava;
+		};
+		B5D112DF1C6D7BEE00F66AB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B53267C41C60632B008297CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5FBEB521C6AD4EC006DCC12;
+			remoteInfo = "Guava-Beta";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -90,11 +118,15 @@
 		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
 		B5D112D11C6AFBE600F66AB6 /* MyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCard.swift; path = CustomCell/MyCard.swift; sourceTree = "<group>"; };
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
+		B5D112E81C6D7BEE00F66AB6 /* GuavaBetaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuavaBetaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D112EA1C6D7C4100F66AB6 /* GuavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
 		B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guava-Beta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBEB731C6AD553006DCC12 /* Guava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Guava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Guava-info.plist"; sourceTree = "<group>"; };
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCenterTableViewCell.swift; path = CustomCell/ImageCenterTableViewCell.swift; sourceTree = "<group>"; };
+		D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCenterTableViewCell.xib; path = CustomCell/ImageCenterTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
 		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
@@ -119,6 +151,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B599F7261C682BFF0013E89E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D112E31C6D7BEE00F66AB6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -150,6 +189,7 @@
 				B53267CC1C60632B008297CF /* Guava.app */,
 				B599F7291C682BFF0013E89E /* GuavaUITests.xctest */,
 				B5FBEB711C6AD4EC006DCC12 /* Guava-Beta.app */,
+				B5D112E81C6D7BEE00F66AB6 /* GuavaBetaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +282,7 @@
 		B599F72A1C682BFF0013E89E /* GuavaUITests */ = {
 			isa = PBXGroup;
 			children = (
+				B5D112EA1C6D7C4100F66AB6 /* GuavaBetaUITests-Info.plist */,
 				B599F72B1C682C000013E89E /* GuavaUITests.swift */,
 				B599F72D1C682C000013E89E /* Info.plist */,
 				B599F7331C682DBF0013E89E /* SnapshotHelper.swift */,
@@ -263,16 +304,18 @@
 			children = (
 				D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */,
 				D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */,
+				D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */,
+				D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */,
 				D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */,
 				D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */,
 				D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */,
 				D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */,
+				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
+				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
 				D3F326B21C6391030092427F /* SignInTableViewCell.swift */,
 				D3F326B31C6391030092427F /* SignInTableViewCell.xib */,
 				D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */,
 				D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */,
-				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
-				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
 			);
 			name = CusomCell;
 			sourceTree = "<group>";
@@ -319,10 +362,30 @@
 			);
 			dependencies = (
 				B599F72F1C682C000013E89E /* PBXTargetDependency */,
+				B5D112DA1C6D7BE000F66AB6 /* PBXTargetDependency */,
 			);
 			name = GuavaUITests;
 			productName = GuavaUITests;
 			productReference = B599F7291C682BFF0013E89E /* GuavaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B5D112DB1C6D7BEE00F66AB6 /* GuavaBetaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5D112E51C6D7BEE00F66AB6 /* Build configuration list for PBXNativeTarget "GuavaBetaUITests" */;
+			buildPhases = (
+				B5D112E01C6D7BEE00F66AB6 /* Sources */,
+				B5D112E31C6D7BEE00F66AB6 /* Frameworks */,
+				B5D112E41C6D7BEE00F66AB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5D112DC1C6D7BEE00F66AB6 /* PBXTargetDependency */,
+				B5D112DE1C6D7BEE00F66AB6 /* PBXTargetDependency */,
+			);
+			name = GuavaBetaUITests;
+			productName = GuavaUITests;
+			productReference = B5D112E81C6D7BEE00F66AB6 /* GuavaBetaUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */ = {
@@ -360,6 +423,9 @@
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = B53267CB1C60632B008297CF;
 					};
+					B5D112DB1C6D7BEE00F66AB6 = {
+						TestTargetID = B5FBEB521C6AD4EC006DCC12;
+					};
 					B5FBEB521C6AD4EC006DCC12 = {
 						DevelopmentTeam = JY7SW47P2C;
 					};
@@ -381,6 +447,7 @@
 				B53267CB1C60632B008297CF /* Guava */,
 				B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */,
 				B599F7281C682BFF0013E89E /* GuavaUITests */,
+				B5D112DB1C6D7BEE00F66AB6 /* GuavaBetaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +459,7 @@
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
 				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
+				D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
 				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
@@ -406,6 +474,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5D112EB1C6D7C4100F66AB6 /* GuavaBetaUITests-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D112E41C6D7BEE00F66AB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +491,7 @@
 			files = (
 				B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */,
 				B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */,
+				B5D112D81C6D79D400F66AB6 /* ImageCenterTableViewCell.xib in Resources */,
 				B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */,
 				B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */,
 				B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */,
@@ -442,6 +519,7 @@
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
+				D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
@@ -461,6 +539,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5D112E01C6D7BEE00F66AB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */,
+				B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5FBEB531C6AD4EC006DCC12 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -475,6 +562,7 @@
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
 				B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */,
+				B5D112D71C6D798D00F66AB6 /* ImageCenterTableViewCell.swift in Sources */,
 				B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
@@ -492,6 +580,21 @@
 			isa = PBXTargetDependency;
 			target = B53267CB1C60632B008297CF /* Guava */;
 			targetProxy = B599F72E1C682C000013E89E /* PBXContainerItemProxy */;
+		};
+		B5D112DA1C6D7BE000F66AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */;
+			targetProxy = B5D112D91C6D7BE000F66AB6 /* PBXContainerItemProxy */;
+		};
+		B5D112DC1C6D7BEE00F66AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B53267CB1C60632B008297CF /* Guava */;
+			targetProxy = B5D112DD1C6D7BEE00F66AB6 /* PBXContainerItemProxy */;
+		};
+		B5D112DE1C6D7BEE00F66AB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5FBEB521C6AD4EC006DCC12 /* Guava-Beta */;
+			targetProxy = B5D112DF1C6D7BEE00F66AB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -608,6 +711,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -622,6 +726,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -650,6 +755,30 @@
 			};
 			name = Release;
 		};
+		B5D112E61C6D7BEE00F66AB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GuavaUITests/GuavaBetaUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Guava-Beta";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B5D112E71C6D7BEE00F66AB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GuavaUITests/GuavaBetaUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.GuavaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Guava-Beta";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		B5FBEB6F1C6AD4EC006DCC12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -661,6 +790,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -676,6 +806,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -706,6 +837,15 @@
 			buildConfigurations = (
 				B599F7301C682C000013E89E /* Debug */,
 				B599F7311C682C000013E89E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5D112E51C6D7BEE00F66AB6 /* Build configuration list for PBXNativeTarget "GuavaBetaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D112E61C6D7BEE00F66AB6 /* Debug */,
+				B5D112E71C6D7BEE00F66AB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
