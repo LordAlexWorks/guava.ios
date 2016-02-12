@@ -50,7 +50,7 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.SignIn.rawValue, forIndexPath: indexPath) as! SignInTableViewCell
-            cell.setup("LOGIN", textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: signDelegate!)
+            cell.setup("LOGIN", textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: signDelegate!)
             
             return cell
         case 1:
@@ -64,17 +64,17 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("EMAIL", fieldType: .EmailType)
+            cell.setup("EMAIL", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.TextField.rawValue, forIndexPath: indexPath) as! TextFieldTableViewCell
-            cell.setup("PASSWORD", fieldType: .PassowrdType)
+            cell.setup("PASSWORD", textFontWeight: FontWeight.ABlack, textSize: 22)
             
             return cell
         case 5:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("CREATE ACCOUNT", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("CREATE ACCOUNT", buttonType: ButtonType.LOG, textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: self)
             
             return cell
         case 6:
@@ -84,12 +84,12 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
             return cell
         case 7:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUP WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("SIGNUP WITH FACEBOOK", buttonType: ButtonType.FB, textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: self)
             
             return cell
         case 8:
             let cell = tableView.dequeueReusableCellWithIdentifier(CustomCell.ButtonCenter.rawValue, forIndexPath: indexPath) as! ButtonCenterTableViewCell
-            cell.setup("SIGNUO WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 13, delegate: self)
+            cell.setup("SIGNUO WITH TWITTER", buttonType: ButtonType.TWITTER, textFontWeight: FontWeight.AHeavy, textSize: 12, delegate: self)
             
             return cell
         default:
@@ -100,13 +100,13 @@ class SignUpVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Si
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         switch indexPath.row {
         case 0, 3, 4, 6:
-            return view.bounds.height * 0.075
+            return view.bounds.height * 0.073
         case 1:
-            return view.bounds.height * 0.24
+            return view.bounds.height * 0.238
         case 2:
-            return view.bounds.height * 0.048
+            return view.bounds.height * 0.045
         case 5,7,8:
-            return view.bounds.height * 0.12
+            return view.bounds.height * 0.118
         default:
             return 0
         }
