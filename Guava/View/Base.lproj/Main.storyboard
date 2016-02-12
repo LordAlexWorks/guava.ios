@@ -132,8 +132,8 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-Yz-Mph">
-                                <rect key="frame" x="20" y="40" width="34" height="30"/>
-                                <state key="normal" title="Back"/>
+                                <rect key="frame" x="20" y="40" width="66" height="66"/>
+                                <state key="normal" backgroundImage="back_button"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="H9u-2Q-EgO" eventType="touchUpInside" id="xBE-rN-UrW"/>
                                 </connections>
@@ -273,6 +273,7 @@
         <image name="Gridicon" width="26" height="25"/>
         <image name="Logout" width="25" height="29"/>
         <image name="QR" width="41" height="35"/>
+        <image name="back_button" width="66" height="66"/>
         <image name="bg" width="750" height="1334"/>
     </resources>
 </document>
