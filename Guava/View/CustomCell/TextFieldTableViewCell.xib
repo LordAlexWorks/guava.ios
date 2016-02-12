@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="380" height="126"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="126"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="125.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6pw-od-MTX">
@@ -26,9 +26,14 @@
                                 <color key="textColor" red="0.36078431372549019" green="0.34901960784313724" blue="0.34901960784313724" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.41176470588235292" green="0.41176470588235292" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6D-Ld-Zcg">
-                                <rect key="frame" x="45" y="30" width="290" height="1"/>
+                                <rect key="frame" x="45" y="31" width="290" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Azv-5w-F3A"/>
@@ -42,7 +47,7 @@
                             <constraint firstAttribute="height" constant="40" id="GPp-Ps-rHE"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="centerY" secondItem="6pw-od-MTX" secondAttribute="centerY" id="Gcz-6z-Hub"/>
                             <constraint firstAttribute="trailing" secondItem="c7D-Hd-ro7" secondAttribute="trailing" constant="45" id="KI1-bz-qTm"/>
-                            <constraint firstItem="r6D-Ld-Zcg" firstAttribute="top" secondItem="c7D-Hd-ro7" secondAttribute="bottom" constant="-5" id="L8v-2w-GPb"/>
+                            <constraint firstItem="r6D-Ld-Zcg" firstAttribute="top" secondItem="c7D-Hd-ro7" secondAttribute="bottom" constant="-4" id="L8v-2w-GPb"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="top" secondItem="6pw-od-MTX" secondAttribute="top" id="bHn-0e-qqe"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="leading" secondItem="6pw-od-MTX" secondAttribute="leading" constant="45" id="eEw-5H-KcQ"/>
                             <constraint firstItem="c7D-Hd-ro7" firstAttribute="centerX" secondItem="6pw-od-MTX" secondAttribute="centerX" id="hSS-9D-UKu"/>
