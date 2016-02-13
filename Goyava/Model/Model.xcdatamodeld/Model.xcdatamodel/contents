@@ -19,6 +19,13 @@
         <relationship name="merchant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchants" inverseName="qrid" inverseEntity="Merchants" syncable="YES"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="scannedqrcodes" inverseEntity="User" syncable="YES"/>
     </entity>
+    <entity name="Scores" syncable="YES">
+        <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="merchant_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="point" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
     <entity name="User" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
@@ -28,5 +35,6 @@
         <element name="Merchants" positionX="-317" positionY="-135" width="128" height="165"/>
         <element name="QRCode" positionX="-299" positionY="-333" width="128" height="150"/>
         <element name="User" positionX="-578" positionY="-333" width="128" height="88"/>
+        <element name="Scores" positionX="-567" positionY="-180" width="128" height="120"/>
     </elements>
 </model>
