@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpVC: UIViewController, SignInTableViewDelegate,ButtonCenterTableViewDelegate {
+class SignUpVC: UIViewController, SignInTableViewDelegate {
 
     var signDelegate: SignInTableViewDelegate?
     
@@ -30,9 +30,10 @@ class SignUpVC: UIViewController, SignInTableViewDelegate,ButtonCenterTableViewD
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     //MARK: Login navigation
-    func loginButtonTapped() {
+    @IBAction func loginButtonPress(sender: UIButton) {
         goToScannerView()
     }
+    
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in

@@ -22,19 +22,19 @@ class LoginVC: UIViewController, SignInTableViewDelegate {
 //        signDelegate = self
 //        addBackgroundTapGesture()
         
-        self.loginButtonPress.layer.cornerRadius = 27
-        self.loginButtonPress.layer.borderWidth = 2
-        self.loginButtonPress.layer.borderColor = UIColor.whiteColor().CGColor
-        
-        self.facebookButtonPress.layer.cornerRadius = 28
-        self.facebookButtonPress.layer.borderColor = UIColor.facebookColor().CGColor
-        self.facebookButtonPress.backgroundColor = UIColor.facebookColor()
-        self.facebookButtonPress.layer.borderWidth = 2
-        
-        self.twitterButtonPress.layer.cornerRadius = 28
-        self.twitterButtonPress.layer.borderColor = UIColor.twitterColor().CGColor
-        self.twitterButtonPress.backgroundColor = UIColor.twitterColor()
-        self.twitterButtonPress.layer.borderWidth = 2
+//        self.loginButtonPress.layer.cornerRadius = 27
+//        self.loginButtonPress.layer.borderWidth = 2
+//        self.loginButtonPress.layer.borderColor = UIColor.whiteColor().CGColor
+//        
+//        self.facebookButtonPress.layer.cornerRadius = 28
+//        self.facebookButtonPress.layer.borderColor = UIColor.facebookColor().CGColor
+//        self.facebookButtonPress.backgroundColor = UIColor.facebookColor()
+//        self.facebookButtonPress.layer.borderWidth = 2
+//        
+//        self.twitterButtonPress.layer.cornerRadius = 28
+//        self.twitterButtonPress.layer.borderColor = UIColor.twitterColor().CGColor
+//        self.twitterButtonPress.backgroundColor = UIColor.twitterColor()
+//        self.twitterButtonPress.layer.borderWidth = 2
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,9 +66,6 @@ class LoginVC: UIViewController, SignInTableViewDelegate {
         appDelegate.window?.rootViewController = mainVc
     }
     
-    @IBAction func signupButtonTapped(sender: UIButton) {
-        self.performSegueWithIdentifier("", sender: nil)
-    }
     
     
     //MARK: Background Tap
