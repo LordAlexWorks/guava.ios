@@ -66,6 +66,11 @@ class LoginVC: UIViewController, SignInTableViewDelegate {
         appDelegate.window?.rootViewController = mainVc
     }
     
+    @IBAction func signupButtonTapped(sender: UIButton) {
+        self.performSegueWithIdentifier("", sender: nil)
+    }
+    
+    
     //MARK: Background Tap
 //    func addBackgroundTapGesture(){
 //        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
