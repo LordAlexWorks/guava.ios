@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -106,6 +107,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C26969E1C7215B300B140F0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C26969D1C7215B300B140F0 /* CircularView */ = {
+			isa = PBXGroup;
+			children = (
+				1C26969E1C7215B300B140F0 /* CircleView.swift */,
+			);
+			path = CircularView;
+			sourceTree = "<group>";
+		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +284,7 @@
 		B599F6C71C65ABC30013E89E /* External */ = {
 			isa = PBXGroup;
 			children = (
+				1C26969D1C7215B300B140F0 /* CircularView */,
 				B599F6C81C65ABC30013E89E /* QRScanner */,
 			);
 			path = External;
@@ -529,6 +540,7 @@
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
 				D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
+				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
