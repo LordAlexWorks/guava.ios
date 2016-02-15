@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -9,7 +9,7 @@
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -66,7 +66,7 @@
         <!--Sign UpVC-->
         <scene sceneID="8yk-MS-q7b">
             <objects>
-                <viewController id="KhV-bm-d6i" customClass="SignUpVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KhV-bm-d6i" customClass="SignUpVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Yhu-mz-zPC"/>
                         <viewControllerLayoutGuide type="bottom" id="kV9-mq-YbP"/>
@@ -118,7 +118,7 @@
         <!--ScannerVC-->
         <scene sceneID="o0e-Jg-9tz">
             <objects>
-                <viewController storyboardIdentifier="QRScannerVC" id="H9u-2Q-EgO" customClass="QRScannerVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QRScannerVC" id="H9u-2Q-EgO" customClass="QRScannerVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n9r-5T-jyK"/>
                         <viewControllerLayoutGuide type="bottom" id="dDE-HL-vZn"/>
@@ -161,10 +161,111 @@
             </objects>
             <point key="canvasLocation" x="940" y="1140"/>
         </scene>
+        <!--Main ContentVC-->
+        <scene sceneID="E0X-2H-DeE">
+            <objects>
+                <viewController storyboardIdentifier="MainContentVC" id="4BI-I9-gjs" customClass="MainContentVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="34j-yC-qdd"/>
+                        <viewControllerLayoutGuide type="bottom" id="3YN-0T-eiX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8s-pC-NUN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="484"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="pt3-AT-gDf">
+            <objects>
+                <viewController storyboardIdentifier="MainVC" id="qXj-25-k7c" customClass="MainVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lVl-YQ-w0T"/>
+                        <viewControllerLayoutGuide type="bottom" id="hFr-tr-y4h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oay-TT-Aa2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-PQ-OLd">
+                                <rect key="frame" x="0.0" y="564" width="600" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NII-8k-RuZ">
+                                        <rect key="frame" x="15" y="12" width="13" height="13"/>
+                                        <state key="normal" backgroundImage="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="gaD-Uq-3Kn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="0Hl-KB-41k"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uME-Xg-vd3">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfl-Hq-fDC">
+                                        <rect key="frame" x="15" y="16" width="20" height="15"/>
+                                        <state key="normal" backgroundImage="QR"/>
+                                        <connections>
+                                            <action selector="scanButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="kE8-YC-uIY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-Ug-XJR">
+                                        <rect key="frame" x="563" y="17" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="4et-mz-2bm"/>
+                                            <constraint firstAttribute="height" constant="15" id="l6f-YH-SJw"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Gridicon"/>
+                                        <connections>
+                                            <action selector="gridButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="28v-7d-MVf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Yvn-Ug-XJR" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="17" id="8zF-8g-wCl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yvn-Ug-XJR" secondAttribute="bottom" constant="12" id="LkR-NM-N9i"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yvn-Ug-XJR" secondAttribute="trailing" constant="22" id="bXh-Lp-cAX"/>
+                                    <constraint firstAttribute="height" constant="44" id="eBN-pw-MFo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-IW-kf1">
+                                <rect key="frame" x="0.0" y="64" width="600" height="500"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kpf-IW-kf1" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="bottom" id="B3x-9r-rBo"/>
+                            <constraint firstItem="kpf-IW-kf1" firstAttribute="leading" secondItem="Oay-TT-Aa2" secondAttribute="leading" id="EIT-5M-W6S"/>
+                            <constraint firstAttribute="trailing" secondItem="uME-Xg-vd3" secondAttribute="trailing" id="ENw-k6-Vrd"/>
+                            <constraint firstItem="uME-Xg-vd3" firstAttribute="leading" secondItem="Oay-TT-Aa2" secondAttribute="leading" id="JXE-Ry-lGy"/>
+                            <constraint firstItem="bwV-PQ-OLd" firstAttribute="leading" secondItem="Oay-TT-Aa2" secondAttribute="leading" id="Klg-SO-8nG"/>
+                            <constraint firstAttribute="trailing" secondItem="kpf-IW-kf1" secondAttribute="trailing" id="QUv-L9-OMC"/>
+                            <constraint firstItem="bwV-PQ-OLd" firstAttribute="top" secondItem="kpf-IW-kf1" secondAttribute="bottom" id="SL0-ge-sr4"/>
+                            <constraint firstItem="bwV-PQ-OLd" firstAttribute="top" secondItem="kpf-IW-kf1" secondAttribute="bottom" id="Wd1-uP-fHT"/>
+                            <constraint firstAttribute="trailing" secondItem="bwV-PQ-OLd" secondAttribute="trailing" id="l90-PF-rIC"/>
+                            <constraint firstItem="bwV-PQ-OLd" firstAttribute="bottom" secondItem="hFr-tr-y4h" secondAttribute="top" id="pFT-sQ-vi7"/>
+                            <constraint firstItem="uME-Xg-vd3" firstAttribute="top" secondItem="Oay-TT-Aa2" secondAttribute="top" constant="20" id="ut3-gj-OGO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFq-WY-icb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="477"/>
+        </scene>
         <!--My CardsVC-->
         <scene sceneID="Alp-ru-xHZ">
             <objects>
-                <viewController storyboardIdentifier="MyCardsVC" id="eYq-37-RmF" customClass="MyCardsVC" customModule="Guava" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyCardsVC" id="eYq-37-RmF" customClass="MyCardsVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HoN-33-efT"/>
                         <viewControllerLayoutGuide type="bottom" id="Usm-ov-IqE"/>
@@ -259,10 +360,10 @@
                             <constraint firstItem="LhH-hY-m28" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="Fvu-K5-Ymt"/>
                             <constraint firstItem="17q-NF-nyZ" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="HiA-3w-FlG"/>
                             <constraint firstAttribute="trailing" secondItem="17q-NF-nyZ" secondAttribute="trailing" id="Ryx-Vj-5eN"/>
-                            <constraint firstItem="Usm-ov-IqE" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="bottom" id="Zok-TK-NO1"/>
-                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="top" secondItem="HoN-33-efT" secondAttribute="bottom" id="moS-we-5nD"/>
+                            <constraint firstItem="Usm-ov-IqE" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="bottom" id="bIH-M8-El4"/>
                             <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="bottom" id="qoe-Hb-6Bm"/>
                             <constraint firstAttribute="trailing" secondItem="w5Z-bu-ieP" secondAttribute="trailing" id="v9G-4K-Ouq"/>
+                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="top" secondItem="HoN-33-efT" secondAttribute="bottom" id="xiN-2O-EaV"/>
                             <constraint firstAttribute="trailing" secondItem="LhH-hY-m28" secondAttribute="trailing" id="zL9-as-jj6"/>
                             <constraint firstItem="17q-NF-nyZ" firstAttribute="top" secondItem="LhH-hY-m28" secondAttribute="bottom" id="zzf-Yf-oIb"/>
                         </constraints>

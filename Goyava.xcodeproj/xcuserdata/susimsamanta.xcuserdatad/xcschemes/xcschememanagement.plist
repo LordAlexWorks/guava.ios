@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Guava-Beta.xcscheme</key>
+		<key>Goyava-Beta.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Guava.xcscheme</key>
+		<key>Goyava.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>

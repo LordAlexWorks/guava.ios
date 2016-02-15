@@ -130,9 +130,9 @@ class LoginVC: UIViewController, UITableViewDataSource, UITableViewDelegate, Sig
         }
     }
     func goToMyCard(){
-        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.window?.rootViewController = myCardsVc
+        appDelegate.window?.rootViewController = mainVc
     }
     //MARK: Background Tap
     func addBackgroundTapGesture(){

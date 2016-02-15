@@ -27,6 +27,10 @@
 		B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112EB1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */; };
+		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
+		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
+		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
+		B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
 		B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
 		B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
@@ -120,6 +124,8 @@
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
 		B5D112E81C6D7BEE00F66AB6 /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
+		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5FBEB711C6AD4EC006DCC12 /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBEB731C6AD553006DCC12 /* Goyava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Goyava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-info.plist"; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 				D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */,
 				B599F6CB1C65AC580013E89E /* QRScannerVC.swift */,
 				B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */,
+				B5ECEF171C7168A700E5E098 /* MainVC.swift */,
+				B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -521,12 +529,14 @@
 				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
 				D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */,
 				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
+				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */,
 				D3F326BC1C63AB560092427F /* LabelCenterTableViewCell.swift in Sources */,
+				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,12 +574,14 @@
 				B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */,
 				B5D112D71C6D798D00F66AB6 /* ImageCenterTableViewCell.swift in Sources */,
 				B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */,
+				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
 				B5FBEB611C6AD4EC006DCC12 /* SignInTableViewCell.swift in Sources */,
 				B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */,
+				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
