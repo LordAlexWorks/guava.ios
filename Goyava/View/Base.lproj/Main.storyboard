@@ -618,7 +618,7 @@
                                         <rect key="frame" x="15" y="12" width="13" height="13"/>
                                         <state key="normal" backgroundImage="Logout"/>
                                         <connections>
-                                            <action selector="logoutButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="gaD-Uq-3Kn"/>
+                                            <action selector="logoutButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="wYl-FW-yzJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -634,7 +634,7 @@
                                         <rect key="frame" x="15" y="16" width="20" height="15"/>
                                         <state key="normal" backgroundImage="QR"/>
                                         <connections>
-                                            <action selector="scanButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="kE8-YC-uIY"/>
+                                            <action selector="scanButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="z2k-MS-6X4"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvn-Ug-XJR">
@@ -645,7 +645,7 @@
                                         </constraints>
                                         <state key="normal" backgroundImage="Gridicon"/>
                                         <connections>
-                                            <action selector="gridButtonTapped:" destination="eYq-37-RmF" eventType="touchUpInside" id="28v-7d-MVf"/>
+                                            <action selector="myCardsButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="zcv-pJ-3Qa"/>
                                         </connections>
                                     </button>
                                 </subviews>

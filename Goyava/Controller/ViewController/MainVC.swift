@@ -77,4 +77,23 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
     }
+    
+    //MARK: Button actions
+    @IBAction func myCardsButtonTapped(sender : UIButton){
+        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        myCardsVc.modalTransitionStyle = .FlipHorizontal
+        self.presentViewController(myCardsVc, animated: true) { () -> Void in
+            
+        }
+    }
+    @IBAction func logoutButtonTapped(sender : UIButton) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+        appDelegate.window?.rootViewController = loginVc
+    }
+    @IBAction func scanButtonTapped(sender : UIButton) {
+        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
+        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+        }
+    }
 }

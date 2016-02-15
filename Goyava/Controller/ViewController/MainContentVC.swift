@@ -20,8 +20,4 @@ class MainContentVC: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func updateBottomConstraint(){
-        print(self.view.frame.size.height)
-        self.bottomConstraint.constant = self.view.frame.size.height - 470.0 
-    }
 }

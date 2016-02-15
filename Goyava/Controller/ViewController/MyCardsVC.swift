@@ -62,6 +62,7 @@ class MyCardsVC: UIViewController {
         appDelegate.window?.rootViewController = loginVc
     }
     @IBAction func gridButtonTapped(sender : UIButton) {
-        
+        self.dismissViewControllerAnimated(true) { () -> Void in
+        }
     }
 }
