@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXf-iu-5Hd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="1140"/>
+            <point key="canvasLocation" x="936" y="1201"/>
         </scene>
         <!--Main ContentVC-->
         <scene sceneID="E0X-2H-DeE">
@@ -182,15 +182,27 @@
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-tl-Z9C">
                                                 <rect key="frame" x="0.0" y="0.0" width="480" height="300"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92   Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-80-ncv">
+                                                <rect key="frame" x="190" y="115" width="100" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Ec5-1K-QKA"/>
+                                                    <constraint firstAttribute="height" constant="70" id="QJ1-we-aOw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="ENG-4o-ZRb"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="SuO-qF-Eok"/>
+                                            <constraint firstItem="EAL-80-ncv" firstAttribute="centerY" secondItem="akr-Pp-if1" secondAttribute="centerY" id="Uai-0x-3jQ"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="Wzl-Ja-tJU"/>
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="a2u-Dn-I6F"/>
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="dee-af-twB"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="jTo-BX-2jd"/>
+                                            <constraint firstItem="EAL-80-ncv" firstAttribute="centerX" secondItem="akr-Pp-if1" secondAttribute="centerX" id="nPs-Jc-Sva"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="r8M-0o-tgU"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="zxh-ka-eEu"/>
                                         </constraints>
@@ -550,21 +562,10 @@
                                             <constraint firstAttribute="bottom" secondItem="Grg-nv-z47" secondAttribute="bottom" id="nhL-6B-vUq"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="92 Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-80-ncv">
-                                        <rect key="frame" x="245" y="140" width="110" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="110" id="1yP-xe-2tk"/>
-                                            <constraint firstAttribute="height" constant="100" id="Bjs-82-0Xp"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
-                                        <color key="textColor" red="0.90980392160000001" green="0.75686274509999996" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Owd-hM-2aH" secondAttribute="bottom" constant="10" id="7bs-n4-jJr"/>
-                                    <constraint firstItem="EAL-80-ncv" firstAttribute="centerY" secondItem="RdO-ah-uKA" secondAttribute="centerY" constant="-110" id="FeG-cp-fPa"/>
                                     <constraint firstItem="Owd-hM-2aH" firstAttribute="top" secondItem="pVr-0I-Etg" secondAttribute="bottom" constant="8" id="MuA-Ja-GUb"/>
                                     <constraint firstItem="akr-Pp-if1" firstAttribute="leading" secondItem="RdO-ah-uKA" secondAttribute="leading" constant="60" id="Q4q-eC-hdd"/>
                                     <constraint firstAttribute="trailing" secondItem="KOd-CY-YF0" secondAttribute="trailing" constant="8" id="a8H-R8-HKg"/>
@@ -577,7 +578,6 @@
                                     <constraint firstAttribute="trailing" secondItem="pVr-0I-Etg" secondAttribute="trailing" constant="8" id="sCf-AL-OcJ"/>
                                     <constraint firstItem="pVr-0I-Etg" firstAttribute="leading" secondItem="RdO-ah-uKA" secondAttribute="leading" constant="8" id="tL2-Wp-HME"/>
                                     <constraint firstAttribute="trailing" secondItem="akr-Pp-if1" secondAttribute="trailing" constant="60" id="vuB-Xy-ily"/>
-                                    <constraint firstItem="EAL-80-ncv" firstAttribute="centerX" secondItem="RdO-ah-uKA" secondAttribute="centerX" id="wuX-1T-QD2"/>
                                     <constraint firstItem="KOd-CY-YF0" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="bottom" constant="30" id="ymr-sY-m1K"/>
                                     <constraint firstItem="pVr-0I-Etg" firstAttribute="top" secondItem="KOd-CY-YF0" secondAttribute="bottom" constant="8" id="zMQ-fa-V9m"/>
                                 </constraints>
@@ -597,7 +597,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2281" y="477"/>
+            <point key="canvasLocation" x="2390" y="439"/>
         </scene>
         <!--MainVC-->
         <scene sceneID="pt3-AT-gDf">
@@ -680,7 +680,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFq-WY-icb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="477"/>
+            <point key="canvasLocation" x="1592" y="433"/>
         </scene>
         <!--My CardsVC-->
         <scene sceneID="Alp-ru-xHZ">
@@ -795,7 +795,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f15-oJ-OjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1563" y="1127"/>
+            <point key="canvasLocation" x="1564" y="1208"/>
         </scene>
     </scenes>
     <resources>

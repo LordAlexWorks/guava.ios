@@ -14,7 +14,6 @@ class MainContentVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.updateBottomConstraint()
     }
 
     override func didReceiveMemoryWarning() {
