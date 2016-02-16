@@ -47,8 +47,9 @@
                                             <constraint firstAttribute="width" constant="300" id="4h4-t1-YRY"/>
                                             <constraint firstAttribute="height" constant="30" id="cEu-d6-D8Y"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9S-WT-CZw">
                                         <rect key="frame" x="150" y="244" width="300" height="1"/>
@@ -64,8 +65,9 @@
                                             <constraint firstAttribute="width" constant="300" id="Evp-BZ-WSw"/>
                                             <constraint firstAttribute="height" constant="30" id="RCb-rr-SKV"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvu-tV-yT6">
                                         <rect key="frame" x="150" y="299" width="300" height="1"/>
@@ -228,8 +230,9 @@
                                             <constraint firstAttribute="height" constant="30" id="DWL-aH-v26"/>
                                             <constraint firstAttribute="width" constant="300" id="lPh-JA-Ecc"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t0B-uH-MdW">
                                         <rect key="frame" x="150" y="264" width="300" height="1"/>
@@ -245,8 +248,9 @@
                                             <constraint firstAttribute="width" constant="300" id="d2X-nc-ILN"/>
                                             <constraint firstAttribute="height" constant="30" id="vV9-Os-q7F"/>
                                         </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oag-m3-yn4">
                                         <rect key="frame" x="150" y="319" width="300" height="1"/>
