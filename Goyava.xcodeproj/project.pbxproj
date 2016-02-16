@@ -30,6 +30,8 @@
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
 		B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
+		B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */; };
+		B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */; };
 		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
 		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
@@ -100,6 +102,7 @@
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
+		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
 		B5FBEB711C6AD4EC006DCC12 /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5FBEB731C6AD553006DCC12 /* Goyava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Goyava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-info.plist"; sourceTree = "<group>"; };
@@ -233,6 +236,7 @@
 				D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */,
 				B599F6CB1C65AC580013E89E /* QRScannerVC.swift */,
 				B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */,
+				B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */,
 				B5ECEF171C7168A700E5E098 /* MainVC.swift */,
 				B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */,
 			);
@@ -460,6 +464,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
@@ -504,6 +509,7 @@
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
+				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
