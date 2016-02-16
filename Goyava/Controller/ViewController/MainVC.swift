@@ -94,7 +94,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         appDelegate.window?.rootViewController = loginVc
     }
     @IBAction func scanButtonTapped(sender : UIButton) {
-        
+        goToScannerView()
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
