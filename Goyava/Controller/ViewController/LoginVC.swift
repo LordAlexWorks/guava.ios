@@ -33,7 +33,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
-            goToMyCard()
+            goToMain()
         #else
             goToScannerView()
         #endif
@@ -44,7 +44,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in
         }
     }
-    func goToMyCard(){
+    func goToMain(){
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.window?.rootViewController = mainVc

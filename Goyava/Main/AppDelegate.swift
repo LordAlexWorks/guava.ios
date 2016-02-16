@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        self.window = UIWindow()
+        self.window?.makeKeyAndVisible()
+         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+        self.window?.rootViewController = loginVc
         setUpGeneralSettings()
         return true
     }

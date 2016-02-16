@@ -27,9 +27,7 @@ class QRScannerVC: UIViewController {
                 print(result)
                 if self != nil {
                     self!.dismissViewControllerAnimated(true, completion: { () -> Void in
-                        let myCardsVc = self!.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
-                        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-                        appDelegate.window?.rootViewController = myCardsVc
+                        self!.goToMain()
                     })
                 }
             }
@@ -41,6 +39,11 @@ class QRScannerVC: UIViewController {
                 }
             }
         })
+    }
+    func goToMain(){
+        let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = mainVc
     }
     
     @IBAction func backButtonTapped(sender : UIButton) {
