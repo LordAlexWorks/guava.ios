@@ -65,7 +65,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
         let viewFrame = self.view.frame
         UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+28, width: viewFrame.size.width, height: viewFrame.size.height)
+            self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
         })
     }
     func keyboardWillHide(notification: NSNotification) {
