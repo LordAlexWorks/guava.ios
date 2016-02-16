@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1034,8 +1034,45 @@
                                     <constraint firstAttribute="height" constant="36" id="FTJ-3e-Cz9"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92l-kr-mL9">
                                 <rect key="frame" x="0.0" y="44" width="600" height="520"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="1aZ-VS-GRr"/>
+                            <constraint firstItem="92l-kr-mL9" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="4Qf-Me-d4i"/>
+                            <constraint firstItem="17q-NF-nyZ" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="HiA-3w-FlG"/>
+                            <constraint firstItem="92l-kr-mL9" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="bottom" id="IZv-pR-0eG"/>
+                            <constraint firstAttribute="trailing" secondItem="17q-NF-nyZ" secondAttribute="trailing" id="Ryx-Vj-5eN"/>
+                            <constraint firstItem="Usm-ov-IqE" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="bottom" id="bIH-M8-El4"/>
+                            <constraint firstAttribute="trailing" secondItem="92l-kr-mL9" secondAttribute="trailing" id="fjR-U9-5qF"/>
+                            <constraint firstItem="17q-NF-nyZ" firstAttribute="top" secondItem="92l-kr-mL9" secondAttribute="bottom" id="rM2-0J-88I"/>
+                            <constraint firstAttribute="trailing" secondItem="w5Z-bu-ieP" secondAttribute="trailing" id="v9G-4K-Ouq"/>
+                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="top" secondItem="HoN-33-efT" secondAttribute="bottom" id="xiN-2O-EaV"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f15-oJ-OjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="1190"/>
+        </scene>
+        <!--My Card ContentVC-->
+        <scene sceneID="TEN-ha-WfP">
+            <objects>
+                <viewController storyboardIdentifier="MyCardContentVC" id="8n5-fw-dyJ" customClass="MyCardContentVC" customModule="Goyava" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YPT-Hu-eMq"/>
+                        <viewControllerLayoutGuide type="bottom" id="oVG-m1-Plt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RTu-Rr-Gtm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="jxG-yc-wBM">
                                     <size key="itemSize" width="120" height="110"/>
@@ -1045,33 +1082,26 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                                 <connections>
-                                    <outlet property="dataSource" destination="eYq-37-RmF" id="SDK-GN-9hI"/>
-                                    <outlet property="delegate" destination="eYq-37-RmF" id="UeL-Pm-cbd"/>
+                                    <outlet property="dataSource" destination="8n5-fw-dyJ" id="MX2-gN-Ik6"/>
+                                    <outlet property="delegate" destination="8n5-fw-dyJ" id="jDU-MM-0zE"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="1aZ-VS-GRr"/>
-                            <constraint firstItem="LhH-hY-m28" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="Fvu-K5-Ymt"/>
-                            <constraint firstItem="17q-NF-nyZ" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="HiA-3w-FlG"/>
-                            <constraint firstAttribute="trailing" secondItem="17q-NF-nyZ" secondAttribute="trailing" id="Ryx-Vj-5eN"/>
-                            <constraint firstItem="Usm-ov-IqE" firstAttribute="top" secondItem="17q-NF-nyZ" secondAttribute="bottom" id="bIH-M8-El4"/>
-                            <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="w5Z-bu-ieP" secondAttribute="bottom" id="qoe-Hb-6Bm"/>
-                            <constraint firstAttribute="trailing" secondItem="w5Z-bu-ieP" secondAttribute="trailing" id="v9G-4K-Ouq"/>
-                            <constraint firstItem="w5Z-bu-ieP" firstAttribute="top" secondItem="HoN-33-efT" secondAttribute="bottom" id="xiN-2O-EaV"/>
-                            <constraint firstAttribute="trailing" secondItem="LhH-hY-m28" secondAttribute="trailing" id="zL9-as-jj6"/>
-                            <constraint firstItem="17q-NF-nyZ" firstAttribute="top" secondItem="LhH-hY-m28" secondAttribute="bottom" id="zzf-Yf-oIb"/>
+                            <constraint firstAttribute="trailing" secondItem="LhH-hY-m28" secondAttribute="trailing" id="0RD-4n-Wzp"/>
+                            <constraint firstItem="oVG-m1-Plt" firstAttribute="top" secondItem="LhH-hY-m28" secondAttribute="bottom" id="2oj-hr-1IT"/>
+                            <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="RTu-Rr-Gtm" secondAttribute="top" id="ZVW-Wc-C5y"/>
+                            <constraint firstItem="LhH-hY-m28" firstAttribute="leading" secondItem="RTu-Rr-Gtm" secondAttribute="leading" id="cWc-3y-QQO"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="collectionView" destination="LhH-hY-m28" id="QNh-wW-0AR"/>
+                        <outlet property="collectionView" destination="LhH-hY-m28" id="K4N-l6-tWL"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="f15-oJ-OjK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfN-yv-6fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1564" y="1208"/>
+            <point key="canvasLocation" x="2436" y="1193"/>
         </scene>
     </scenes>
     <resources>

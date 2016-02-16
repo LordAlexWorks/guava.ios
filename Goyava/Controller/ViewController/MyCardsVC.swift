@@ -10,13 +10,16 @@ import UIKit
 
 typealias MyCardsCompletionHandler = () -> Void
 
-class MyCardsVC: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
+class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     var myCardsHandler : MyCardsCompletionHandler?
+    var pageViewController : UIPageViewController?
+    var currentIndex : Int = 0
+    var dataSource = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpMyCardsLayout()
+        self.dataSource = ["","",""]
+        self.createMainPages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,35 +27,6 @@ class MyCardsVC: UIViewController {
     }
     func setUpUI(){
         self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
-    }
-    func setUpMyCardsLayout() {
-        let layout = UICollectionViewFlowLayout()
-        let gridNib = UINib(nibName: "MyCard", bundle: nil) as UINib
-        self.collectionView.registerNib(gridNib, forCellWithReuseIdentifier: "MyCard")
-        layout.scrollDirection = .Vertical
-        let column = 2
-        let itemWidth = floor((view.bounds.size.width - CGFloat(column - 1)) / CGFloat(column))
-        layout.minimumInteritemSpacing = 0.0
-        layout.minimumLineSpacing = 0.0
-        layout.itemSize = CGSizeMake(itemWidth,itemWidth)
-        self.collectionView.setCollectionViewLayout(layout, animated: false) { (isAnimated) -> Void in
-            self.collectionView.reloadData()
-        }
-    }
-    // MARK: Collection View Data Source
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView!) -> Int {
-        return 1
-    }
-    func collectionView(collectionView: UICollectionView!,numberOfItemsInSection section: Int) -> Int {
-        return 6
-    }
-    func collectionView(collectionView: UICollectionView!,cellForItemAtIndexPath indexPath: NSIndexPath!) ->UICollectionViewCell! {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("MyCard",forIndexPath: indexPath) as! MyCard
-        cell.refreshUIWithDatasource()
-        return cell
-    }
-    func collectionView(collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("selected \(indexPath.row)")
     }
     func onDismiss(handler : MyCardsCompletionHandler) {
         self.myCardsHandler = handler
@@ -74,4 +48,50 @@ class MyCardsVC: UIViewController {
         self.dismissViewControllerAnimated(true) { () -> Void in
         }
     }
+    func createMainPages(){
+        pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+        pageViewController!.dataSource = self
+        
+        let startingViewController: MyCardContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
+        let viewControllers = [startingViewController]
+        pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
+        pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-108);
+        
+        addChildViewController(pageViewController!)
+        view.addSubview(pageViewController!.view)
+        pageViewController!.didMoveToParentViewController(self)
+    }
+    //MARK: Page Control Data Source
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+        var index = (viewController as! MyCardContentVC).pageIndex
+        if (index == 0) || (index == NSNotFound) {
+            return nil
+        }
+        index--
+        return viewControllerAtIndex(index)
+    }
+    
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
+        var index = (viewController as! MyCardContentVC).pageIndex
+        if index == NSNotFound {
+            return nil
+        }
+        index++
+        if (index == self.dataSource.count) {
+            return nil
+        }
+        return viewControllerAtIndex(index)
+    }
+    
+    func viewControllerAtIndex(index: Int) -> MyCardContentVC? {
+        if self.dataSource.count == 0 || index >= self.dataSource.count {
+            return nil
+        }
+        // Create a new view controller and pass suitable data.
+        let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
+        pageContentViewController.pageIndex = index
+        currentIndex = index
+        return pageContentViewController
+    }
+    
 }
