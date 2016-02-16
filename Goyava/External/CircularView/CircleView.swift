@@ -22,8 +22,8 @@ class CircleView: UIView {
     override func drawRect(rect: CGRect) {
         let context = UIGraphicsGetCurrentContext();
         CGContextSetLineWidth(context, 5.0);
-        UIColor.redColor().set()
-        CGContextAddArc(context, (frame.size.width)/2, frame.size.height/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 1.5), 1)
+        UIColor.greenColor().set()
+        CGContextAddArc(context, (frame.size.width)/2, frame.size.height/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 1), 1)
         CGContextStrokePath(context);
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
+		1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -515,6 +516,7 @@
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
+				1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

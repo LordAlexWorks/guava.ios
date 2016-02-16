@@ -18,7 +18,8 @@ class MyCard: UICollectionViewCell {
     }
     
     func refreshUIWithDatasource(){
-        
+        let circleView = CircleView(frame: CGRectMake(24, 2, 113,113))
+        self.addSubview(circleView)
     }
 
 }
