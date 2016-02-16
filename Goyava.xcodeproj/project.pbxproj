@@ -23,8 +23,6 @@
 		B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
 		B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
 		B5D112D61C6AFBE600F66AB6 /* MyCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5D112D21C6AFBE600F66AB6 /* MyCard.xib */; };
-		B5D112D71C6D798D00F66AB6 /* ImageCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */; };
-		B5D112D81C6D79D400F66AB6 /* ImageCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */; };
 		B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112EB1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */; };
@@ -32,45 +30,19 @@
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
 		B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
-		B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
-		B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
 		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
-		B5FBEB571C6AD4EC006DCC12 /* LabelLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */; };
 		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
-		B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */; };
-		B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */; };
 		B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
 		B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
-		B5FBEB611C6AD4EC006DCC12 /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
-		B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */; };
 		B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
-		B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */; };
 		B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
-		B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */; };
-		B5FBEB6B1C6AD4EC006DCC12 /* LabelCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */; };
-		B5FBEB6C1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
-		B5FBEB6D1C6AD4EC006DCC12 /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
 		B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
-		D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */; };
-		D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */; };
-		D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */; };
-		D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B21C6391030092427F /* SignInTableViewCell.swift */; };
-		D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326B31C6391030092427F /* SignInTableViewCell.xib */; };
-		D3F326B81C6397860092427F /* UITableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326B71C6397860092427F /* UITableExtension.swift */; };
-		D3F326BC1C63AB560092427F /* LabelCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */; };
-		D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */; };
-		D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */; };
-		D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */; };
-		D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */; };
-		D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */; };
-		D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */; };
-		D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
 /* End PBXBuildFile section */
@@ -132,20 +104,6 @@
 		B5FBEB731C6AD553006DCC12 /* Goyava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Goyava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-info.plist"; sourceTree = "<group>"; };
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
-		D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
-		D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageCenterTableViewCell.swift; path = CustomCell/ImageCenterTableViewCell.swift; sourceTree = "<group>"; };
-		D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ImageCenterTableViewCell.xib; path = CustomCell/ImageCenterTableViewCell.xib; sourceTree = "<group>"; };
-		D3F326B21C6391030092427F /* SignInTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInTableViewCell.swift; path = CustomCell/SignInTableViewCell.swift; sourceTree = "<group>"; };
-		D3F326B31C6391030092427F /* SignInTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInTableViewCell.xib; path = CustomCell/SignInTableViewCell.xib; sourceTree = "<group>"; };
-		D3F326B71C6397860092427F /* UITableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITableExtension.swift; path = Extensions/UITableExtension.swift; sourceTree = "<group>"; };
-		D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelCenterTableViewCell.swift; path = CustomCell/LabelCenterTableViewCell.swift; sourceTree = "<group>"; };
-		D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabelCenterTableViewCell.xib; path = CustomCell/LabelCenterTableViewCell.xib; sourceTree = "<group>"; };
-		D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelLeftTableViewCell.swift; path = CustomCell/LabelLeftTableViewCell.swift; sourceTree = "<group>"; };
-		D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LabelLeftTableViewCell.xib; path = CustomCell/LabelLeftTableViewCell.xib; sourceTree = "<group>"; };
-		D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextFieldTableViewCell.swift; path = CustomCell/TextFieldTableViewCell.swift; sourceTree = "<group>"; };
-		D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TextFieldTableViewCell.xib; path = CustomCell/TextFieldTableViewCell.xib; sourceTree = "<group>"; };
-		D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ButtonCenterTableViewCell.swift; path = CustomCell/ButtonCenterTableViewCell.swift; sourceTree = "<group>"; };
-		D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ButtonCenterTableViewCell.xib; path = CustomCell/ButtonCenterTableViewCell.xib; sourceTree = "<group>"; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -321,20 +279,8 @@
 		D3DDC2CE1C621C490093EBEA /* CusomCell */ = {
 			isa = PBXGroup;
 			children = (
-				D3F326C61C63BD3F0092427F /* ButtonCenterTableViewCell.swift */,
-				D3F326C71C63BD3F0092427F /* ButtonCenterTableViewCell.xib */,
-				D347CCCA1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift */,
-				D347CCCB1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib */,
-				D3F326BA1C63AB560092427F /* LabelCenterTableViewCell.swift */,
-				D3F326BB1C63AB560092427F /* LabelCenterTableViewCell.xib */,
-				D3F326BE1C63B59A0092427F /* LabelLeftTableViewCell.swift */,
-				D3F326BF1C63B59A0092427F /* LabelLeftTableViewCell.xib */,
 				B5D112D11C6AFBE600F66AB6 /* MyCard.swift */,
 				B5D112D21C6AFBE600F66AB6 /* MyCard.xib */,
-				D3F326B21C6391030092427F /* SignInTableViewCell.swift */,
-				D3F326B31C6391030092427F /* SignInTableViewCell.xib */,
-				D3F326C21C63B8810092427F /* TextFieldTableViewCell.swift */,
-				D3F326C31C63B8810092427F /* TextFieldTableViewCell.xib */,
 			);
 			name = CusomCell;
 			sourceTree = "<group>";
@@ -343,8 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
-				D30B1EEB1C68F03A00C73183 /* UIFontExtension.swift */,
-				D3F326B71C6397860092427F /* UITableExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -477,14 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */,
-				D3F326C11C63B59A0092427F /* LabelLeftTableViewCell.xib in Resources */,
-				D347CCCD1C6CD02900BFAE0F /* ImageCenterTableViewCell.xib in Resources */,
 				B53267D71C60632B008297CF /* Assets.xcassets in Resources */,
 				B53267EF1C606C78008297CF /* Main.storyboard in Resources */,
-				D3F326C51C63B8810092427F /* TextFieldTableViewCell.xib in Resources */,
-				D3F326BD1C63AB560092427F /* LabelCenterTableViewCell.xib in Resources */,
-				D3F326C91C63BD3F0092427F /* ButtonCenterTableViewCell.xib in Resources */,
-				D3F326B51C6391030092427F /* SignInTableViewCell.xib in Resources */,
 				B5D112D51C6AFBE600F66AB6 /* MyCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,14 +447,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FBEB651C6AD4EC006DCC12 /* LaunchScreen.storyboard in Resources */,
-				B5FBEB661C6AD4EC006DCC12 /* LabelLeftTableViewCell.xib in Resources */,
-				B5D112D81C6D79D400F66AB6 /* ImageCenterTableViewCell.xib in Resources */,
 				B5FBEB681C6AD4EC006DCC12 /* Assets.xcassets in Resources */,
 				B5FBEB691C6AD4EC006DCC12 /* Main.storyboard in Resources */,
-				B5FBEB6A1C6AD4EC006DCC12 /* TextFieldTableViewCell.xib in Resources */,
-				B5FBEB6B1C6AD4EC006DCC12 /* LabelCenterTableViewCell.xib in Resources */,
-				B5FBEB6C1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.xib in Resources */,
-				B5FBEB6D1C6AD4EC006DCC12 /* SignInTableViewCell.xib in Resources */,
 				B5D112D61C6AFBE600F66AB6 /* MyCard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,26 +460,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F326B81C6397860092427F /* UITableExtension.swift in Sources */,
-				D30B1EEC1C68F03A00C73183 /* UIFontExtension.swift in Sources */,
 				B53267F41C606D41008297CF /* Login.swift in Sources */,
-				D3F326C01C63B59A0092427F /* LabelLeftTableViewCell.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
-				D3F326C81C63BD3F0092427F /* ButtonCenterTableViewCell.swift in Sources */,
-				D347CCCC1C6CD02900BFAE0F /* ImageCenterTableViewCell.swift in Sources */,
-				D3F326C41C63B8810092427F /* TextFieldTableViewCell.swift in Sources */,
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
-				D3F326B41C6391030092427F /* SignInTableViewCell.swift in Sources */,
-				D3F326BC1C63AB560092427F /* LabelCenterTableViewCell.swift in Sources */,
 				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,25 +498,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FBEB541C6AD4EC006DCC12 /* UITableExtension.swift in Sources */,
-				B5FBEB551C6AD4EC006DCC12 /* UIFontExtension.swift in Sources */,
 				B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */,
-				B5FBEB571C6AD4EC006DCC12 /* LabelLeftTableViewCell.swift in Sources */,
 				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
 				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
-				B5FBEB5B1C6AD4EC006DCC12 /* ButtonCenterTableViewCell.swift in Sources */,
-				B5D112D71C6D798D00F66AB6 /* ImageCenterTableViewCell.swift in Sources */,
-				B5FBEB5C1C6AD4EC006DCC12 /* TextFieldTableViewCell.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
-				B5FBEB611C6AD4EC006DCC12 /* SignInTableViewCell.swift in Sources */,
-				B5FBEB621C6AD4EC006DCC12 /* LabelCenterTableViewCell.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

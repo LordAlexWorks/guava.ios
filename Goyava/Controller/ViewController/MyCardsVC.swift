@@ -8,8 +8,12 @@
 
 import UIKit
 
+typealias MyCardsCompletionHandler = () -> Void
+
 class MyCardsVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    var myCardsHandler : MyCardsCompletionHandler?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpMyCardsLayout()
@@ -50,16 +54,21 @@ class MyCardsVC: UIViewController {
     func collectionView(collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print("selected \(indexPath.row)")
     }
+    func onDismiss(handler : MyCardsCompletionHandler) {
+        self.myCardsHandler = handler
+    }
     //MARK: Button Actions 
     @IBAction func scanButtonTapped(sender : UIButton) {
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+        self.dismissViewControllerAnimated(false) { () -> Void in
+            self.myCardsHandler!()
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
-        appDelegate.window?.rootViewController = loginVc
+        self.dismissViewControllerAnimated(false) { () -> Void in
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+            appDelegate.window?.rootViewController = loginVc
+        }
     }
     @IBAction func gridButtonTapped(sender : UIButton) {
         self.dismissViewControllerAnimated(true) { () -> Void in

@@ -83,7 +83,9 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
         myCardsVc.modalTransitionStyle = .FlipHorizontal
         self.presentViewController(myCardsVc, animated: true) { () -> Void in
-            
+        }
+        myCardsVc.onDismiss { [weak self]() -> Void in
+            self?.goToScannerView()
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
@@ -92,6 +94,9 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         appDelegate.window?.rootViewController = loginVc
     }
     @IBAction func scanButtonTapped(sender : UIButton) {
+        
+    }
+    func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
         self.presentViewController(qrscannerVc, animated: true) { () -> Void in
         }

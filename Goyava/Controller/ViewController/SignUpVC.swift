@@ -8,7 +8,10 @@
 
 import UIKit
 
+typealias SignupCompletionHandler = () -> Void
+
 class SignUpVC: UIViewController,UITextFieldDelegate {
+    var signUpHandler : SignupCompletionHandler?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,14 +32,15 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
-        goToScannerView()
-    }
-    //MARK: Login navigation
-    func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-            
+        self.dismissViewControllerAnimated(false) { () -> Void in
+            if self.signUpHandler != nil {
+                self.signUpHandler!()
+            }
         }
+    }
+    
+    func onDismiss(handler :SignupCompletionHandler ) {
+        self.signUpHandler = handler
     }
     //MARK: Background Tap
     func addBackgroundTapGesture(){

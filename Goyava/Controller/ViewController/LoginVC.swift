@@ -30,6 +30,11 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         signupVc.modalTransitionStyle = .FlipHorizontal
         self.presentViewController(signupVc, animated: true) { () -> Void in
         }
+        signupVc.onDismiss { [weak self]() -> Void in
+            if self != nil {
+                self?.goToScannerView()
+            }
+        }
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
         #if (arch(i386) || arch(x86_64)) && os(iOS)
