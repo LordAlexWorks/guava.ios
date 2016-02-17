@@ -730,7 +730,7 @@
 		B5FBEB6F1C6AD4EC006DCC12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2023;
@@ -746,7 +746,7 @@
 		B5FBEB701C6AD4EC006DCC12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 2023;
