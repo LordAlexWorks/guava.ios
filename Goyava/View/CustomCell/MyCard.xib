@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,8 +14,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
                         <rect key="frame" x="0.0" y="2" width="120" height="73"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="uu3-qy-gj2">
+                        <rect key="frame" x="40" y="15" width="40" height="47"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 global points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-V0-Hs9">
                         <rect key="frame" x="1" y="82" width="120" height="17"/>
@@ -34,22 +37,26 @@
             </view>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="uu3-qy-gj2" secondAttribute="trailing" constant="40" id="0Hy-mp-suC"/>
                 <constraint firstAttribute="bottom" secondItem="LI4-Iv-jHH" secondAttribute="bottom" constant="8" id="1S0-ig-WpB"/>
                 <constraint firstAttribute="trailing" secondItem="vdc-V0-Hs9" secondAttribute="trailing" constant="-1" id="Ax2-8E-aY5"/>
                 <constraint firstAttribute="trailing" secondItem="LI4-Iv-jHH" secondAttribute="trailing" id="Ayc-H0-wxK"/>
                 <constraint firstItem="vdc-V0-Hs9" firstAttribute="leading" secondItem="Iz4-sN-aGV" secondAttribute="leading" constant="1" id="DBc-fT-D3K"/>
                 <constraint firstItem="LI4-Iv-jHH" firstAttribute="leading" secondItem="Iz4-sN-aGV" secondAttribute="leading" id="EXx-Zg-ZGy"/>
+                <constraint firstItem="vdc-V0-Hs9" firstAttribute="top" secondItem="uu3-qy-gj2" secondAttribute="bottom" constant="20" id="Lek-td-5VE"/>
                 <constraint firstItem="LI4-Iv-jHH" firstAttribute="top" secondItem="vdc-V0-Hs9" secondAttribute="bottom" id="Mpu-rC-rp6"/>
                 <constraint firstItem="vdc-V0-Hs9" firstAttribute="top" secondItem="xuG-5k-eS7" secondAttribute="bottom" constant="7" id="U99-7L-0IE"/>
                 <constraint firstItem="xuG-5k-eS7" firstAttribute="leading" secondItem="Iz4-sN-aGV" secondAttribute="leading" id="V4g-YS-Veu"/>
                 <constraint firstItem="LI4-Iv-jHH" firstAttribute="top" secondItem="vdc-V0-Hs9" secondAttribute="bottom" id="aep-ci-pfr"/>
                 <constraint firstAttribute="trailing" secondItem="xuG-5k-eS7" secondAttribute="trailing" id="eht-01-GG0"/>
+                <constraint firstItem="uu3-qy-gj2" firstAttribute="top" secondItem="Iz4-sN-aGV" secondAttribute="top" constant="15" id="i4r-6T-8eH"/>
                 <constraint firstItem="xuG-5k-eS7" firstAttribute="top" secondItem="Iz4-sN-aGV" secondAttribute="top" constant="2" id="ieG-Ij-5rY"/>
+                <constraint firstItem="uu3-qy-gj2" firstAttribute="leading" secondItem="Iz4-sN-aGV" secondAttribute="leading" constant="40" id="j2Z-by-YG1"/>
                 <constraint firstItem="vdc-V0-Hs9" firstAttribute="top" secondItem="xuG-5k-eS7" secondAttribute="bottom" constant="7" id="wV0-KN-cnI"/>
             </constraints>
             <connections>
                 <outlet property="globalPointLabel" destination="vdc-V0-Hs9" id="hNb-bV-Bfn"/>
-                <outlet property="iconImageView" destination="xuG-5k-eS7" id="i2y-xR-LWW"/>
+                <outlet property="iconImageView" destination="uu3-qy-gj2" id="cmf-PM-e1S"/>
                 <outlet property="weeklyPointLabel" destination="LI4-Iv-jHH" id="wVm-2j-pYu"/>
             </connections>
             <point key="canvasLocation" x="-247" y="112"/>
@@ -57,5 +64,6 @@
     </objects>
     <resources>
         <image name="ellipse03" width="88" height="89"/>
+        <image name="logo2" width="154" height="129"/>
     </resources>
 </document>

@@ -9,21 +9,14 @@
 import UIKit
 
 class CircleView: UIView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = UIColor.clearColor()
-    }
     
-    required init(coder aDecoder: NSCoder) {
-        fatalError("Fatal Error!")
-    }
-    
-    
-    override func drawRect(rect: CGRect) {
-        let context = UIGraphicsGetCurrentContext();
-        CGContextSetLineWidth(context, 5.0);
-        UIColor.greenColor().set()
-        CGContextAddArc(context, (frame.size.width)/2, frame.size.height/2, (frame.size.width - 10)/2, 0.0, CGFloat(M_PI * 1), 1)
-        CGContextStrokePath(context);
+    static func drawCircleOn(view : UIView){
+        let circlePath = UIBezierPath(arcCenter: CGPointMake(view.center.x+18, view.center.y), radius: CGFloat(view.frame.width/2-5), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = circlePath.CGPath
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.strokeColor = UIColor.greenColor().CGColor
+        shapeLayer.lineWidth = 5.0
+        view.layer.addSublayer(shapeLayer)
     }
 }
