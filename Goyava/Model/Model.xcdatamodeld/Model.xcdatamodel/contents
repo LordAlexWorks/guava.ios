@@ -9,6 +9,7 @@
         <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="qrid" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="QRCode" inverseName="merchant" inverseEntity="QRCode" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scores" inverseName="merchants" inverseEntity="Scores" syncable="YES"/>
     </entity>
     <entity name="QRCode" syncable="YES">
         <attribute name="created_at" optional="YES" attributeType="Date" syncable="YES"/>
@@ -25,16 +26,19 @@
         <attribute name="merchant_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="point" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="user_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="merchants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Merchants" inverseName="scores" inverseEntity="Merchants" syncable="YES"/>
+        <relationship name="users" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="scores" inverseEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="scannedqrcodes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="QRCode" inverseName="user" inverseEntity="QRCode" syncable="YES"/>
+        <relationship name="scores" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scores" inverseName="users" inverseEntity="Scores" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Merchants" positionX="-317" positionY="-135" width="128" height="165"/>
+        <element name="Merchants" positionX="-317" positionY="-135" width="128" height="178"/>
         <element name="QRCode" positionX="-299" positionY="-333" width="128" height="150"/>
-        <element name="User" positionX="-578" positionY="-333" width="128" height="88"/>
-        <element name="Scores" positionX="-567" positionY="-180" width="128" height="120"/>
+        <element name="Scores" positionX="-567" positionY="-180" width="128" height="148"/>
+        <element name="User" positionX="-578" positionY="-333" width="128" height="103"/>
     </elements>
 </model>
