@@ -9,6 +9,8 @@
 import UIKit
 
 class LoginVC: UIViewController,UITextFieldDelegate {
+    @IBOutlet weak var emailTextField : UITextField!
+    @IBOutlet weak var passwordTextField : UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,8 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         addBackgroundTapGesture()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
     //MARK: Button Action
     @IBAction func signUpButtonTapped(sender: UIButton) {
