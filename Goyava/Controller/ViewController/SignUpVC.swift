@@ -11,6 +11,9 @@ import UIKit
 typealias SignupCompletionHandler = () -> Void
 
 class SignUpVC: UIViewController,UITextFieldDelegate {
+    @IBOutlet weak var emailTextField : UITextField!
+    @IBOutlet weak var passwordTextField : UITextField!
+    
     var signUpHandler : SignupCompletionHandler?
     
     override func viewDidLoad() {
@@ -25,6 +28,8 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
         addBackgroundTapGesture()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
     //MARK: Button Actions
     @IBAction func loginButtonTapped(sender: UIButton) {
