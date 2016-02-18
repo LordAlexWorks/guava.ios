@@ -98,7 +98,11 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+        if qrscannerVc.isAuthorizedForCamera() {
+            self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+            }
+        }else {
+            print("Enable Your Camera . Go To Settings -> Privacy -> Camera.")
         }
     }
 }

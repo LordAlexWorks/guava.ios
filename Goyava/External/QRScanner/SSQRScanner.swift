@@ -29,6 +29,7 @@ class SSQRScanner: NSObject,AVCaptureMetadataOutputObjectsDelegate {
         }
         if (error != nil) {
             self.qrScannerHandler!(obj: nil, error: error)
+            return;
         }
         captureSession = AVCaptureSession()
         captureSession?.addInput(input as! AVCaptureInput)

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class QRScannerVC: UIViewController {
     var qrScanner : SSQRScanner?
@@ -34,7 +35,8 @@ class QRScannerVC: UIViewController {
             if((error) != nil) {
                 print(error)
                 if self != nil {
-                    self!.dismissViewControllerAnimated(true, completion: { () -> Void in
+                    self!.dismissViewControllerAnimated(false, completion: { () -> Void in
+                        self!.goToMain()
                     })
                 }
             }
@@ -49,5 +51,15 @@ class QRScannerVC: UIViewController {
     @IBAction func backButtonTapped(sender : UIButton) {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
         })
+    }
+    func isAuthorizedForCamera()->Bool {
+        if AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) ==  AVAuthorizationStatus.Authorized {
+            return true
+        }else{
+            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: { (granted :Bool) -> Void in
+                return granted
+            });
+        }
+        return false
     }
 }

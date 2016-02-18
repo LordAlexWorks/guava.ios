@@ -46,7 +46,11 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     //MARK: Login navigation
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+        if qrscannerVc.isAuthorizedForCamera() {
+            self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+            }
+        }else {
+            self.goToMain()
         }
     }
     func goToMain(){
