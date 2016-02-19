@@ -30,7 +30,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
-        pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-108);
+        pageViewController!.view.frame = CGRectMake(0, 71, view.frame.size.width, view.frame.size.height-109);
         
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
