@@ -1105,7 +1105,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="URb-iF-sEo" firstAttribute="leading" secondItem="TbQ-mQ-Uhd" secondAttribute="trailing" constant="32" id="2Ru-pd-RMh"/>
                                     <constraint firstAttribute="height" constant="44" id="Ixc-7u-t0y"/>
@@ -1140,7 +1140,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="w5Z-bu-ieP" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="1aZ-VS-GRr"/>
                             <constraint firstItem="92l-kr-mL9" firstAttribute="leading" secondItem="L3T-In-gOt" secondAttribute="leading" id="4Qf-Me-d4i"/>
@@ -1171,34 +1171,8 @@
                     <view key="view" contentMode="scaleToFill" id="RTu-Rr-Gtm">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LhH-hY-m28">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="jxG-yc-wBM">
-                                    <size key="itemSize" width="120" height="110"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                                <connections>
-                                    <outlet property="dataSource" destination="8n5-fw-dyJ" id="MX2-gN-Ik6"/>
-                                    <outlet property="delegate" destination="8n5-fw-dyJ" id="jDU-MM-0zE"/>
-                                </connections>
-                            </collectionView>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LhH-hY-m28" secondAttribute="trailing" id="0RD-4n-Wzp"/>
-                            <constraint firstItem="oVG-m1-Plt" firstAttribute="top" secondItem="LhH-hY-m28" secondAttribute="bottom" id="2oj-hr-1IT"/>
-                            <constraint firstItem="LhH-hY-m28" firstAttribute="top" secondItem="RTu-Rr-Gtm" secondAttribute="top" id="ZVW-Wc-C5y"/>
-                            <constraint firstItem="LhH-hY-m28" firstAttribute="leading" secondItem="RTu-Rr-Gtm" secondAttribute="leading" id="cWc-3y-QQO"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="collectionView" destination="LhH-hY-m28" id="K4N-l6-tWL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfN-yv-6fl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

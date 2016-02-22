@@ -55,8 +55,8 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         let startingViewController: MyCardContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
-        pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-108);
-        
+        pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-100);
+        pageViewController?.view.backgroundColor = UIColor.clearColor()
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
