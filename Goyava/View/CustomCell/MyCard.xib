@@ -19,13 +19,13 @@
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" text="2 points this week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI4-Iv-jHH">
                         <rect key="frame" x="0.0" y="87" width="100" height="13"/>
-                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="9"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="8"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 global points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdc-V0-Hs9">
                         <rect key="frame" x="0.0" y="75" width="100" height="17"/>
-                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="12"/>
+                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
