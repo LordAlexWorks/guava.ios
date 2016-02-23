@@ -10,12 +10,12 @@ import UIKit
 
 class CircleView: UIView {
     
-    static func drawCircleOn(view : UIView){
-        let circlePath = UIBezierPath(arcCenter: CGPointMake(view.center.x+18, view.center.y), radius: CGFloat(view.frame.width/2-5), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+    static func drawCircleOn(view : UIView, color: UIColor, progress: Double){
+        let circlePath = UIBezierPath(arcCenter: CGPointMake(view.center.x+5, view.center.y+5), radius: CGFloat(view.frame.width/2-8), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * progress), clockwise: true)
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.CGPath
         shapeLayer.fillColor = UIColor.clearColor().CGColor
-        shapeLayer.strokeColor = UIColor.greenColor().CGColor
+        shapeLayer.strokeColor = color.CGColor
         shapeLayer.lineWidth = 5.0
         view.layer.addSublayer(shapeLayer)
     }

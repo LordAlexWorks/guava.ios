@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="xuG-5k-eS7">
                         <rect key="frame" x="0.0" y="2" width="100" height="77"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" fixedFrame="YES" text="2 points this week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LI4-Iv-jHH">
@@ -29,12 +29,17 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="psa-SE-e7r">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="79"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <size key="customSize" width="115" height="105"/>
             <connections>
+                <outlet property="backgroundCicularview" destination="psa-SE-e7r" id="fxs-2w-RMg"/>
                 <outlet property="globalPointLabel" destination="vdc-V0-Hs9" id="hNb-bV-Bfn"/>
                 <outlet property="iconImageView" destination="xuG-5k-eS7" id="EnC-Ry-f5r"/>
                 <outlet property="weeklyPointLabel" destination="LI4-Iv-jHH" id="wVm-2j-pYu"/>
@@ -43,6 +48,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="ellipse03" width="88" height="89"/>
+        <image name="logo2" width="154" height="129"/>
     </resources>
 </document>
