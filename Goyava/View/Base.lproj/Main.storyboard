@@ -1001,7 +1001,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-YJ-hZI">
-                                        <rect key="frame" x="269" y="0.0" width="70" height="51"/>
+                                        <rect key="frame" x="269" y="4" width="70" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="70" id="WYq-pg-XpO"/>
                                         </constraints>
@@ -1012,7 +1012,7 @@
                                     <constraint firstItem="Yvn-Ug-XJR" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="17" id="8zF-8g-wCl"/>
                                     <constraint firstAttribute="bottom" secondItem="EFS-YJ-hZI" secondAttribute="bottom" id="BNV-q7-UdC"/>
                                     <constraint firstAttribute="bottom" secondItem="Yvn-Ug-XJR" secondAttribute="bottom" constant="19" id="LkR-NM-N9i"/>
-                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" id="Mss-fT-nvv"/>
+                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="4" id="Mss-fT-nvv"/>
                                     <constraint firstAttribute="trailing" secondItem="Yvn-Ug-XJR" secondAttribute="trailing" constant="22" id="bXh-Lp-cAX"/>
                                     <constraint firstAttribute="height" constant="51" id="eBN-pw-MFo"/>
                                     <constraint firstItem="EFS-YJ-hZI" firstAttribute="centerX" secondItem="uME-Xg-vd3" secondAttribute="centerX" constant="4" id="lfO-MT-ASZ"/>
