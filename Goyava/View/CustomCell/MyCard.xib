@@ -36,7 +36,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
             <size key="customSize" width="115" height="105"/>
             <connections>
                 <outlet property="backgroundCicularview" destination="psa-SE-e7r" id="fxs-2w-RMg"/>
