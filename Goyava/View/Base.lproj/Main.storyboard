@@ -979,22 +979,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-PQ-OLd">
-                                <rect key="frame" x="0.0" y="564" width="600" height="36"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NII-8k-RuZ">
-                                        <rect key="frame" x="15" y="12" width="13" height="13"/>
-                                        <state key="normal" backgroundImage="Logout"/>
-                                        <connections>
-                                            <action selector="logoutButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="wYl-FW-yzJ"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="0Hl-KB-41k"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uME-Xg-vd3">
                                 <rect key="frame" x="0.0" y="20" width="600" height="51"/>
                                 <subviews>
@@ -1035,8 +1019,24 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-IW-kf1">
-                                <rect key="frame" x="0.0" y="72" width="600" height="492"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="498"/>
                                 <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-PQ-OLd">
+                                <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NII-8k-RuZ">
+                                        <rect key="frame" x="15" y="0.0" width="13" height="13"/>
+                                        <state key="normal" backgroundImage="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="wYl-FW-yzJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0Hl-KB-41k"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
