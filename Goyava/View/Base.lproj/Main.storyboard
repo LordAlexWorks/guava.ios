@@ -494,14 +494,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAL-80-ncv">
-                                                <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="470" height="335"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtG-7L-BsU">
-                                                <rect key="frame" x="0.0" y="60" width="470" height="286"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtG-7L-BsU">
+                                                <rect key="frame" x="0.0" y="58" width="470" height="288"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -513,11 +513,11 @@
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="SuO-qF-Eok"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="Wzl-Ja-tJU"/>
                                             <constraint firstItem="DtG-7L-BsU" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="YBt-L8-cKd"/>
-                                            <constraint firstAttribute="bottom" secondItem="EAL-80-ncv" secondAttribute="bottom" id="YJE-uj-ooB"/>
+                                            <constraint firstAttribute="bottom" secondItem="EAL-80-ncv" secondAttribute="bottom" constant="11" id="YJE-uj-ooB"/>
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="a2u-Dn-I6F"/>
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="dee-af-twB"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="jTo-BX-2jd"/>
-                                            <constraint firstItem="DtG-7L-BsU" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" constant="60" id="oGj-Oa-LBY"/>
+                                            <constraint firstItem="DtG-7L-BsU" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" constant="58" id="oGj-Oa-LBY"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="r8M-0o-tgU"/>
                                             <constraint firstAttribute="trailing" secondItem="DtG-7L-BsU" secondAttribute="trailing" id="s6z-X9-MDh"/>
                                             <constraint firstItem="EAL-80-ncv" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="tJt-4Z-fYB"/>
