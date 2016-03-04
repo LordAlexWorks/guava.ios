@@ -570,7 +570,11 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-SI-M0M">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-v2-lhX">
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-ze-S7s">
+                                                                <rect key="frame" x="-3" y="-4" width="60" height="60"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-v2-lhX">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRz-8e-aTD">
@@ -961,7 +965,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="7bs-n4-jJr" id="ldD-9J-UMN"/>
-                        <outlet property="mondayProgressView" destination="KNY-v2-lhX" id="aeV-na-NBQ"/>
+                        <outlet property="mondayProgressView" destination="6gG-ze-S7s" id="xVu-Pr-iHP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>

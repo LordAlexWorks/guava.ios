@@ -12,7 +12,7 @@ import UIKit
 class MainContentVC: UIViewController {
     var pageIndex : Int = 0
     @IBOutlet weak var bottomConstraint : NSLayoutConstraint!
-    @IBOutlet weak var mondayProgressView : UIImageView!
+    @IBOutlet weak var mondayProgressView : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +24,8 @@ class MainContentVC: UIViewController {
     }
     
     func showProgress(){
-        CircleView.drawCircleOn(mondayProgressView, color: UIColor.grayColor(), progress:2,lineWidth: 2.0)
-        CircleView.drawCircleOn(mondayProgressView, color: UIColor.redColor(), progress:1,lineWidth : 2.0)
+        CircleView.drawCircleOn(mondayProgressView, color: UIColor.grayColor(), progress:2,lineWidth: 1.5,fillColor: UIColor.clearColor())
+        CircleView.drawCircleOn(mondayProgressView, color: UIColor.redColor(), progress:1,lineWidth : 1.5,fillColor: UIColor.clearColor())
     }
     
 }
