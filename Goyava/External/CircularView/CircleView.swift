@@ -1,0 +1,22 @@
+//
+//  CircleView.swift
+//  SSCircle
+//
+//  Created by Susim Samanta on 15/02/16.
+//  Copyright © 2016 Susim Samanta. All rights reserved.
+//
+
+import UIKit
+
+class CircleView: UIView {
+    
+    static func drawCircleOn(view : UIView, color: UIColor, progress: Double){
+        let circlePath = UIBezierPath(arcCenter: CGPointMake(view.center.x+5, view.center.y+5), radius: CGFloat(view.frame.width/2-8), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * progress), clockwise: true)
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = circlePath.CGPath
+        shapeLayer.fillColor = UIColor.clearColor().CGColor
+        shapeLayer.strokeColor = color.CGColor
+        shapeLayer.lineWidth = 5.0
+        view.layer.addSublayer(shapeLayer)
+    }
+}

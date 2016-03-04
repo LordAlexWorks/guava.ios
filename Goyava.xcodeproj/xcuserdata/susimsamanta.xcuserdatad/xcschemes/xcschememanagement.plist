@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Goyava-Beta.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Goyava.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B53267CB1C60632B008297CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B599F7281C682BFF0013E89E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5D112DB1C6D7BEE00F66AB6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B5FBEB521C6AD4EC006DCC12</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -7,6 +7,7 @@ default_platform :ios
 
 platform :ios do
   before_all do
+
   end
 
   desc "Runs all the tests"
@@ -26,26 +27,25 @@ platform :ios do
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
+
     #prepare(remote_branch: "development")
-
+    gym(scheme: "Guava-Beta") # Build your app - more options available
+    clear_derived_data
     # Increment build number to current date
-    build_number = Time.new.strftime("%Y.%m.%d")
-    increment_build_number build_number: build_number
-
-    # Generate release notes from CHANGELOG
-    #release_notes = latest_version.split("\n")[1..-1].join("\n")
+    increment_build_number
 
     #match(type: "appstore")
-    gym(scheme: "Guava-Beta") # Build your app - more options available
     pilot
 
      # Make sure our directory is clean, except for changes Fastlane has made
     clean_build_artifacts
+
     # push to GitHub
     git_commit(path: ".",
               message: "Deploying build #{build_number}.")
 
     push_to_git_remote
+
    end
 
     desc "Submit a new weekly build to Apple TestFlight"
