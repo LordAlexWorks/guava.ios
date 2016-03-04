@@ -961,6 +961,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="7bs-n4-jJr" id="ldD-9J-UMN"/>
+                        <outlet property="mondayProgressView" destination="KNY-v2-lhX" id="aeV-na-NBQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>
