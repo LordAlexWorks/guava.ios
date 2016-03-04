@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 
+typealias CameraAccessHandler = (isGranted : Bool) -> Void
+
 class QRScannerVC: UIViewController {
     var qrScanner : SSQRScanner?
     @IBOutlet weak var scannerView: UIView!
@@ -52,14 +54,13 @@ class QRScannerVC: UIViewController {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
         })
     }
-    func isAuthorizedForCamera()->Bool {
+    func isAuthorizedForCamera(handler : CameraAccessHandler) {
         if AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) ==  AVAuthorizationStatus.Authorized {
-            return true
+            handler(isGranted: true)
         }else{
             AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: { (granted :Bool) -> Void in
-                return granted
+                handler(isGranted: granted)
             });
         }
-        return false
     }
 }

@@ -98,11 +98,19 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     }
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        if qrscannerVc.isAuthorizedForCamera() {
-            self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+        qrscannerVc.isAuthorizedForCamera { (isGranted) -> Void in
+            if isGranted {
+                self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+                }
             }
-        }else {
-            print("Enable Your Camera . Go To Settings -> Privacy -> Camera.")
+            else{
+                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Cancel, handler:{ action in
+                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
     }
 }
