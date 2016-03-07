@@ -8,6 +8,7 @@
 
 import UIKit
 
-class AppConstants: NSObject {
-
+enum URL : String {
+    case baseURL = "http://server"
+    case loginEndPoint = "/api/login/"
 }
