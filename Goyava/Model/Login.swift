@@ -9,5 +9,6 @@
 import UIKit
 
 class Login: NSObject {
-
+    var username : String?
+    var password : String?
 }

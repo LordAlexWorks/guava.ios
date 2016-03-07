@@ -41,6 +41,23 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
+        //self.callLoginService()
+        self.pageOnLoginSuccess() // remove this line and uncomment self.callLoginService when login backend service will be ready
+    }
+    func callLoginService() {
+        let login = Login()
+        login.username = self.emailTextField.text!
+        login.password = self.passwordTextField.text!
+        AppServices.callLoginService(login) { (obj, error) -> Void in
+            if error != nil {
+                print(error)
+            }else {
+                //Login success
+                self.pageOnLoginSuccess()
+            }
+        }
+    }
+    func pageOnLoginSuccess(){
         #if (arch(i386) || arch(x86_64)) && os(iOS)
             goToMain()
         #else

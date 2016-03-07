@@ -490,6 +490,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akr-Pp-if1" userLabel="TopView1">
                                         <rect key="frame" x="65" y="32" width="470" height="346"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-aH-drz">
+                                                <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-tl-Z9C">
                                                 <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
                                             </imageView>
@@ -508,8 +512,11 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fh1-aH-drz" secondAttribute="trailing" id="4EG-n5-2sz"/>
                                             <constraint firstAttribute="trailing" secondItem="EAL-80-ncv" secondAttribute="trailing" id="C66-t0-elS"/>
+                                            <constraint firstAttribute="bottom" secondItem="fh1-aH-drz" secondAttribute="bottom" id="C6G-SE-peb"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="ENG-4o-ZRb"/>
+                                            <constraint firstItem="fh1-aH-drz" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="M0Z-vW-TMk"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="SuO-qF-Eok"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="Wzl-Ja-tJU"/>
                                             <constraint firstItem="DtG-7L-BsU" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="YBt-L8-cKd"/>
@@ -518,6 +525,7 @@
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="dee-af-twB"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="jTo-BX-2jd"/>
                                             <constraint firstItem="DtG-7L-BsU" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" constant="58" id="oGj-Oa-LBY"/>
+                                            <constraint firstItem="fh1-aH-drz" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="r0d-kp-TXN"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="r8M-0o-tgU"/>
                                             <constraint firstAttribute="trailing" secondItem="DtG-7L-BsU" secondAttribute="trailing" id="s6z-X9-MDh"/>
                                             <constraint firstItem="EAL-80-ncv" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="tJt-4Z-fYB"/>
@@ -570,6 +578,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Rh-SI-M0M">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gG-ze-S7s">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-v2-lhX">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -597,6 +609,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-iz-5va">
                                                         <rect key="frame" x="60" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rms-fV-5GN">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="zRV-Ec-Hcy">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -624,6 +640,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="woF-hj-DFG">
                                                         <rect key="frame" x="120" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAR-pK-wZv">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-4V-QqE">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -651,6 +671,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wg0-CF-blO">
                                                         <rect key="frame" x="180" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAx-1x-bst">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="VXI-Rl-7UI">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -678,6 +702,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ikh-Ou-RcN">
                                                         <rect key="frame" x="240" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqR-xJ-JHv">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-XM-EgC">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -830,6 +858,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCY-uZ-PWn">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohl-gq-8sC">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="Ytp-5W-rjG">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -857,6 +889,10 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnI-iw-9ED">
                                                         <rect key="frame" x="60" y="0.0" width="60" height="80"/>
                                                         <subviews>
+                                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CWJ-4n-5Ml">
+                                                                <rect key="frame" x="-2" y="-4" width="58" height="58"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="OtT-FY-ZXL">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
@@ -961,6 +997,14 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="7bs-n4-jJr" id="ldD-9J-UMN"/>
+                        <outlet property="fridayProgressView" destination="GqR-xJ-JHv" id="4fB-wa-lIC"/>
+                        <outlet property="mondayProgressView" destination="6gG-ze-S7s" id="xVu-Pr-iHP"/>
+                        <outlet property="saturdayProgressView" destination="ohl-gq-8sC" id="Z2F-mQ-sPm"/>
+                        <outlet property="sundayProgressView" destination="CWJ-4n-5Ml" id="cvg-LP-R3x"/>
+                        <outlet property="thrursdayProgressView" destination="XAx-1x-bst" id="4ps-uq-omx"/>
+                        <outlet property="tuesdayProgressView" destination="rms-fV-5GN" id="tWa-m8-EUQ"/>
+                        <outlet property="wednesdayProgressView" destination="qAR-pK-wZv" id="BZC-T1-Ntn"/>
+                        <outlet property="weeklyProgressView" destination="fh1-aH-drz" id="EPn-tp-lMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>
