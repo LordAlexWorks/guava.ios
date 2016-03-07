@@ -490,6 +490,10 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akr-Pp-if1" userLabel="TopView1">
                                         <rect key="frame" x="65" y="32" width="470" height="346"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fh1-aH-drz">
+                                                <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-tl-Z9C">
                                                 <rect key="frame" x="0.0" y="0.0" width="470" height="346"/>
                                             </imageView>
@@ -508,8 +512,11 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fh1-aH-drz" secondAttribute="trailing" id="4EG-n5-2sz"/>
                                             <constraint firstAttribute="trailing" secondItem="EAL-80-ncv" secondAttribute="trailing" id="C66-t0-elS"/>
+                                            <constraint firstAttribute="bottom" secondItem="fh1-aH-drz" secondAttribute="bottom" id="C6G-SE-peb"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="ENG-4o-ZRb"/>
+                                            <constraint firstItem="fh1-aH-drz" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="M0Z-vW-TMk"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="SuO-qF-Eok"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="Wzl-Ja-tJU"/>
                                             <constraint firstItem="DtG-7L-BsU" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="YBt-L8-cKd"/>
@@ -518,6 +525,7 @@
                                             <constraint firstAttribute="bottom" secondItem="dHZ-tl-Z9C" secondAttribute="bottom" id="dee-af-twB"/>
                                             <constraint firstAttribute="trailing" secondItem="dHZ-tl-Z9C" secondAttribute="trailing" id="jTo-BX-2jd"/>
                                             <constraint firstItem="DtG-7L-BsU" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" constant="58" id="oGj-Oa-LBY"/>
+                                            <constraint firstItem="fh1-aH-drz" firstAttribute="leading" secondItem="akr-Pp-if1" secondAttribute="leading" id="r0d-kp-TXN"/>
                                             <constraint firstItem="dHZ-tl-Z9C" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="r8M-0o-tgU"/>
                                             <constraint firstAttribute="trailing" secondItem="DtG-7L-BsU" secondAttribute="trailing" id="s6z-X9-MDh"/>
                                             <constraint firstItem="EAL-80-ncv" firstAttribute="top" secondItem="akr-Pp-if1" secondAttribute="top" id="tJt-4Z-fYB"/>
@@ -996,6 +1004,7 @@
                         <outlet property="thrursdayProgressView" destination="XAx-1x-bst" id="4ps-uq-omx"/>
                         <outlet property="tuesdayProgressView" destination="rms-fV-5GN" id="tWa-m8-EUQ"/>
                         <outlet property="wednesdayProgressView" destination="qAR-pK-wZv" id="BZC-T1-Ntn"/>
+                        <outlet property="weeklyProgressView" destination="fh1-aH-drz" id="EPn-tp-lMc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtR-3d-klo" userLabel="First Responder" sceneMemberID="firstResponder"/>

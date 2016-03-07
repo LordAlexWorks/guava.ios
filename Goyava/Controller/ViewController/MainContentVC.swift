@@ -19,9 +19,19 @@ class MainContentVC: UIViewController {
     @IBOutlet weak var fridayProgressView : UIView!
     @IBOutlet weak var saturdayProgressView : UIView!
     @IBOutlet weak var sundayProgressView : UIView!
+    @IBOutlet weak var weeklyProgressView : UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.progressControlSetups()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    //MARK: Progress Controls 
+    func progressControlSetups() {
         self.showProgress(self.mondayProgressView)
         self.showProgress(self.tuesdayProgressView)
         self.showProgress(self.wednesdayProgressView)
@@ -29,12 +39,11 @@ class MainContentVC: UIViewController {
         self.showProgress(self.fridayProgressView)
         self.showProgress(self.saturdayProgressView)
         self.showProgress(self.sundayProgressView)
+        self.weeklyProgressView.frame = CGRectMake(1.5, -9, 175, 175);
+        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor.grayColor(), progress:2,lineWidth: 10.0,fillColor: UIColor.clearColor())
+        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor(hexString:"29ABA9"), progress:1,lineWidth : 10.0,fillColor: UIColor.clearColor())
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
     func showProgress(progressView : UIView){
         CircleView.drawCircleOn(progressView, color: UIColor.grayColor(), progress:2,lineWidth: 1.5,fillColor: UIColor.clearColor())
         CircleView.drawCircleOn(progressView, color: UIColor(hexString:"29ABA9"), progress:1,lineWidth : 1.5,fillColor: UIColor.clearColor())
