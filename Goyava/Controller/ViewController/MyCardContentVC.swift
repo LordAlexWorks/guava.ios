@@ -33,8 +33,19 @@ class MyCardContentVC: UIViewController {
             for col in 0...totalCols-1 {
                 let myCardView = MyCard.instanceFromNib() as! MyCard
                 myCardView.frame = CGRect(x: Double(col)*width, y: Double(row)*height, width: width, height: height)
+                self.addTapGestureOnView(myCardView)
                 self.view.addSubview(myCardView)
             }
+        }
+    }
+    
+    func addTapGestureOnView(view : UIView) {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        view.userInteractionEnabled =  true
+        view.addGestureRecognizer(tap)
+    }
+    func handleTap(sender: UITapGestureRecognizer? = nil) {
+        self.dismissViewControllerAnimated(true) { () -> Void in
         }
     }
 }
