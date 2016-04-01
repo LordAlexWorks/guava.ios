@@ -59,7 +59,6 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                 }else {
                     print("Login error")
                 }
-                
             }
         }
     }
