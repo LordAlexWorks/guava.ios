@@ -50,7 +50,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
         login.password = self.passwordTextField.text!
         AuthenticationController.doSignup(login) { (obj, error) in
             if error != nil {
-                print(error)
+                UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
             }else {
                 let login = obj as! Login
                 if (login.isSuccess == true) {

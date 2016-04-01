@@ -49,7 +49,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         login.password = self.passwordTextField.text!
         AuthenticationController.doLogin(login) { (obj, error) in
             if error != nil {
-                print(error)
+                UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
             }else {
                 let login = obj as! Login
                 if (login.isSuccess == true) {
@@ -57,7 +57,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                         self.pageOnLoginSuccess()
                     })
                 }else {
-                    print("Login error")
+                    UtilityManager.showAlertMessage("Login Error", onViewcontrolller: self)
                 }
             }
         }
