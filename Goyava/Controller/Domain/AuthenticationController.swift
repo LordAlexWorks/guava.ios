@@ -17,7 +17,14 @@ class AuthenticationController: NSObject {
                 handler(obj: nil,error: error)
             }else {
                 // do business logic with login json response
-                handler(obj: obj, error: nil)
+                let json = obj as! NSDictionary
+                let error = json["errors"]
+                if error != nil {
+                   login.isSuccess = false
+                }else {
+                    login.isSuccess = true
+                }
+                handler(obj: login, error: nil)
             }
         }
     }

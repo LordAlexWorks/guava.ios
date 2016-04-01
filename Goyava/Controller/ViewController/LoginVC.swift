@@ -45,13 +45,21 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     func callLoginController() {
         let login = Login()
-        login.username = self.emailTextField.text!
+        login.email = self.emailTextField.text!
         login.password = self.passwordTextField.text!
         AuthenticationController.doLogin(login) { (obj, error) in
             if error != nil {
                 print(error)
             }else {
-                self.pageOnLoginSuccess()
+                let login = obj as! Login
+                if (login.isSuccess == true) {
+                    dispatch_async(dispatch_get_main_queue(),{
+                        self.pageOnLoginSuccess()
+                    })
+                }else {
+                    print("Login error")
+                }
+                
             }
         }
     }
