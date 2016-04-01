@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
+		1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
+		1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
+		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
+		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -89,6 +93,8 @@
 
 /* Begin PBXFileReference section */
 		1C26969E1C7215B300B140F0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +167,22 @@
 			path = CircularView;
 			sourceTree = "<group>";
 		};
+		1CA12C181CAE7A8300DFA0E3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1CA12C1C1CAE833E00DFA0E3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +213,7 @@
 				B599F6C71C65ABC30013E89E /* External */,
 				B53267E41C606C78008297CF /* Main */,
 				B53267E61C606C78008297CF /* Model */,
+				1CA12C1C1CAE833E00DFA0E3 /* Utilities */,
 				B53267E71C606C78008297CF /* View */,
 			);
 			path = Goyava;
@@ -208,6 +231,7 @@
 		B53267E31C606C78008297CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1CA12C181CAE7A8300DFA0E3 /* Domain */,
 				B5FADFFC1C8D1A7B00A5C7A4 /* Services */,
 				B53267F01C606CBE008297CF /* ViewController */,
 			);
@@ -502,6 +526,8 @@
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
+				1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
@@ -544,6 +570,8 @@
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
+				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
