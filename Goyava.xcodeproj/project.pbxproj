@@ -34,6 +34,10 @@
 		B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
 		B5DE7D701CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
 		B5DE7D711CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
+		B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
+		B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
+		B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
+		B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
 		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
@@ -118,6 +122,8 @@
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
 		B5DE7D6D1CB2038C009416A5 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		B5DE7D6F1CB20B90009416A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5DE7D721CB21177009416A5 /* ActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
+		B5DE7D751CB21187009416A5 /* CardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsController.swift; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
@@ -176,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */,
+				B5DE7D721CB21177009416A5 /* ActivitiesController.swift */,
+				B5DE7D751CB21187009416A5 /* CardsController.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -531,6 +539,7 @@
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5FADFFA1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
+				B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
@@ -544,6 +553,7 @@
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
+				B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */,
 				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,9 +581,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */,
+				B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
 				B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,
+				B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */,
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FADFFB1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
