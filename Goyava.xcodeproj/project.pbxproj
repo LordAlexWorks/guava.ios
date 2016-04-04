@@ -18,7 +18,7 @@
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
 		B53267EF1C606C78008297CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
 		B53267F21C606D2F008297CF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
-		B53267F41C606D41008297CF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		B53267F41C606D41008297CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
@@ -43,7 +43,7 @@
 		B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FADFFE1C8D1A8700A5C7A4 /* SSHTTPClient.swift */; };
 		B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
 		B5FAE0031C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
-		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
@@ -101,7 +101,7 @@
 		B53267E91C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53267EB1C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53267F11C606D2F008297CF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		B53267F31C606D41008297CF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B53267F31C606D41008297CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 		B53267E61C606C78008297CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B53267F31C606D41008297CF /* Login.swift */,
+				B53267F31C606D41008297CF /* Session.swift */,
 				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -518,7 +518,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
-				B53267F41C606D41008297CF /* Login.swift in Sources */,
+				B53267F41C606D41008297CF /* Session.swift in Sources */,
 				B5FADFFF1C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
@@ -561,7 +561,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */,
+				B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */,
 				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
 				B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,

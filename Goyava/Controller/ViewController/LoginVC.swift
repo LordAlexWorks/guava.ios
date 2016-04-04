@@ -44,15 +44,15 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         self.callLoginController()
     }
     func callLoginController() {
-        let login = Login()
-        login.email = self.emailTextField.text!
-        login.password = self.passwordTextField.text!
-        AuthenticationController.doLogin(login) { (obj, error) in
+        let session = Session()
+        session.email = self.emailTextField.text!
+        session.password = self.passwordTextField.text!
+        AuthenticationController.doLogin(session) { (obj, error) in
             if error != nil {
                 UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
             }else {
-                let login = obj as! Login
-                if (login.isSuccess == true) {
+                let session = obj as! Session
+                if (session.isSuccess == true) {
                     dispatch_async(dispatch_get_main_queue(),{
                         self.pageOnLoginSuccess()
                     })

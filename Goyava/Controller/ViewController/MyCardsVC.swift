@@ -67,7 +67,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
-        index--
+        index -= 1
         return viewControllerAtIndex(index)
     }
     
@@ -76,7 +76,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         if index == NSNotFound {
             return nil
         }
-        index++
+        index += 1
         if (index == self.dataSource.count) {
             return nil
         }

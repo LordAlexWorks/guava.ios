@@ -11,10 +11,10 @@ public typealias AppServiceHandler = (obj : AnyObject? , error : NSError?) -> Vo
 
 class AppServices: NSObject {
     //MARK: Login Service
-    class func callLoginService(login : Login,handler :AppServiceHandler) {
+    class func callLoginService(session : Session,handler :AppServiceHandler) {
         let loginURL = URL.baseURL.rawValue+URL.loginEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/json"]
-        let jsondict = ["email":login.email!,"password":login.password!]
+        let jsondict = ["email":session.email!,"password":session.password!]
         let httpBody = UtilityManager.getFormattedJSONString(jsondict)
         let httpClient = SSHTTPClient(url: loginURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
@@ -26,10 +26,10 @@ class AppServices: NSObject {
         }
     }
     //MARK: Signup Service
-    class func callSignupService(login : Login,handler :AppServiceHandler) {
+    class func callSignupService(session : Session,handler :AppServiceHandler) {
         let loginURL = URL.baseURL.rawValue+URL.loginEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/json"]
-        let jsondict = ["email":login.email!,"password":login.password!]
+        let jsondict = ["email":session.email!,"password":session.password!]
         let httpBody = UtilityManager.getFormattedJSONString(jsondict)
         let httpClient = SSHTTPClient(url: loginURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
