@@ -31,6 +31,9 @@
 		B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112EB1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */; };
+		B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
+		B5DE7D701CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
+		B5DE7D711CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
 		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
@@ -113,6 +116,8 @@
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
 		B5D112E81C6D7BEE00F66AB6 /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
+		B5DE7D6D1CB2038C009416A5 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		B5DE7D6F1CB20B90009416A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
@@ -178,6 +183,7 @@
 		1CA12C1C1CAE833E00DFA0E3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				B5DE7D6D1CB2038C009416A5 /* Loader.swift */,
 				1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */,
 			);
 			path = Utilities;
@@ -251,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				B53267F31C606D41008297CF /* Session.swift */,
+				B5DE7D6F1CB20B90009416A5 /* User.swift */,
 				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -531,11 +538,13 @@
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
+				B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
+				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +578,7 @@
 				B5FADFFB1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
+				B5DE7D711CB20B90009416A5 /* User.swift in Sources */,
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
 				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,

@@ -24,6 +24,9 @@ class AuthenticationController: NSObject {
                    session.isSuccess = false
                 }else {
                     session.isSuccess = true
+                    // create user 
+                    let clientJson = json["client"] as! NSDictionary
+                    User.sharedInstance.setModelData(clientJson)
                 }
                 handler(obj: session, error: nil)
             }
