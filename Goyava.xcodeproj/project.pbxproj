@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0884F01CB28E81006D9FB8 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
 		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
@@ -599,6 +600,7 @@
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
 				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
+				1C0884F01CB28E81006D9FB8 /* Loader.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
