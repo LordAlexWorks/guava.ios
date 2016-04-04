@@ -38,6 +38,8 @@
 		B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
 		B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
 		B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
+		B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
+		B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
 		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
@@ -124,6 +126,7 @@
 		B5DE7D6F1CB20B90009416A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B5DE7D721CB21177009416A5 /* ActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
 		B5DE7D751CB21187009416A5 /* CardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsController.swift; sourceTree = "<group>"; };
+		B5DE7D781CB21CCB009416A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
@@ -265,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				B53267F31C606D41008297CF /* Session.swift */,
+				B5DE7D781CB21CCB009416A5 /* Card.swift */,
 				B5DE7D6F1CB20B90009416A5 /* User.swift */,
 				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
 			);
@@ -539,6 +543,7 @@
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5FADFFA1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
+				B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */,
 				B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
@@ -598,6 +603,7 @@
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
+				B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
 				1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
