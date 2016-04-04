@@ -13,4 +13,9 @@ class Card: NSObject {
     var maxPoint : Int?
     var point : Int?
     
+    func setModelData(dict : NSDictionary) {
+        self.cardId = dict["id"] as? Int
+        self.maxPoint = dict["max_point"] as? Int
+        self.point = dict["point"] as? Int
+    }
 }

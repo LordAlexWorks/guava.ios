@@ -18,7 +18,15 @@ class CardsController: NSObject {
                 handler(obj: nil, error: error)
             }else {
                 //parse card object
-                handler(obj: obj, error: nil)
+                let json = obj as! NSDictionary
+                let cards = json["cards"] as! NSArray
+                var cardsList = [Card]()
+                for item in cards {
+                    let card = Card()
+                    card.setModelData(item as! NSDictionary)
+                    cardsList.append(card)
+                }
+                handler(obj: cardsList, error: nil)
             }
         }
     }
