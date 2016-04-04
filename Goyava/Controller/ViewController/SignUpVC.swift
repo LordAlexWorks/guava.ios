@@ -26,8 +26,8 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     
     func initilizeUITasks(){
         addBackgroundTapGesture()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
         emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
@@ -37,19 +37,42 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
+        self.doSignup()
+    }
+    
+    func onDismiss(handler :SignupCompletionHandler ) {
+        self.signUpHandler = handler
+    }
+    //MARK: Signup controller activity
+    func doSignup(){
+        let session = Session()
+        session.email = self.emailTextField.text!
+        session.password = self.passwordTextField.text!
+        AuthenticationController.doSignup(session) { (obj, error) in
+            if error != nil {
+                UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
+            }else {
+                let session = obj as! Session
+                if (session.isSuccess == true) {
+                    dispatch_async(dispatch_get_main_queue(),{
+                        self.navigateOnSignupSuccess()
+                    })
+                }else {
+                    print("Login error")
+                }
+            }
+        }
+    }
+    func navigateOnSignupSuccess() {
         self.dismissViewControllerAnimated(false) { () -> Void in
             if self.signUpHandler != nil {
                 self.signUpHandler!()
             }
         }
     }
-    
-    func onDismiss(handler :SignupCompletionHandler ) {
-        self.signUpHandler = handler
-    }
     //MARK: Background Tap
     func addBackgroundTapGesture(){
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
     }
     func handleTap(gestureRecognizer: UIGestureRecognizer) {

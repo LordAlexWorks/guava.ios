@@ -8,7 +8,8 @@
 
 import UIKit
 
-class Login: NSObject {
-    var username : String?
+class Session: NSObject {
+    var email : String?
     var password : String?
+    var isSuccess : Bool?
 }

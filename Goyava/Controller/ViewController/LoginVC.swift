@@ -23,8 +23,8 @@ class LoginVC: UIViewController,UITextFieldDelegate {
 
     func initilizeUITasks(){
         addBackgroundTapGesture()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillShow:"), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name:UIKeyboardWillHideNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
         emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
@@ -41,20 +41,27 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
-        //self.callLoginService()
-        self.pageOnLoginSuccess() // remove this line and uncomment self.callLoginService when login backend service will be ready
+        self.callLoginController()
     }
-    func callLoginService() {
-        let login = Login()
-        login.username = self.emailTextField.text!
-        login.password = self.passwordTextField.text!
-        AppServices.callLoginService(login) { (obj, error) -> Void in
-            if error != nil {
-                print(error)
-            }else {
-                //Login success
-                self.pageOnLoginSuccess()
-            }
+    func callLoginController() {
+        let session = Session()
+        session.email = self.emailTextField.text!
+        session.password = self.passwordTextField.text!
+        Loader.sharedInstance.showLoader()
+        AuthenticationController.doLogin(session) { (obj, error) in
+            dispatch_async(dispatch_get_main_queue(),{
+                Loader.sharedInstance.hideLoader()
+                if error != nil {
+                    UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
+                }else {
+                    let session = obj as! Session
+                    if (session.isSuccess == true) {
+                        self.pageOnLoginSuccess()
+                    }else {
+                        UtilityManager.showAlertMessage("Login Error", onViewcontrolller: self)
+                    }
+                }
+            })
         }
     }
     func pageOnLoginSuccess(){
@@ -89,7 +96,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     
     //MARK: Background Tap
     func addBackgroundTapGesture(){
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
     }
     func handleTap(gestureRecognizer: UIGestureRecognizer) {

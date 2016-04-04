@@ -40,7 +40,7 @@ class MyCardContentVC: UIViewController {
     }
     
     func addTapGestureOnView(view : UIView) {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "handleTap:")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         view.userInteractionEnabled =  true
         view.addGestureRecognizer(tap)
     }

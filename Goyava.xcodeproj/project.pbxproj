@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
+		1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
+		1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
+		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
+		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
 		B53267EF1C606C78008297CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267EA1C606C78008297CF /* Main.storyboard */; };
 		B53267F21C606D2F008297CF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
-		B53267F41C606D41008297CF /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		B53267F41C606D41008297CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
@@ -27,6 +31,15 @@
 		B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112EB1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */; };
+		B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
+		B5DE7D701CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
+		B5DE7D711CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
+		B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
+		B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
+		B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
+		B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
+		B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
+		B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
 		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
@@ -39,7 +52,7 @@
 		B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FADFFE1C8D1A8700A5C7A4 /* SSHTTPClient.swift */; };
 		B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
 		B5FAE0031C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
-		B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Login.swift */; };
+		B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
@@ -89,13 +102,15 @@
 
 /* Begin PBXFileReference section */
 		1C26969E1C7215B300B140F0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
+		1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B53267E91C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B53267EB1C606C78008297CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B53267F11C606D2F008297CF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		B53267F31C606D41008297CF /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B53267F31C606D41008297CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -107,6 +122,11 @@
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
 		B5D112E81C6D7BEE00F66AB6 /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
+		B5DE7D6D1CB2038C009416A5 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		B5DE7D6F1CB20B90009416A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5DE7D721CB21177009416A5 /* ActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
+		B5DE7D751CB21187009416A5 /* CardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsController.swift; sourceTree = "<group>"; };
+		B5DE7D781CB21CCB009416A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
@@ -161,6 +181,25 @@
 			path = CircularView;
 			sourceTree = "<group>";
 		};
+		1CA12C181CAE7A8300DFA0E3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */,
+				B5DE7D721CB21177009416A5 /* ActivitiesController.swift */,
+				B5DE7D751CB21187009416A5 /* CardsController.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1CA12C1C1CAE833E00DFA0E3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE7D6D1CB2038C009416A5 /* Loader.swift */,
+				1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +230,7 @@
 				B599F6C71C65ABC30013E89E /* External */,
 				B53267E41C606C78008297CF /* Main */,
 				B53267E61C606C78008297CF /* Model */,
+				1CA12C1C1CAE833E00DFA0E3 /* Utilities */,
 				B53267E71C606C78008297CF /* View */,
 			);
 			path = Goyava;
@@ -208,6 +248,7 @@
 		B53267E31C606C78008297CF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1CA12C181CAE7A8300DFA0E3 /* Domain */,
 				B5FADFFC1C8D1A7B00A5C7A4 /* Services */,
 				B53267F01C606CBE008297CF /* ViewController */,
 			);
@@ -226,7 +267,9 @@
 		B53267E61C606C78008297CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B53267F31C606D41008297CF /* Login.swift */,
+				B53267F31C606D41008297CF /* Session.swift */,
+				B5DE7D781CB21CCB009416A5 /* Card.swift */,
+				B5DE7D6F1CB20B90009416A5 /* User.swift */,
 				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
 			);
 			path = Model;
@@ -494,22 +537,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
-				B53267F41C606D41008297CF /* Login.swift in Sources */,
+				B53267F41C606D41008297CF /* Session.swift in Sources */,
 				B5FADFFF1C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5FADFFA1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
+				B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */,
+				B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
+				1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
+				B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
+				B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */,
+				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,19 +585,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5FBEB561C6AD4EC006DCC12 /* Login.swift in Sources */,
+				B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */,
+				B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
 				B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,
+				B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */,
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FADFFB1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
+				B5DE7D711CB20B90009416A5 /* User.swift in Sources */,
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
+				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
+				B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
 				1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,

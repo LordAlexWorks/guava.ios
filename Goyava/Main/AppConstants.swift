@@ -9,6 +9,9 @@
 import UIKit
 
 enum URL : String {
-    case baseURL = "http://server"
-    case loginEndPoint = "/api/login/"
+    case baseURL = "http://api.goyava.site"
+    case apiEndPoint = "/v1/clients/"
+    case loginEndPoint = "login.json"
+    case registrationEndPoint = "signup.json"
+    case cardsEndPoint = "/cards.json"
 }
