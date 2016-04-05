@@ -14,6 +14,7 @@ class User: NSObject {
     var email : String?
     var username : String?
     var token : String?
+    var myCards : [Card]?
     
     func setModelData(dict : NSDictionary) {
         self.id = dict["id"] as? Int

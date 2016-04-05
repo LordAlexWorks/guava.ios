@@ -8,10 +8,13 @@
 
 import UIKit
 
+
 class Card: NSObject {
     var id : Int?
     var maxPoint : Int?
     var point : Int?
+    var shop : Shop?
+    var activities : [Activity]?
     
     func setModelData(dict : NSDictionary) {
         self.id = dict["id"] as? Int
