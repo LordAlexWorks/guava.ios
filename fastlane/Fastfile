@@ -28,7 +28,7 @@ platform :ios do
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
 
-    #prepare(remote_branch: "development")
+    prepare(remote_branch: "development")
     gym(scheme: "Guava-Beta") # Build your app - more options available
     clear_derived_data
     # Increment build number to current date
