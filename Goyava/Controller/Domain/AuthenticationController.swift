@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 public typealias AuthenticationHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class AuthenticationController: NSObject {
@@ -26,7 +27,12 @@ class AuthenticationController: NSObject {
                     session.isSuccess = true
                     // create user 
                     let clientJson = json["client"] as! NSDictionary
-                    User.sharedInstance.setModelData(clientJson)
+                    let user = User()
+                    user.setModelData(clientJson)
+                    let realm = try! Realm()
+                    try! realm.write {
+                        realm.add(user)
+                    }
                 }
                 handler(obj: session, error: nil)
             }

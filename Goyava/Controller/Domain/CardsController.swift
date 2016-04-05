@@ -13,7 +13,8 @@ public typealias CardsHandler = (obj : AnyObject? , error : NSError?) -> Void
 class CardsController: NSObject {
     //get all cards from current session
     class func getAllCards(handler : CardsHandler) {
-        AppServices.getAllCardsOfUser(User.sharedInstance) { (obj, error) in
+        let user = User()
+        AppServices.getAllCardsOfUser(user) { (obj, error) in
             if error != nil {
                 handler(obj: nil, error: error)
             }else {

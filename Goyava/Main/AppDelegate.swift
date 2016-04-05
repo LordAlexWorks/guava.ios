@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let realm = try! Realm()
+        let user = realm.objects(User).first!
+        print(user)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
         self.window?.rootViewController = loginVc
         setUpGeneralSettings()
