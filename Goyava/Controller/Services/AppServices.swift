@@ -43,9 +43,9 @@ class AppServices: NSObject {
     
     //MARK: Get All Cards
     class func getAllCardsOfUser(user : User, handler: AppServiceHandler) {
-        let clientId  = String(user.id!)
+        let clientId  = String(user.id)
         let usersCardsURL = URL.baseURL.rawValue+URL.loginEndPoint.rawValue+clientId+URL.cardsEndPoint.rawValue
-        let headerFieldAndValues = ["X-User-Email" : user.email!, "X-User-Token": user.token!]
+        let headerFieldAndValues = ["X-User-Email" : user.email, "X-User-Token": user.token]
         let httpClient = SSHTTPClient(url: usersCardsURL, method: "GET", httpBody: nil, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
             if (error != nil) {

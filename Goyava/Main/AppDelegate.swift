@@ -19,11 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         let realm = try! Realm()
-        let user = realm.objects(User).first!
-        print(user)
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
-        self.window?.rootViewController = loginVc
+        let user = realm.objects(User).first
+        if user != nil {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let mainVc = mainStoryboard.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
+            self.window?.rootViewController = mainVc
+        }else {
+            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+            self.window?.rootViewController = loginVc
+        }
         setUpGeneralSettings()
         return true
     }
