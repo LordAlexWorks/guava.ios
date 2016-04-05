@@ -21,5 +21,7 @@ class User: NSObject {
         self.email = dict["email"] as? String
         self.username = dict["username"] as? String
         self.token = dict["token"] as? String
+        let cards = dict["cards"] as! NSArray
+        self.myCards = CardsController.getMyCards(cards)
     }
 }

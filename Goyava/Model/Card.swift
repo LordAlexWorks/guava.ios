@@ -20,5 +20,6 @@ class Card: NSObject {
         self.id = dict["id"] as? Int
         self.maxPoint = dict["max_point"] as? Int
         self.point = dict["point"] as? Int
+        self.shop = CardsController.getMyShop(dict["shop"] as! NSDictionary)
     }
 }
