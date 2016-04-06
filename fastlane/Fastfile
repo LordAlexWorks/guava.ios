@@ -35,7 +35,9 @@ platform :ios do
     increment_build_number
 
     #match(type: "appstore")
-    pilot
+    pilot(skip_submission: true , distribute_external: "external")
+
+
 
      # Make sure our directory is clean, except for changes Fastlane has made
     clean_build_artifacts
