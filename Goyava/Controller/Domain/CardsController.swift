@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import RealmSwift
 public typealias CardsHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class CardsController: NSObject {
@@ -25,8 +25,8 @@ class CardsController: NSObject {
             }
         }
     }
-    class func getMyCards(cards : NSArray) ->[Card] {
-        var cardsList = [Card]()
+    class func getMyCards(cards : NSArray) -> List<Card> {
+        let cardsList = List<Card>()
         for item in cards {
             let card = Card()
             card.setModelData(item as! NSDictionary)
