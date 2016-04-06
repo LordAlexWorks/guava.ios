@@ -3,7 +3,7 @@ git_url "https://github.com/LordAlexWorks/certificates"
 type "development" # The default type, can be: appstore, adhoc or development
 
 app_identifier "io.proactives.guava-beta"
-# username "user@fastlane.tools" # Your Apple Developer Portal username
+username "bolo@me.com" # Your Apple Developer Portal username
 
 # For all available options run `match --help`
 # Remove the # in the beginning of the line to enable the other options

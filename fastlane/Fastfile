@@ -24,25 +24,37 @@ platform :ios do
     deliver(app: 925311796, app_identifier: "com.acast.app.native.production", skip_metadata: true, force: true)
   end
 
+ def version_string(version_number, build_number)
+    "#{version_number} (#{build_number})"
+end
+
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
 
     prepare(remote_branch: "development")
-    gym(scheme: "Guava-Beta") # Build your app - more options available
+    version_number = get_version_number
+
+    build_number = increment_build_number
+    complete_version_number = version_string(version_number, build_number)
+    gym(scheme: "Goyava-Beta") # Build your app - more options available
+
+     # Increment build number to current date
+
     clear_derived_data
-    # Increment build number to current date
-    increment_build_number
 
     #match(type: "appstore")
     pilot(skip_submission: true , distribute_external: "external")
-
 
 
      # Make sure our directory is clean, except for changes Fastlane has made
     clean_build_artifacts
 
     # push to GitHub
+
+    version = `/usr/libexec/plistbuddy -c Print:CFBundleShortVersionString '../Project/Project-Info.plist'`.strip
+   build_number = `cd ..;agvtool what-version -terse`.strip
+
     git_commit(path: ".",
               message: "Deploying build #{build_number}.")
 
