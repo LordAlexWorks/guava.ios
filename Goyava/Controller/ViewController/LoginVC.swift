@@ -36,7 +36,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
         signupVc.onDismiss { [weak self]() -> Void in
             if self != nil {
-                self?.goToScannerView()
+                self?.goToMain()
             }
         }
     }
@@ -65,29 +65,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
     }
     func pageOnLoginSuccess(){
-        #if (arch(i386) || arch(x86_64)) && os(iOS)
-            goToMain()
-        #else
-            goToScannerView()
-        #endif
+        goToMain()
     }
     //MARK: Login navigation
-    func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        qrscannerVc.isAuthorizedForCamera { (isGranted) -> Void in
-            if isGranted {
-                    self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-                }
-            }else {
-                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Cancel, handler:{ action in
-                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
-                }))
-                self.presentViewController(alert, animated: true, completion: nil)
-            }
-        }
-    }
     func goToMain(){
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
