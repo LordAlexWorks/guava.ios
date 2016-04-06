@@ -17,7 +17,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = ["","",""]
+        self.loadDataSource()
         self.createMainPages()
     }
 
@@ -38,6 +38,15 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.didMoveToParentViewController(self)
     }
     
+    func loadDataSource() {
+        self.dataSource = ["","",""]
+        // process data with UI logic
+        let realm = try! Realm()
+        let user = realm.objects(User).first
+        if user != nil {
+            print(user!.myCards)
+        }
+    }
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! MainContentVC).pageIndex
