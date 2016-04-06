@@ -41,7 +41,21 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
-        self.callLoginController()
+        if isPassedInFormValidation() {
+            self.callLoginController()
+        }else {
+            UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
+        }
+    }
+    func isPassedInFormValidation()-> Bool {
+        if (self.emailTextField.text?.characters.count == 0) {
+            return false
+        }else if (self.passwordTextField.text?.characters.count == 0 ) {
+            return false
+        }else if (!UtilityManager.validateEmail(self.emailTextField.text!)){
+            return false
+        }
+        return true
     }
     func callLoginController() {
         let session = Session()
