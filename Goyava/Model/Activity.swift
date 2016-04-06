@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Activity: NSObject {
-    var createdAt : String?
-    var point : Int?
+class Activity: Object {
+    dynamic var createdAt = ""
+    dynamic var point = 0
 }

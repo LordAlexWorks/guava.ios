@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainVC: UIViewController,UIPageViewControllerDataSource {
 
@@ -16,7 +17,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = ["","",""]
+        self.loadDataSource()
         self.createMainPages()
     }
 
@@ -37,6 +38,15 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.didMoveToParentViewController(self)
     }
     
+    func loadDataSource() {
+        self.dataSource = ["","",""]
+        // process data with UI logic
+        let realm = try! Realm()
+        let user = realm.objects(User).first
+        if user != nil {
+            print(user!.myCards)
+        }
+    }
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! MainContentVC).pageIndex
@@ -89,6 +99,10 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
         appDelegate.window?.rootViewController = loginVc

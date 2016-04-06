@@ -7,19 +7,20 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Shop: NSObject {
-    var id : Int?
-    var name : String?
-    var website : String?
-    var maximumPoint : Int?
-    var logo : String?
+class Shop: Object {
+    dynamic var id = 0
+    dynamic var name = ""
+    dynamic var website = ""
+    dynamic var maximumPoint = 0
+    dynamic var logo  = ""
     
      func setModelData(dict : NSDictionary) {
-        self.id = dict["id"]  as? Int
-        self.name = dict["name"] as? String
-        self.website = dict["website"] as? String
-        self.maximumPoint = dict["maximum_point"] as? Int
-        self.logo = dict["logo"] as? String
+        self.id = dict["id"]  as! Int
+        self.name = dict["name"] as! String
+        self.website = dict["website"] as! String
+        self.maximumPoint = dict["maximum_point"] as! Int
+        self.logo = dict["logo"] as! String
     }
 }
