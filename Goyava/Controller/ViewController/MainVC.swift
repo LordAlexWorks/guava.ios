@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainVC: UIViewController,UIPageViewControllerDataSource {
 
@@ -89,6 +90,10 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
         appDelegate.window?.rootViewController = loginVc

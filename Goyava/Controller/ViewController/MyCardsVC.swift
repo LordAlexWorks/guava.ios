@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 typealias MyCardsCompletionHandler = () -> Void
 
@@ -38,6 +39,10 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
         self.dismissViewControllerAnimated(false) { () -> Void in
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
