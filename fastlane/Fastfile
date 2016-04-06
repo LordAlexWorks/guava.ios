@@ -44,7 +44,9 @@ end
     clear_derived_data
 
     #match(type: "appstore")
-    pilot(skip_submission: true , distribute_external: "external")
+    pilot(skip_submission: true ,
+         distribute_external: true
+         changelog: "issue fixed with the label QA")
 
 
      # Make sure our directory is clean, except for changes Fastlane has made

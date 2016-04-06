@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EC7893F8F202D6B7853560E8'
+               BlueprintIdentifier = 'DCCAE0367EF6B328594A836E'
                BlueprintName = 'Pods-Goyava-Beta'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Goyava_Beta.framework'>
