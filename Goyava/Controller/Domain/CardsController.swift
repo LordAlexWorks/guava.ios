@@ -7,28 +7,36 @@
 //
 
 import UIKit
-
+import RealmSwift
 public typealias CardsHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class CardsController: NSObject {
     //get all cards from current session
-    func getAllCards(handler : CardsHandler) {
-        AppServices.getAllCardsOfUser(User.sharedInstance) { (obj, error) in
+    class func getAllCards(handler : CardsHandler) {
+        let user = User()
+        AppServices.getAllCardsOfUser(user) { (obj, error) in
             if error != nil {
                 handler(obj: nil, error: error)
             }else {
                 //parse card object
                 let json = obj as! NSDictionary
                 let cards = json["cards"] as! NSArray
-                var cardsList = [Card]()
-                for item in cards {
-                    let card = Card()
-                    card.setModelData(item as! NSDictionary)
-                    cardsList.append(card)
-                }
-                handler(obj: cardsList, error: nil)
+                handler(obj: self.getMyCards(cards), error: nil)
             }
         }
     }
-    
+    class func getMyCards(cards : NSArray) -> List<Card> {
+        let cardsList = List<Card>()
+        for item in cards {
+            let card = Card()
+            card.setModelData(item as! NSDictionary)
+            cardsList.append(card)
+        }
+        return cardsList
+    }
+    class func getMyShop(shopDict : NSDictionary)-> Shop {
+        let shop = Shop()
+        shop.setModelData(shopDict)
+        return shop
+    }
 }

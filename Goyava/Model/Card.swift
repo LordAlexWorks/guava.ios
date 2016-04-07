@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import RealmSwift
 
-class Card: NSObject {
-    var cardId : Int?
-    var maxPoint : Int?
-    var point : Int?
+class Card: Object {
+    dynamic var id = 0
+    dynamic var maxPoint = 0
+    dynamic var point = 0
+    var shop : Shop?
+    var activities = List<Activity>()
     
     func setModelData(dict : NSDictionary) {
-        self.cardId = dict["id"] as? Int
-        self.maxPoint = dict["max_point"] as? Int
-        self.point = dict["point"] as? Int
+        self.id = dict["id"] as! Int
+        self.maxPoint = dict["max_point"] as! Int
+        self.point = dict["point"] as! Int
+        self.shop = CardsController.getMyShop(dict["shop"] as! NSDictionary)
     }
 }

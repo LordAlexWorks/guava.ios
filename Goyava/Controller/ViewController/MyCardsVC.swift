@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 typealias MyCardsCompletionHandler = () -> Void
 
@@ -14,11 +15,11 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     var myCardsHandler : MyCardsCompletionHandler?
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
-    var dataSource = [String]()
+    var dataSource =  [List<Card>]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dataSource = ["","",""]
+        self.loadDataSource()
         self.createMainPages()
     }
 
@@ -38,6 +39,10 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.deleteAll()
+        }
         self.dismissViewControllerAnimated(false) { () -> Void in
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
             let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
@@ -60,6 +65,32 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
+    }
+    func loadDataSource() {
+        // process data with UI logic
+        let realm = try! Realm()
+        let user = realm.objects(User).first
+        if user != nil {
+            let mycards = user!.myCards
+            if mycards.count%6 == 0 {
+                var count = 0
+                var internalCards = List<Card>()
+                for item in mycards {
+                    if count == 0 {
+                        internalCards = List<Card>()
+                    }
+                    internalCards.append(item)
+                    count += 1
+                    if count == 6 {
+                        count = 0
+                        self.dataSource.append(internalCards)
+                    }
+                }
+                
+            }else {
+                print("cards list does not have multiple of 6 cards")
+            }
+        }
     }
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {

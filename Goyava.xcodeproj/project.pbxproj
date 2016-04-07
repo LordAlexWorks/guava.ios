@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C0884F01CB28E81006D9FB8 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
 		1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C26969E1C7215B300B140F0 /* CircleView.swift */; };
 		1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
 		1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
 		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
+		2F81BF495E4BFA4763A3E241 /* Pods_Goyava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 971CA3494BA4A8F5AD21B3F9 /* Pods_Goyava.framework */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -21,7 +23,6 @@
 		B53267F41C606D41008297CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
-		B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
 		B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D112D11C6AFBE600F66AB6 /* MyCard.swift */; };
@@ -40,6 +41,10 @@
 		B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
 		B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
 		B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D781CB21CCB009416A5 /* Card.swift */; };
+		B5DE7D7C1CB3660E009416A5 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D7B1CB3660E009416A5 /* Shop.swift */; };
+		B5DE7D7D1CB3660E009416A5 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D7B1CB3660E009416A5 /* Shop.swift */; };
+		B5DE7D7F1CB36624009416A5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D7E1CB36624009416A5 /* Activity.swift */; };
+		B5DE7D801CB36624009416A5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D7E1CB36624009416A5 /* Activity.swift */; };
 		B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF171C7168A700E5E098 /* MainVC.swift */; };
 		B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */; };
@@ -53,7 +58,6 @@
 		B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
 		B5FAE0031C8D1AA700A5C7A4 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FAE0011C8D1AA700A5C7A4 /* AppServices.swift */; };
 		B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
-		B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */; };
 		B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
 		B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F11C606D2F008297CF /* LoginVC.swift */; };
@@ -67,6 +71,7 @@
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
+		EFE3ED4249C5115C48C7F71A /* Pods_Goyava_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5E358DF85ACA40DEC816BA /* Pods_Goyava_Beta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +109,8 @@
 		1C26969E1C7215B300B140F0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
 		1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
+		971CA3494BA4A8F5AD21B3F9 /* Pods_Goyava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAF759C09FC8E65D3A9EC8B /* Pods-Goyava-Beta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.release.xcconfig"; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +120,6 @@
 		B53267F31C606D41008297CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
-		B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B599F7291C682BFF0013E89E /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
 		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		B5DE7D721CB21177009416A5 /* ActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
 		B5DE7D751CB21187009416A5 /* CardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsController.swift; sourceTree = "<group>"; };
 		B5DE7D781CB21CCB009416A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		B5DE7D7B1CB3660E009416A5 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		B5DE7D7E1CB36624009416A5 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		B5ECEF171C7168A700E5E098 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentVC.swift; sourceTree = "<group>"; };
 		B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardContentVC.swift; sourceTree = "<group>"; };
@@ -137,8 +145,12 @@
 		B5FBEB731C6AD553006DCC12 /* Goyava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Goyava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-info.plist"; sourceTree = "<group>"; };
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
+		BB5E358DF85ACA40DEC816BA /* Pods_Goyava_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E0184B896256CC213056EF62 /* Pods-Goyava-Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.debug.xcconfig"; sourceTree = "<group>"; };
+		E0B6534BE8A4548FCE86BC26 /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
+		FAE1D07D0A3454FC12EF5906 /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F81BF495E4BFA4763A3E241 /* Pods_Goyava.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE3ED4249C5115C48C7F71A /* Pods_Goyava_Beta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,12 +214,25 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		9FC6F8FBFBF91D804B6C85D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0B6534BE8A4548FCE86BC26 /* Pods-Goyava.debug.xcconfig */,
+				FAE1D07D0A3454FC12EF5906 /* Pods-Goyava.release.xcconfig */,
+				E0184B896256CC213056EF62 /* Pods-Goyava-Beta.debug.xcconfig */,
+				9FAF759C09FC8E65D3A9EC8B /* Pods-Goyava-Beta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B53267C31C60632B008297CF = {
 			isa = PBXGroup;
 			children = (
 				B53267CE1C60632B008297CF /* Goyava */,
 				B599F72A1C682BFF0013E89E /* GuavaUITests */,
 				B53267CD1C60632B008297CF /* Products */,
+				9FC6F8FBFBF91D804B6C85D7 /* Pods */,
+				F4FE1EDDCB9E30710B3948ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -270,7 +297,8 @@
 				B53267F31C606D41008297CF /* Session.swift */,
 				B5DE7D781CB21CCB009416A5 /* Card.swift */,
 				B5DE7D6F1CB20B90009416A5 /* User.swift */,
-				B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */,
+				B5DE7D7B1CB3660E009416A5 /* Shop.swift */,
+				B5DE7D7E1CB36624009416A5 /* Activity.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +397,15 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		F4FE1EDDCB9E30710B3948ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				971CA3494BA4A8F5AD21B3F9 /* Pods_Goyava.framework */,
+				BB5E358DF85ACA40DEC816BA /* Pods_Goyava_Beta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -376,9 +413,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53267DE1C60632B008297CF /* Build configuration list for PBXNativeTarget "Goyava" */;
 			buildPhases = (
+				4181D0D1E9AC9BB6D35AB952 /* Check Pods Manifest.lock */,
 				B53267C81C60632B008297CF /* Sources */,
 				B53267C91C60632B008297CF /* Frameworks */,
 				B53267CA1C60632B008297CF /* Resources */,
+				3AB16E408F373391334AC847 /* Embed Pods Frameworks */,
+				F928C73C845516BF14CE2358 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -431,9 +471,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FBEB6E1C6AD4EC006DCC12 /* Build configuration list for PBXNativeTarget "Goyava-Beta" */;
 			buildPhases = (
+				5AB954333BEFB7F16BE2AF41 /* Check Pods Manifest.lock */,
 				B5FBEB531C6AD4EC006DCC12 /* Sources */,
 				B5FBEB631C6AD4EC006DCC12 /* Frameworks */,
 				B5FBEB641C6AD4EC006DCC12 /* Resources */,
+				6041A709BC18B2E862BB8361 /* Embed Pods Frameworks */,
+				E8D65FEE10B819461144E89D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -531,6 +574,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AB16E408F373391334AC847 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava/Pods-Goyava-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4181D0D1E9AC9BB6D35AB952 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5AB954333BEFB7F16BE2AF41 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6041A709BC18B2E862BB8361 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D65FEE10B819461144E89D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F928C73C845516BF14CE2358 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava/Pods-Goyava-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B53267C81C60632B008297CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -539,9 +675,9 @@
 				B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				B53267F41C606D41008297CF /* Session.swift in Sources */,
 				B5FADFFF1C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
-				B599F6CF1C65C6CD0013E89E /* Model.xcdatamodeld in Sources */,
 				B5D112D31C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5FADFFA1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
+				B5DE7D7F1CB36624009416A5 /* Activity.swift in Sources */,
 				B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */,
 				B5DE7D791CB21CCB009416A5 /* Card.swift in Sources */,
 				B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */,
@@ -552,6 +688,7 @@
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
+				B5DE7D7C1CB3660E009416A5 /* Shop.swift in Sources */,
 				B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */,
 				B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */,
 				B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */,
@@ -587,10 +724,10 @@
 			files = (
 				B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */,
 				B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */,
-				B5FBEB581C6AD4EC006DCC12 /* Model.xcdatamodeld in Sources */,
 				B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
 				B5D112D41C6AFBE600F66AB6 /* MyCard.swift in Sources */,
 				B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */,
+				B5DE7D801CB36624009416A5 /* Activity.swift in Sources */,
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FADFFB1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
@@ -599,7 +736,9 @@
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
 				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
+				1C0884F01CB28E81006D9FB8 /* Loader.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
+				B5DE7D7D1CB3660E009416A5 /* Shop.swift in Sources */,
 				B5FBEB5D1C6AD4EC006DCC12 /* LoginVC.swift in Sources */,
 				B5FBEB5E1C6AD4EC006DCC12 /* SSQRScanner.swift in Sources */,
 				B5FBEB5F1C6AD4EC006DCC12 /* AppDelegate.swift in Sources */,
@@ -741,11 +880,12 @@
 		};
 		B53267DF1C60632B008297CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0B6534BE8A4548FCE86BC26 /* Pods-Goyava.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2028;
-				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-info.plist";
+				CURRENT_PROJECT_VERSION = 2047;
+				INFOPLIST_FILE = "Goyava/Configurations/Goyava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = Goyava;
@@ -756,11 +896,12 @@
 		};
 		B53267E01C60632B008297CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAE1D07D0A3454FC12EF5906 /* Pods-Goyava.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2028;
-				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-info.plist";
+				CURRENT_PROJECT_VERSION = 2047;
+				INFOPLIST_FILE = "Goyava/Configurations/Goyava-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.proactives.guava;
 				PRODUCT_NAME = Goyava;
@@ -819,12 +960,13 @@
 		};
 		B5FBEB6F1C6AD4EC006DCC12 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0184B896256CC213056EF62 /* Pods-Goyava-Beta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2028;
-				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-Beta-info.plist";
+				CURRENT_PROJECT_VERSION = 2047;
+				INFOPLIST_FILE = "Goyava/Configurations/Goyava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
@@ -835,12 +977,13 @@
 		};
 		B5FBEB701C6AD4EC006DCC12 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAF759C09FC8E65D3A9EC8B /* Pods-Goyava-Beta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2028;
-				INFOPLIST_FILE = "$(SRCROOT)/Goyava/Configurations/Goyava-Beta-info.plist";
+				CURRENT_PROJECT_VERSION = 2047;
+				INFOPLIST_FILE = "Goyava/Configurations/Goyava-Beta-info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
@@ -898,19 +1041,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B599F6CD1C65C6CD0013E89E /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */,
-			);
-			currentVersion = B599F6CE1C65C6CD0013E89E /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B53267C41C60632B008297CF /* Project object */;
 }

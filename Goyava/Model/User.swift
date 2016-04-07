@@ -7,18 +7,21 @@
 //
 
 import UIKit
+import RealmSwift
 
-class User: NSObject {
-    static let sharedInstance = User()
-    var clientId : Int?
-    var email : String?
-    var username : String?
-    var token : String?
+class User: Object {
+    dynamic var id = 0
+    dynamic var email = ""
+    dynamic var username : String = ""
+    dynamic var token = ""
+    var myCards = List<Card>()
     
     func setModelData(dict : NSDictionary) {
-        self.clientId = dict["id"] as? Int
-        self.email = dict["email"] as? String
-        self.username = dict["username"] as? String
-        self.token = dict["token"] as? String
+        self.id = dict["id"] as! Int
+        self.email = dict["email"] as! String
+        self.username = dict["username"] as! String
+        self.token = dict["token"] as! String
+        let cards = dict["cards"] as! NSArray
+        self.myCards = CardsController.getMyCards(cards)
     }
 }
