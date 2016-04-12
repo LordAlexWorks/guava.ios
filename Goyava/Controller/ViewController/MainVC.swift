@@ -103,9 +103,11 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         try! realm.write {
             realm.deleteAll()
         }
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
-        appDelegate.window?.rootViewController = loginVc
+        self.dismissViewControllerAnimated(false) {
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+            appDelegate.window?.rootViewController = loginVc
+        }
     }
     @IBAction func scanButtonTapped(sender : UIButton) {
         self.dismissViewControllerAnimated(false) { () -> Void in

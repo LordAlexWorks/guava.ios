@@ -38,11 +38,9 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         try! realm.write {
             realm.deleteAll()
         }
-        self.dismissViewControllerAnimated(false) { () -> Void in
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
-            appDelegate.window?.rootViewController = loginVc
-        }
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
+        appDelegate.window?.rootViewController = loginVc
     }
     @IBAction func gridButtonTapped(sender : UIButton) {
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
