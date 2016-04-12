@@ -13,17 +13,17 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var user : User?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
         let realm = try! Realm()
-        let user = realm.objects(User).first
+        self.user = realm.objects(User).first
         if user != nil {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let mainVc = mainStoryboard.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
-            self.window?.rootViewController = mainVc
+            let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+            self.window?.rootViewController = myCardVC
         }else {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC

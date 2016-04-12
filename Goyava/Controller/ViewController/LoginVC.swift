@@ -83,9 +83,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     //MARK: Login navigation
     func goToMain(){
-        let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
+        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.window?.rootViewController = mainVc
+        appDelegate.window?.rootViewController = myCardsVc
     }
     
     //MARK: Background Tap

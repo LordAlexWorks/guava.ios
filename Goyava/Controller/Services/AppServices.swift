@@ -55,4 +55,20 @@ class AppServices: NSObject {
             }
         }
     }
+    
+    //MARK: Add QR code service 
+    class func addQRCodeActivity(user:User,qrcode: String,merchantId : String, handler: AppServiceHandler){
+        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+"\(user.id)/qrcodes/\(qrcode)/"+URL.activityEndPoint.rawValue
+        let headerFieldAndValues = ["X-User-Email" : user.email, "X-User-Token": user.token,"Content-Type" : "application/json"]
+        let jsondict = ["activity":["shop_id":merchantId]]
+        let httpBody = UtilityManager.getFormattedJSONString(jsondict)
+        let httpClient = SSHTTPClient(url: addQRCodeActivityURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        httpClient.getJsonData { (obj, error) -> Void in
+            if (error != nil) {
+                handler(obj: nil,error: error)
+            }else {
+                handler(obj: obj,error: nil)
+            }
+        }
+    }
 }

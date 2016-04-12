@@ -14,4 +14,5 @@ enum URL : String {
     case loginEndPoint = "login.json"
     case registrationEndPoint = "signup.json"
     case cardsEndPoint = "/cards.json"
+    case activityEndPoint = "activities.json"
 }
