@@ -1,6 +1,5 @@
 require 'yaml'
 require 'ostruct'
-require 'git'
 
 fastlane_version "1.57.0"
 
@@ -33,7 +32,7 @@ end
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
     ensure_git_status_clean
-    prepare(remote_branch: "master")
+    ensure_git_branch(branch: 'master')
     git_pull
     version_number = get_version_number
 
