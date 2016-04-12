@@ -1,5 +1,6 @@
 require 'yaml'
 require 'ostruct'
+require 'git'
 
 fastlane_version "1.57.0"
 
@@ -31,8 +32,9 @@ end
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-
-    prepare(remote_branch: "development")
+    ensure_git_status_clean
+    prepare(remote_branch: "master")
+    git_pull
     version_number = get_version_number
 
     build_number = increment_build_number
@@ -45,8 +47,8 @@ end
 
     #match(type: "appstore")
     pilot(skip_submission: true ,
-         distribute_external: true
-         changelog: "issue fixed with the label QA")
+         distribute_external: true,
+         changelog: "Please remove the older version before to install the new one \n issue fixed with the label QA")
 
 
      # Make sure our directory is clean, except for changes Fastlane has made

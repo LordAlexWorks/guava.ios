@@ -3,33 +3,33 @@ module Fastlane
         module SharedValues
             GIT_CHECKOUT_BRANCH = :GIT_CHECKOUT_BRANCH
         end
-        
+
         class GitCheckoutAction < Action
             def self.run(params)
             remote_branch = params[:remote_branch]
-            
+
             # construct our command as an array of components
             command = [
             'git',
             'checkout',
             remote_branch
             ]
-            
+
             # execute our command
             Actions.sh('pwd')
-            
+
             Actions.sh(command.join(' '))
             Helper.log.info "Successfully checkout branch #{remote_branch}."
         end
-        
+
         #####################################################
         # @!group Documentation
         #####################################################
-        
+
         def self.description
         'Checkout a branch from project working copy'
     end
-    
+
     def self.available_options
     [
     FastlaneCore::ConfigItem.new(key: :remote_branch,
@@ -47,7 +47,7 @@ def self.output
 end
 
 def self.authors
-["fabiomilano"]
+["bolom"]
 end
 
 def self.is_supported?(platform)
