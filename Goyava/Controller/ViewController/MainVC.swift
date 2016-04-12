@@ -9,8 +9,10 @@
 import UIKit
 import RealmSwift
 
-class MainVC: UIViewController,UIPageViewControllerDataSource {
+typealias MainCardsCompletionHandler = () -> Void
 
+class MainVC: UIViewController,UIPageViewControllerDataSource {
+    var mainCardsHandler : MainCardsCompletionHandler?
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
     var dataSource = [String]()
@@ -23,6 +25,9 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    func onDismiss(handler : MainCardsCompletionHandler) {
+        self.mainCardsHandler = handler
     }
     func createMainPages(){
         pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
@@ -90,12 +95,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     //MARK: Button actions
     @IBAction func myCardsButtonTapped(sender : UIButton){
-        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
-        myCardsVc.modalTransitionStyle = .FlipHorizontal
-        self.presentViewController(myCardsVc, animated: true) { () -> Void in
-        }
-        myCardsVc.onDismiss { [weak self]() -> Void in
-            self?.goToScannerView()
+        self.dismissViewControllerAnimated(true) { () -> Void in
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
@@ -108,23 +108,9 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         appDelegate.window?.rootViewController = loginVc
     }
     @IBAction func scanButtonTapped(sender : UIButton) {
-        goToScannerView()
-    }
-    func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
-        qrscannerVc.isAuthorizedForCamera { (isGranted) -> Void in
-            if isGranted {
-                self.presentViewController(qrscannerVc, animated: true) { () -> Void in
-                }
-            }
-            else{
-                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Cancel, handler:{ action in
-                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
-                }))
-                self.presentViewController(alert, animated: true, completion: nil)
-            }
+        self.dismissViewControllerAnimated(false) { () -> Void in
+            self.mainCardsHandler!()
         }
     }
+
 }
