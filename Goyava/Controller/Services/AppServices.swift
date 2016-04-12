@@ -58,7 +58,7 @@ class AppServices: NSObject {
     
     //MARK: Add QR code service 
     class func addQRCodeActivity(user:User,qrcode: String,merchantId : String, handler: AppServiceHandler){
-        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+URL.loginEndPoint.rawValue
+        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+"\(user.id)/qrcodes/\(qrcode)/"+URL.activityEndPoint.rawValue
         let headerFieldAndValues = ["X-User-Email" : user.email, "X-User-Token": user.token,"Content-Type" : "application/json"]
         let jsondict = ["activity":["shop_id":merchantId]]
         let httpBody = UtilityManager.getFormattedJSONString(jsondict)

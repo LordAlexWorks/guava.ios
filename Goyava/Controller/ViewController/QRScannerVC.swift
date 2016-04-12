@@ -29,8 +29,17 @@ class QRScannerVC: UIViewController {
                 let result = obj as! String
                 print(result)
                 if self != nil {
-                    self!.dismissViewControllerAnimated(true, completion: { () -> Void in
-                        self!.goToMain()
+                    Loader.sharedInstance.showLoader()
+                    ActivitiesController.addQRCodeActivity(result, handler: { (obj, error) in
+                        dispatch_async(dispatch_get_main_queue(),{
+                            Loader.sharedInstance.hideLoader()
+                            if error != nil {
+                                UtilityManager.showAlertMessage("Error", onViewcontrolller: self!)
+                            }else {
+                                UtilityManager.showAlertMessage("Success!", onViewcontrolller: self!)
+                                self!.showMain()
+                            }
+                        })
                     })
                 }
             }
@@ -49,7 +58,11 @@ class QRScannerVC: UIViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.window?.rootViewController = mainVc
     }
-    
+    func showMain(){
+        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+            self.goToMain()
+        })
+    }
     @IBAction func backButtonTapped(sender : UIButton) {
         self.dismissViewControllerAnimated(true, completion: { () -> Void in
         })

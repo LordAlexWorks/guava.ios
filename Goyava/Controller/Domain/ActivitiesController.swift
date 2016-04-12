@@ -11,7 +11,7 @@ public typealias ActivityHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class ActivitiesController: NSObject {
     class func addQRCodeActivity(qrCode: String, handler: ActivityHandler){
-        let qrCodeComponenets = qrCode.componentsSeparatedByString("/")
+        let qrCodeComponenets = qrCode.componentsSeparatedByString("//")
         if qrCodeComponenets.count == 3 {
             let qrid = qrCodeComponenets[2]
             let shopId = qrCodeComponenets[1]
