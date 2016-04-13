@@ -13,7 +13,7 @@ class Card: Object {
     dynamic var id = 0
     dynamic var maxPoint = 0
     dynamic var point = 0
-    var shop : Shop?
+    dynamic var shop : Shop?
     var activities = List<Activity>()
     
     func setModelData(dict : NSDictionary) {
