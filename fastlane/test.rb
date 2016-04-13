@@ -1,0 +1,2 @@
+require 'fastlane'
+fastlane dailybuild

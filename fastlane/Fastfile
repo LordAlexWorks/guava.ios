@@ -47,7 +47,7 @@ end
     #match(type: "appstore")
     pilot(skip_submission: true ,
          distribute_external: true,
-         changelog: "Please remove the older version before to install the new one \n issue fixed with the label QA")
+         changelog: "Please remove the previous version. Check the issus with the label QA")
 
 
      # Make sure our directory is clean, except for changes Fastlane has made
