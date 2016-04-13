@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MyCardContentVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var pageIndex : Int = 0
+    var dataSource = List<Card>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createGrids()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    // Data Source
+    func loadDataSource(dataSource : List<Card>){
+        self.dataSource = dataSource
+        self.createGrids()
     }
     // Create 6 Grids
     func createGrids(){
@@ -28,12 +34,18 @@ class MyCardContentVC: UIViewController {
         let totalCols = 2
         let width =  totalWidth/Double(totalCols)
         let height = totalHeight/Double(totalRows)
-        
+        var index = 0
         for row in 0...totalRows-1 {
             for col in 0...totalCols-1 {
+                if index >= self.dataSource.count {
+                    return
+                }
+                let card = self.dataSource[index]
+                index += 1
                 let myCardView = MyCard.instanceFromNib() as! MyCard
                 myCardView.frame = CGRect(x: Double(col)*width, y: Double(row)*height, width: width, height: height)
                 self.addTapGestureOnView(myCardView)
+                myCardView.loadWithDataSource(card)
                 self.view.addSubview(myCardView)
             }
         }

@@ -33,6 +33,8 @@ class MyCard: UIView {
 
             iconImageView.frame = CGRect(x: (frame.size.width-frame.size.height)/2+32, y: 20, width: frame.size.height-65, height: frame.size.height-65)
         }
-
+    }
+    func loadWithDataSource(card : Card) {
+        self.globalPointLabel.text = "\(card.maxPoint) global points"
     }
 }
