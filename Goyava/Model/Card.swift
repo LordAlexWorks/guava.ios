@@ -21,5 +21,11 @@ class Card: Object {
         self.maxPoint = dict["max_point"] as! Int
         self.point = dict["point"] as! Int
         self.shop = CardsController.getMyShop(dict["shop"] as! NSDictionary)
+        let activityList = dict["activities"] as! [NSDictionary]
+        for item in activityList {
+            let activity = Activity()
+            activity.setModelData(item)
+            self.activities.append(activity)
+        }
     }
 }

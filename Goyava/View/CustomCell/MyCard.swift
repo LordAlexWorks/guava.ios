@@ -35,10 +35,12 @@ class MyCard: UIView {
         }
     }
     func loadWithDataSource(card : Card) {
-        self.globalPointLabel.text = "\(card.maxPoint) global points"
+        self.iconImageView.image = nil
+        self.globalPointLabel.text = "\(ActivitiesController.getGlobalPoint(card)) global points"
         ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
             dispatch_async(dispatch_get_main_queue(), {
                 self.iconImageView.image = image
+                UtilityManager.drawCircularImage(self.iconImageView)
             });
         }
     }

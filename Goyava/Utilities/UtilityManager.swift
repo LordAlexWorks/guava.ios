@@ -32,5 +32,12 @@ class UtilityManager: NSObject {
         return emailPredicate.evaluateWithObject(email)
         
     }
+    class func drawCircularImage(image :UIImageView) {
+        image.layer.borderWidth = 0.0
+        image.layer.masksToBounds = false
+        image.layer.borderColor = UIColor.redColor().CGColor
+        image.layer.cornerRadius = image.frame.size.width/2
+        image.clipsToBounds = true
+    }
 
 }
