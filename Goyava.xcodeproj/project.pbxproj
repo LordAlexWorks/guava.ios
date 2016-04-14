@@ -23,6 +23,8 @@
 		B53267F41C606D41008297CF /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267F31C606D41008297CF /* Session.swift */; };
 		B537DFDB1CBDF10B00FA854E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537DFDA1CBDF10B00FA854E /* ImageLoader.swift */; };
 		B537DFDC1CBDF10B00FA854E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B537DFDA1CBDF10B00FA854E /* ImageLoader.swift */; };
+		B5787FA21CBF5AA1002268C8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */; };
+		B5787FA31CBF5AA1002268C8 /* NSDateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */; };
 		B599F6CA1C65ABC30013E89E /* SSQRScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6C91C65ABC30013E89E /* SSQRScanner.swift */; };
 		B599F6CC1C65AC580013E89E /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F6CB1C65AC580013E89E /* QRScannerVC.swift */; };
 		B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F72B1C682C000013E89E /* GuavaUITests.swift */; };
@@ -121,6 +123,7 @@
 		B53267F11C606D2F008297CF /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B53267F31C606D41008297CF /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		B537DFDA1CBDF10B00FA854E /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NSDateExtension.swift; path = Extensions/NSDateExtension.swift; sourceTree = "<group>"; };
 		B599F6C91C65ABC30013E89E /* SSQRScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSQRScanner.swift; sourceTree = "<group>"; };
 		B599F6CB1C65AC580013E89E /* QRScannerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		B599F7291C682BFF0013E89E /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -405,6 +408,7 @@
 			isa = PBXGroup;
 			children = (
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
+				B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -708,6 +712,7 @@
 				D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */,
 				B5ECEF1B1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
+				B5787FA21CBF5AA1002268C8 /* NSDateExtension.swift in Sources */,
 				B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */,
 				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
 			);
@@ -759,6 +764,7 @@
 				B5DE7D7A1CB21CCB009416A5 /* Card.swift in Sources */,
 				B5FBEB601C6AD4EC006DCC12 /* UIColorExtension.swift in Sources */,
 				1C2696A01C7334EC00B140F0 /* CircleView.swift in Sources */,
+				B5787FA31CBF5AA1002268C8 /* NSDateExtension.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0031C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
 			);
