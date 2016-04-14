@@ -70,6 +70,8 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                 }else {
                     let session = obj as! Session
                     if (session.isSuccess == true) {
+                        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
+                        appDel.user = AuthenticationController.getLocalUser()
                         self.pageOnLoginSuccess()
                     }else {
                         UtilityManager.showAlertMessage("Login Error", onViewcontrolller: self)

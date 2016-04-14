@@ -7,18 +7,24 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MyCardContentVC: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var pageIndex : Int = 0
+    var dataSource = List<Card>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createGrids()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    // Data Source
+    func loadDataSource(dataSource : List<Card>){
+        self.dataSource = dataSource
+        self.createGrids()
     }
     // Create 6 Grids
     func createGrids(){
@@ -28,12 +34,18 @@ class MyCardContentVC: UIViewController {
         let totalCols = 2
         let width =  totalWidth/Double(totalCols)
         let height = totalHeight/Double(totalRows)
-        
+        var index = 0
         for row in 0...totalRows-1 {
             for col in 0...totalCols-1 {
+                if index >= self.dataSource.count {
+                    return
+                }
+                let card = self.dataSource[index]
+                index += 1
                 let myCardView = MyCard.instanceFromNib() as! MyCard
                 myCardView.frame = CGRect(x: Double(col)*width, y: Double(row)*height, width: width, height: height)
                 self.addTapGestureOnView(myCardView)
+                myCardView.loadWithDataSource(card)
                 self.view.addSubview(myCardView)
             }
         }
@@ -45,7 +57,30 @@ class MyCardContentVC: UIViewController {
         view.addGestureRecognizer(tap)
     }
     func handleTap(sender: UITapGestureRecognizer? = nil) {
-        self.dismissViewControllerAnimated(true) { () -> Void in
+        let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
+        mainVc.modalTransitionStyle = .FlipHorizontal
+        self.presentViewController(mainVc, animated: true) { () -> Void in
+        }
+        mainVc.onDismiss { [weak self]() -> Void in
+            self?.goToScannerView()
+        }
+    }
+    //MARK: Scanner
+    func goToScannerView(){
+        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
+        qrscannerVc.isAuthorizedForCamera { (isGranted) -> Void in
+            if isGranted {
+                self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+                }
+            }
+            else{
+                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Cancel, handler:{ action in
+                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
         }
     }
 }

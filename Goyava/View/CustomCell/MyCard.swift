@@ -33,6 +33,15 @@ class MyCard: UIView {
 
             iconImageView.frame = CGRect(x: (frame.size.width-frame.size.height)/2+32, y: 20, width: frame.size.height-65, height: frame.size.height-65)
         }
-
+    }
+    func loadWithDataSource(card : Card) {
+        self.iconImageView.image = nil
+        self.globalPointLabel.text = "\(ActivitiesController.getGlobalPoint(card)) global points"
+        ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
+            dispatch_async(dispatch_get_main_queue(), {
+                self.iconImageView.image = image
+                UtilityManager.drawCircularImage(self.iconImageView)
+            });
+        }
     }
 }

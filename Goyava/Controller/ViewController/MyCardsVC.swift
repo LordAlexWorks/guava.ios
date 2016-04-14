@@ -19,7 +19,6 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.loadDataSource()
-        self.createMainPages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +56,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.dataSource = self
         
         let startingViewController: MyCardContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
+        startingViewController.loadDataSource(self.dataSource[0])
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
         pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-100);
@@ -66,30 +66,28 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.didMoveToParentViewController(self)
     }
     func loadDataSource() {
-        
         // process data with UI logic
         let realm = try! Realm()
         let user = realm.objects(User).first
         if user != nil {
             let mycards = user!.myCards
-            if mycards.count%6 == 0 {
-                var count = 0
-                var internalCards = List<Card>()
-                for item in mycards {
-                    if count == 0 {
-                        internalCards = List<Card>()
-                    }
-                    internalCards.append(item)
-                    count += 1
-                    if count == 6 {
-                        count = 0
-                        self.dataSource.append(internalCards)
-                    }
-                }
-                
+            let itemPerPage = 6
+            var pageCount = 0
+            if mycards.count%itemPerPage == 0 {
+                pageCount = mycards.count/6
             }else {
-                print("cards list does not have multiple of 6 cards")
+                pageCount = (mycards.count/6)+1
             }
+            for index in 0...pageCount-1{
+                let startIndex = index*itemPerPage
+                var endIndex = (index+1)*itemPerPage-1
+                if endIndex > mycards.count {
+                    endIndex = mycards.count-1
+                }
+                let pageItems = List<Card>(mycards[startIndex...endIndex]) 
+                self.dataSource.append(pageItems)
+            }
+            self.createMainPages()
         }
     }
     //MARK: Page Control Data Source
@@ -122,6 +120,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
         pageContentViewController.pageIndex = index
         currentIndex = index
+        pageContentViewController.loadDataSource(self.dataSource[index])
         return pageContentViewController
     }
     //MARK: Scanner
