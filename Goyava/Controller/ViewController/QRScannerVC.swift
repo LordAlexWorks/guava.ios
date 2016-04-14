@@ -34,7 +34,7 @@ class QRScannerVC: UIViewController {
                         dispatch_async(dispatch_get_main_queue(),{
                             Loader.sharedInstance.hideLoader()
                             if error != nil {
-                                UtilityManager.showAlertMessage("Error", onViewcontrolller: self!)
+                                UtilityManager.showAlertMessage("\(error.debugDescription)", onViewcontrolller: self!)
                             }else {
                                 UtilityManager.showAlertMessage("Success!", onViewcontrolller: self!)
                                 self!.showMain()

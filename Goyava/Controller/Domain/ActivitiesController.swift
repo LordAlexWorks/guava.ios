@@ -21,10 +21,15 @@ class ActivitiesController: NSObject {
                    handler(obj: nil, error: error)
                 }else {
                     let json = obj as! NSDictionary
-                    let activityDict = json["activity"] as! NSDictionary
-                    let activity = Activity()
-                    activity.setModelData(activityDict)
-                    handler(obj: activity, error: nil)
+                    let error = json["errors"]
+                    if error != nil {
+                        handler(obj: nil, error:  NSError(domain: "io.proactives.guava.QRCodeError", code: 1001, userInfo: ["description":"Guava add QRcode service error."]))
+                    }else {
+                        let activityDict = json["activity"] as! NSDictionary
+                        let activity = Activity()
+                        activity.setModelData(activityDict)
+                        handler(obj: activity, error: nil)
+                    }
                 }
             })
         }else {

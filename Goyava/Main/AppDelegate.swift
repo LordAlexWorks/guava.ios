@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-        let realm = try! Realm()
-        self.user = realm.objects(User).first
+        self.user = AuthenticationController.getLocalUser()
         if user != nil {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC

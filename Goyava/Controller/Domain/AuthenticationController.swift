@@ -57,4 +57,8 @@ class AuthenticationController: NSObject {
             }
         }
     }
+    class func getLocalUser()-> User? {
+        let realm = try! Realm()
+        return realm.objects(User).first
+    }
 }
