@@ -8,30 +8,14 @@
 
 import Foundation
 extension NSDate {
-    func startOfWeek(weekday: Int?) -> NSDate? {
-        guard
-            let cal: NSCalendar = NSCalendar.currentCalendar(),
-            let comp: NSDateComponents = cal.components([.YearForWeekOfYear, .WeekOfYear], fromDate: self) else { return nil }
-        comp.to12pm()
-        cal.firstWeekday = weekday ?? 1
-        return cal.dateFromComponents(comp)!
+    var mondaysDate: NSDate {
+        let iso8601 =  NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
+        return iso8601.dateFromComponents(iso8601.components([.YearForWeekOfYear, .WeekOfYear ], fromDate: NSDate()))!
     }
     
-    func endOfWeek(weekday: Int) -> NSDate? {
-        guard
-            let cal: NSCalendar = NSCalendar.currentCalendar(),
-            let comp: NSDateComponents = cal.components([.WeekOfYear], fromDate: self) else { return nil }
-        comp.weekOfYear = 1
-        comp.day -= 1
-        comp.to12pm()
-        return cal.dateByAddingComponents(comp, toDate: self.startOfWeek(weekday)!, options: [])!
-    }
-    
-}
-internal extension NSDateComponents {
-    func to12pm() {
-        self.hour = 12
-        self.minute = 0
-        self.second = 0
+    var sundayDate : NSDate {
+        let iso8601 =  NSCalendar(calendarIdentifier: NSCalendarIdentifierISO8601)!
+        let sunday = iso8601.dateByAddingUnit(.Day, value: 6, toDate: self.mondaysDate, options: [])
+        return sunday!
     }
 }
