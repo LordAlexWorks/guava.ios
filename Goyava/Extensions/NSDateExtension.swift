@@ -18,4 +18,11 @@ extension NSDate {
         let sunday = iso8601.dateByAddingUnit(.Day, value: 6, toDate: self.mondaysDate, options: [])
         return sunday!
     }
+    
+    func dateFromString(string : String) -> NSDate{
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss.SSSSxxx"
+        let date = dateFormatter.dateFromString(string)
+        return date!
+    }
 }

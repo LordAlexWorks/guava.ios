@@ -46,4 +46,8 @@ class ActivitiesController: NSObject {
         }
         return globalPoint
     }
+    
+    class func getWeeklyPoint(card : Card)-> Int {
+        return 0
+    }
 }
