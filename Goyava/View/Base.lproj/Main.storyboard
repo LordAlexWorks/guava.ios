@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -1048,9 +1049,11 @@
                                         <state key="normal" backgroundImage="Gridicon"/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-YJ-hZI">
-                                        <rect key="frame" x="269" y="4" width="70" height="47"/>
+                                        <rect key="frame" x="269" y="1" width="70" height="50"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4ZP-jd-f5F"/>
                                             <constraint firstAttribute="width" constant="70" id="WYq-pg-XpO"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="q3N-va-50c"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJb-bT-nHs">
@@ -1063,8 +1066,11 @@
                                             <action selector="myCardsButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="wDD-1o-pJu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBa-Yc-YwR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBa-Yc-YwR">
                                         <rect key="frame" x="2" y="0.0" width="76" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="EKr-aT-eah"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="scanButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="fbp-TD-oh5"/>
                                         </connections>
@@ -1072,17 +1078,29 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="bottom" secondItem="JBa-Yc-YwR" secondAttribute="bottom" id="3oo-2X-meQ"/>
                                     <constraint firstItem="Yvn-Ug-XJR" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="17" id="8zF-8g-wCl"/>
                                     <constraint firstAttribute="bottom" secondItem="EFS-YJ-hZI" secondAttribute="bottom" id="BNV-q7-UdC"/>
                                     <constraint firstAttribute="bottom" secondItem="Yvn-Ug-XJR" secondAttribute="bottom" constant="19" id="LkR-NM-N9i"/>
                                     <constraint firstItem="EFS-YJ-hZI" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="4" id="Mss-fT-nvv"/>
                                     <constraint firstAttribute="trailing" secondItem="Yvn-Ug-XJR" secondAttribute="trailing" constant="22" id="bXh-Lp-cAX"/>
+                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="bottom" secondItem="vJb-bT-nHs" secondAttribute="bottom" id="cym-45-DND"/>
                                     <constraint firstAttribute="height" constant="51" id="eBN-pw-MFo"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="leading" secondItem="uME-Xg-vd3" secondAttribute="leading" constant="2" id="f9I-Dk-apt"/>
                                     <constraint firstAttribute="trailing" secondItem="vJb-bT-nHs" secondAttribute="trailing" id="fIA-Ro-tjp"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="top" secondItem="vJb-bT-nHs" secondAttribute="top" id="gAY-Uo-FHB"/>
                                     <constraint firstItem="EFS-YJ-hZI" firstAttribute="centerX" secondItem="uME-Xg-vd3" secondAttribute="centerX" constant="4" id="lfO-MT-ASZ"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="baseline" secondItem="vJb-bT-nHs" secondAttribute="baseline" id="oaw-wF-ZuJ"/>
                                     <constraint firstAttribute="bottom" secondItem="vJb-bT-nHs" secondAttribute="bottom" id="rSt-7H-xBx"/>
                                     <constraint firstItem="vJb-bT-nHs" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" id="vmB-C2-pN9"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="firstBaseline" secondItem="vJb-bT-nHs" secondAttribute="firstBaseline" id="zZp-3O-OgY"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BNV-q7-UdC"/>
+                                        <exclude reference="Mss-fT-nvv"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-IW-kf1">
                                 <rect key="frame" x="0.0" y="72" width="600" height="498"/>
@@ -1123,6 +1141,9 @@
                             <constraint firstItem="uME-Xg-vd3" firstAttribute="top" secondItem="Oay-TT-Aa2" secondAttribute="top" constant="20" id="ut3-gj-OGO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardIconImageView" destination="EFS-YJ-hZI" id="PrI-0J-rVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFq-WY-icb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

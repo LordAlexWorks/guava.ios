@@ -23,7 +23,6 @@ class MainContentVC: UIViewController {
     
     @IBOutlet weak var globalPointsLabel : UILabel!
     @IBOutlet weak var weeklyPointsLabel : UILabel!
-    @IBOutlet weak var cardIconImageView : UIImageView!
     
     @IBOutlet weak var mondayPointsLabel : UILabel!
     @IBOutlet weak var tuesdayPointsLabel : UILabel!

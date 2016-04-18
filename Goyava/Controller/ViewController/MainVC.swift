@@ -12,6 +12,8 @@ import RealmSwift
 typealias MainCardsCompletionHandler = () -> Void
 
 class MainVC: UIViewController,UIPageViewControllerDataSource {
+    
+    @IBOutlet weak var cardIconImageView : UIImageView!
     var mainCardsHandler : MainCardsCompletionHandler?
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
@@ -41,6 +43,17 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
+        
+        self.setTopImage(atIndex)
+    }
+    func setTopImage(atIndex : Int) {
+        let card = self.dataSource[atIndex]
+        self.cardIconImageView.image = nil
+        ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
+            dispatch_async(dispatch_get_main_queue(), {
+                self.cardIconImageView.image = image
+            });
+        }
     }
     
     func loadDataSource(card : Card) {
