@@ -25,6 +25,14 @@ class MainContentVC: UIViewController {
     @IBOutlet weak var weeklyPointsLabel : UILabel!
     @IBOutlet weak var cardIconImageView : UIImageView!
     
+    @IBOutlet weak var mondayPointsLabel : UILabel!
+    @IBOutlet weak var tuesdayPointsLabel : UILabel!
+    @IBOutlet weak var wednesdayPointsLabel : UILabel!
+    @IBOutlet weak var thrusdayPointsLabel : UILabel!
+    @IBOutlet weak var fridayPointsLabel : UILabel!
+    @IBOutlet weak var saturdayPointsLabel : UILabel!
+    @IBOutlet weak var sundayPointsLabel : UILabel!
+    
     var card: Card?
     
     override func viewDidLoad() {
@@ -41,6 +49,7 @@ class MainContentVC: UIViewController {
     }
     func refreshUIWithDataSource(){
         self.progressControlSetups()
+        self.setupDailyPoints()
         self.globalPointsLabel.text = "\(ActivitiesController.getGlobalPoint(self.card!))"
         self.weeklyPointsLabel.text = "YOU HAVE SCORED \(ActivitiesController.getWeeklyPoint(self.card!)) POINTS THIS WEEK"
     }
@@ -62,5 +71,15 @@ class MainContentVC: UIViewController {
         CircleView.drawCircleOn(progressView, color: UIColor.grayColor(), progress:2,lineWidth: 1.5,fillColor: UIColor.clearColor())
         CircleView.drawCircleOn(progressView, color: UIColor(hexString:"29ABA9"), progress:1,lineWidth : 1.5,fillColor: UIColor.clearColor())
     }
-    
+    //MARK: func DailyPoints set ups
+    func setupDailyPoints(){
+        self.mondayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(1.0, card: self.card!))"
+        self.tuesdayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(2.0, card: self.card!))"
+        self.wednesdayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(3.0, card: self.card!))"
+        self.thrusdayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(4.0, card: self.card!))"
+        self.fridayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(5.0, card: self.card!))"
+        self.saturdayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(6.0, card: self.card!))"
+        self.sundayPointsLabel.text = "\(ActivitiesController.getDailyTotalPointsOnDay(7.0, card: self.card!))"
+        
+    }
 }
