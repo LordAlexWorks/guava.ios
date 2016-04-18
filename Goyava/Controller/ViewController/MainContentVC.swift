@@ -55,21 +55,28 @@ class MainContentVC: UIViewController {
     }
     //MARK: Progress Controls 
     func progressControlSetups() {
-        self.showProgress(self.mondayProgressView)
-        self.showProgress(self.tuesdayProgressView)
-        self.showProgress(self.wednesdayProgressView)
-        self.showProgress(self.thrursdayProgressView)
-        self.showProgress(self.fridayProgressView)
-        self.showProgress(self.saturdayProgressView)
-        self.showProgress(self.sundayProgressView)
+        self.showProgress(self.mondayProgressView, day: 1)
+        self.showProgress(self.tuesdayProgressView, day: 2)
+        self.showProgress(self.wednesdayProgressView, day: 3)
+        self.showProgress(self.thrursdayProgressView, day: 4)
+        self.showProgress(self.fridayProgressView, day: 5)
+        self.showProgress(self.saturdayProgressView, day: 6)
+        self.showProgress(self.sundayProgressView, day: 7)
         self.weeklyProgressView.frame = CGRectMake(1.5, -9, 175, 175);
+        
+        let globalPoints = Double(ActivitiesController.getGlobalPoint(self.card!))
+        let weeklyPoints = Double(ActivitiesController.getWeeklyPoint(self.card!))
+        let totalProgress = weeklyPoints/globalPoints
         CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor.grayColor(), progress:2,lineWidth: 10.0,fillColor: UIColor.clearColor())
-        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor(hexString:"29ABA9"), progress:1,lineWidth : 10.0,fillColor: UIColor.clearColor())
+        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor(hexString:"29ABA9"), progress:totalProgress,lineWidth : 10.0,fillColor: UIColor.clearColor())
         
     }
-    func showProgress(progressView : UIView){
+    func showProgress(progressView : UIView, day:Double){
+        let dailypoints = Double(ActivitiesController.getDailyTotalPointsOnDay(day, card: self.card!))
+        let weeklyPoints = Double(ActivitiesController.getWeeklyPoint(self.card!))
+        let progress = dailypoints/weeklyPoints
         CircleView.drawCircleOn(progressView, color: UIColor.grayColor(), progress:2,lineWidth: 1.5,fillColor: UIColor.clearColor())
-        CircleView.drawCircleOn(progressView, color: UIColor(hexString:"29ABA9"), progress:1,lineWidth : 1.5,fillColor: UIColor.clearColor())
+        CircleView.drawCircleOn(progressView, color: UIColor(hexString:"29ABA9"), progress:progress,lineWidth : 1.5,fillColor: UIColor.clearColor())
     }
     //MARK: func DailyPoints set ups
     func setupDailyPoints(){
