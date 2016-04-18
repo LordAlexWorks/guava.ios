@@ -58,7 +58,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
                         self.navigateOnSignupSuccess()
                     })
                 }else {
-                    print("Login error")
+                    print("Login error", terminator: "")
                 }
             }
         }

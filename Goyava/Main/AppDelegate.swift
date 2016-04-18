@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -28,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = loginVc
         }
         setUpGeneralSettings()
+        loadLookabackSettings()
+        Fabric.with([Crashlytics.self]);
         return true
     }
 
@@ -55,6 +59,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: Common Set up
     func setUpGeneralSettings(){
         UIApplication.sharedApplication().statusBarStyle = .LightContent
+    }
+    
+    func loadLookabackSettings(){
+        Lookback.setupWithAppToken("HASk58eZD3Gfovze6")
+        Lookback.sharedLookback().shakeToRecord = true
+        Lookback.sharedLookback().feedbackBubbleVisible = true
     }
 
 }

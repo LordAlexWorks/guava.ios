@@ -27,7 +27,7 @@ class MyCard: UIView {
 
     override func layoutSubviews(){
         if iconImageView != nil {
-            print(frame)
+            print(frame, terminator: "")
             backgroundCicularview.frame = CGRect(x: (frame.size.width-frame.size.height)/2+5, y: 0, width: frame.size.height-35, height: frame.size.height-35)
             globalPointLabel.frame = CGRect(x: 0, y: frame.size.height-35, width: frame.size.width, height: 15)
             weeklyPointLabel.frame = CGRect(x: 0, y: frame.size.height-20, width: frame.size.width, height: 10)
