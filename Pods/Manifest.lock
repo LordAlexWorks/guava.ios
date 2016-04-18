@@ -1,4 +1,7 @@
 PODS:
+  - AWSCore (2.3.6)
+  - AWSMobileAnalytics (2.3.6):
+    - AWSCore (= 2.3.6)
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
@@ -14,6 +17,7 @@ PODS:
     - Realm (= 0.98.8)
 
 DEPENDENCIES:
+  - AWSMobileAnalytics (~> 2.3.2)
   - Crashlytics
   - Fabric
   - Lookback
@@ -21,6 +25,8 @@ DEPENDENCIES:
   - RealmSwift
 
 SPEC CHECKSUMS:
+  AWSCore: 917d84b32974136194a905b98c0ae25c9f3350b8
+  AWSMobileAnalytics: 56ce9e671640fbd702f8ce52b0f128e525f3e51c
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   Lookback: 9ab9027ff246d2dc5ce34be483f70e4a6718280b
@@ -29,6 +35,6 @@ SPEC CHECKSUMS:
   Realm: 0e293bb62999730599efc3048896bbd4f2e43bcd
   RealmSwift: 064262d38113f23ff3508fb20a0a922e696bec01
 
-PODFILE CHECKSUM: 78136b701adee835da1bf72a5168d8afeffa9599
+PODFILE CHECKSUM: 4e0638eeede923263107f900fcb8167f2c04bc18
 
 COCOAPODS: 1.0.0.beta.8
