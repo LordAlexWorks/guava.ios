@@ -27,7 +27,7 @@ class QRScannerVC: UIViewController {
         self.qrScanner!.createQRScannerOnCompletion(self.scannerView, scannerHandler: {[weak self] (obj, error) -> Void in
             if((obj) != nil) {
                 let result = obj as! String
-                print(result)
+                print(result, terminator: "")
                 if self != nil {
                     Loader.sharedInstance.showLoader()
                     ActivitiesController.addQRCodeActivity(result, handler: { (obj, error) in
@@ -44,7 +44,7 @@ class QRScannerVC: UIViewController {
                 }
             }
             if((error) != nil) {
-                print(error)
+                print(error, terminator: "")
                 if self != nil {
                     self!.dismissViewControllerAnimated(false, completion: { () -> Void in
                         self!.goToMain()
