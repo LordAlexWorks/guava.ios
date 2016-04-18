@@ -998,12 +998,14 @@
                     <connections>
                         <outlet property="bottomConstraint" destination="7bs-n4-jJr" id="ldD-9J-UMN"/>
                         <outlet property="fridayProgressView" destination="GqR-xJ-JHv" id="4fB-wa-lIC"/>
+                        <outlet property="globalPointsLabel" destination="EAL-80-ncv" id="Oot-9L-mWf"/>
                         <outlet property="mondayProgressView" destination="6gG-ze-S7s" id="xVu-Pr-iHP"/>
                         <outlet property="saturdayProgressView" destination="ohl-gq-8sC" id="Z2F-mQ-sPm"/>
                         <outlet property="sundayProgressView" destination="CWJ-4n-5Ml" id="cvg-LP-R3x"/>
                         <outlet property="thrursdayProgressView" destination="XAx-1x-bst" id="4ps-uq-omx"/>
                         <outlet property="tuesdayProgressView" destination="rms-fV-5GN" id="tWa-m8-EUQ"/>
                         <outlet property="wednesdayProgressView" destination="qAR-pK-wZv" id="BZC-T1-Ntn"/>
+                        <outlet property="weeklyPointsLabel" destination="aeP-kY-jKV" id="gbQ-DL-EkF"/>
                         <outlet property="weeklyProgressView" destination="fh1-aH-drz" id="EPn-tp-lMc"/>
                     </connections>
                 </viewController>

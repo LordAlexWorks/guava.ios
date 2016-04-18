@@ -15,11 +15,11 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     var mainCardsHandler : MainCardsCompletionHandler?
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
-    var dataSource = [String]()
+    var dataSource = List<Card>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataSource()
+        self.loadDataSource(0)
         self.createMainPages()
     }
 
@@ -34,6 +34,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.dataSource = self
         
         let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
+        startingViewController.loadDataSource(self.dataSource[0])
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
         pageViewController!.view.frame = CGRectMake(0, 71, view.frame.size.width, view.frame.size.height-109);
@@ -43,13 +44,12 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.didMoveToParentViewController(self)
     }
     
-    func loadDataSource() {
-        self.dataSource = ["","",""]
+    func loadDataSource(showingAtIndex : Int) {
         // process data with UI logic
         let realm = try! Realm()
         let user = realm.objects(User).first
         if user != nil {
-            print(user!.myCards)
+            self.dataSource = user!.myCards
         }
     }
     //MARK: Page Control Data Source
@@ -82,6 +82,8 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
         pageContentViewController.pageIndex = index
         currentIndex = index
+        let card  = self.dataSource[index]
+        pageContentViewController.loadDataSource(card)
         return pageContentViewController
     }
     

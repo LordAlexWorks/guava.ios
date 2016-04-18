@@ -21,15 +21,29 @@ class MainContentVC: UIViewController {
     @IBOutlet weak var sundayProgressView : UIView!
     @IBOutlet weak var weeklyProgressView : UIView!
     
+    @IBOutlet weak var globalPointsLabel : UILabel!
+    @IBOutlet weak var weeklyPointsLabel : UILabel!
+    @IBOutlet weak var cardIconImageView : UIImageView!
+    
+    var card: Card?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.progressControlSetups()
+        self.refreshUIWithDataSource()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    //MARK: Data Source 
+    func loadDataSource(card : Card) {
+        self.card = card
+    }
+    func refreshUIWithDataSource(){
+        self.progressControlSetups()
+        self.globalPointsLabel.text = "\(ActivitiesController.getGlobalPoint(self.card!))"
+        self.weeklyPointsLabel.text = "YOU HAVE SCORED \(ActivitiesController.getWeeklyPoint(self.card!)) POINTS THIS WEEK"
+    }
     //MARK: Progress Controls 
     func progressControlSetups() {
         self.showProgress(self.mondayProgressView)
