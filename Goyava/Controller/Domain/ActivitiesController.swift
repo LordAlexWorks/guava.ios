@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RealmSwift
+
 public typealias ActivityHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class ActivitiesController: NSObject {
@@ -45,5 +47,16 @@ class ActivitiesController: NSObject {
             globalPoint = globalPoint+acitvity.point
         }
         return globalPoint
+    }
+    
+    class func getWeeklyPoint(card : Card)-> Int {
+        let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+        let results = card.activities.filter("createdAt >= \(mondayTimeStamp)")
+        var weeklyTotal = 0
+        for item in results {
+            let activity = item 
+            weeklyTotal = weeklyTotal + activity.point
+        }
+        return weeklyTotal
     }
 }
