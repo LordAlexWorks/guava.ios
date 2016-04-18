@@ -14,6 +14,9 @@ class MyCard: UIView {
     @IBOutlet weak var globalPointLabel : UILabel!
     @IBOutlet weak var weeklyPointLabel : UILabel!
     @IBOutlet weak var backgroundCicularview : UIView!
+    
+    var card: Card?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -35,6 +38,7 @@ class MyCard: UIView {
         }
     }
     func loadWithDataSource(card : Card) {
+        self.card = card
         self.iconImageView.image = nil
         self.globalPointLabel.text = "\(ActivitiesController.getGlobalPoint(card)) global points"
         self.weeklyPointLabel.text = "\(ActivitiesController.getWeeklyPoint(card)) points this week"

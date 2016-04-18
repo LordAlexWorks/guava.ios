@@ -19,8 +19,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataSource(0)
-        self.createMainPages()
+        self.self.displayPage(self.currentIndex)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,12 +28,12 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func onDismiss(handler : MainCardsCompletionHandler) {
         self.mainCardsHandler = handler
     }
-    func createMainPages(){
+    func displayPage(atIndex : Int){
         pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         pageViewController!.dataSource = self
         
         let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
-        startingViewController.loadDataSource(self.dataSource[0])
+        startingViewController.loadDataSource(self.dataSource[atIndex])
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
         pageViewController!.view.frame = CGRectMake(0, 71, view.frame.size.width, view.frame.size.height-109);
@@ -44,13 +43,14 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         pageViewController!.didMoveToParentViewController(self)
     }
     
-    func loadDataSource(showingAtIndex : Int) {
+    func loadDataSource(card : Card) {
         // process data with UI logic
         let realm = try! Realm()
         let user = realm.objects(User).first
         if user != nil {
             self.dataSource = user!.myCards
         }
+        self.currentIndex = self.dataSource.indexOf(card)!
     }
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {

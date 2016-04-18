@@ -41,12 +41,13 @@ class MyCardContentVC: UIViewController {
                     return
                 }
                 let card = self.dataSource[index]
-                index += 1
                 let myCardView = MyCard.instanceFromNib() as! MyCard
                 myCardView.frame = CGRect(x: Double(col)*width, y: Double(row)*height, width: width, height: height)
+                myCardView.tag = index
                 self.addTapGestureOnView(myCardView)
                 myCardView.loadWithDataSource(card)
                 self.view.addSubview(myCardView)
+                index += 1
             }
         }
     }
@@ -59,6 +60,8 @@ class MyCardContentVC: UIViewController {
     func handleTap(sender: UITapGestureRecognizer? = nil) {
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         mainVc.modalTransitionStyle = .FlipHorizontal
+        let myCardView = sender?.view as! MyCard
+        mainVc.loadDataSource(myCardView.card!)
         self.presentViewController(mainVc, animated: true) { () -> Void in
         }
         mainVc.onDismiss { [weak self]() -> Void in
