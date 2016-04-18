@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -585,15 +586,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="KNY-v2-lhX">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRz-8e-aTD">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5PX-Kg-Y6t">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRz-8e-aTD">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -616,15 +617,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="zRV-Ec-Hcy">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-dq-djj">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckj-zj-Xc9">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-dq-djj">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -647,15 +648,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="ANs-4V-QqE">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-rP-YHa">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-BJ-4WH">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud2-rP-YHa">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -678,15 +679,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="VXI-Rl-7UI">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZz-FF-gP3">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-Tn-x8V">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZz-FF-gP3">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -709,15 +710,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="dHX-XM-EgC">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-AU-erw">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5F2-iX-lpl">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIN-AU-erw">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -896,15 +897,15 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ellipse03" translatesAutoresizingMaskIntoConstraints="NO" id="OtT-FY-ZXL">
                                                                 <rect key="frame" x="7" y="0.0" width="45" height="52"/>
                                                             </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJH-Nl-hd2">
-                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
-                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YH2-Vr-WOX">
                                                                 <rect key="frame" x="7" y="11" width="45" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="7"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJH-Nl-hd2">
+                                                                <rect key="frame" x="7" y="0.0" width="45" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -997,13 +998,22 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstraint" destination="7bs-n4-jJr" id="ldD-9J-UMN"/>
+                        <outlet property="fridayPointsLabel" destination="KIN-AU-erw" id="Dr5-ax-ZDB"/>
                         <outlet property="fridayProgressView" destination="GqR-xJ-JHv" id="4fB-wa-lIC"/>
+                        <outlet property="globalPointsLabel" destination="EAL-80-ncv" id="Oot-9L-mWf"/>
+                        <outlet property="mondayPointsLabel" destination="wRz-8e-aTD" id="wOG-qG-sN9"/>
                         <outlet property="mondayProgressView" destination="6gG-ze-S7s" id="xVu-Pr-iHP"/>
+                        <outlet property="saturdayPointsLabel" destination="DLQ-6Z-84P" id="t9z-Fg-J8n"/>
                         <outlet property="saturdayProgressView" destination="ohl-gq-8sC" id="Z2F-mQ-sPm"/>
+                        <outlet property="sundayPointsLabel" destination="aJH-Nl-hd2" id="coi-qw-ewW"/>
                         <outlet property="sundayProgressView" destination="CWJ-4n-5Ml" id="cvg-LP-R3x"/>
                         <outlet property="thrursdayProgressView" destination="XAx-1x-bst" id="4ps-uq-omx"/>
+                        <outlet property="thrusdayPointsLabel" destination="mZz-FF-gP3" id="BB1-LU-WiW"/>
+                        <outlet property="tuesdayPointsLabel" destination="cbW-dq-djj" id="Oa0-c1-DT9"/>
                         <outlet property="tuesdayProgressView" destination="rms-fV-5GN" id="tWa-m8-EUQ"/>
+                        <outlet property="wednesdayPointsLabel" destination="Ud2-rP-YHa" id="CdH-t4-HQo"/>
                         <outlet property="wednesdayProgressView" destination="qAR-pK-wZv" id="BZC-T1-Ntn"/>
+                        <outlet property="weeklyPointsLabel" destination="aeP-kY-jKV" id="gbQ-DL-EkF"/>
                         <outlet property="weeklyProgressView" destination="fh1-aH-drz" id="EPn-tp-lMc"/>
                     </connections>
                 </viewController>
@@ -1039,9 +1049,11 @@
                                         <state key="normal" backgroundImage="Gridicon"/>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo2" translatesAutoresizingMaskIntoConstraints="NO" id="EFS-YJ-hZI">
-                                        <rect key="frame" x="269" y="4" width="70" height="47"/>
+                                        <rect key="frame" x="269" y="1" width="70" height="50"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4ZP-jd-f5F"/>
                                             <constraint firstAttribute="width" constant="70" id="WYq-pg-XpO"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="q3N-va-50c"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJb-bT-nHs">
@@ -1054,8 +1066,11 @@
                                             <action selector="myCardsButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="wDD-1o-pJu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBa-Yc-YwR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBa-Yc-YwR">
                                         <rect key="frame" x="2" y="0.0" width="76" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="76" id="EKr-aT-eah"/>
+                                        </constraints>
                                         <connections>
                                             <action selector="scanButtonTapped:" destination="qXj-25-k7c" eventType="touchUpInside" id="fbp-TD-oh5"/>
                                         </connections>
@@ -1063,17 +1078,29 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.14509803921568626" green="0.15294117647058825" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="bottom" secondItem="JBa-Yc-YwR" secondAttribute="bottom" id="3oo-2X-meQ"/>
                                     <constraint firstItem="Yvn-Ug-XJR" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="17" id="8zF-8g-wCl"/>
                                     <constraint firstAttribute="bottom" secondItem="EFS-YJ-hZI" secondAttribute="bottom" id="BNV-q7-UdC"/>
                                     <constraint firstAttribute="bottom" secondItem="Yvn-Ug-XJR" secondAttribute="bottom" constant="19" id="LkR-NM-N9i"/>
                                     <constraint firstItem="EFS-YJ-hZI" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" constant="4" id="Mss-fT-nvv"/>
                                     <constraint firstAttribute="trailing" secondItem="Yvn-Ug-XJR" secondAttribute="trailing" constant="22" id="bXh-Lp-cAX"/>
+                                    <constraint firstItem="EFS-YJ-hZI" firstAttribute="bottom" secondItem="vJb-bT-nHs" secondAttribute="bottom" id="cym-45-DND"/>
                                     <constraint firstAttribute="height" constant="51" id="eBN-pw-MFo"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="leading" secondItem="uME-Xg-vd3" secondAttribute="leading" constant="2" id="f9I-Dk-apt"/>
                                     <constraint firstAttribute="trailing" secondItem="vJb-bT-nHs" secondAttribute="trailing" id="fIA-Ro-tjp"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="top" secondItem="vJb-bT-nHs" secondAttribute="top" id="gAY-Uo-FHB"/>
                                     <constraint firstItem="EFS-YJ-hZI" firstAttribute="centerX" secondItem="uME-Xg-vd3" secondAttribute="centerX" constant="4" id="lfO-MT-ASZ"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="baseline" secondItem="vJb-bT-nHs" secondAttribute="baseline" id="oaw-wF-ZuJ"/>
                                     <constraint firstAttribute="bottom" secondItem="vJb-bT-nHs" secondAttribute="bottom" id="rSt-7H-xBx"/>
                                     <constraint firstItem="vJb-bT-nHs" firstAttribute="top" secondItem="uME-Xg-vd3" secondAttribute="top" id="vmB-C2-pN9"/>
+                                    <constraint firstItem="JBa-Yc-YwR" firstAttribute="firstBaseline" secondItem="vJb-bT-nHs" secondAttribute="firstBaseline" id="zZp-3O-OgY"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BNV-q7-UdC"/>
+                                        <exclude reference="Mss-fT-nvv"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpf-IW-kf1">
                                 <rect key="frame" x="0.0" y="72" width="600" height="498"/>
@@ -1114,6 +1141,9 @@
                             <constraint firstItem="uME-Xg-vd3" firstAttribute="top" secondItem="Oay-TT-Aa2" secondAttribute="top" constant="20" id="ut3-gj-OGO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardIconImageView" destination="EFS-YJ-hZI" id="PrI-0J-rVA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFq-WY-icb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

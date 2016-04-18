@@ -12,15 +12,16 @@ import RealmSwift
 typealias MainCardsCompletionHandler = () -> Void
 
 class MainVC: UIViewController,UIPageViewControllerDataSource {
+    
+    @IBOutlet weak var cardIconImageView : UIImageView!
     var mainCardsHandler : MainCardsCompletionHandler?
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
-    var dataSource = [String]()
+    var dataSource = List<Card>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataSource()
-        self.createMainPages()
+        self.self.displayPage(self.currentIndex)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,11 +30,12 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func onDismiss(handler : MainCardsCompletionHandler) {
         self.mainCardsHandler = handler
     }
-    func createMainPages(){
+    func displayPage(atIndex : Int){
         pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         pageViewController!.dataSource = self
         
         let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
+        startingViewController.loadDataSource(self.dataSource[atIndex])
         let viewControllers = [startingViewController]
         pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
         pageViewController!.view.frame = CGRectMake(0, 71, view.frame.size.width, view.frame.size.height-109);
@@ -41,16 +43,27 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
+        
+        self.setTopImage(atIndex)
+    }
+    func setTopImage(atIndex : Int) {
+        let card = self.dataSource[atIndex]
+        self.cardIconImageView.image = nil
+        ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
+            dispatch_async(dispatch_get_main_queue(), {
+                self.cardIconImageView.image = image
+            });
+        }
     }
     
-    func loadDataSource() {
-        self.dataSource = ["","",""]
+    func loadDataSource(card : Card) {
         // process data with UI logic
         let realm = try! Realm()
         let user = realm.objects(User).first
         if user != nil {
-            print(user!.myCards)
+            self.dataSource = user!.myCards
         }
+        self.currentIndex = self.dataSource.indexOf(card)!
     }
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
@@ -82,6 +95,8 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
         pageContentViewController.pageIndex = index
         currentIndex = index
+        let card  = self.dataSource[index]
+        pageContentViewController.loadDataSource(card)
         return pageContentViewController
     }
     

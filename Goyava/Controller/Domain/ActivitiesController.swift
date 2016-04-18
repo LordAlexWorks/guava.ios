@@ -59,4 +59,19 @@ class ActivitiesController: NSObject {
         }
         return weeklyTotal
     }
+    class func getDailyTotalPointsOnDay(day : Double, card : Card) -> Int {
+        var dailyTotalPoitns = 0
+        let  secondsInADay = 24.0*3600.0
+        let startTimeDiffrecesInSeconds = (day-1.0)*secondsInADay
+        let endTimeDifferencesInSeconds = day*secondsInADay
+        
+        let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+        let predicate = "createdAt >= \(mondayTimeStamp*day+startTimeDiffrecesInSeconds) AND createdAt <= \(mondayTimeStamp+endTimeDifferencesInSeconds)"
+        let results = card.activities.filter(predicate)
+        for item in results {
+            let activity = item
+            dailyTotalPoitns = dailyTotalPoitns + activity.point
+        }
+        return dailyTotalPoitns
+    }
 }
