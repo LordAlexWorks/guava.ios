@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import AWSMobileAnalytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -31,6 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         setUpGeneralSettings()
         loadLookabackSettings()
+        setupAnalytics()
         Fabric.with([Crashlytics.self]);
         return true
     }
@@ -65,6 +67,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Lookback.setupWithAppToken("HASk58eZD3Gfovze6")
         Lookback.sharedLookback().shakeToRecord = true
         Lookback.sharedLookback().feedbackBubbleVisible = true
+    }
+    func setupAnalytics(){
+        let analytics = AWSMobileAnalytics(forAppId: "50d4101badbd4161801e978d1dfa1313", identityPoolId: "us-east-1:649c5a0c-5dc4-489f-93d9-2515e12695e8")
+        print(analytics.description)
     }
 
 }
