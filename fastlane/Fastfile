@@ -64,7 +64,7 @@ end
      add_git_tag(
         grouping: 'fastlane-builds',
         prefix: 'v',
-        build_number: "#{version_number} - #{build_number}"
+        build_number: "v#{version_number}-b#{build_number}"
       )
 
     push_to_git_remote
