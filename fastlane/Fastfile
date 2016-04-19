@@ -61,6 +61,12 @@ end
     git_commit(path: ".",
               message: "Deploying build #{build_number}.")
 
+     add_git_tag(
+        grouping: 'fastlane-builds',
+        prefix: 'v',
+        build_number: "#{version_number} - #{build_number}"
+      )
+
     push_to_git_remote
 
    end
