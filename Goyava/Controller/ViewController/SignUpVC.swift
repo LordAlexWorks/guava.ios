@@ -37,11 +37,26 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
-        self.doSignup()
+        if isPassedInFormValidation() {
+            self.doSignup()
+        }else {
+            UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
+        }
     }
     
     func onDismiss(handler :SignupCompletionHandler ) {
         self.signUpHandler = handler
+    }
+    //MARK: Text Field Validation
+    func isPassedInFormValidation()-> Bool {
+        if (self.emailTextField.text?.characters.count == 0) {
+            return false
+        }else if (self.passwordTextField.text?.characters.count == 0 ) {
+            return false
+        }else if (!UtilityManager.validateEmail(self.emailTextField.text!)){
+            return false
+        }
+        return true
     }
     //MARK: Signup controller activity
     func doSignup(){
@@ -58,7 +73,9 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
                         self.navigateOnSignupSuccess()
                     })
                 }else {
-                    print("Login error", terminator: "")
+                    dispatch_async(dispatch_get_main_queue(),{
+                        print("Login error", terminator: "")
+                    })
                 }
             }
         }
