@@ -14,10 +14,9 @@
 		1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
 		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
-		48C19D64819A8411B89CCD49 /* Pods_Goyava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F8E7A05EA67B0749990333C /* Pods_Goyava.framework */; };
-		5E8FC14BB7887C867EA75EBC /* Pods_Goyava_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA7213113DF9260AFC4A389 /* Pods_Goyava_Beta.framework */; };
-		828A1B9CD67940E9196BA5E0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5A4596EA279C86D3BF72D9 /* Pods.framework */; };
-		908858C47B2351EEA7FA87C0 /* Pods_GoyavaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933D62CF0BCBE29EC20EAEA0 /* Pods_GoyavaUITests.framework */; };
+		1E1842467AE889F09A348988 /* Pods_GoyavaBetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87CCFE6C986D2677706BCE5 /* Pods_GoyavaBetaUITests.framework */; };
+		620159A41931807A331A3767 /* Pods_Goyava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D929844C4AD4AE6522954043 /* Pods_Goyava.framework */; };
+		939592F8C1DF4976A19BAF0E /* Pods_Goyava_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 331EA82744567F84BFBA72C8 /* Pods_Goyava_Beta.framework */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -78,7 +77,7 @@
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
-		F2A04AE5B4630508A011ACBC /* Pods_GoyavaBetaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3FF7521348D9DC0DE625F1E /* Pods_GoyavaBetaUITests.framework */; };
+		F79175CA533D0E466CDC3CCF /* Pods_GoyavaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C35C595FBAF04905F3349F /* Pods_GoyavaUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,18 +112,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		116F8F449CD4AE1CE1E7FAD8 /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
-		1620F23279B38BEA872159FA /* Pods-GoyavaBetaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaBetaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaBetaUITests/Pods-GoyavaBetaUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1B5E0569722C8616057A6092 /* Pods-GoyavaBetaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaBetaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaBetaUITests/Pods-GoyavaBetaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1B2DC3F62DCA386DC430364E /* Pods-GoyavaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1C26969E1C7215B300B140F0 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationController.swift; sourceTree = "<group>"; };
 		1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilityManager.swift; sourceTree = "<group>"; };
-		26057BFE6A99F6B26A2E064B /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
-		34D01B79C242F25CBB58415A /* Pods-Goyava-Beta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.release.xcconfig"; sourceTree = "<group>"; };
-		3F8E7A05EA67B0749990333C /* Pods_Goyava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EA7213113DF9260AFC4A389 /* Pods_Goyava_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		933D62CF0BCBE29EC20EAEA0 /* Pods_GoyavaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A95AF795961B93F85DF63871 /* Pods-Goyava-Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.debug.xcconfig"; sourceTree = "<group>"; };
+		256C596A7BFD4C51B60BF83C /* Pods-Goyava-Beta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.release.xcconfig"; sourceTree = "<group>"; };
+		331EA82744567F84BFBA72C8 /* Pods_Goyava_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5864AB5A01BE8A1F336A75B9 /* Pods-GoyavaBetaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaBetaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaBetaUITests/Pods-GoyavaBetaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A517C58D03F5E8C4BDB6B7F /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
+		746735634913DE0116063726 /* Pods-Goyava-Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.debug.xcconfig"; sourceTree = "<group>"; };
+		AF6A417A6C8EA3016A05332E /* Pods-GoyavaBetaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaBetaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaBetaUITests/Pods-GoyavaBetaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0088F85650E97495DB65F7F /* Pods-GoyavaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,12 +160,13 @@
 		B5FBEB731C6AD553006DCC12 /* Goyava-Beta-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-Beta-info.plist"; sourceTree = "<group>"; };
 		B5FBEB741C6AD553006DCC12 /* Goyava-info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Goyava-info.plist"; sourceTree = "<group>"; };
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
-		C3FF7521348D9DC0DE625F1E /* Pods_GoyavaBetaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaBetaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87CCFE6C986D2677706BCE5 /* Pods_GoyavaBetaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaBetaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D929844C4AD4AE6522954043 /* Pods_Goyava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA5A4596EA279C86D3BF72D9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F71901D158498CEFD278DCE1 /* Pods-GoyavaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FBFF39F6B4A36D2D2FB62BD7 /* Pods-GoyavaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F406FBD993F67C09A8AC71E4 /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
+		F5C35C595FBAF04905F3349F /* Pods_GoyavaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,8 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C19D64819A8411B89CCD49 /* Pods_Goyava.framework in Frameworks */,
-				828A1B9CD67940E9196BA5E0 /* Pods.framework in Frameworks */,
+				620159A41931807A331A3767 /* Pods_Goyava.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +182,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				908858C47B2351EEA7FA87C0 /* Pods_GoyavaUITests.framework in Frameworks */,
+				F79175CA533D0E466CDC3CCF /* Pods_GoyavaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2A04AE5B4630508A011ACBC /* Pods_GoyavaBetaUITests.framework in Frameworks */,
+				1E1842467AE889F09A348988 /* Pods_GoyavaBetaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E8FC14BB7887C867EA75EBC /* Pods_Goyava_Beta.framework in Frameworks */,
+				939592F8C1DF4976A19BAF0E /* Pods_Goyava_Beta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,11 +208,11 @@
 		07DBD2A4DD11FE4B50BAC75D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3F8E7A05EA67B0749990333C /* Pods_Goyava.framework */,
-				7EA7213113DF9260AFC4A389 /* Pods_Goyava_Beta.framework */,
-				C3FF7521348D9DC0DE625F1E /* Pods_GoyavaBetaUITests.framework */,
-				933D62CF0BCBE29EC20EAEA0 /* Pods_GoyavaUITests.framework */,
 				DA5A4596EA279C86D3BF72D9 /* Pods.framework */,
+				D929844C4AD4AE6522954043 /* Pods_Goyava.framework */,
+				331EA82744567F84BFBA72C8 /* Pods_Goyava_Beta.framework */,
+				B87CCFE6C986D2677706BCE5 /* Pods_GoyavaBetaUITests.framework */,
+				F5C35C595FBAF04905F3349F /* Pods_GoyavaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -246,17 +244,17 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		766E47614DAF1AF1C2A07ABC /* Pods */ = {
+		82B224E5EA81235DECB4A892 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				26057BFE6A99F6B26A2E064B /* Pods-Goyava.debug.xcconfig */,
-				116F8F449CD4AE1CE1E7FAD8 /* Pods-Goyava.release.xcconfig */,
-				A95AF795961B93F85DF63871 /* Pods-Goyava-Beta.debug.xcconfig */,
-				34D01B79C242F25CBB58415A /* Pods-Goyava-Beta.release.xcconfig */,
-				1620F23279B38BEA872159FA /* Pods-GoyavaBetaUITests.debug.xcconfig */,
-				1B5E0569722C8616057A6092 /* Pods-GoyavaBetaUITests.release.xcconfig */,
-				FBFF39F6B4A36D2D2FB62BD7 /* Pods-GoyavaUITests.debug.xcconfig */,
-				F71901D158498CEFD278DCE1 /* Pods-GoyavaUITests.release.xcconfig */,
+				5A517C58D03F5E8C4BDB6B7F /* Pods-Goyava.debug.xcconfig */,
+				F406FBD993F67C09A8AC71E4 /* Pods-Goyava.release.xcconfig */,
+				746735634913DE0116063726 /* Pods-Goyava-Beta.debug.xcconfig */,
+				256C596A7BFD4C51B60BF83C /* Pods-Goyava-Beta.release.xcconfig */,
+				5864AB5A01BE8A1F336A75B9 /* Pods-GoyavaBetaUITests.debug.xcconfig */,
+				AF6A417A6C8EA3016A05332E /* Pods-GoyavaBetaUITests.release.xcconfig */,
+				B0088F85650E97495DB65F7F /* Pods-GoyavaUITests.debug.xcconfig */,
+				1B2DC3F62DCA386DC430364E /* Pods-GoyavaUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -267,8 +265,8 @@
 				B53267CE1C60632B008297CF /* Goyava */,
 				B599F72A1C682BFF0013E89E /* GuavaUITests */,
 				B53267CD1C60632B008297CF /* Products */,
-				766E47614DAF1AF1C2A07ABC /* Pods */,
 				07DBD2A4DD11FE4B50BAC75D /* Frameworks */,
+				82B224E5EA81235DECB4A892 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,7 +449,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53267DE1C60632B008297CF /* Build configuration list for PBXNativeTarget "Goyava" */;
 			buildPhases = (
-				37C3B03D995867034A1D8140 /* Check Pods Manifest.lock */,
 				B6BD920521ED6466CC52DAFF /* 📦 Check Pods Manifest.lock */,
 				B53267C81C60632B008297CF /* Sources */,
 				B53267C91C60632B008297CF /* Frameworks */,
@@ -459,8 +456,6 @@
 				E503E69562910024433E6043 /* 📦 Embed Pods Frameworks */,
 				5413D8FCDEE917474A976C84 /* 📦 Copy Pods Resources */,
 				BAAF4A9F1CC523F700E3A5E0 /* ShellScript */,
-				34F1B6FC2BD3705BBD71A0BC /* Embed Pods Frameworks */,
-				D01E5031A324038411E029B5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -524,7 +519,6 @@
 				84ACC637A274F5F44CDDAA2C /* 📦 Embed Pods Frameworks */,
 				2FC9A24A3C8C156F5C6CEAF4 /* 📦 Copy Pods Resources */,
 				BAE633BD1CC5333500BE0374 /* ShellScript */,
-				EDE5B2CDF2339302B30946E4 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -669,36 +663,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		34F1B6FC2BD3705BBD71A0BC /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		37C3B03D995867034A1D8140 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		389E4332111C3BDF16C4995D /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -815,21 +779,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D01E5031A324038411E029B5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava/Pods-Goyava-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E503E69562910024433E6043 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -843,21 +792,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava/Pods-Goyava-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EDE5B2CDF2339302B30946E4 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1079,7 +1013,7 @@
 		};
 		B53267DF1C60632B008297CF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26057BFE6A99F6B26A2E064B /* Pods-Goyava.debug.xcconfig */;
+			baseConfigurationReference = 5A517C58D03F5E8C4BDB6B7F /* Pods-Goyava.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1097,7 +1031,7 @@
 		};
 		B53267E01C60632B008297CF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 116F8F449CD4AE1CE1E7FAD8 /* Pods-Goyava.release.xcconfig */;
+			baseConfigurationReference = F406FBD993F67C09A8AC71E4 /* Pods-Goyava.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1114,7 +1048,7 @@
 		};
 		B599F7301C682C000013E89E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBFF39F6B4A36D2D2FB62BD7 /* Pods-GoyavaUITests.debug.xcconfig */;
+			baseConfigurationReference = B0088F85650E97495DB65F7F /* Pods-GoyavaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuavaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1127,7 +1061,7 @@
 		};
 		B599F7311C682C000013E89E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F71901D158498CEFD278DCE1 /* Pods-GoyavaUITests.release.xcconfig */;
+			baseConfigurationReference = 1B2DC3F62DCA386DC430364E /* Pods-GoyavaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = GuavaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1140,7 +1074,7 @@
 		};
 		B5D112E61C6D7BEE00F66AB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1620F23279B38BEA872159FA /* Pods-GoyavaBetaUITests.debug.xcconfig */;
+			baseConfigurationReference = 5864AB5A01BE8A1F336A75B9 /* Pods-GoyavaBetaUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "GuavaUITests/GoyavaBetaUITests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1153,7 +1087,7 @@
 		};
 		B5D112E71C6D7BEE00F66AB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5E0569722C8616057A6092 /* Pods-GoyavaBetaUITests.release.xcconfig */;
+			baseConfigurationReference = AF6A417A6C8EA3016A05332E /* Pods-GoyavaBetaUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "GuavaUITests/GoyavaBetaUITests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1166,7 +1100,7 @@
 		};
 		B5FBEB6F1C6AD4EC006DCC12 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A95AF795961B93F85DF63871 /* Pods-Goyava-Beta.debug.xcconfig */;
+			baseConfigurationReference = 746735634913DE0116063726 /* Pods-Goyava-Beta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
@@ -1185,7 +1119,7 @@
 		};
 		B5FBEB701C6AD4EC006DCC12 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34D01B79C242F25CBB58415A /* Pods-Goyava-Beta.release.xcconfig */;
+			baseConfigurationReference = 256C596A7BFD4C51B60BF83C /* Pods-Goyava-Beta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
