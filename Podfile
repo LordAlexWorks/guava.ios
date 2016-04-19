@@ -3,7 +3,7 @@ use_frameworks!
 
 pod 'Fabric'
 pod 'Crashlytics'
-pod 'AWSMobileAnalytics', '~> 2.3.2'
+pod 'AWSMobileAnalytics'
 
 
 target 'Goyava' do

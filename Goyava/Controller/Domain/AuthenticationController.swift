@@ -47,7 +47,9 @@ class AuthenticationController: NSObject {
             }else {
                 // do bussiness logic with signup json response
                 let json = obj as! NSDictionary
-                let userid = json["client"]!["id"]
+                let client = json["client"] as! NSDictionary
+                let userid = client["id"]
+
                 if userid != nil {
                     session.isSuccess = false
                 }else {
