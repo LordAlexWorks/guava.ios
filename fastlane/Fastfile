@@ -31,7 +31,7 @@ end
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :dailybuild do |options|
-    ensure_git_status_clean
+   # ensure_git_status_clean
     ensure_git_branch(branch: 'master')
     git_pull
     version_number = get_version_number
