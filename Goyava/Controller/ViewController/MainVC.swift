@@ -52,6 +52,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
             dispatch_async(dispatch_get_main_queue(), {
                 self.cardIconImageView.image = image
+                UtilityManager.drawCircularImage(self.cardIconImageView)
             });
         }
     }
