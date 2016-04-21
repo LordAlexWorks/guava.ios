@@ -32,9 +32,9 @@ class MyCard: UIView {
             globalPointLabel.frame = CGRect(x: 0, y: frame.size.height-35, width: frame.size.width, height: 15)
             weeklyPointLabel.frame = CGRect(x: 0, y: frame.size.height-20, width: frame.size.width, height: 10)
             
-            let globalPoints = Double(self.card!.maxPoint)
-            let weeklyPoints = Double(ActivitiesController.getWeeklyPoint(self.card!))
-            let totalProgress = weeklyPoints/globalPoints
+            let maxPoints = Double(self.card!.maxPoint)
+            let globalPoints = Double(ActivitiesController.getGlobalPoint(self.card!))
+            let totalProgress = globalPoints/maxPoints
             CircleView.drawCircleOn(backgroundCicularview, color: UIColor.grayColor(), progress:2,lineWidth:5.0,fillColor: UIColor.clearColor())
             CircleView.drawCircleOn(backgroundCicularview, color: UIColor(hexString:"29ABA9"), progress:totalProgress*2,lineWidth:5.0,fillColor: UIColor.clearColor())
 

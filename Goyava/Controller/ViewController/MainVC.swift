@@ -101,13 +101,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         return pageContentViewController
     }
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return self.dataSource.count
-    }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return 0
-    }
     
     //MARK: Button actions
     @IBAction func myCardsButtonTapped(sender : UIButton){
