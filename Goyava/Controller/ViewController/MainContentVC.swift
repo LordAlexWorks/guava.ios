@@ -61,7 +61,7 @@ class MainContentVC: UIViewController {
         self.showProgress(self.fridayProgressView, day: 5)
         self.showProgress(self.saturdayProgressView, day: 6)
         self.showProgress(self.sundayProgressView, day: 7)
-        self.weeklyProgressView.frame = CGRectMake(1.5, -9, 175, 175);
+        self.weeklyProgressView.frame = CGRectMake(0, 0, 170, 170);
         
         let globalPoints = Double(ActivitiesController.getGlobalPoint(self.card!))
         let weeklyPoints = Double(ActivitiesController.getWeeklyPoint(self.card!))
