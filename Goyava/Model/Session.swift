@@ -12,4 +12,5 @@ class Session: NSObject {
     var email : String?
     var password : String?
     var isSuccess : Bool?
+    var errorDescription : String?
 }
