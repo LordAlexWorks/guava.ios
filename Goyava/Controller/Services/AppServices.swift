@@ -27,10 +27,11 @@ class AppServices: NSObject {
     }
     //MARK: Signup Service
     class func callSignupService(session : Session,handler :AppServiceHandler) {
-        let loginURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+URL.loginEndPoint.rawValue
+        let loginURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+URL.registrationEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/json"]
-        let jsondict = ["email":session.email!,"password":session.password!]
-        let httpBody = UtilityManager.getFormattedJSONString(jsondict)
+        let usernamePasswordDict = ["email":session.email!,"password":session.password!]
+        let clientRegistrationDict = ["client_registration" : usernamePasswordDict]
+        let httpBody = UtilityManager.getFormattedJSONString(clientRegistrationDict)
         let httpClient = SSHTTPClient(url: loginURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
             if (error != nil) {

@@ -61,13 +61,13 @@ class MainContentVC: UIViewController {
         self.showProgress(self.fridayProgressView, day: 5)
         self.showProgress(self.saturdayProgressView, day: 6)
         self.showProgress(self.sundayProgressView, day: 7)
-        self.weeklyProgressView.frame = CGRectMake(1.5, -9, 175, 175);
+        self.weeklyProgressView.frame = CGRectMake(0, 0, 168, 168);
         
+        let maxPoints = Double(self.card!.maxPoint)
         let globalPoints = Double(ActivitiesController.getGlobalPoint(self.card!))
-        let weeklyPoints = Double(ActivitiesController.getWeeklyPoint(self.card!))
-        let totalProgress = weeklyPoints/globalPoints
+        let totalProgress = globalPoints/maxPoints
         CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor.grayColor(), progress:2,lineWidth: 10.0,fillColor: UIColor.clearColor())
-        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor(hexString:"29ABA9"), progress:totalProgress,lineWidth : 10.0,fillColor: UIColor.clearColor())
+        CircleView.drawCircleOn(self.weeklyProgressView, color: UIColor(hexString:"29ABA9"), progress:totalProgress*2,lineWidth : 10.0,fillColor: UIColor.clearColor())
         
     }
     func showProgress(progressView : UIView, day:Double){

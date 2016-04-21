@@ -48,19 +48,24 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
         let session = Session()
         session.email = self.emailTextField.text!
         session.password = self.passwordTextField.text!
+        Loader.sharedInstance.showLoader()
         AuthenticationController.doSignup(session) { (obj, error) in
-            if error != nil {
-                UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
-            }else {
-                let session = obj as! Session
-                if (session.isSuccess == true) {
-                    dispatch_async(dispatch_get_main_queue(),{
-                        self.navigateOnSignupSuccess()
-                    })
+            dispatch_async(dispatch_get_main_queue(),{
+                Loader.sharedInstance.hideLoader()
+                if error != nil {
+                    UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
                 }else {
-                    print("Login error", terminator: "")
+                    let session = obj as! Session
+                    if (session.isSuccess == true) {
+                        UtilityManager.showAlertMessage("Registration Success!", onViewcontrolller: self)
+                        self.dismissViewControllerAnimated(true, completion: nil)
+                    }else {
+                        if session.errorDescription != nil {
+                            UtilityManager.showAlertMessage(session.errorDescription!, onViewcontrolller: self)
+                        }
+                    }
                 }
-            }
+            })
         }
     }
     func navigateOnSignupSuccess() {
