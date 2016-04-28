@@ -53,7 +53,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
             dispatch_async(dispatch_get_main_queue(),{
                 Loader.sharedInstance.hideLoader()
                 if error != nil {
-                    UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
+                    UtilityManager.showErrorAlertMessage("Network Error", onViewcontrolller: self)
                 }else {
                     let session = obj as! Session
                     if (session.isSuccess == true) {
@@ -61,7 +61,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
                         self.dismissViewControllerAnimated(true, completion: nil)
                     }else {
                         if session.errorDescription != nil {
-                            UtilityManager.showAlertMessage(session.errorDescription!, onViewcontrolller: self)
+                            UtilityManager.showErrorAlertMessage(session.errorDescription!, onViewcontrolller: self)
                         }
                     }
                 }

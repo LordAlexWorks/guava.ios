@@ -44,7 +44,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         if isPassedInFormValidation() {
             self.callLoginController()
         }else {
-            UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
+            UtilityManager.showErrorAlertMessage("Invaid Email or Password", onViewcontrolller: self)
         }
     }
     func isPassedInFormValidation()-> Bool {
@@ -66,7 +66,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             dispatch_async(dispatch_get_main_queue(),{
                 Loader.sharedInstance.hideLoader()
                 if error != nil {
-                    UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
+                    UtilityManager.showErrorAlertMessage("Network Error", onViewcontrolller: self)
                 }else {
                     let session = obj as! Session
                     if (session.isSuccess == true) {
@@ -74,7 +74,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                         appDel.user = AuthenticationController.getLocalUser()
                         self.pageOnLoginSuccess()
                     }else {
-                        UtilityManager.showAlertMessage("Login Error", onViewcontrolller: self)
+                        UtilityManager.showErrorAlertMessage(session.errorDescription!, onViewcontrolller: self)
                     }
                 }
             })
