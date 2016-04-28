@@ -26,6 +26,12 @@ class UtilityManager: NSObject {
         onViewcontrolller.presentViewController(alert, animated: true, completion: nil)
     }
     
+    class func showErrorAlertMessage(messageString: String, onViewcontrolller:UIViewController) {
+        let alert = UIAlertController(title: "Oops!", message: messageString, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        onViewcontrolller.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     class func validateEmail(email :String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
