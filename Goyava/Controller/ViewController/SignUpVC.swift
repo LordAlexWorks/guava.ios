@@ -58,7 +58,9 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
                     let session = obj as! Session
                     if (session.isSuccess == true) {
                         UtilityManager.showAlertMessage("Registration Success!", onViewcontrolller: self)
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        self.dismissViewControllerAnimated(false, completion: { 
+                            self.goToMain()
+                        })
                     }else {
                         if session.errorDescription != nil {
                             UtilityManager.showErrorAlertMessage(session.errorDescription!, onViewcontrolller: self)
@@ -97,5 +99,12 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
         UIView.animateWithDuration(0.4, animations: { () -> Void in
             self.view.frame = CGRect(x: 0, y: 0, width: viewFrame.size.width, height: viewFrame.size.height)
         })
+    }
+    //GO TO MAIN
+    
+    func goToMain(){
+        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = myCardsVc
     }
 }
