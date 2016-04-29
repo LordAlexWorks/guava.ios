@@ -44,8 +44,11 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     @IBAction func gridButtonTapped(sender : UIButton) {
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         mainVc.modalTransitionStyle = .FlipHorizontal
-        let internalCards = self.dataSource[0]
-        mainVc.loadDataSource(internalCards[0])
+        if self.dataSource.count > 0 {
+            let internalCards = self.dataSource[0]
+            mainVc.loadDataSource(internalCards[0])
+        }
+        
         self.presentViewController(mainVc, animated: true) { () -> Void in
         }
         mainVc.onDismiss { [weak self]() -> Void in
