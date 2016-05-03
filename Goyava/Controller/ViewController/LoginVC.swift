@@ -13,6 +13,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     // Outlets
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var passwordTextField : UITextField!
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     //View method. Entry point of loading a view
     override func viewDidLoad() {
@@ -44,6 +45,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
         if isPassedInFormValidation() {
+            guard appDelegate.isNetworkReachable else {
+                return
+            }
             self.handleLogin()
         }else {
             UtilityManager.showErrorAlertMessage("Invaid Email or Password", onViewcontrolller: self)

@@ -16,6 +16,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var passwordTextField : UITextField!
     var signUpHandler : SignupCompletionHandler?
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     // Entry point of view load
     override func viewDidLoad() {
@@ -39,6 +40,9 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
         if isPassedInFormValidation() {
+            guard appDelegate.isNetworkReachable else {
+                return
+            }
             self.handleSignup()
         }else {
             UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)

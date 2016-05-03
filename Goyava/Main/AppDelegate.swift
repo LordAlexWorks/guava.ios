@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var user : User?
     var reach: Reachability?
+    var isNetworkReachable = false
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
@@ -78,13 +79,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func addReachability(){
         self.reach = Reachability.reachabilityForInternetConnection()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reachabilityChanged(_:)), name: kReachabilityChangedNotification,object: nil)
+        if self.reach!.isReachableViaWiFi() || self.reach!.isReachableViaWWAN() {
+            self.isNetworkReachable = true
+        } else {
+            self.isNetworkReachable = false
+        }
         self.reach!.startNotifier()
     }
     func reachabilityChanged(notification: NSNotification) {
         if self.reach!.isReachableViaWiFi() || self.reach!.isReachableViaWWAN() {
-            print("Service avalaible!!!")
+            self.isNetworkReachable = true
         } else {
-            print("No service avalaible!!!")
+           self.isNetworkReachable = false
         }
     }
 }
