@@ -8,30 +8,33 @@
 
 import UIKit
 
-public typealias ShowKeyboardHandler = (notification : NSNotification) -> Void
-public typealias HideKeyboardHandler = (notification : NSNotification) -> Void
-
 class Keyboard: NSObject {
     
-    //keyboard show and hide handlers
-    static var showKeyboardHandler : ShowKeyboardHandler?
-    static var hidekyeboardHandler : HideKeyboardHandler?
+    //view controller 
+    static var viewController : UIViewController?
     
     //Keyboard register method with show and hide notification
-    static func resgister(viewController : UIViewController, showKeyboard showKeyboardHandler : ShowKeyboardHandler, hideKeyboard hideKeyboardHandler : HideKeyboardHandler) {
+    static func showHide(viewController : UIViewController) {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
-        self.showKeyboardHandler =  showKeyboardHandler
-        self.hidekyeboardHandler = hideKeyboardHandler
+        self.viewController = viewController
     }
     
     //keyboard show method
     static func keyboardWillShow(notification: NSNotification) {
-        self.showKeyboardHandler!(notification: notification)
+        let info = notification.userInfo!
+        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
+        let viewFrame = self.viewController!.view.frame
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.viewController!.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
+        })
     }
     
     //keyboard hide method
     static func keyboardWillHide(notification: NSNotification) {
-        self.hidekyeboardHandler!(notification: notification)
+        let viewFrame = self.viewController!.view.frame
+        UIView.animateWithDuration(0.4, animations: { () -> Void in
+            self.viewController!.view.frame = CGRect(x: 0, y: 0, width: viewFrame.size.width, height: viewFrame.size.height)
+        })
     }
 }

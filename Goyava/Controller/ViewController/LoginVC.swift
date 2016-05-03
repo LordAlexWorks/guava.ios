@@ -27,25 +27,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     //This method for initializing some ui tasks e.g oberserver for key board notification and setting text filed ui tasks.
     func initilizeUITasks(){
         addBackgroundTapGesture()
-        self.keyboardShowHide()
+        Keyboard.showHide(self)
         emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
-    }
-    //this method for registering keyboard show and hide and handling notification of show and shide
-    func keyboardShowHide(){
-        Keyboard.resgister(self, showKeyboard: { (notification) in
-                let info = notification.userInfo!
-                let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-                let viewFrame = self.view.frame
-                UIView.animateWithDuration(0.4, animations: { () -> Void in
-                    self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
-                })
-            }, hideKeyboard: { (notification) in
-                let viewFrame = self.view.frame
-                UIView.animateWithDuration(0.4, animations: { () -> Void in
-                    self.view.frame = CGRect(x: 0, y: 0, width: viewFrame.size.width, height: viewFrame.size.height)
-            })
-        })
     }
     //MARK: Button Action
     @IBAction func signUpButtonTapped(sender: UIButton) {

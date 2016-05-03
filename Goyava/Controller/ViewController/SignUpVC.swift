@@ -26,8 +26,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     
     func initilizeUITasks(){
         addBackgroundTapGesture()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
+       Keyboard.showHide(self)
         emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
@@ -100,21 +99,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     func handleTap(gestureRecognizer: UIGestureRecognizer) {
         self.view.endEditing(true)
     }
-    //MARK: Keyboard Show and Hide
-    func keyboardWillShow(notification: NSNotification) {
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        let viewFrame = self.view.frame
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
-        })
-    }
-    func keyboardWillHide(notification: NSNotification) {
-        let viewFrame = self.view.frame
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.view.frame = CGRect(x: 0, y: 0, width: viewFrame.size.width, height: viewFrame.size.height)
-        })
-    }
+
     //GO TO MAIN
     
     func goToMain(){
