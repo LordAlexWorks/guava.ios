@@ -20,8 +20,8 @@ class AuthenticationController: NSObject {
             }else {
                 // do bussiness logic with login json response
                 let json = obj as! NSDictionary
-                let errorString = json["errors"] as! String
-                if errorString.characters.count > 0 {
+                let errorString = json["errors"] as? String
+                if errorString != nil {
                     session.isSuccess = false
                     session.errorDescription = errorString
                 }else {
