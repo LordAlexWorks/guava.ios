@@ -10,13 +10,14 @@ import UIKit
 import Fabric
 import Crashlytics
 import AWSMobileAnalytics
-
+import Reachability
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var user : User?
-
+    var reach: Reachability?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
@@ -34,6 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         loadLookabackSettings()
         setupAnalytics()
         Fabric.with([Crashlytics.self]);
+        self.addReachability()
         return true
     }
 
@@ -72,6 +74,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let analytics = AWSMobileAnalytics(forAppId: "50d4101badbd4161801e978d1dfa1313", identityPoolId: "us-east-1:649c5a0c-5dc4-489f-93d9-2515e12695e8")
         print(analytics.description)
     }
-
+    // add Reachability method
+    func addReachability(){
+        self.reach = Reachability.reachabilityForInternetConnection()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reachabilityChanged(_:)), name: kReachabilityChangedNotification,object: nil)
+        self.reach!.startNotifier()
+    }
+    func reachabilityChanged(notification: NSNotification) {
+        if self.reach!.isReachableViaWiFi() || self.reach!.isReachableViaWWAN() {
+            print("Service avalaible!!!")
+        } else {
+            print("No service avalaible!!!")
+        }
+    }
 }
 
