@@ -9,18 +9,22 @@
 import UIKit
 
 class LoginVC: UIViewController,UITextFieldDelegate {
+    
+    // Outlets
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var passwordTextField : UITextField!
     
+    //View method. Entry point of loading a view
     override func viewDidLoad() {
         super.viewDidLoad()
         initilizeUITasks()
     }
-
+    //memory warning method
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    //This method for initializing some ui tasks oberserver for key board notification and setting text filed ui tasks
     func initilizeUITasks(){
         addBackgroundTapGesture()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
@@ -42,11 +46,13 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     @IBAction func loginButtonTapped(sender: UIButton) {
         if isPassedInFormValidation() {
-            self.callLoginController()
+            self.handleLogin()
         }else {
             UtilityManager.showErrorAlertMessage("Invaid Email or Password", onViewcontrolller: self)
         }
     }
+    
+    //mthod will be responsible for passing text fileds validations
     func isPassedInFormValidation()-> Bool {
         if (self.emailTextField.text?.characters.count == 0) {
             return false
@@ -57,7 +63,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
         return true
     }
-    func callLoginController() {
+    
+    //Method will handle login service will fetch model data after succesful login
+    func handleLogin() {
         let session = Session()
         session.email = self.emailTextField.text!
         session.password = self.passwordTextField.text!
@@ -72,7 +80,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
                     if (session.isSuccess == true) {
                         let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
                         appDel.user = AuthenticationController.getLocalUser()
-                        self.pageOnLoginSuccess()
+                        self.goToMain()
                     }else {
                         UtilityManager.showErrorAlertMessage(session.errorDescription!, onViewcontrolller: self)
                     }
@@ -80,9 +88,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             })
         }
     }
-    func pageOnLoginSuccess(){
-        goToMain()
-    }
+    
     //MARK: Login navigation
     func goToMain(){
         let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
