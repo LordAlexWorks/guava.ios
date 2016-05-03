@@ -17,7 +17,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     //View method. Entry point of loading a view
     override func viewDidLoad() {
         super.viewDidLoad()
-        initilizeUITasks()
+        self.initilizeUITasks()
     }
     //memory warning method
     override func didReceiveMemoryWarning() {
@@ -26,10 +26,9 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     
     //This method for initializing some ui tasks e.g oberserver for key board notification and setting text filed ui tasks.
     func initilizeUITasks(){
-        addBackgroundTapGesture()
+        self.addBackgroundTapGesture()
         Keyboard.showHide(self)
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        UtilityManager.addAttributedPlacehoder(self.emailTextField, passwordTextField: self.passwordTextField)
     }
     //MARK: Button Action
     @IBAction func signUpButtonTapped(sender: UIButton) {
@@ -93,15 +92,6 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         appDelegate.window?.rootViewController = myCardsVc
-    }
-    
-    //MARK: Background Tap
-    func addBackgroundTapGesture(){
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        self.view.addGestureRecognizer(gestureRecognizer)
-    }
-    func handleTap(gestureRecognizer: UIGestureRecognizer) {
-        self.view.endEditing(true)
     }
     
 }

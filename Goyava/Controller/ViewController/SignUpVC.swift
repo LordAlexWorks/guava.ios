@@ -11,24 +11,26 @@ import UIKit
 typealias SignupCompletionHandler = () -> Void
 
 class SignUpVC: UIViewController,UITextFieldDelegate {
+    
+    //Outlets and Variables
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var passwordTextField : UITextField!
-    
     var signUpHandler : SignupCompletionHandler?
     
+    // Entry point of view load
     override func viewDidLoad() {
         super.viewDidLoad()
         initilizeUITasks()
     }
+    //Memory warning method
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    // method to initialize ui tasks and keyboard show hide methods
     func initilizeUITasks(){
-        addBackgroundTapGesture()
-       Keyboard.showHide(self)
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        self.addBackgroundTapGesture()
+        Keyboard.showHide(self)
+        UtilityManager.addAttributedPlacehoder(self.emailTextField, passwordTextField: self.passwordTextField)
     }
     //MARK: Button Actions
     @IBAction func loginButtonTapped(sender: UIButton) {
@@ -37,7 +39,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
         if isPassedInFormValidation() {
-            self.doSignup()
+            self.handleSignup()
         }else {
             UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
         }
@@ -57,8 +59,8 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
         }
         return true
     }
-    //MARK: Signup controller activity
-    func doSignup(){
+    //MARK: handle sign up service 
+    func handleSignup(){
         let session = Session()
         session.email = self.emailTextField.text!
         session.password = self.passwordTextField.text!
@@ -84,24 +86,7 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
             })
         }
     }
-    func navigateOnSignupSuccess() {
-        self.dismissViewControllerAnimated(false) { () -> Void in
-            if self.signUpHandler != nil {
-                self.signUpHandler!()
-            }
-        }
-    }
-    //MARK: Background Tap
-    func addBackgroundTapGesture(){
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        self.view.addGestureRecognizer(gestureRecognizer)
-    }
-    func handleTap(gestureRecognizer: UIGestureRecognizer) {
-        self.view.endEditing(true)
-    }
-
-    //GO TO MAIN
-    
+    //Navigate to main screen
     func goToMain(){
         let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate

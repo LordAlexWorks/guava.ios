@@ -19,6 +19,8 @@
 		6129B3C7C6D44D2422D7F758 /* Pods_Goyava.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABA9B0EB4816F40E3A1130E /* Pods_Goyava.framework */; };
 		B50388C31CD8571500C07A18 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50388C21CD8571500C07A18 /* Keyboard.swift */; };
 		B50388C41CD8571500C07A18 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50388C21CD8571500C07A18 /* Keyboard.swift */; };
+		B50388C61CD8618300C07A18 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50388C51CD8618300C07A18 /* UIViewControllerExtension.swift */; };
+		B50388C71CD8618300C07A18 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B50388C51CD8618300C07A18 /* UIViewControllerExtension.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -128,6 +130,7 @@
 		A2785FB62F7925CA10E98CF4 /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.release.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
 		A794D95238C86D22B0CC5508 /* Pods_Goyava_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B50388C21CD8571500C07A18 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		B50388C51CD8618300C07A18 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -444,6 +447,7 @@
 			children = (
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
 				B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */,
+				B50388C51CD8618300C07A18 /* UIViewControllerExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -886,6 +890,7 @@
 				1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
 				B537DFDB1CBDF10B00FA854E /* ImageLoader.swift in Sources */,
 				1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
+				B50388C61CD8618300C07A18 /* UIViewControllerExtension.swift in Sources */,
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
 				B5ECEF181C7168A700E5E098 /* MainVC.swift in Sources */,
 				B53267F21C606D2F008297CF /* LoginVC.swift in Sources */,
@@ -939,6 +944,7 @@
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				B537DFDC1CBDF10B00FA854E /* ImageLoader.swift in Sources */,
 				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				B50388C71CD8618300C07A18 /* UIViewControllerExtension.swift in Sources */,
 				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				1C0884F01CB28E81006D9FB8 /* Loader.swift in Sources */,
 				B5ECEF191C7168A700E5E098 /* MainVC.swift in Sources */,
