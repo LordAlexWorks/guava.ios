@@ -22,12 +22,19 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
 
     func initilizeUITasks(){
+        
         addBackgroundTapGesture()
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
+        
         emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        
         passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
     }
+    
+    
     //MARK: Button Action
     @IBAction func signUpButtonTapped(sender: UIButton) {
         let signupVc = self.storyboard?.instantiateViewControllerWithIdentifier("SignUpVC") as! SignUpVC
@@ -40,6 +47,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             }
         }
     }
+    
     @IBAction func loginButtonTapped(sender: UIButton) {
         if isPassedInFormValidation() {
             self.callLoginController()
@@ -47,6 +55,8 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
         }
     }
+    
+    
     func isPassedInFormValidation()-> Bool {
         if (self.emailTextField.text?.characters.count == 0) {
             return false
@@ -57,6 +67,8 @@ class LoginVC: UIViewController,UITextFieldDelegate {
         }
         return true
     }
+    
+    
     func callLoginController() {
         let session = Session()
         session.email = self.emailTextField.text!
@@ -80,6 +92,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             })
         }
     }
+    
     func pageOnLoginSuccess(){
         goToMain()
     }

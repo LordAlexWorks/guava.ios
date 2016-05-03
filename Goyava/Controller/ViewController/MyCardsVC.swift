@@ -32,6 +32,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     @IBAction func scanButtonTapped(sender : UIButton) {
         goToScannerView()
     }
+    
     @IBAction func logoutButtonTapped(sender : UIButton) {
         let realm = try! Realm()
         try! realm.write {
@@ -41,6 +42,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
         appDelegate.window?.rootViewController = loginVc
     }
+    
     @IBAction func gridButtonTapped(sender : UIButton) {
         let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
         mainVc.modalTransitionStyle = .FlipHorizontal
@@ -67,6 +69,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
     }
+    
     func loadDataSource() {
         // process data with UI logic
         let realm = try! Realm()
@@ -92,6 +95,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
             self.createMainPages()
         }
     }
+    
     //MARK: Page Control Data Source
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! MyCardContentVC).pageIndex
@@ -125,6 +129,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         pageContentViewController.loadDataSource(self.dataSource[index])
         return pageContentViewController
     }
+    
     //MARK: Scanner
     func goToScannerView(){
         let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
