@@ -40,10 +40,9 @@ platform :ios do
   desc "- Commit and push the version bump"
   lane :beta do |options|
     raise "You must specify a version in A.B.X format to deploy." if version.nil? || version.scan(/\d+\.\d+\.\d+/).length == 0
-
+    ensure_git_status_clean
      # Make sure we start off with a clean slate
     ensure_git_branch(branch: 'master')
-    ensure_git_status_clean
     git_pull
 
 
