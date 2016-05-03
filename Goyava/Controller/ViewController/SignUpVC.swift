@@ -11,25 +11,27 @@ import UIKit
 typealias SignupCompletionHandler = () -> Void
 
 class SignUpVC: UIViewController,UITextFieldDelegate {
+    
+    //Outlets and Variables
     @IBOutlet weak var emailTextField : UITextField!
     @IBOutlet weak var passwordTextField : UITextField!
-    
     var signUpHandler : SignupCompletionHandler?
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
+    // Entry point of view load
     override func viewDidLoad() {
         super.viewDidLoad()
         initilizeUITasks()
     }
+    //Memory warning method
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+    // method to initialize ui tasks and keyboard show hide methods
     func initilizeUITasks(){
-        addBackgroundTapGesture()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
-        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        self.addBackgroundTapGesture()
+        Keyboard.showHide(self)
+        UtilityManager.addAttributedPlacehoder(self.emailTextField, passwordTextField: self.passwordTextField)
     }
     //MARK: Button Actions
     @IBAction func loginButtonTapped(sender: UIButton) {
@@ -37,14 +39,32 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     }
     
     @IBAction func createAccountButtonTapped(sender: UIButton) {
-        self.doSignup()
+        if isPassedInFormValidation() {
+            guard appDelegate.isNetworkReachable else {
+                return
+            }
+            self.handleSignup()
+        }else {
+            UtilityManager.showAlertMessage("Invaid Email or Password", onViewcontrolller: self)
+        }
     }
     
     func onDismiss(handler :SignupCompletionHandler ) {
         self.signUpHandler = handler
     }
-    //MARK: Signup controller activity
-    func doSignup(){
+    //MARK: Text Field Validation
+    func isPassedInFormValidation()-> Bool {
+        if (self.emailTextField.text?.characters.count == 0) {
+            return false
+        }else if (self.passwordTextField.text?.characters.count == 0 ) {
+            return false
+        }else if (!UtilityManager.validateEmail(self.emailTextField.text!)){
+            return false
+        }
+        return true
+    }
+    //MARK: handle sign up service 
+    func handleSignup(){
         let session = Session()
         session.email = self.emailTextField.text!
         session.password = self.passwordTextField.text!
@@ -53,49 +73,27 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
             dispatch_async(dispatch_get_main_queue(),{
                 Loader.sharedInstance.hideLoader()
                 if error != nil {
-                    UtilityManager.showAlertMessage("Network Error", onViewcontrolller: self)
+                    UtilityManager.showErrorAlertMessage("Network Error", onViewcontrolller: self)
                 }else {
                     let session = obj as! Session
                     if (session.isSuccess == true) {
                         UtilityManager.showAlertMessage("Registration Success!", onViewcontrolller: self)
-                        self.dismissViewControllerAnimated(true, completion: nil)
+                        self.dismissViewControllerAnimated(false, completion: { 
+                            self.goToMain()
+                        })
                     }else {
                         if session.errorDescription != nil {
-                            UtilityManager.showAlertMessage(session.errorDescription!, onViewcontrolller: self)
+                            UtilityManager.showErrorAlertMessage(session.errorDescription!, onViewcontrolller: self)
                         }
                     }
                 }
             })
         }
     }
-    func navigateOnSignupSuccess() {
-        self.dismissViewControllerAnimated(false) { () -> Void in
-            if self.signUpHandler != nil {
-                self.signUpHandler!()
-            }
-        }
-    }
-    //MARK: Background Tap
-    func addBackgroundTapGesture(){
-        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        self.view.addGestureRecognizer(gestureRecognizer)
-    }
-    func handleTap(gestureRecognizer: UIGestureRecognizer) {
-        self.view.endEditing(true)
-    }
-    //MARK: Keyboard Show and Hide
-    func keyboardWillShow(notification: NSNotification) {
-        let info = notification.userInfo!
-        let keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
-        let viewFrame = self.view.frame
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
-        })
-    }
-    func keyboardWillHide(notification: NSNotification) {
-        let viewFrame = self.view.frame
-        UIView.animateWithDuration(0.4, animations: { () -> Void in
-            self.view.frame = CGRect(x: 0, y: 0, width: viewFrame.size.width, height: viewFrame.size.height)
-        })
+    //Navigate to main screen
+    func goToMain(){
+        let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = myCardsVc
     }
 }

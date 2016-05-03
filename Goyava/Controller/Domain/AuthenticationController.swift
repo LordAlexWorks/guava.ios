@@ -20,9 +20,10 @@ class AuthenticationController: NSObject {
             }else {
                 // do bussiness logic with login json response
                 let json = obj as! NSDictionary
-                let error = json["errors"]
-                if error != nil {
-                   session.isSuccess = false
+                let errorString = json["errors"] as? String
+                if errorString != nil {
+                    session.isSuccess = false
+                    session.errorDescription = errorString
                 }else {
                     session.isSuccess = true
                     // create user 
