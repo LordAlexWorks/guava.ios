@@ -45,5 +45,9 @@ class UtilityManager: NSObject {
         image.layer.cornerRadius = image.frame.size.width/2
         image.clipsToBounds = true
     }
+    class func addAttributedPlacehoder(emailTextField : UITextField, passwordTextField : UITextField) {
+        emailTextField.attributedPlaceholder = NSAttributedString(string: "EMAIL", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: "PASSWORD", attributes: [NSForegroundColorAttributeName : UIColor.grayColor()])
+    }
 
 }

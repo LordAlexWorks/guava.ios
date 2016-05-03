@@ -10,6 +10,7 @@ PODS:
   - LookbackSafe (1.1.4):
     - PDKTZipArchive
   - PDKTZipArchive (0.4.1)
+  - Reachability (3.2)
   - Realm (0.98.8):
     - Realm/Headers (= 0.98.8)
   - Realm/Headers (0.98.8)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - Fabric
   - Lookback
   - LookbackSafe
+  - Reachability
   - RealmSwift
 
 SPEC CHECKSUMS:
@@ -32,6 +34,7 @@ SPEC CHECKSUMS:
   Lookback: 9ab9027ff246d2dc5ce34be483f70e4a6718280b
   LookbackSafe: 3f1271d9a597bbb8ef854784e87c145854e1fbef
   PDKTZipArchive: 22bbab52b49f46a3adf1acf134311fd252c43feb
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   Realm: 0e293bb62999730599efc3048896bbd4f2e43bcd
   RealmSwift: 064262d38113f23ff3508fb20a0a922e696bec01
 
