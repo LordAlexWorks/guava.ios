@@ -10,7 +10,7 @@ import UIKit
 
 typealias SignupCompletionHandler = () -> Void
 
-class SignUpVC: UIViewController,UITextFieldDelegate {
+class SignUpVC: UIViewController, UITextFieldDelegate {
     
     //Outlets and Variables
     @IBOutlet weak var emailTextField : UITextField!
@@ -27,12 +27,14 @@ class SignUpVC: UIViewController,UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     // method to initialize ui tasks and keyboard show hide methods
     func initilizeUITasks(){
         self.addBackgroundTapGesture()
         Keyboard.showHide(self)
         UtilityManager.addAttributedPlacehoder(self.emailTextField, passwordTextField: self.passwordTextField)
     }
+    
     //MARK: Button Actions
     @IBAction func loginButtonTapped(sender: UIButton) {
         self.dismissViewControllerAnimated(true, completion: nil)

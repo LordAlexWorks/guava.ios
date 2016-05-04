@@ -1,7 +1,8 @@
 require 'yaml'
 require 'ostruct'
 
-fastlane_version "1.57.0"
+ENV["FASTLANE_ITC_TEAM_ID"] = "< iTunes Connect Id>"
+fastlane_version "1.84.0"
 
 default_platform :ios
 
