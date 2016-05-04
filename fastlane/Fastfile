@@ -1,8 +1,7 @@
 require 'yaml'
 require 'ostruct'
 
-ENV["FASTLANE_ITC_TEAM_ID"] = "< iTunes Connect Id>"
-fastlane_version "1.84.0"
+fastlane_version "1.85.0"
 
 default_platform :ios
 
@@ -31,18 +30,15 @@ end
 
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
-  lane :dailybuild do |options|
+  lane :beta do |options|
    # ensure_git_status_clean
      version = get_version_number
-
-    ensure_git_branch(branch: 'master')
+#ensure_git_branch(branch: 'master')
     git_pull
 
     # Increment build number to current date
-    build_number = Time.new.strftime("%Y.%m.%d")
+    build_number = increment_build_number
     increment_build_number build_number: build_number
-
-
 
     gym(scheme: "Goyava-Beta") # Build your app - more options available
 
@@ -105,24 +101,9 @@ end
   end
 
 
-  desc "Submit a new Beta Build to Apple TestFlight"
-  desc "This will also make sure the profile is up to date"
-  lane :beta do
-    #match(type: "appstore") # more information: https://codesigning.guide
-    snapshot
-    cert
-    sigh
-    gym(scheme: "Guava") # Build your app - more options available
-    pilot
-  end
 
-  desc "Deploy a new version to the App Store"
-  lane :appstore do
-    match(type: "appstore")
-    snapshot
-    gym(scheme: "Guava") # Build your app - more options available
-    deliver(force: true)
-  end
+
+
 
 # PRIVATE LANES
 

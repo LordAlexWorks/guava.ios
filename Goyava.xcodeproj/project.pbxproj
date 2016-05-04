@@ -1035,7 +1035,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2060;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1057,7 +1057,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2060;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1131,7 +1131,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2060;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1206,7 +1206,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2060;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
