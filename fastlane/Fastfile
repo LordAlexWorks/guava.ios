@@ -26,27 +26,55 @@ platform :ios do
 
  def version_string(version_number, build_number)
     "#{version_number} (#{build_number})"
- end
+end
 
-  desc "Release a new beta version on TestFlight"
-  desc "This action does the following:"
-  desc ""
-  desc "- Verifies API keys are non-empty"
-  desc "- Ensures a clean git status"
-  desc "- Increment the build number"
-  desc "- Build and sign the app"
-  desc "- Upload the ipa file to testFlight"
-  desc "- Post a message to slack containing the download link"
-  desc "- Commit and push the version bump"
-  lane :beta do |options|
-    raise "You must specify a version in A.B.X format to deploy." if version.nil? || version.scan(/\d+\.\d+\.\d+/).length == 0
-    ensure_git_status_clean
-     # Make sure we start off with a clean slate
+  desc "Submit a new daily build to Apple TestFlight"
+  desc "A daily build is sent to Guava team by default"
+  lane :dailybuild do |options|
+   # ensure_git_status_clean
+     version = get_version_number
+
     ensure_git_branch(branch: 'master')
     git_pull
 
+    # Increment build number to current date
+    build_number = Time.new.strftime("%Y.%m.%d")
+    increment_build_number build_number: build_number
 
-  end
+
+
+    gym(scheme: "Goyava-Beta") # Build your app - more options available
+
+     # Increment build number to current date
+
+    clear_derived_data
+
+    #match(type: "appstore")
+    pilot(skip_submission: true ,
+         distribute_external: true,
+         changelog: "Please remove the previous version. Check the issus with the label QA")
+
+
+     # Make sure our directory is clean, except for changes Fastlane has made
+    clean_build_artifacts
+
+    # push to GitHub
+
+    version = `/usr/libexec/plistbuddy -c Print:CFBundleShortVersionString '../Project/Project-Info.plist'`.strip
+   build_number = `cd ..;agvtool what-version -terse`.strip
+
+    git_commit(path: ".",
+              message: "Deploying build #{build_number}.")
+
+     add_git_tag(
+        grouping: 'fastlane-builds',
+        prefix: 'v',
+        build_number: "#{version_number}-b#{build_number}"
+      )
+
+    push_to_git_remote
+
+   end
 
     desc "Submit a new weekly build to Apple TestFlight"
     desc "A weekly build is sent to Guava team by default"
@@ -72,10 +100,20 @@ platform :ios do
         prefix: 'v',
         build_number: version_number
       )
+      push_to_git_remote
   end
 
 
-
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    #match(type: "appstore") # more information: https://codesigning.guide
+    snapshot
+    cert
+    sigh
+    gym(scheme: "Guava") # Build your app - more options available
+    pilot
+  end
 
   desc "Deploy a new version to the App Store"
   lane :appstore do
@@ -107,14 +145,21 @@ end
 
   after_all do |lane|
 
-     push_to_git_remote
+    # This block is called, only if the executed lane was successful
+    # Make sure our directory is clean, except for changes Fastlane has made
+    #clean_build_artifacts
+
+    #add all files
+    #git_add(path: ".")
+
+    # Commit new build and push to git
+   # commit_version_bump
+  #  push_to_git_remote
 
   end
 
   error do |lane, exception|
-    puts "Unable to deploy, resetting git repository."
-    clean_build_artifacts
-    reset_git_repo
+
   end
 end
 
