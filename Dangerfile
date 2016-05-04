@@ -16,5 +16,5 @@ require 'fastlane/actions/device_grid/device_grid'
 device_grid(
   public_key: result,
   languages: ["en", "de"],
-  devices: ["iphone5s", "iphone6splus", "ipadair"]
+  devices: ["iphone5s", , "iphone6","iphone6splus"]
 )
