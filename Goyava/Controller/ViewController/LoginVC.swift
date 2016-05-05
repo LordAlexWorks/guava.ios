@@ -96,6 +96,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     func pageOnLoginSuccess(){
         goToMain()
     }
+    
     //MARK: Login navigation
     func goToMain(){
         let myCardsVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
@@ -104,7 +105,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
     }
     
     //MARK: Background Tap
-    func addBackgroundTapGesture(){
+    override func addBackgroundTapGesture(){
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
     }
@@ -121,6 +122,7 @@ class LoginVC: UIViewController,UITextFieldDelegate {
             self.view.frame = CGRect(x: 0, y: -keyboardFrame.height+140, width: viewFrame.size.width, height: viewFrame.size.height)
         })
     }
+    
     func keyboardWillHide(notification: NSNotification) {
         let viewFrame = self.view.frame
         UIView.animateWithDuration(0.4, animations: { () -> Void in

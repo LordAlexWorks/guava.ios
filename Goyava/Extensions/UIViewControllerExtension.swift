@@ -9,10 +9,12 @@
 import UIKit
 
 extension UIViewController {
+    
     func addBackgroundTapGesture(){
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.handleTapGesture(_:)))
         self.view.addGestureRecognizer(gestureRecognizer)
     }
+    
     func handleTapGesture(gestureRecognizer: UIGestureRecognizer) {
         self.view.endEditing(true)
     }

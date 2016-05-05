@@ -76,6 +76,10 @@
 		B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */; };
 		BA31DD701CD0086E00BA2A10 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA31DD6F1CD0086E00BA2A10 /* Reveal.framework */; };
 		BA31DD711CD0086E00BA2A10 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA31DD6F1CD0086E00BA2A10 /* Reveal.framework */; };
+		BA7935491CDA436A009737C1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7935481CDA436A009737C1 /* UIViewControllerExtension.swift */; };
+		BA79354A1CDA436A009737C1 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7935481CDA436A009737C1 /* UIViewControllerExtension.swift */; };
+		BA79354C1CDA43B8009737C1 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79354B1CDA43B8009737C1 /* Keyboard.swift */; };
+		BA79354D1CDA43B8009737C1 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA79354B1CDA43B8009737C1 /* Keyboard.swift */; };
 		D3F326CB1C63C3990092427F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F326CA1C63C3990092427F /* UIColorExtension.swift */; };
 		D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */; };
 		D75B83386F956C2C3F065826 /* Pods_Goyava_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA8B8AC904789D72FFC0744 /* Pods_Goyava_Beta.framework */; };
@@ -165,6 +169,8 @@
 		B5FBEB771C6AE548006DCC12 /* MyCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCardsVC.swift; sourceTree = "<group>"; };
 		B6E666EA0924CE3DCA6CA4F9 /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava/Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
 		BA31DD6F1CD0086E00BA2A10 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		BA7935481CDA436A009737C1 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = Extensions/UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		BA79354B1CDA43B8009737C1 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		BECF62675E9795B28CEE7DE2 /* Pods-Goyava-Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Goyava-Beta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.debug.xcconfig"; sourceTree = "<group>"; };
 		D3F326CA1C63C3990092427F /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = Extensions/UIColorExtension.swift; sourceTree = "<group>"; };
 		D3F5FC3A1C64DBD800861E2D /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
@@ -244,6 +250,7 @@
 		1CA12C1C1CAE833E00DFA0E3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BA79354B1CDA43B8009737C1 /* Keyboard.swift */,
 				B5DE7D6D1CB2038C009416A5 /* Loader.swift */,
 				1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */,
 			);
@@ -442,6 +449,7 @@
 		D3F326B61C6397310092427F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BA7935481CDA436A009737C1 /* UIViewControllerExtension.swift */,
 				D3F326CA1C63C3990092427F /* UIColorExtension.swift */,
 				B5787FA11CBF5AA1002268C8 /* NSDateExtension.swift */,
 			);
@@ -819,6 +827,7 @@
 				B5FBEB781C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
 				D3F5FC3B1C64DBD800861E2D /* SignUpVC.swift in Sources */,
 				1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
+				BA7935491CDA436A009737C1 /* UIViewControllerExtension.swift in Sources */,
 				B537DFDB1CBDF10B00FA854E /* ImageLoader.swift in Sources */,
 				1CA12C1A1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
 				1C26969F1C7215B300B140F0 /* CircleView.swift in Sources */,
@@ -834,6 +843,7 @@
 				B5787FA21CBF5AA1002268C8 /* NSDateExtension.swift in Sources */,
 				B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */,
 				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
+				BA79354C1CDA43B8009737C1 /* Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -871,6 +881,7 @@
 				B5FBEB5A1C6AD4EC006DCC12 /* SignUpVC.swift in Sources */,
 				B5DE7D711CB20B90009416A5 /* User.swift in Sources */,
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
+				BA79354A1CDA436A009737C1 /* UIViewControllerExtension.swift in Sources */,
 				B537DFDC1CBDF10B00FA854E /* ImageLoader.swift in Sources */,
 				1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */,
 				1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */,
@@ -886,6 +897,7 @@
 				B5787FA31CBF5AA1002268C8 /* NSDateExtension.swift in Sources */,
 				B5ECEF1C1C7168C700E5E098 /* MainContentVC.swift in Sources */,
 				B5FAE0031C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
+				BA79354D1CDA43B8009737C1 /* Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,7 +1035,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2063;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1045,7 +1057,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2063;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1119,7 +1131,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2063;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1194,7 +1206,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2016.05.04;
+				CURRENT_PROJECT_VERSION = 2063;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

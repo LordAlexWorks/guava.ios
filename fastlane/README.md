@@ -16,9 +16,9 @@ Runs all the tests
 fastlane ios screens
 ```
 Creates new screenshots and uploads them to iTunes Connect
-### ios dailybuild
+### ios beta
 ```
-fastlane ios dailybuild
+fastlane ios beta
 ```
 Submit a new daily build to Apple TestFlight
 
@@ -30,18 +30,6 @@ fastlane ios weeklybuild
 Submit a new weekly build to Apple TestFlight
 
 A weekly build is sent to Guava team by default
-### ios beta
-```
-fastlane ios beta
-```
-Submit a new Beta Build to Apple TestFlight
-
-This will also make sure the profile is up to date
-### ios appstore
-```
-fastlane ios appstore
-```
-Deploy a new version to the App Store
 
 ----
 
