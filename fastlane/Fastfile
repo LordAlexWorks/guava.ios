@@ -24,16 +24,16 @@ platform :ios do
     deliver(app: 925311796, app_identifier: "com.acast.app.native.production", skip_metadata: true, force: true)
   end
 
- def version_string(version_number, build_number)
+  def version_string(version_number, build_number)
     "#{version_number} (#{build_number})"
-end
+  end
 
   desc "Submit a new daily build to Apple TestFlight"
   desc "A daily build is sent to Guava team by default"
   lane :beta do |options|
    # ensure_git_status_clean
-     version = get_version_number
-#ensure_git_branch(branch: 'master')
+     version_number = get_version_number
+    #ensure_git_branch(branch: 'master')
     git_pull
 
     # Increment build number to current date
