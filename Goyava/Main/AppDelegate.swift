@@ -11,6 +11,7 @@ import Fabric
 import Crashlytics
 import AWSMobileAnalytics
 import Reachability
+import SafariServices
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -28,9 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
             self.window?.rootViewController = myCardVC
         }else {
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let authVc = mainStoryboard.instantiateViewControllerWithIdentifier("AuthVC") as! AuthVC
-            self.window?.rootViewController = authVc
+            self.loadAuthScene()
         }
         setUpGeneralSettings()
         loadLookabackSettings()
@@ -39,7 +38,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.addReachability()
         return true
     }
-
+    func loadAuthScene() {
+        let urlString = "http://proactives.site/oauth/authorize?client_id=8f05f8c75f0b1c45c6ef08a6b51519d82d41c1eac0d0f7d169afce403322446e&redirect_uri=http://goyava.site/clients/login/callback&response_type=code"
+        let svc = SFSafariViewController(URL: NSURL(string: urlString)!)
+       self.window?.rootViewController = svc
+    }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SafariServices
 class AuthVC: UIViewController {
 
     override func viewDidLoad() {
@@ -17,5 +17,6 @@ class AuthVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
+    
+    
 }
