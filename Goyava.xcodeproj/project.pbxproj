@@ -16,10 +16,6 @@
 		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		8DDDCF359F69586F00D29440 /* Pods_GoyavaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99183D5B6CA755DE72C1A956 /* Pods_GoyavaUITests.framework */; };
-		B52FE74A1D1CDB9500CE92C5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */; };
-		B52FE74B1D1CDBD900CE92C5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */; };
-		B52FE74C1D1CDBDB00CE92C5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */; };
-		B52FE74D1D1CDBDC00CE92C5 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -131,7 +127,6 @@
 		99183D5B6CA755DE72C1A956 /* Pods_GoyavaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED81A66FF6B57D95DC28643 /* Pods_GoyavaBetaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaBetaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52FE7461D1CCDE300CE92C5 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
-		B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -367,7 +362,6 @@
 				B5ECEF1D1C72E80E00E5E098 /* MyCardContentVC.swift */,
 				B5ECEF171C7168A700E5E098 /* MainVC.swift */,
 				B5ECEF1A1C7168C700E5E098 /* MainContentVC.swift */,
-				B52FE7491D1CDB9500CE92C5 /* AuthVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -813,7 +807,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52FE74A1D1CDB9500CE92C5 /* AuthVC.swift in Sources */,
 				B5ECEF1E1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				B53267F41C606D41008297CF /* Session.swift in Sources */,
 				B5FADFFF1C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,
@@ -848,7 +841,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52FE74C1D1CDBDB00CE92C5 /* AuthVC.swift in Sources */,
 				B599F72C1C682C000013E89E /* GuavaUITests.swift in Sources */,
 				B599F7341C682DBF0013E89E /* SnapshotHelper.swift in Sources */,
 			);
@@ -858,7 +850,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52FE74D1D1CDBDC00CE92C5 /* AuthVC.swift in Sources */,
 				B5D112E11C6D7BEE00F66AB6 /* GuavaUITests.swift in Sources */,
 				B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */,
 			);
@@ -868,7 +859,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B52FE74B1D1CDBD900CE92C5 /* AuthVC.swift in Sources */,
 				B5FBEB561C6AD4EC006DCC12 /* Session.swift in Sources */,
 				B5DE7D771CB21187009416A5 /* CardsController.swift in Sources */,
 				B5FAE0001C8D1A8700A5C7A4 /* SSHTTPClient.swift in Sources */,

@@ -115,8 +115,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         }
         self.dismissViewControllerAnimated(false) {
             let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("AuthVC") as! AuthVC
-            appDelegate.window?.rootViewController = loginVc
+            appDelegate.loadAuthScene()
         }
     }
     @IBAction func scanButtonTapped(sender : UIButton) {

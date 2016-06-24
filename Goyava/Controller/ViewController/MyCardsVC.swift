@@ -39,8 +39,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
             realm.deleteAll()
         }
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let loginVc = self.storyboard?.instantiateViewControllerWithIdentifier("AuthVC") as! AuthVC
-        appDelegate.window?.rootViewController = loginVc
+        appDelegate.loadAuthScene()
     }
     
     @IBAction func gridButtonTapped(sender : UIButton) {
