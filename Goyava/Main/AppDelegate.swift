@@ -67,9 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func loadLookabackSettings(){
-        Lookback.setupWithAppToken("HASk58eZD3Gfovze6")
+        /*Lookback.setupWithAppToken("HASk58eZD3Gfovze6")
         Lookback.sharedLookback().shakeToRecord = true
-        Lookback.sharedLookback().feedbackBubbleVisible = true
+        Lookback.sharedLookback().feedbackBubbleVisible = true*/
     }
     func setupAnalytics(){
         let analytics = AWSMobileAnalytics(forAppId: "50d4101badbd4161801e978d1dfa1313", identityPoolId: "us-east-1:649c5a0c-5dc4-489f-93d9-2515e12695e8")
