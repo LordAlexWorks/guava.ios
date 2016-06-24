@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = myCardVC
         }else {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginVc = mainStoryboard.instantiateViewControllerWithIdentifier("LoginVC") as! LoginVC
-            self.window?.rootViewController = loginVc
+            let authVc = mainStoryboard.instantiateViewControllerWithIdentifier("AuthVC") as! AuthVC
+            self.window?.rootViewController = authVc
         }
         setUpGeneralSettings()
         loadLookabackSettings()
