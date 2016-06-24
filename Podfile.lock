@@ -1,21 +1,21 @@
 PODS:
-  - AWSCore (2.3.6)
-  - AWSMobileAnalytics (2.3.6):
-    - AWSCore (= 2.3.6)
+  - AWSCore (2.4.2)
+  - AWSMobileAnalytics (2.4.2):
+    - AWSCore (= 2.4.2)
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - Lookback (1.1.4):
+  - Lookback (1.2.0):
     - PDKTZipArchive
-  - LookbackSafe (1.1.4):
+  - LookbackSafe (1.2.0):
     - PDKTZipArchive
   - PDKTZipArchive (0.4.1)
   - Reachability (3.2)
-  - Realm (0.98.8):
-    - Realm/Headers (= 0.98.8)
-  - Realm/Headers (0.98.8)
-  - RealmSwift (0.98.8):
-    - Realm (= 0.98.8)
+  - Realm (0.103.1):
+    - Realm/Headers (= 0.103.1)
+  - Realm/Headers (0.103.1)
+  - RealmSwift (0.103.1):
+    - Realm (= 0.103.1)
 
 DEPENDENCIES:
   - AWSMobileAnalytics
@@ -27,17 +27,17 @@ DEPENDENCIES:
   - RealmSwift
 
 SPEC CHECKSUMS:
-  AWSCore: 917d84b32974136194a905b98c0ae25c9f3350b8
-  AWSMobileAnalytics: 56ce9e671640fbd702f8ce52b0f128e525f3e51c
+  AWSCore: 08cc4318682a518ad73e452900336ba54e823e03
+  AWSMobileAnalytics: 7e61206330c5dfe0643e749682d93cdbd553c49d
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Lookback: 9ab9027ff246d2dc5ce34be483f70e4a6718280b
-  LookbackSafe: 3f1271d9a597bbb8ef854784e87c145854e1fbef
+  Lookback: fdd29bb4a506cc78e9e5cf3e21452bf74bdcde06
+  LookbackSafe: 021772ee4bbf0a2e1e261280de4661eb16320d5c
   PDKTZipArchive: 22bbab52b49f46a3adf1acf134311fd252c43feb
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  Realm: 0e293bb62999730599efc3048896bbd4f2e43bcd
-  RealmSwift: 064262d38113f23ff3508fb20a0a922e696bec01
+  Realm: 9ed57109332e95bdc48a7caedff80b70c51d5ef4
+  RealmSwift: 56629adb4acd2dc33eb2c8199fe856585dfd3ba3
 
 PODFILE CHECKSUM: 90263e567f2e4b6fc8a8882232e2241722c03e85
 
-COCOAPODS: 1.0.0.rc.1
+COCOAPODS: 1.0.1

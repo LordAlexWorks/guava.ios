@@ -130,6 +130,7 @@
 		981482185E4E306421C8A9CF /* Pods-GoyavaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoyavaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests.release.xcconfig"; sourceTree = "<group>"; };
 		99183D5B6CA755DE72C1A956 /* Pods_GoyavaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED81A66FF6B57D95DC28643 /* Pods_GoyavaBetaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoyavaBetaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52FE7461D1CCDE300CE92C5 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
 		B53267CC1C60632B008297CF /* Goyava.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goyava.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53267D61C60632B008297CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53267E51C606C78008297CF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +146,6 @@
 		B599F72B1C682C000013E89E /* GuavaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuavaUITests.swift; sourceTree = "<group>"; };
 		B599F72D1C682C000013E89E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B599F7331C682DBF0013E89E /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
-		B5CD069A1CC5C7310042BB78 /* Guava-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Guava-Bridging-Header.h"; sourceTree = "<group>"; };
 		B5D112D11C6AFBE600F66AB6 /* MyCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCard.swift; path = CustomCell/MyCard.swift; sourceTree = "<group>"; };
 		B5D112D21C6AFBE600F66AB6 /* MyCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MyCard.xib; path = CustomCell/MyCard.xib; sourceTree = "<group>"; };
 		B5D112E81C6D7BEE00F66AB6 /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -334,7 +334,7 @@
 			children = (
 				B53267E51C606C78008297CF /* AppDelegate.swift */,
 				B5FADFF91C8D1A6D00A5C7A4 /* AppConstants.swift */,
-				B5CD069A1CC5C7310042BB78 /* Guava-Bridging-Header.h */,
+				B52FE7461D1CCDE300CE92C5 /* Guava-Bridging-Header.h */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -463,12 +463,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B53267DE1C60632B008297CF /* Build configuration list for PBXNativeTarget "Goyava" */;
 			buildPhases = (
-				B6BD920521ED6466CC52DAFF /* 📦 Check Pods Manifest.lock */,
+				B6BD920521ED6466CC52DAFF /* [CP] Check Pods Manifest.lock */,
 				B53267C81C60632B008297CF /* Sources */,
 				B53267C91C60632B008297CF /* Frameworks */,
 				B53267CA1C60632B008297CF /* Resources */,
-				E503E69562910024433E6043 /* 📦 Embed Pods Frameworks */,
-				5413D8FCDEE917474A976C84 /* 📦 Copy Pods Resources */,
+				E503E69562910024433E6043 /* [CP] Embed Pods Frameworks */,
+				5413D8FCDEE917474A976C84 /* [CP] Copy Pods Resources */,
 				BAAF4A9F1CC523F700E3A5E0 /* ShellScript */,
 			);
 			buildRules = (
@@ -484,11 +484,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B599F7321C682C000013E89E /* Build configuration list for PBXNativeTarget "GoyavaUITests" */;
 			buildPhases = (
-				BC9CC186826D6ECD9674D037 /* 📦 Check Pods Manifest.lock */,
+				BC9CC186826D6ECD9674D037 /* [CP] Check Pods Manifest.lock */,
 				B599F7251C682BFF0013E89E /* Sources */,
 				B599F7261C682BFF0013E89E /* Frameworks */,
 				B599F7271C682BFF0013E89E /* Resources */,
-				BEFCEFC4E84AF90D6792944D /* 📦 Copy Pods Resources */,
+				BEFCEFC4E84AF90D6792944D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -505,11 +505,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5D112E51C6D7BEE00F66AB6 /* Build configuration list for PBXNativeTarget "GoyavaBetaUITests" */;
 			buildPhases = (
-				22354461F042F0CF3F82B81A /* 📦 Check Pods Manifest.lock */,
+				22354461F042F0CF3F82B81A /* [CP] Check Pods Manifest.lock */,
 				B5D112E01C6D7BEE00F66AB6 /* Sources */,
 				B5D112E31C6D7BEE00F66AB6 /* Frameworks */,
 				B5D112E41C6D7BEE00F66AB6 /* Resources */,
-				01B588A6BEDC8B9ED83297B0 /* 📦 Copy Pods Resources */,
+				01B588A6BEDC8B9ED83297B0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -526,12 +526,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5FBEB6E1C6AD4EC006DCC12 /* Build configuration list for PBXNativeTarget "Goyava-Beta" */;
 			buildPhases = (
-				389E4332111C3BDF16C4995D /* 📦 Check Pods Manifest.lock */,
+				389E4332111C3BDF16C4995D /* [CP] Check Pods Manifest.lock */,
 				B5FBEB531C6AD4EC006DCC12 /* Sources */,
 				B5FBEB631C6AD4EC006DCC12 /* Frameworks */,
 				B5FBEB641C6AD4EC006DCC12 /* Resources */,
-				84ACC637A274F5F44CDDAA2C /* 📦 Embed Pods Frameworks */,
-				2FC9A24A3C8C156F5C6CEAF4 /* 📦 Copy Pods Resources */,
+				84ACC637A274F5F44CDDAA2C /* [CP] Embed Pods Frameworks */,
+				2FC9A24A3C8C156F5C6CEAF4 /* [CP] Copy Pods Resources */,
 				BAE633BD1CC5333500BE0374 /* ShellScript */,
 			);
 			buildRules = (
@@ -632,14 +632,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01B588A6BEDC8B9ED83297B0 /* 📦 Copy Pods Resources */ = {
+		01B588A6BEDC8B9ED83297B0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -647,14 +647,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoyavaBetaUITests/Pods-GoyavaBetaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		22354461F042F0CF3F82B81A /* 📦 Check Pods Manifest.lock */ = {
+		22354461F042F0CF3F82B81A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,14 +662,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		2FC9A24A3C8C156F5C6CEAF4 /* 📦 Copy Pods Resources */ = {
+		2FC9A24A3C8C156F5C6CEAF4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -677,14 +677,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		389E4332111C3BDF16C4995D /* 📦 Check Pods Manifest.lock */ = {
+		389E4332111C3BDF16C4995D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,14 +692,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5413D8FCDEE917474A976C84 /* 📦 Copy Pods Resources */ = {
+		5413D8FCDEE917474A976C84 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -707,14 +707,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava/Pods-Goyava-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		84ACC637A274F5F44CDDAA2C /* 📦 Embed Pods Frameworks */ = {
+		84ACC637A274F5F44CDDAA2C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -722,14 +722,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B6BD920521ED6466CC52DAFF /* 📦 Check Pods Manifest.lock */ = {
+		B6BD920521ED6466CC52DAFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -763,14 +763,14 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" ede1b6b2e188115c3c072795bc8cdf7ae263003b 714fba508d07642289adae3ee70e2a79feaaed0bf3869b9181cc1b582d4473a5";
 		};
-		BC9CC186826D6ECD9674D037 /* 📦 Check Pods Manifest.lock */ = {
+		BC9CC186826D6ECD9674D037 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -778,14 +778,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BEFCEFC4E84AF90D6792944D /* 📦 Copy Pods Resources */ = {
+		BEFCEFC4E84AF90D6792944D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,14 +793,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoyavaUITests/Pods-GoyavaUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E503E69562910024433E6043 /* 📦 Embed Pods Frameworks */ = {
+		E503E69562910024433E6043 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
