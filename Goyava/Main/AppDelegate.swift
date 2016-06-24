@@ -13,7 +13,7 @@ import AWSMobileAnalytics
 import Reachability
 import SafariServices
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDelegate {
 
     var window: UIWindow?
     var user : User?
@@ -41,7 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func loadAuthScene() {
         let urlString = "http://proactives.site/oauth/authorize?client_id=8f05f8c75f0b1c45c6ef08a6b51519d82d41c1eac0d0f7d169afce403322446e&redirect_uri=http://goyava.site/clients/login/callback&response_type=code"
         let svc = SFSafariViewController(URL: NSURL(string: urlString)!)
+        svc.delegate = self
        self.window?.rootViewController = svc
+    }
+    func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        print("Safari:\(url)")
+        return true
     }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
