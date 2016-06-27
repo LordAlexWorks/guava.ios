@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
         return true
     }
     func loadAuthScene() {
-        let urlString = "http://proactives.site/oauth/authorize?client_id=8f05f8c75f0b1c45c6ef08a6b51519d82d41c1eac0d0f7d169afce403322446e&redirect_uri=http://goyava.site/clients/login/callback&response_type=code"
+        let urlString = "http://proactives.site/oauth/authorize?client_id=8f05f8c75f0b1c45c6ef08a6b51519d82d41c1eac0d0f7d169afce403322446e&redirect_uri=guavaios://guavaios/callback&response_type=code"
         let svc = SFSafariViewController(URL: NSURL(string: urlString)!)
         svc.delegate = self
        self.window?.rootViewController = svc

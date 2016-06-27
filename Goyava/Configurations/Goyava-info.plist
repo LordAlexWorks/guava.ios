@@ -53,7 +53,7 @@
 			<string>io.proactives.guava</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>http://goyava.site/clients/login/callback=</string>
+				<string>guavaios</string>
 			</array>
 		</dict>
 	</array>
