@@ -12,6 +12,7 @@ import Crashlytics
 import AWSMobileAnalytics
 import Reachability
 import SafariServices
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDelegate {
 
@@ -45,7 +46,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
        self.window?.rootViewController = svc
     }
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        print("Safari:\(url)")
+        let code = url.getQueryItemValueForKey("code")
+        print("Code:\(code!)")
         return true
     }
     func applicationWillResignActive(application: UIApplication) {
