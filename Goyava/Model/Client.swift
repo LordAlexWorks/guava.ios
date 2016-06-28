@@ -16,8 +16,7 @@ class Client: Object {
     
     func setModelData(dict : NSDictionary) {
         self.id = dict["id"] as! Int
-        self.token = dict["token"] as! String
-        //let cards = dict["cards"] as! NSArray
-        //self.myCards = CardsController.getMyCards(cards)
+        let cards = dict["cards"] as! NSArray
+        self.myCards = CardsController.getMyCards(cards)
     }
 }

@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 typealias AuthenticationHandler = (session : Session? , error : NSError?) -> Void
+typealias ClientHandler = (client : Client? , error : NSError?) -> Void
 
 class AuthenticationController: NSObject {
     
@@ -24,8 +25,22 @@ class AuthenticationController: NSObject {
             }
         }
     }
-    class func addClients(session :Session) {
-        
+    class func addClient(session :Session, clientHandler: ClientHandler) {
+        AppServices.addClient(session) { (json, error) in
+            if error != nil {
+                clientHandler(client: nil, error: error)
+            }else {
+                let client = Client()
+                client.token = session.token!
+                let clientDict = json!["client"] as! NSDictionary
+                client.setModelData(clientDict)
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.add(client)
+                }
+                clientHandler(client: client, error: nil)
+            }
+        }
     }
     class func getLocalClient()-> Client? {
         let realm = try! Realm()

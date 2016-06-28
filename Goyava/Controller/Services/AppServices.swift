@@ -12,10 +12,10 @@ public typealias AppServiceHandler = (obj : AnyObject? , error : NSError?) -> Vo
 class AppServices: NSObject {
     //MARK: Login Service
     class func callTokenService(code : String,handler :AppServiceHandler) {
-        let tokeURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
+        let tokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded"]
         let httpBody = "code=\(code)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&client_id=\(ApplicationSecrets.ApplicationId.rawValue)&grant_type=authorization_code&client_secret=\(ApplicationSecrets.ApplicationSecret.rawValue)"
-        let httpClient = SSHTTPClient(url: tokeURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        let httpClient = SSHTTPClient(url: tokenURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (json, error) -> Void in
             if (error != nil) {
                 handler(obj: nil,error: error)
@@ -24,7 +24,19 @@ class AppServices: NSObject {
             }
         }
     }
-    
+    class func addClient(session: Session, handler: AppServiceHandler) {
+        let addClientURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue
+        let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": session.token!]
+        let httpBody = "proactives_access_token=\(session.token!)"
+        let httpClient = SSHTTPClient(url: addClientURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        httpClient.getJsonData { (json, error) -> Void in
+            if (error != nil) {
+                handler(obj: nil,error: error)
+            }else {
+                handler(obj: json,error: nil)
+            }
+        }
+    }
     //MARK: Get All Cards
     class func getAllCardsOfClient(client : Client, handler: AppServiceHandler) {
         let clientId  = String(client.id)

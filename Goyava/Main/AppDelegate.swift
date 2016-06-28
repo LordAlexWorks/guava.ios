@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
         let code = url.getQueryItemValueForKey("code")
         AuthenticationController.getSession(code!) { (session, error) in
-            print(session)
+            
         }
         return true
     }
