@@ -60,7 +60,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func loadDataSource(card : Card) {
         // process data with UI logic
         let realm = try! Realm()
-        let user = realm.objects(User).first
+        let user = realm.objects(Client).first
         if user != nil {
             self.dataSource = user!.myCards
         }

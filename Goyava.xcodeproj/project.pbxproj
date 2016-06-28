@@ -41,8 +41,8 @@
 		B5D112E21C6D7BEE00F66AB6 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B599F7331C682DBF0013E89E /* SnapshotHelper.swift */; };
 		B5D112EB1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */; };
 		B5DE7D6E1CB2038C009416A5 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6D1CB2038C009416A5 /* Loader.swift */; };
-		B5DE7D701CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
-		B5DE7D711CB20B90009416A5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* User.swift */; };
+		B5DE7D701CB20B90009416A5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* Client.swift */; };
+		B5DE7D711CB20B90009416A5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D6F1CB20B90009416A5 /* Client.swift */; };
 		B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
 		B5DE7D741CB21177009416A5 /* ActivitiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D721CB21177009416A5 /* ActivitiesController.swift */; };
 		B5DE7D761CB21187009416A5 /* CardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE7D751CB21187009416A5 /* CardsController.swift */; };
@@ -151,7 +151,7 @@
 		B5D112E81C6D7BEE00F66AB6 /* Goyava.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Goyava.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D112EA1C6D7C4100F66AB6 /* GoyavaBetaUITests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoyavaBetaUITests-Info.plist"; sourceTree = "<group>"; };
 		B5DE7D6D1CB2038C009416A5 /* Loader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
-		B5DE7D6F1CB20B90009416A5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B5DE7D6F1CB20B90009416A5 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		B5DE7D721CB21177009416A5 /* ActivitiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitiesController.swift; sourceTree = "<group>"; };
 		B5DE7D751CB21187009416A5 /* CardsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsController.swift; sourceTree = "<group>"; };
 		B5DE7D781CB21CCB009416A5 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -343,7 +343,7 @@
 			children = (
 				B53267F31C606D41008297CF /* Session.swift */,
 				B5DE7D781CB21CCB009416A5 /* Card.swift */,
-				B5DE7D6F1CB20B90009416A5 /* User.swift */,
+				B5DE7D6F1CB20B90009416A5 /* Client.swift */,
 				B5DE7D7B1CB3660E009416A5 /* Shop.swift */,
 				B5DE7D7E1CB36624009416A5 /* Activity.swift */,
 			);
@@ -839,7 +839,7 @@
 				B5FAE0021C8D1AA700A5C7A4 /* AppServices.swift in Sources */,
 				B5787FA21CBF5AA1002268C8 /* NSDateExtension.swift in Sources */,
 				B5DE7D731CB21177009416A5 /* ActivitiesController.swift in Sources */,
-				B5DE7D701CB20B90009416A5 /* User.swift in Sources */,
+				B5DE7D701CB20B90009416A5 /* Client.swift in Sources */,
 				BA79354C1CDA43B8009737C1 /* Keyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,7 +877,7 @@
 				B5FBEB591C6AD4EC006DCC12 /* QRScannerVC.swift in Sources */,
 				B5FADFFB1C8D1A6D00A5C7A4 /* AppConstants.swift in Sources */,
 				B5FBEB791C6AE548006DCC12 /* MyCardsVC.swift in Sources */,
-				B5DE7D711CB20B90009416A5 /* User.swift in Sources */,
+				B5DE7D711CB20B90009416A5 /* Client.swift in Sources */,
 				B5ECEF1F1C72E80E00E5E098 /* MyCardContentVC.swift in Sources */,
 				BA79354A1CDA436A009737C1 /* UIViewControllerExtension.swift in Sources */,
 				B537DFDC1CBDF10B00FA854E /* ImageLoader.swift in Sources */,

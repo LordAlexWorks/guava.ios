@@ -26,10 +26,10 @@ class AppServices: NSObject {
     }
     
     //MARK: Get All Cards
-    class func getAllCardsOfUser(user : User, handler: AppServiceHandler) {
-        let clientId  = String(user.id)
+    class func getAllCardsOfClient(client : Client, handler: AppServiceHandler) {
+        let clientId  = String(client.id)
         let usersCardsURL = URL.baseURL.rawValue
-        let headerFieldAndValues = ["X-User-Token": user.token]
+        let headerFieldAndValues = ["X-User-Token": client.token]
         let httpClient = SSHTTPClient(url: usersCardsURL, method: "GET", httpBody: nil, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
             if (error != nil) {
@@ -41,9 +41,9 @@ class AppServices: NSObject {
     }
     
     //MARK: Add QR code service 
-    class func addQRCodeActivity(user:User,qrcode: String,merchantId : String, handler: AppServiceHandler){
-        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+"\(user.id)/qrcodes/\(qrcode)/"+URL.activityEndPoint.rawValue
-        let headerFieldAndValues = ["X-User-Token": user.token,"Content-Type" : "application/json"]
+    class func addQRCodeActivity(client:Client,qrcode: String,merchantId : String, handler: AppServiceHandler){
+        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+"\(client.id)/qrcodes/\(qrcode)/"+URL.activityEndPoint.rawValue
+        let headerFieldAndValues = ["X-User-Token": client.token,"Content-Type" : "application/json"]
         let jsondict = ["activity":["shop_id":merchantId]]
         let httpBody = UtilityManager.getFormattedJSONString(jsondict)
         let httpClient = SSHTTPClient(url: addQRCodeActivityURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)

@@ -9,8 +9,8 @@
 import UIKit
 import RealmSwift
 
-class User: Object {
-    dynamic var id = 0
+class Client: Object {
+    dynamic var id = 0 //it's client_id
     dynamic var token = ""
     var myCards = List<Card>()
     

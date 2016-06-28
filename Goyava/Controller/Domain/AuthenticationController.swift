@@ -24,10 +24,12 @@ class AuthenticationController: NSObject {
             }
         }
     }
-    
-    class func getLocalUser()-> User? {
+    class func addClients(session :Session) {
+        
+    }
+    class func getLocalClient()-> Client? {
         let realm = try! Realm()
-        return realm.objects(User).first
+        return realm.objects(Client).first
     }
     class func getProactiveAuthURL() -> String {
         let authURL = "\(URL.proactiveBaseURL.rawValue)\(URL.proactiveAuthEndPoint.rawValue)client_id=\(ApplicationSecrets.ApplicationId.rawValue)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&response_type=code"

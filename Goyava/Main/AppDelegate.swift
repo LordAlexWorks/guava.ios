@@ -17,15 +17,15 @@ import SafariServices
 class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDelegate {
 
     var window: UIWindow?
-    var user : User?
+    var client : Client?
     var reach: Reachability?
     var isNetworkReachable = false
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         self.window = UIWindow()
         self.window?.makeKeyAndVisible()
-        self.user = AuthenticationController.getLocalUser()
-        if user != nil {
+        self.client = AuthenticationController.getLocalClient()
+        if client != nil {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
             self.window?.rootViewController = myCardVC

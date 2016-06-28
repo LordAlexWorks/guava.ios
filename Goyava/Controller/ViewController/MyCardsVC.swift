@@ -75,7 +75,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     func loadDataSource() {
         // process data with UI logic
         let realm = try! Realm()
-        let user = realm.objects(User).first
+        let user = realm.objects(Client).first
         if user != nil {
             let mycards = user!.myCards
             let itemPerPage = 6
