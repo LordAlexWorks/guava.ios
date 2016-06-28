@@ -12,10 +12,10 @@ public typealias AppServiceHandler = (obj : AnyObject? , error : NSError?) -> Vo
 class AppServices: NSObject {
     //MARK: Login Service
     class func callTokenService(code : String,handler :AppServiceHandler) {
-        let loginURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
+        let tokeURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded"]
-        let httpBody = "code=\(code)&redirect_uri=\(ApplicationSecrets.callBackURL)&client_id=\(ApplicationSecrets.ApplicationId)&grant_type=authorization_code&client_secret=\(ApplicationSecrets.ApplicationSecret)"
-        let httpClient = SSHTTPClient(url: loginURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        let httpBody = "code=\(code)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&client_id=\(ApplicationSecrets.ApplicationId.rawValue)&grant_type=authorization_code&client_secret=\(ApplicationSecrets.ApplicationSecret.rawValue)"
+        let httpClient = SSHTTPClient(url: tokeURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (json, error) -> Void in
             if (error != nil) {
                 handler(obj: nil,error: error)
