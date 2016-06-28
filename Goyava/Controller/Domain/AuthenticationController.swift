@@ -8,58 +8,29 @@
 
 import UIKit
 import RealmSwift
-public typealias AuthenticationHandler = (obj : AnyObject? , error : NSError?) -> Void
+typealias AuthenticationHandler = (session : Session? , error : NSError?) -> Void
 
 class AuthenticationController: NSObject {
     
     //MARK: Login controller method
-    class func doLogin(session : Session, handler : AuthenticationHandler){
-        AppServices.callLoginService(session) { (obj, error) -> Void in
+    class func getSession(code : String, handler : AuthenticationHandler){
+        AppServices.callTokenService(code) { (json, error) -> Void in
             if error != nil {
-                handler(obj: nil,error: error)
+                handler(session: nil,error: error)
             }else {
-                // do bussiness logic with login json response
-                let json = obj as! NSDictionary
-                let errorString = json["errors"] as? String
-                if errorString != nil {
-                    session.isSuccess = false
-                    session.errorDescription = errorString
-                }else {
-                    session.isSuccess = true
-                    // create user 
-                    let clientJson = json["client"] as! NSDictionary
-                    let user = User()
-                    user.setModelData(clientJson)
-                    let realm = try! Realm()
-                    try! realm.write {
-                        realm.add(user)
-                    }
-                }
-                handler(obj: session, error: nil)
+                let session = Session()
+                session.setModelData(json as! NSDictionary)
+                handler(session: session,error: error)
             }
         }
     }
     
-    //MARK: Signup controller method
-    class func doSignup(session : Session, handler : AuthenticationHandler){
-        AppServices.callSignupService(session) { (obj, error) -> Void in
-            if error != nil {
-                handler(obj: nil,error: error)
-            }else {
-                // do bussiness logic with signup json response
-                let json = obj as! NSDictionary
-                session.errorDescription = json["errors"] as? String
-                if session.errorDescription == nil {
-                    session.isSuccess = true
-                }else {
-                    session.isSuccess = false
-                }
-                handler(obj: session, error: nil)
-            }
-        }
-    }
     class func getLocalUser()-> User? {
         let realm = try! Realm()
         return realm.objects(User).first
+    }
+    class func getProactiveAuthURL() -> String {
+        let authURL = "\(URL.proactiveBaseURL.rawValue)\(URL.proactiveAuthEndPoint.rawValue)client_id=\(ApplicationSecrets.ApplicationId.rawValue)&redirect_uri==\(ApplicationSecrets.callBackURL.rawValue)&response_type=code"
+        return authURL
     }
 }

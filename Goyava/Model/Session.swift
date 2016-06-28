@@ -9,8 +9,17 @@
 import UIKit
 
 class Session: NSObject {
-    var email : String?
-    var password : String?
+    var token : String?
     var isSuccess : Bool?
     var errorDescription : String?
+    
+    func setModelData(dict : NSDictionary) {
+        self.errorDescription = dict["error_description"] as? String
+        self.token = dict["access_token"] as? String
+        if self.errorDescription != nil {
+            self.isSuccess = false
+        }else if token != nil {
+            self.isSuccess = true
+        }
+    }
 }
