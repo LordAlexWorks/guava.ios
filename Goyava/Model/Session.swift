@@ -10,7 +10,7 @@ import UIKit
 
 class Session: NSObject {
     var token : String?
-    var isSuccess : Bool?
+    var isSuccess = false
     var errorDescription : String?
     
     func setModelData(dict : NSDictionary) {

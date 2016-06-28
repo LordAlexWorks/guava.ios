@@ -34,10 +34,6 @@ class AuthenticationController: NSObject {
                 client.token = session.token!
                 let clientDict = json!["client"] as! NSDictionary
                 client.setModelData(clientDict)
-                let realm = try! Realm()
-                try! realm.write {
-                    realm.add(client)
-                }
                 clientHandler(client: client, error: nil)
             }
         }

@@ -9,8 +9,6 @@
 import UIKit
 import RealmSwift
 
-
-
 class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     var pageViewController : UIPageViewController?
     var currentIndex : Int = 0
@@ -18,7 +16,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataSource()
+        //self.loadDataSource()
     }
 
     override func didReceiveMemoryWarning() {

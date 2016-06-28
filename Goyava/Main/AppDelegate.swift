@@ -12,6 +12,7 @@ import Crashlytics
 import AWSMobileAnalytics
 import Reachability
 import SafariServices
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDelegate {
@@ -26,9 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
         self.window?.makeKeyAndVisible()
         self.client = AuthenticationController.getLocalClient()
         if client != nil {
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
-            self.window?.rootViewController = myCardVC
+            self.loadMyCardScene()
         }else {
             self.loadAuthScene()
         }
@@ -45,12 +44,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
         svc.delegate = self
        self.window?.rootViewController = svc
     }
+    func loadMyCardScene() {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let myCardVC = mainStoryboard.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
+        self.window?.rootViewController = myCardVC
+    }
     func application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
         let code = url.getQueryItemValueForKey("code")
         AuthenticationController.getSession(code!) { (session, error) in
-            
+            if (session!.isSuccess)  {
+                AuthenticationController.addClient(session!) { (client, error) in
+                    if client != nil {
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.saveClient(client!)
+                            self.loadMyCardScene()
+                        }
+                       
+                    }else if error != nil {
+                        print(error)
+                    }
+                }
+            }
         }
         return true
+    }
+    func saveClient(client : Client) {
+        let realm = try! Realm()
+        try! realm.write {
+            realm.add(client)
+        }
     }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
