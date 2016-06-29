@@ -1,151 +1,22 @@
 require 'yaml'
 require 'ostruct'
 
-fastlane_version "1.85.0"
+fastlane_version "1.89.0"
 
 default_platform :ios
 
+import_from_git(
+     url: 'git@github.com:LordAlexWorks/fastlane.git', # The url of the repository to import the Fastfile from.
+     branch: 'HEAD', # The branch to checkout on the repository. Defaults to `HEAD`.
+     path: 'ios/Fastfile' # The path of the Fastfile in the repository. Defaults to `fastlane/Fastfile`.
+   )
+
 platform :ios do
+
   before_all do
-    cocoapods
-  end
-
-  desc "Runs all the tests"
-  lane :test do
-    scan
-  end
-
-  desc "Creates new screenshots and uploads them to iTunes Connect"
-  lane :screens do
-    cocoapods
-    match(app_identifier: "com.acast.app.debug", type: "development")
-    snapshot
-    frameit
-    deliver(app: 925311796, app_identifier: "com.acast.app.native.production", skip_metadata: true, force: true)
-  end
-
-  def version_string(version_number, build_number)
-    "#{version_number} (#{build_number})"
-  end
-
-  desc "Submit a new daily build to Apple TestFlight"
-  desc "A daily build is sent to Guava team by default"
-  lane :beta do |options|
-   # ensure_git_status_clean
-     version_number = get_version_number
-    #ensure_git_branch(branch: 'master')
-    git_pull
-
-    # Increment build number to current date
-    build_number = increment_build_number
-    increment_build_number build_number: build_number
-
-    gym(scheme: "Goyava-Beta") # Build your app - more options available
-
-     # Increment build number to current date
-
-    clear_derived_data
-
-    #match(type: "appstore")
-    pilot(skip_submission: true ,
-         distribute_external: true,
-         changelog: "Please remove the previous version. Check the issus with the label QA")
-
-
-     # Make sure our directory is clean, except for changes Fastlane has made
-    clean_build_artifacts
-
-    # push to GitHub
-
-    version = `/usr/libexec/plistbuddy -c Print:CFBundleShortVersionString '../Project/Project-Info.plist'`.strip
-   build_number = `cd ..;agvtool what-version -terse`.strip
-
-    git_commit(path: ".",
-              message: "Deploying build #{build_number}.")
-
-     add_git_tag(
-        grouping: 'fastlane-builds',
-        prefix: 'v',
-        build_number: "#{version_number}-b#{build_number}"
-      )
-
-    push_to_git_remote
-
-   end
-
-    desc "Submit a new weekly build to Apple TestFlight"
-    desc "A weekly build is sent to Guava team by default"
-    lane :weeklybuild do |options|
-     # prepare(remote_branch: "master")
-
-      increment_version_number
-
-      match(type: "appstore")
-      gym(scheme: "Guava") # Build your app - more options available
-     # pilot
-
-      version_number = get_version_number(xcodeproj: "Guava.xcodeproj")
-
-      # Make sure our directory is clean, except for changes Fastlane has made
-      clean_build_artifacts
-
-      # Tag release and push to GitHub
-      commit_version_bump message: "Deploying version #{version_number}."
-
-      add_git_tag(
-        grouping: 'fastlane-builds',
-        prefix: 'v',
-        build_number: version_number
-      )
-      push_to_git_remote
-  end
-
-
-
-
-
-
-# PRIVATE LANES
-
-
-  private_lane :project_warm_up do |options|
-    # Get configurations
-    config = YAML.load(open(File.join(File.dirname(__FILE__), "fastlane_config.yaml")))
-    settings = OpenStruct.new(config)
-    lane_setting = settings[options[:lane_name]]
-  end
-
-private_lane :prepare do |options|
-
-   # ensure_git_status_clean
-    git_checkout(remote_branch: options[:remote_branch])
-    puts "current_branch new branch #{git_branch}"
-    git_pull
-
-    #cocoapods
-end
-
-  after_all do |lane|
-
-    # This block is called, only if the executed lane was successful
-    # Make sure our directory is clean, except for changes Fastlane has made
-    #clean_build_artifacts
-
-    #add all files
-    #git_add(path: ".")
-
-    # Commit new build and push to git
-   # commit_version_bump
-  #  push_to_git_remote
-
-  end
-
-  error do |lane, exception|
-
+     cocoapods
   end
 end
-
-
 
 # More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/docs/Platforms.md
 # All available actions: https://github.com/fastlane/fastlane/blob/master/docs/Actions.md
