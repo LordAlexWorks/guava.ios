@@ -32,12 +32,18 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     }
     
     @IBAction func logoutButtonTapped(sender : UIButton) {
-        let realm = try! Realm()
-        try! realm.write {
-            realm.deleteAll()
+        AuthenticationController.logout { (isFinishedLogout) in
+            if isFinishedLogout {
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.deleteAll()
+                }
+                dispatch_async(dispatch_get_main_queue()) {
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDelegate.loadAuthScene()
+                }
+            }
         }
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        appDelegate.loadAuthScene()
     }
     
     @IBAction func gridButtonTapped(sender : UIButton) {

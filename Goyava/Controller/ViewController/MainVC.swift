@@ -111,14 +111,19 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         }
     }
     @IBAction func logoutButtonTapped(sender : UIButton) {
-        let realm = try! Realm()
-        try! realm.write {
-            realm.deleteAll()
+        AuthenticationController.logout { (isFinishedLogout) in
+            if isFinishedLogout {
+                let realm = try! Realm()
+                try! realm.write {
+                    realm.deleteAll()
+                }
+                dispatch_async(dispatch_get_main_queue()) {
+                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                    appDelegate.loadAuthScene()
+                }
+            }
         }
-        self.dismissViewControllerAnimated(false) {
-            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            appDelegate.loadAuthScene()
-        }
+        
     }
     @IBAction func scanButtonTapped(sender : UIButton) {
         self.dismissViewControllerAnimated(false) { () -> Void in

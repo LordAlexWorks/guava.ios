@@ -10,7 +10,7 @@ import UIKit
 public typealias AppServiceHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class AppServices: NSObject {
-    //MARK: Login Service
+    //MARK: Token Service
     class func callTokenService(code : String,handler :AppServiceHandler) {
         let tokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded"]
@@ -63,6 +63,21 @@ class AppServices: NSObject {
                 handler(obj: nil,error: error)
             }else {
                 handler(obj: obj,error: nil)
+            }
+        }
+    }
+    
+    //MARK: Revoke Auth Token
+    static func revokeToken(client: Client,appServiceHandler:AppServiceHandler) {
+        let revokeTokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveRevokeTokenEndPoint.rawValue
+        let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
+        let httpBody = "proactives_access_token=\(client.token)"
+        let httpClient = SSHTTPClient(url: revokeTokenURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        httpClient.getJsonData { (json, error) -> Void in
+            if (error != nil) {
+                appServiceHandler(obj: nil,error: error)
+            }else {
+                appServiceHandler(obj: json,error: nil)
             }
         }
     }

@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 typealias AuthenticationHandler = (session : Session? , error : NSError?) -> Void
 typealias ClientHandler = (client : Client? , error : NSError?) -> Void
-
+typealias LogoutHandler = (isFinishedLogout : Bool) -> Void
 class AuthenticationController: NSObject {
     
     //MARK: Login controller method
@@ -45,5 +45,17 @@ class AuthenticationController: NSObject {
     class func getProactiveAuthURL() -> String {
         let authURL = "\(URL.proactiveBaseURL.rawValue)\(URL.proactiveAuthEndPoint.rawValue)client_id=\(ApplicationSecrets.ApplicationId.rawValue)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&response_type=code"
         return authURL
+    }
+    class func logout(logoutHandler: LogoutHandler){
+        let client = self.getLocalClient()
+        AppServices.revokeToken(client!) { (obj, error) in
+            if error != nil {
+                logoutHandler(isFinishedLogout: false)
+                print(error)
+            }else {
+                logoutHandler(isFinishedLogout: true)
+                print(obj)
+            }
+        }
     }
 }

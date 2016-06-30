@@ -16,6 +16,7 @@ enum URL : String {
     case proactiveBaseURL = "http://proactives.site"
     case proactiveAuthEndPoint = "/oauth/authorize?"
     case proactiveTokenEndPoint = "/oauth/token"
+    case proactiveRevokeTokenEndPoint = "/oauth/revoke"
 }
 enum ApplicationSecrets : String {
     case ApplicationId = "8f05f8c75f0b1c45c6ef08a6b51519d82d41c1eac0d0f7d169afce403322446e"
