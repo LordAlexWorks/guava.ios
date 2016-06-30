@@ -16,7 +16,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.loadDataSource()
+        self.loadDataSource()
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,6 +76,9 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         let user = realm.objects(Client).first
         if user != nil {
             let mycards = user!.myCards
+            guard mycards.count > 0 else {
+                return
+            }
             let itemPerPage = 6
             var pageCount = 0
             if mycards.count%itemPerPage == 0 {

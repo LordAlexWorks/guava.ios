@@ -53,12 +53,11 @@ class AppServices: NSObject {
     }
     
     //MARK: Add QR code service 
-    class func addQRCodeActivity(client:Client,qrcode: String,merchantId : String, handler: AppServiceHandler){
-        let addQRCodeActivityURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue+"\(client.id)/qrcodes/\(qrcode)/"+URL.activityEndPoint.rawValue
-        let headerFieldAndValues = ["X-User-Token": client.token,"Content-Type" : "application/json"]
-        let jsondict = ["activity":["shop_id":merchantId]]
-        let httpBody = UtilityManager.getFormattedJSONString(jsondict)
-        let httpClient = SSHTTPClient(url: addQRCodeActivityURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+    class func addQRCodeActivity(client:Client,qrcode: String, shopId:String, handler: AppServiceHandler){
+        let addQRCodeURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/activities"
+        let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
+        let httpBody = "shop_id=\(shopId)&stamp_id=\(qrcode)"
+        let httpClient = SSHTTPClient(url: addQRCodeURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
         httpClient.getJsonData { (obj, error) -> Void in
             if (error != nil) {
                 handler(obj: nil,error: error)
