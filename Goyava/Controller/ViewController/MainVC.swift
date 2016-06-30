@@ -21,7 +21,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.self.displayPage(self.currentIndex)
+        self.displayPage(self.currentIndex)
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,7 +33,9 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func displayPage(atIndex : Int){
         pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
         pageViewController!.dataSource = self
-        
+        guard self.dataSource.count > 0 else {
+            return
+        }
         let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
         startingViewController.loadDataSource(self.dataSource[atIndex])
         let viewControllers = [startingViewController]
