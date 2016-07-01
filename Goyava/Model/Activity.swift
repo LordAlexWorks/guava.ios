@@ -10,11 +10,11 @@ import UIKit
 import RealmSwift
 
 class Activity: Object {
-    dynamic var createdAt = 0.0
+    dynamic var createdAt = 1467345810.0
     dynamic var point = 0
     
     func setModelData(dict : NSDictionary) {
-        self.createdAt = dict["created_at"] as! Double
+        //self.createdAt = dict["created_at"] as! Double
         self.point = dict["point"] as! Int
     }
 }

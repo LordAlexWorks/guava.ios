@@ -18,25 +18,11 @@ class ActivitiesController: NSObject {
         if qrCodeComponenets.count == 3 {
             let qrid = qrCodeComponenets[2]
             let shopId = qrCodeComponenets[1]
-            let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
             CardsController.addCard(shopId, cardHandler: { (obj, error) in
                 if error == nil {
-                    AppServices.addQRCodeActivity(appDel.client!, qrcode: qrid, shopId: shopId, handler: { (obj, error) in
-                        if error != nil {
-                            handler(obj: nil, error: error)
-                        }else {
-                            let json = obj as! NSDictionary
-                            let error = json["error"]
-                            if error != nil {
-                                handler(obj: nil, error:  NSError(domain: "io.proactives.guava.QRCodeError", code: 1001, userInfo: ["description":"Guava add QRcode service error."]))
-                            }else {
-                                let activityDict = json["activity"] as! NSDictionary
-                                let activity = Activity()
-                                activity.setModelData(activityDict)
-                                handler(obj: activity, error: nil)
-                            }
-                        }
-                    })
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.addActivity(qrid, shopId: shopId, handler: handler)
+                    }
                 }
             })
         }else {
@@ -44,6 +30,25 @@ class ActivitiesController: NSObject {
         }
     }
     
+    class func addActivity(qrid: String,shopId: String,handler: ActivityHandler) {
+        let client = AuthenticationController.getLocalClient()
+        AppServices.addQRCodeActivity(client!, qrcode: qrid, shopId: shopId, handler: { (obj, error) in
+            if error != nil {
+                handler(obj: nil, error: error)
+            }else {
+                let json = obj as! NSDictionary
+                let error = json["error"]
+                if error != nil {
+                    handler(obj: nil, error:  NSError(domain: "io.proactives.guava.QRCodeError", code: 1001, userInfo: ["description":"Guava add QRcode service error."]))
+                }else {
+                    let activityDict = json["activity"] as! NSDictionary
+                    let activity = Activity()
+                    activity.setModelData(activityDict)
+                    handler(obj: activity, error: nil)
+                }
+            }
+        })
+    }
     class func getGlobalPoint(card : Card) -> Int {
         var globalPoint = 0
         let activities = card.activities
@@ -56,6 +61,7 @@ class ActivitiesController: NSObject {
     
     class func getWeeklyPoint(card : Card)-> Int {
         let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+        return 0 //need to remove later when created at will be fixed
         guard card.activities.count > 0 else {
             return 0
         }
