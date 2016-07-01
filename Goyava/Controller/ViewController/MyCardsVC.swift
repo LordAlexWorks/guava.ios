@@ -16,7 +16,6 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadDataSource()
     }
     override func viewWillAppear(animated: Bool) {
         self.refreshMycards()
@@ -85,17 +84,15 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
                 let client = AuthenticationController.getLocalClient()
                 client?.myCards = obj as! List<Card>
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.loadDataSource()
+                    self.loadDataSource(client!)
                 }
             }
         }
     }
-    func loadDataSource() {
+    func loadDataSource(client: Client?) {
         // process data with UI logic
-        let realm = try! Realm()
-        let user = realm.objects(Client).first
-        if user != nil {
-            let mycards = user!.myCards
+        if client != nil {
+            let mycards = client!.myCards
             guard mycards.count > 0 else {
                 return
             }

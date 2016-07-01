@@ -56,6 +56,9 @@ class ActivitiesController: NSObject {
     
     class func getWeeklyPoint(card : Card)-> Int {
         let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+        guard card.activities.count > 0 else {
+            return 0
+        }
         let results = card.activities.filter("createdAt >= \(mondayTimeStamp)")
         var weeklyTotal = 0
         for item in results {
