@@ -18,7 +18,9 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         super.viewDidLoad()
         self.loadDataSource()
     }
-
+    override func viewWillAppear(animated: Bool) {
+        self.refreshMycards()
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -75,7 +77,19 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         view.addSubview(pageViewController!.view)
         pageViewController!.didMoveToParentViewController(self)
     }
-    
+    func refreshMycards() {
+        CardsController.getAllCards { (obj, error) in
+            if error != nil {
+                print(error)
+            }else {
+                let client = AuthenticationController.getLocalClient()
+                client?.myCards = obj as! List<Card>
+                dispatch_async(dispatch_get_main_queue()) {
+                    self.loadDataSource()
+                }
+            }
+        }
+    }
     func loadDataSource() {
         // process data with UI logic
         let realm = try! Realm()

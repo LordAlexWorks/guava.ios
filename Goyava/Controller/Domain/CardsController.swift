@@ -13,15 +13,20 @@ public typealias CardsHandler = (obj : AnyObject? , error : NSError?) -> Void
 class CardsController: NSObject {
     //get all cards from current session
     class func getAllCards(handler : CardsHandler) {
-        let client = Client()
-        AppServices.getAllCardsOfClient(client) { (obj, error) in
+        let client = AuthenticationController.getLocalClient()
+        AppServices.getAllCardsOfClient(client!) { (obj, error) in
             if error != nil {
                 handler(obj: nil, error: error)
             }else {
                 //parse card object
                 let json = obj as! NSDictionary
-                let cards = json["cards"] as! NSArray
-                handler(obj: self.getMyCards(cards), error: nil)
+                let cards = json["cards"] as? NSArray
+                if cards != nil {
+                    handler(obj: self.getMyCards(cards!), error: nil)
+                }else {
+                    handler(obj: nil, error: nil)
+                }
+                
             }
         }
     }

@@ -39,15 +39,14 @@ class AppServices: NSObject {
     }
     //MARK: Get All Cards
     class func getAllCardsOfClient(client : Client, handler: AppServiceHandler) {
-        let clientId  = String(client.id)
-        let usersCardsURL = URL.baseURL.rawValue
-        let headerFieldAndValues = ["X-User-Token": client.token]
-        let httpClient = SSHTTPClient(url: usersCardsURL, method: "GET", httpBody: nil, headerFieldsAndValues: headerFieldAndValues)
-        httpClient.getJsonData { (obj, error) -> Void in
+        let getAllCardsURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/cards"
+        let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
+        let httpClient = SSHTTPClient(url: getAllCardsURL, method: "GET", httpBody: nil, headerFieldsAndValues: headerFieldAndValues)
+        httpClient.getJsonData { (json, error) -> Void in
             if (error != nil) {
                 handler(obj: nil,error: error)
             }else {
-                handler(obj: obj,error: nil)
+                handler(obj: json,error: nil)
             }
         }
     }
