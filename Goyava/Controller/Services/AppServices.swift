@@ -66,7 +66,20 @@ class AppServices: NSObject {
             }
         }
     }
-    
+    //MARK: Add Card
+    class func addCard(client:Client,shopId:String, handler: AppServiceHandler){
+        let addQRCodeURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/cards"
+        let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
+        let httpBody = "shop_id=\(shopId)"
+        let httpClient = SSHTTPClient(url: addQRCodeURL, method: "POST", httpBody: httpBody, headerFieldsAndValues: headerFieldAndValues)
+        httpClient.getJsonData { (obj, error) -> Void in
+            if (error != nil) {
+                handler(obj: nil,error: error)
+            }else {
+                handler(obj: obj,error: nil)
+            }
+        }
+    }
     //MARK: Revoke Auth Token
     static func revokeToken(client: Client,appServiceHandler:AppServiceHandler) {
         let revokeTokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveRevokeTokenEndPoint.rawValue

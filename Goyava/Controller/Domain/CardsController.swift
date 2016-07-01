@@ -39,4 +39,17 @@ class CardsController: NSObject {
         shop.setModelData(shopDict)
         return shop
     }
+    class func addCard(shopId : String,cardHandler :CardsHandler) {
+        let client = AuthenticationController.getLocalClient()
+        AppServices.addCard(client!, shopId: shopId) { (obj, error) in
+            if error != nil {
+                cardHandler(obj: nil, error: error)
+            }else {
+                cardHandler(obj: "isSuccess", error: nil)
+            }
+        }
+    }
+    class func scanCard(qrcode: String,cardHandler :CardsHandler) {
+        
+    }
 }

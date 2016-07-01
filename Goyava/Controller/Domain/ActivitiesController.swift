@@ -12,26 +12,31 @@ import RealmSwift
 public typealias ActivityHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class ActivitiesController: NSObject {
+    
     class func addQRCodeActivity(qrCode: String, handler: ActivityHandler){
         let qrCodeComponenets = qrCode.componentsSeparatedByString("//")
         if qrCodeComponenets.count == 3 {
             let qrid = qrCodeComponenets[2]
             let shopId = qrCodeComponenets[1]
             let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
-            AppServices.addQRCodeActivity(appDel.client!, qrcode: qrid, shopId: shopId, handler: { (obj, error) in
-                if error != nil {
-                   handler(obj: nil, error: error)
-                }else {
-                    let json = obj as! NSDictionary
-                    let error = json["error"]
-                    if error != nil {
-                        handler(obj: nil, error:  NSError(domain: "io.proactives.guava.QRCodeError", code: 1001, userInfo: ["description":"Guava add QRcode service error."]))
-                    }else {
-                        let activityDict = json["activity"] as! NSDictionary
-                        let activity = Activity()
-                        activity.setModelData(activityDict)
-                        handler(obj: activity, error: nil)
-                    }
+            CardsController.addCard(shopId, cardHandler: { (obj, error) in
+                if error == nil {
+                    AppServices.addQRCodeActivity(appDel.client!, qrcode: qrid, shopId: shopId, handler: { (obj, error) in
+                        if error != nil {
+                            handler(obj: nil, error: error)
+                        }else {
+                            let json = obj as! NSDictionary
+                            let error = json["error"]
+                            if error != nil {
+                                handler(obj: nil, error:  NSError(domain: "io.proactives.guava.QRCodeError", code: 1001, userInfo: ["description":"Guava add QRcode service error."]))
+                            }else {
+                                let activityDict = json["activity"] as! NSDictionary
+                                let activity = Activity()
+                                activity.setModelData(activityDict)
+                                handler(obj: activity, error: nil)
+                            }
+                        }
+                    })
                 }
             })
         }else {
