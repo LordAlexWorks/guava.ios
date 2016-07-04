@@ -82,15 +82,19 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
                 print(error)
             }else {
                 let client = AuthenticationController.getLocalClient()
-                client?.myCards = obj as! List<Card>
+                let realm = try! Realm()
+                try! realm.write {
+                    client?.myCards = obj as! List<Card>
+                }
                 dispatch_async(dispatch_get_main_queue()) {
-                    self.loadDataSource(client!)
+                    self.loadDataSource()
                 }
             }
         }
     }
-    func loadDataSource(client: Client?) {
+    func loadDataSource() {
         // process data with UI logic
+        let client = AuthenticationController.getLocalClient()
         if client != nil {
             let mycards = client!.myCards
             guard mycards.count > 0 else {

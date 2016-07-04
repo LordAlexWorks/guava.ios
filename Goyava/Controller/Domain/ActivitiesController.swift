@@ -61,7 +61,6 @@ class ActivitiesController: NSObject {
     
     class func getWeeklyPoint(card : Card)-> Int {
         let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
-        return 0 //need to remove later when created at will be fixed
         guard card.activities.count > 0 else {
             return 0
         }
