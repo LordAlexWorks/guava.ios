@@ -16,7 +16,7 @@ class Card: Object {
     dynamic var shop : Shop?
     var activities = List<Activity>()
     
-    func setModelData(dict : NSDictionary) {
+    func setModelData(_ dict : NSDictionary) {
         self.id = dict["id"] as! Int
         self.maxPoint = dict["max_point"] as! Int
         self.point = dict["point"] as! Int

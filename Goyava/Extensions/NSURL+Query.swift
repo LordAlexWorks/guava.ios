@@ -8,9 +8,9 @@
 
 import UIKit
 
-extension NSURL {
-    func getQueryItemValueForKey(key: String) -> String? {
-        guard let components = NSURLComponents(URL: self, resolvingAgainstBaseURL: false) else {
+extension URL {
+    func getQueryItemValueForKey(_ key: String) -> String? {
+        guard let components = URLComponents(url: self, resolvingAgainstBaseURL: false) else {
             return nil
         }
         guard let queryItems = components.queryItems else { return nil }

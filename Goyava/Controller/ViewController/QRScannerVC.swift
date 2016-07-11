@@ -31,7 +31,7 @@ class QRScannerVC: UIViewController {
                 if self != nil {
                     Loader.sharedInstance.showLoader()
                     ActivitiesController.addQRCodeActivity(result, handler: { (obj, error) in
-                        dispatch_async(dispatch_get_main_queue(),{
+                        DispatchQueue.main.async(execute: {
                             Loader.sharedInstance.hideLoader()
                             if error != nil {
                                 UtilityManager.showAlertMessage("\(error.debugDescription)", onViewcontrolller: self!)
@@ -46,7 +46,7 @@ class QRScannerVC: UIViewController {
             if((error) != nil) {
                 print(error, terminator: "")
                 if self != nil {
-                    self!.dismissViewControllerAnimated(false, completion: { () -> Void in
+                    self!.dismiss(animated: false, completion: { () -> Void in
                         self!.goToMain()
                     })
                 }
@@ -54,24 +54,24 @@ class QRScannerVC: UIViewController {
         })
     }
     func goToMain(){
-        let mycardVc = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardsVC") as! MyCardsVC
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let mycardVc = self.storyboard?.instantiateViewController(withIdentifier: "MyCardsVC") as! MyCardsVC
+        let appDelegate = UIApplication.shared().delegate as! AppDelegate
         appDelegate.window?.rootViewController = mycardVc
     }
     func showMain(){
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+        self.dismiss(animated: true, completion: { () -> Void in
             self.goToMain()
         })
     }
-    @IBAction func backButtonTapped(sender : UIButton) {
-        self.dismissViewControllerAnimated(true, completion: { () -> Void in
+    @IBAction func backButtonTapped(_ sender : UIButton) {
+        self.dismiss(animated: true, completion: { () -> Void in
         })
     }
-    func isAuthorizedForCamera(handler : CameraAccessHandler) {
-        if AVCaptureDevice.authorizationStatusForMediaType(AVMediaTypeVideo) ==  AVAuthorizationStatus.Authorized {
+    func isAuthorizedForCamera(_ handler : CameraAccessHandler) {
+        if AVCaptureDevice.authorizationStatus(forMediaType: AVMediaTypeVideo) ==  AVAuthorizationStatus.authorized {
             handler(isGranted: true)
         }else{
-            AVCaptureDevice.requestAccessForMediaType(AVMediaTypeVideo, completionHandler: { (granted :Bool) -> Void in
+            AVCaptureDevice.requestAccess(forMediaType: AVMediaTypeVideo, completionHandler: { (granted :Bool) -> Void in
                 handler(isGranted: granted)
             });
         }

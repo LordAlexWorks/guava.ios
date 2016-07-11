@@ -14,7 +14,7 @@ class Client: Object {
     dynamic var token = ""
     var myCards = List<Card>()
     
-    func setModelData(dict : NSDictionary) {
+    func setModelData(_ dict : NSDictionary) {
         self.id = dict["id"] as! Int
         let cards = dict["cards"] as! NSArray
         self.myCards = CardsController.getMyCards(cards)

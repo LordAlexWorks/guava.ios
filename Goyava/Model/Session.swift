@@ -13,7 +13,7 @@ class Session: NSObject {
     var isSuccess = false
     var errorDescription : String?
     
-    func setModelData(dict : NSDictionary) {
+    func setModelData(_ dict : NSDictionary) {
         self.errorDescription = dict["error_description"] as? String
         self.token = dict["access_token"] as? String
         if self.errorDescription != nil {

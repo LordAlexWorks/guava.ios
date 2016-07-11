@@ -15,7 +15,7 @@ extension UIViewController {
         self.view.addGestureRecognizer(gestureRecognizer)
     }
     
-    func handleTapGesture(gestureRecognizer: UIGestureRecognizer) {
+    func handleTapGesture(_ gestureRecognizer: UIGestureRecognizer) {
         self.view.endEditing(true)
     }
 }

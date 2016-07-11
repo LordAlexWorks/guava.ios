@@ -16,7 +16,7 @@ class Shop: Object {
     dynamic var maximumPoint = 0
     dynamic var logo  = ""
     
-     func setModelData(dict : NSDictionary) {
+     func setModelData(_ dict : NSDictionary) {
         self.id = dict["id"]  as! Int
         self.name = dict["name"] as! String
         self.website = dict["website"] as! String

@@ -14,7 +14,7 @@ typealias LogoutHandler = (isFinishedLogout : Bool) -> Void
 class AuthenticationController: NSObject {
     
     //MARK: Login controller method
-    class func getSession(code : String, handler : AuthenticationHandler){
+    class func getSession(_ code : String, handler : AuthenticationHandler){
         AppServices.callTokenService(code) { (json, error) -> Void in
             if error != nil {
                 handler(session: nil,error: error)
@@ -25,7 +25,7 @@ class AuthenticationController: NSObject {
             }
         }
     }
-    class func addClient(session :Session, clientHandler: ClientHandler) {
+    class func addClient(_ session :Session, clientHandler: ClientHandler) {
         AppServices.addClient(session) { (json, error) in
             if error != nil {
                 clientHandler(client: nil, error: error)
@@ -46,7 +46,7 @@ class AuthenticationController: NSObject {
         let authURL = "\(URL.proactiveBaseURL.rawValue)\(URL.proactiveAuthEndPoint.rawValue)client_id=\(ApplicationSecrets.ApplicationId.rawValue)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&response_type=code"
         return authURL
     }
-    class func logout(logoutHandler: LogoutHandler){
+    class func logout(_ logoutHandler: LogoutHandler){
         let client = self.getLocalClient()
         AppServices.revokeToken(client!) { (obj, error) in
             if error != nil {

@@ -1,43 +1,56 @@
 PODS:
-  - AWSCore (2.4.2)
-  - AWSMobileAnalytics (2.4.2):
-    - AWSCore (= 2.4.2)
-  - Crashlytics (3.7.0):
+  - AWSCore (2.4.3)
+  - AWSMobileAnalytics (2.4.3):
+    - AWSCore (= 2.4.3)
+  - Crashlytics (3.7.1):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - Lookback (1.2.0):
-    - PDKTZipArchive
-  - LookbackSafe (1.2.0):
+  - LookbackSafe (1.3.0):
     - PDKTZipArchive
   - PDKTZipArchive (0.4.1)
   - Reachability (3.2)
-  - Realm (0.103.1):
-    - Realm/Headers (= 0.103.1)
-  - Realm/Headers (0.103.1)
-  - RealmSwift (0.103.1):
-    - Realm (= 0.103.1)
+  - Realm (1.0.1):
+    - Realm/Headers (= 1.0.1)
+  - Realm/Headers (1.0.1)
+  - RealmSwift (1.0.1):
+    - Realm (= 1.0.1)
 
 DEPENDENCIES:
   - AWSMobileAnalytics
   - Crashlytics
   - Fabric
-  - Lookback
   - LookbackSafe
   - Reachability
-  - RealmSwift
+  - Realm (from `git@github.com:realm/realm-cocoa.git`, branch `master`)
+  - RealmSwift (from `git@github.com:realm/realm-cocoa.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  Realm:
+    :branch: master
+    :git: git@github.com:realm/realm-cocoa.git
+  RealmSwift:
+    :branch: master
+    :git: git@github.com:realm/realm-cocoa.git
+
+CHECKOUT OPTIONS:
+  Realm:
+    :commit: bacfaa40f5ca738363a2b176dcde9137cc04c4a2
+    :git: git@github.com:realm/realm-cocoa.git
+  RealmSwift:
+    :commit: bacfaa40f5ca738363a2b176dcde9137cc04c4a2
+    :git: git@github.com:realm/realm-cocoa.git
 
 SPEC CHECKSUMS:
-  AWSCore: 08cc4318682a518ad73e452900336ba54e823e03
-  AWSMobileAnalytics: 7e61206330c5dfe0643e749682d93cdbd553c49d
-  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  AWSCore: 1b1edbf65f948804c9d522f1c49e29f51f72c6d8
+  AWSMobileAnalytics: 0242c2d0206dcf2231dbd0f62e15f0c61675d023
+  Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  Lookback: fdd29bb4a506cc78e9e5cf3e21452bf74bdcde06
-  LookbackSafe: 021772ee4bbf0a2e1e261280de4661eb16320d5c
+  LookbackSafe: 8d1baf227c472b76cff7b9071b53291ee9cf5194
   PDKTZipArchive: 22bbab52b49f46a3adf1acf134311fd252c43feb
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  Realm: 9ed57109332e95bdc48a7caedff80b70c51d5ef4
-  RealmSwift: 56629adb4acd2dc33eb2c8199fe856585dfd3ba3
+  Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
+  RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
 
-PODFILE CHECKSUM: 90263e567f2e4b6fc8a8882232e2241722c03e85
+PODFILE CHECKSUM: a629b49545e944d8860d0d8a1ca43af3dff2c96a
 
 COCOAPODS: 1.0.1

@@ -27,39 +27,39 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    func onDismiss(handler : MainCardsCompletionHandler) {
+    func onDismiss(_ handler : MainCardsCompletionHandler) {
         self.mainCardsHandler = handler
     }
-    func displayPage(atIndex : Int){
-        pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+    func displayPage(_ atIndex : Int){
+        pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         pageViewController!.dataSource = self
         guard self.dataSource.count > 0 else {
             return
         }
-        let startingViewController: MainContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
+        let startingViewController: MainContentVC = self.storyboard?.instantiateViewController(withIdentifier: "MainContentVC") as! MainContentVC
         startingViewController.loadDataSource(self.dataSource[atIndex])
         let viewControllers = [startingViewController]
-        pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
-        pageViewController!.view.frame = CGRectMake(0, 71, view.frame.size.width, view.frame.size.height-109);
+        pageViewController!.setViewControllers(viewControllers , direction: .forward, animated: false, completion: nil)
+        pageViewController!.view.frame = CGRect(x: 0, y: 71, width: view.frame.size.width, height: view.frame.size.height-109);
         
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
-        pageViewController!.didMoveToParentViewController(self)
+        pageViewController!.didMove(toParentViewController: self)
         
         self.setTopImage(atIndex)
     }
-    func setTopImage(atIndex : Int) {
+    func setTopImage(_ atIndex : Int) {
         let card = self.dataSource[atIndex]
         self.cardIconImageView.image = nil
         ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 self.cardIconImageView.image = image
                 UtilityManager.drawCircularImage(self.cardIconImageView)
             });
         }
     }
     
-    func loadDataSource(card : Card) {
+    func loadDataSource(_ card : Card) {
         // process data with UI logic
         let realm = try! Realm()
         let user = realm.objects(Client).first
@@ -69,7 +69,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         self.currentIndex = self.dataSource.indexOf(card)!
     }
     //MARK: Page Control Data Source
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! MainContentVC).pageIndex
         if (index == 0) || (index == NSNotFound) {
             return nil
@@ -78,7 +78,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         return viewControllerAtIndex(index)
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?{
         var index = (viewController as! MainContentVC).pageIndex
         if index == NSNotFound {
             return nil
@@ -90,12 +90,12 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
         return viewControllerAtIndex(index)
     }
     
-    func viewControllerAtIndex(index: Int) -> MainContentVC? {
+    func viewControllerAtIndex(_ index: Int) -> MainContentVC? {
         if self.dataSource.count == 0 || index >= self.dataSource.count {
             return nil
         }
         // Create a new view controller and pass suitable data.
-        let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MainContentVC") as! MainContentVC
+        let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "MainContentVC") as! MainContentVC
         pageContentViewController.pageIndex = index
         currentIndex = index
         let card  = self.dataSource[index]
@@ -106,27 +106,27 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     
     
     //MARK: Button actions
-    @IBAction func myCardsButtonTapped(sender : UIButton){
-        self.dismissViewControllerAnimated(true) { () -> Void in
+    @IBAction func myCardsButtonTapped(_ sender : UIButton){
+        self.dismiss(animated: true) { () -> Void in
         }
     }
-    @IBAction func logoutButtonTapped(sender : UIButton) {
+    @IBAction func logoutButtonTapped(_ sender : UIButton) {
         AuthenticationController.logout { (isFinishedLogout) in
             if isFinishedLogout {
                 let realm = try! Realm()
                 try! realm.write {
                     realm.deleteAll()
                 }
-                dispatch_async(dispatch_get_main_queue()) {
-                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                DispatchQueue.main.async {
+                    let appDelegate = UIApplication.shared().delegate as! AppDelegate
                     appDelegate.loadAuthScene()
                 }
             }
         }
         
     }
-    @IBAction func scanButtonTapped(sender : UIButton) {
-        self.dismissViewControllerAnimated(false) { () -> Void in
+    @IBAction func scanButtonTapped(_ sender : UIButton) {
+        self.dismiss(animated: false) { () -> Void in
             self.mainCardsHandler!()
         }
     }

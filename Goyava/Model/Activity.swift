@@ -13,7 +13,7 @@ class Activity: Object {
     dynamic var createdAt = 1467345810.0
     dynamic var point = 0
     
-    func setModelData(dict : NSDictionary) {
+    func setModelData(_ dict : NSDictionary) {
         //self.createdAt = dict["created_at"] as! Double
         self.point = dict["point"] as! Int
     }

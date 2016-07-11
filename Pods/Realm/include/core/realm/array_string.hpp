@@ -104,7 +104,6 @@ private:
     size_t calc_byte_len(size_t count, size_t width) const override;
     size_t calc_item_count(size_t bytes,
                               size_t width) const noexcept override;
-    WidthType GetWidthType() const override { return wtype_Multiply; }
 
     bool m_nullable;
 };
@@ -153,7 +152,7 @@ inline StringData ArrayString::get(size_t ndx) const noexcept
     if (size == static_cast<size_t>(-1))
         return m_nullable ? realm::null() : StringData("");
 
-    REALM_ASSERT(data[size] == 0); // Realm guarantees 0 terminated return strings
+    REALM_ASSERT_EX(data[size] == 0, data[size], size); // Realm guarantees 0 terminated return strings
     return StringData(data, size);
 }
 
@@ -171,7 +170,7 @@ inline void ArrayString::add()
 inline StringData ArrayString::get(const char* header, size_t ndx, bool nullable) noexcept
 {
     REALM_ASSERT(ndx < get_size_from_header(header));
-    size_t width = get_width_from_header(header);
+    uint_least8_t width = get_width_from_header(header);
     const char* data = get_data_from_header(header) + (ndx * width);
 
     if (width == 0)

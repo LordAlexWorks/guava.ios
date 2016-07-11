@@ -9,15 +9,15 @@
 import UIKit
 
 class ImageLoader: NSObject {
-    let cache = NSCache()
+    let cache = Cache()
     class var sharedLoader : ImageLoader {
         struct Static {
             static let instance : ImageLoader = ImageLoader()
         }
         return Static.instance
     }
-    func imageForUrl(urlString: String, completionHandler:(image: UIImage?, url: String) -> ()) {
-        let downloadTask: NSURLSessionDataTask = NSURLSession.sharedSession().dataTaskWithURL(NSURL(string: urlString)!, completionHandler: {(data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
+    func imageForUrl(_ urlString: String, completionHandler:(image: UIImage?, url: String) -> ()) {
+        let downloadTask: URLSessionDataTask = URLSession.shared().dataTask(with: Foundation.URL(string: urlString)!, completionHandler: {(data: Data?, response: URLResponse?, error: NSError?) -> Void in
             if (error != nil) {
                 completionHandler(image: nil, url: urlString)
                 return

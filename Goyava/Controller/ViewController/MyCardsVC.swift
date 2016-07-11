@@ -17,45 +17,45 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         self.refreshMycards()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     func setUpUI(){
-        self.navigationController?.navigationBar.barTintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = UIColor.black()
     }
     
     //MARK: Button Actions 
-    @IBAction func scanButtonTapped(sender : UIButton) {
+    @IBAction func scanButtonTapped(_ sender : UIButton) {
         goToScannerView()
     }
     
-    @IBAction func logoutButtonTapped(sender : UIButton) {
+    @IBAction func logoutButtonTapped(_ sender : UIButton) {
         AuthenticationController.logout { (isFinishedLogout) in
             if isFinishedLogout {
                 let realm = try! Realm()
                 try! realm.write {
-                    realm.deleteAll()
+                    realm.deleteAllObjects()
                 }
-                dispatch_async(dispatch_get_main_queue()) {
-                    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                DispatchQueue.main.async {
+                    let appDelegate = UIApplication.shared().delegate as! AppDelegate
                     appDelegate.loadAuthScene()
                 }
             }
         }
     }
     
-    @IBAction func gridButtonTapped(sender : UIButton) {
-        let mainVc = self.storyboard?.instantiateViewControllerWithIdentifier("MainVC") as! MainVC
-        mainVc.modalTransitionStyle = .FlipHorizontal
+    @IBAction func gridButtonTapped(_ sender : UIButton) {
+        let mainVc = self.storyboard?.instantiateViewController(withIdentifier: "MainVC") as! MainVC
+        mainVc.modalTransitionStyle = .flipHorizontal
         if self.dataSource.count > 0 {
             let internalCards = self.dataSource[0]
             mainVc.loadDataSource(internalCards[0])
         }
         
-        self.presentViewController(mainVc, animated: true) { () -> Void in
+        self.present(mainVc, animated: true) { () -> Void in
         }
         mainVc.onDismiss { [weak self]() -> Void in
             self?.goToScannerView()
@@ -63,18 +63,18 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     }
   
     func createMainPages(){
-        pageViewController = UIPageViewController(transitionStyle: .Scroll, navigationOrientation: .Horizontal, options: nil)
+        pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         pageViewController!.dataSource = self
         
-        let startingViewController: MyCardContentVC = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
+        let startingViewController: MyCardContentVC = self.storyboard?.instantiateViewController(withIdentifier: "MyCardContentVC") as! MyCardContentVC
         startingViewController.loadDataSource(self.dataSource[0])
         let viewControllers = [startingViewController]
-        pageViewController!.setViewControllers(viewControllers , direction: .Forward, animated: false, completion: nil)
-        pageViewController!.view.frame = CGRectMake(0, 64, view.frame.size.width, view.frame.size.height-100);
-        pageViewController?.view.backgroundColor = UIColor.clearColor()
+        pageViewController!.setViewControllers(viewControllers , direction: .forward, animated: false, completion: nil)
+        pageViewController!.view.frame = CGRect(x: 0, y: 64, width: view.frame.size.width, height: view.frame.size.height-100);
+        pageViewController?.view.backgroundColor = UIColor.clear()
         addChildViewController(pageViewController!)
         view.addSubview(pageViewController!.view)
-        pageViewController!.didMoveToParentViewController(self)
+        pageViewController!.didMove(toParentViewController: self)
     }
     func refreshMycards() {
         CardsController.getAllCards { (obj, error) in
@@ -83,13 +83,13 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
             }else {
                 let client = AuthenticationController.getLocalClient()
                 client?.myCards = obj as! List<Card>
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     self.loadDataSource(client!)
                 }
             }
         }
     }
-    func loadDataSource(client: Client?) {
+    func loadDataSource(_ client: Client?) {
         // process data with UI logic
         if client != nil {
             let mycards = client!.myCards
@@ -117,7 +117,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     }
     
     //MARK: Page Control Data Source
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         var index = (viewController as! MyCardContentVC).pageIndex
         if (index == 0) || (index == NSNotFound) {
             return nil
@@ -126,7 +126,7 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         return viewControllerAtIndex(index)
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?{
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?{
         var index = (viewController as! MyCardContentVC).pageIndex
         if index == NSNotFound {
             return nil
@@ -138,12 +138,12 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
         return viewControllerAtIndex(index)
     }
     
-    func viewControllerAtIndex(index: Int) -> MyCardContentVC? {
+    func viewControllerAtIndex(_ index: Int) -> MyCardContentVC? {
         if self.dataSource.count == 0 || index >= self.dataSource.count {
             return nil
         }
         // Create a new view controller and pass suitable data.
-        let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("MyCardContentVC") as! MyCardContentVC
+        let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyCardContentVC") as! MyCardContentVC
         pageContentViewController.pageIndex = index
         currentIndex = index
         pageContentViewController.loadDataSource(self.dataSource[index])
@@ -152,19 +152,19 @@ class MyCardsVC: UIViewController,UIPageViewControllerDataSource {
     
     //MARK: Scanner
     func goToScannerView(){
-        let qrscannerVc = self.storyboard?.instantiateViewControllerWithIdentifier("QRScannerVC") as! QRScannerVC
+        let qrscannerVc = self.storyboard?.instantiateViewController(withIdentifier: "QRScannerVC") as! QRScannerVC
         qrscannerVc.isAuthorizedForCamera { (isGranted) -> Void in
             if isGranted {
-                self.presentViewController(qrscannerVc, animated: true) { () -> Void in
+                self.present(qrscannerVc, animated: true) { () -> Void in
                 }
             }
             else{
-                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.Alert)
-                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
-                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.Cancel, handler:{ action in
-                    UIApplication.sharedApplication().openURL(NSURL(string: UIApplicationOpenSettingsURLString)!)
+                let alert = UIAlertController(title: "Alert", message: "Guava need your camera access. Settings->Guava->Camera.", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+                alert.addAction(UIAlertAction(title: "Settings", style: UIAlertActionStyle.cancel, handler:{ action in
+                    UIApplication.shared().openURL(Foundation.URL(string: UIApplicationOpenSettingsURLString)!)
                 }))
-                self.presentViewController(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }

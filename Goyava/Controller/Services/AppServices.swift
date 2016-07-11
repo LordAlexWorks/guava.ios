@@ -11,7 +11,7 @@ public typealias AppServiceHandler = (obj : AnyObject? , error : NSError?) -> Vo
 
 class AppServices: NSObject {
     //MARK: Token Service
-    class func callTokenService(code : String,handler :AppServiceHandler) {
+    class func callTokenService(_ code : String,handler :AppServiceHandler) {
         let tokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveTokenEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded"]
         let httpBody = "code=\(code)&redirect_uri=\(ApplicationSecrets.callBackURL.rawValue)&client_id=\(ApplicationSecrets.ApplicationId.rawValue)&grant_type=authorization_code&client_secret=\(ApplicationSecrets.ApplicationSecret.rawValue)"
@@ -24,7 +24,7 @@ class AppServices: NSObject {
             }
         }
     }
-    class func addClient(session: Session, handler: AppServiceHandler) {
+    class func addClient(_ session: Session, handler: AppServiceHandler) {
         let addClientURL = URL.baseURL.rawValue+URL.apiEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": session.token!]
         let httpBody = "proactives_access_token=\(session.token!)"
@@ -38,7 +38,7 @@ class AppServices: NSObject {
         }
     }
     //MARK: Get All Cards
-    class func getAllCardsOfClient(client : Client, handler: AppServiceHandler) {
+    class func getAllCardsOfClient(_ client : Client, handler: AppServiceHandler) {
         let getAllCardsURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/cards"
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
         let httpClient = SSHTTPClient(url: getAllCardsURL, method: "GET", httpBody: nil, headerFieldsAndValues: headerFieldAndValues)
@@ -52,7 +52,7 @@ class AppServices: NSObject {
     }
     
     //MARK: Add QR code service 
-    class func addQRCodeActivity(client:Client,qrcode: String, shopId:String, handler: AppServiceHandler){
+    class func addQRCodeActivity(_ client:Client,qrcode: String, shopId:String, handler: AppServiceHandler){
         let addQRCodeURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/activities"
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
         let httpBody = "shop_id=\(shopId)&stamp_id=\(qrcode)"
@@ -66,7 +66,7 @@ class AppServices: NSObject {
         }
     }
     //MARK: Add Card
-    class func addCard(client:Client,shopId:String, handler: AppServiceHandler){
+    class func addCard(_ client:Client,shopId:String, handler: AppServiceHandler){
         let addQRCodeURL = "\(URL.baseURL.rawValue)\(URL.apiEndPoint.rawValue)\(client.id)/cards"
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
         let httpBody = "shop_id=\(shopId)"
@@ -80,7 +80,7 @@ class AppServices: NSObject {
         }
     }
     //MARK: Revoke Auth Token
-    static func revokeToken(client: Client,appServiceHandler:AppServiceHandler) {
+    static func revokeToken(_ client: Client,appServiceHandler:AppServiceHandler) {
         let revokeTokenURL = URL.proactiveBaseURL.rawValue+URL.proactiveRevokeTokenEndPoint.rawValue
         let headerFieldAndValues = ["Content-Type" : "application/x-www-form-urlencoded","Proactives-User-Token": client.token]
         let httpBody = "proactives_access_token=\(client.token)"

@@ -13,14 +13,14 @@ public typealias ActivityHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class ActivitiesController: NSObject {
     
-    class func addQRCodeActivity(qrCode: String, handler: ActivityHandler){
-        let qrCodeComponenets = qrCode.componentsSeparatedByString("//")
+    class func addQRCodeActivity(_ qrCode: String, handler: ActivityHandler){
+        let qrCodeComponenets = qrCode.components(separatedBy: "//")
         if qrCodeComponenets.count == 3 {
             let qrid = qrCodeComponenets[2]
             let shopId = qrCodeComponenets[1]
             CardsController.addCard(shopId, cardHandler: { (obj, error) in
                 if error == nil {
-                    dispatch_async(dispatch_get_main_queue()) {
+                    DispatchQueue.main.async {
                         self.addActivity(qrid, shopId: shopId, handler: handler)
                     }
                 }
@@ -30,7 +30,7 @@ class ActivitiesController: NSObject {
         }
     }
     
-    class func addActivity(qrid: String,shopId: String,handler: ActivityHandler) {
+    class func addActivity(_ qrid: String,shopId: String,handler: ActivityHandler) {
         let client = AuthenticationController.getLocalClient()
         AppServices.addQRCodeActivity(client!, qrcode: qrid, shopId: shopId, handler: { (obj, error) in
             if error != nil {
@@ -49,7 +49,7 @@ class ActivitiesController: NSObject {
             }
         })
     }
-    class func getGlobalPoint(card : Card) -> Int {
+    class func getGlobalPoint(_ card : Card) -> Int {
         var globalPoint = 0
         let activities = card.activities
         for item in activities {
@@ -59,8 +59,8 @@ class ActivitiesController: NSObject {
         return globalPoint
     }
     
-    class func getWeeklyPoint(card : Card)-> Int {
-        let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+    class func getWeeklyPoint(_ card : Card)-> Int {
+        let mondayTimeStamp = Date().mondaysDate.timeIntervalSince1970
         return 0 //need to remove later when created at will be fixed
         guard card.activities.count > 0 else {
             return 0
@@ -73,13 +73,13 @@ class ActivitiesController: NSObject {
         }
         return weeklyTotal
     }
-    class func getDailyTotalPointsOnDay(day : Double, card : Card) -> Int {
+    class func getDailyTotalPointsOnDay(_ day : Double, card : Card) -> Int {
         var dailyTotalPoitns = 0
         let  secondsInADay = 24.0*3600.0
         let startTimeDiffrecesInSeconds = (day-1.0)*secondsInADay
         let endTimeDifferencesInSeconds = day*secondsInADay
         
-        let mondayTimeStamp = NSDate().mondaysDate.timeIntervalSince1970
+        let mondayTimeStamp = Date().mondaysDate.timeIntervalSince1970
         let predicate = "createdAt >= \(mondayTimeStamp*day+startTimeDiffrecesInSeconds) AND createdAt <= \(mondayTimeStamp+endTimeDifferencesInSeconds)"
         let results = card.activities.filter(predicate)
         for item in results {

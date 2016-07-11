@@ -12,7 +12,7 @@ public typealias CardsHandler = (obj : AnyObject? , error : NSError?) -> Void
 
 class CardsController: NSObject {
     //get all cards from current session
-    class func getAllCards(handler : CardsHandler) {
+    class func getAllCards(_ handler : CardsHandler) {
         let client = AuthenticationController.getLocalClient()
         AppServices.getAllCardsOfClient(client!) { (obj, error) in
             if error != nil {
@@ -30,7 +30,7 @@ class CardsController: NSObject {
             }
         }
     }
-    class func getMyCards(cards : NSArray) -> List<Card> {
+    class func getMyCards(_ cards : NSArray) -> List<Card> {
         let cardsList = List<Card>()
         for item in cards {
             let card = Card()
@@ -39,12 +39,12 @@ class CardsController: NSObject {
         }
         return cardsList
     }
-    class func getMyShop(shopDict : NSDictionary)-> Shop {
+    class func getMyShop(_ shopDict : NSDictionary)-> Shop {
         let shop = Shop()
         shop.setModelData(shopDict)
         return shop
     }
-    class func addCard(shopId : String,cardHandler :CardsHandler) {
+    class func addCard(_ shopId : String,cardHandler :CardsHandler) {
         let client = AuthenticationController.getLocalClient()
         AppServices.addCard(client!, shopId: shopId) { (obj, error) in
             if error != nil {
@@ -54,7 +54,7 @@ class CardsController: NSObject {
             }
         }
     }
-    class func scanCard(qrcode: String,cardHandler :CardsHandler) {
+    class func scanCard(_ qrcode: String,cardHandler :CardsHandler) {
         
     }
 }

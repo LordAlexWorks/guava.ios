@@ -22,7 +22,7 @@ class MyCard: UIView {
     }
     
     class func instanceFromNib() -> UIView {
-        return UINib(nibName: "MyCard", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
+        return UINib(nibName: "MyCard", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! UIView
     }
 
     override func layoutSubviews(){
@@ -35,19 +35,19 @@ class MyCard: UIView {
             let maxPoints = Double(self.card!.maxPoint)
             let globalPoints = Double(ActivitiesController.getGlobalPoint(self.card!))
             let totalProgress = globalPoints/maxPoints
-            CircleView.drawCircleOn(backgroundCicularview, color: UIColor.grayColor(), progress:2,lineWidth:5.0,fillColor: UIColor.clearColor())
-            CircleView.drawCircleOn(backgroundCicularview, color: UIColor(hexString:"29ABA9"), progress:totalProgress*2,lineWidth:5.0,fillColor: UIColor.clearColor())
+            CircleView.drawCircleOn(backgroundCicularview, color: UIColor.gray(), progress:2,lineWidth:5.0,fillColor: UIColor.clear())
+            CircleView.drawCircleOn(backgroundCicularview, color: UIColor(hexString:"29ABA9"), progress:totalProgress*2,lineWidth:5.0,fillColor: UIColor.clear())
 
             iconImageView.frame = CGRect(x: (frame.size.width-frame.size.height)/2+32, y: 20, width: frame.size.height-65, height: frame.size.height-65)
         }
     }
-    func loadWithDataSource(card : Card) {
+    func loadWithDataSource(_ card : Card) {
         self.card = card
         self.iconImageView.image = nil
         self.globalPointLabel.text = "\(ActivitiesController.getGlobalPoint(card)) global points"
         self.weeklyPointLabel.text = "\(ActivitiesController.getWeeklyPoint(card)) points this week"
         ImageLoader.sharedLoader.imageForUrl((card.shop?.logo)!) { (image, url) in
-            dispatch_async(dispatch_get_main_queue(), {
+            DispatchQueue.main.async(execute: {
                 self.iconImageView.image = image
                 UtilityManager.drawCircularImage(self.iconImageView)
             });
