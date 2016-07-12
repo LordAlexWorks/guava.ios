@@ -1,7 +1,4 @@
 PODS:
-  - AWSCore (2.4.3)
-  - AWSMobileAnalytics (2.4.3):
-    - AWSCore (= 2.4.3)
   - Crashlytics (3.7.1):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
@@ -16,7 +13,6 @@ PODS:
     - Realm (= 1.0.1)
 
 DEPENDENCIES:
-  - AWSMobileAnalytics
   - Crashlytics
   - Fabric
   - LookbackSafe
@@ -41,8 +37,6 @@ CHECKOUT OPTIONS:
     :git: git@github.com:realm/realm-cocoa.git
 
 SPEC CHECKSUMS:
-  AWSCore: 1b1edbf65f948804c9d522f1c49e29f51f72c6d8
-  AWSMobileAnalytics: 0242c2d0206dcf2231dbd0f62e15f0c61675d023
   Crashlytics: 3cdd4c9655be68032a0cf0379e0fb5ef6af22cad
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   LookbackSafe: 8d1baf227c472b76cff7b9071b53291ee9cf5194
@@ -51,6 +45,6 @@ SPEC CHECKSUMS:
   Realm: 2e15e39d35b08abb529e212ed5d8af107b5236c8
   RealmSwift: d73ea2af08c3676dbdd5e4b669651a0f492162a4
 
-PODFILE CHECKSUM: 69834c25e9f1c4dc1172a7ff9cc42fd4ecd68a95
+PODFILE CHECKSUM: 44ba26ca4f5aaf57b9faf37746872dbd5d443bad
 
 COCOAPODS: 1.0.1

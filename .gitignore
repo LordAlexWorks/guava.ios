@@ -42,6 +42,6 @@ Pods/*
 # Bundler files
 /.bundle
 RLMArray.h
-Guava-Bridging-Header.h
+
 
 Appfile

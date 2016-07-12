@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import Fabric
-import Crashlytics
-import AWSMobileAnalytics
+//import Fabric
+//import Crashlytics
 import Reachability
 import SafariServices
 import RealmSwift
@@ -34,8 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
         }
         setUpGeneralSettings()
         loadLookabackSettings()
-        setupAnalytics()
-        Fabric.with([Crashlytics.self]);
+        //setupAnalytics()
+        //Fabric.with([Crashlytics.self]);
         self.addReachability()
         return true
     }
@@ -106,17 +105,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,SFSafariViewControllerDele
         Lookback.sharedLookback().shakeToRecord = true
         Lookback.sharedLookback().feedbackBubbleVisible = true*/
     }
-    func setupAnalytics(){
-        let analytics = AWSMobileAnalytics(forAppId: "50d4101badbd4161801e978d1dfa1313", identityPoolId: "us-east-1:649c5a0c-5dc4-489f-93d9-2515e12695e8")
-        print(analytics?.description)
-    }
+  
     
     // add Reachability method
     func addReachability(){
         
         self.reach = Reachability.forInternetConnection()
         
-        NotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.reachabilityChanged(_:)), name: kReachabilityChangedNotification,object: nil)
+        NotificationCenter.defaultCenter.addObserver(self, selector: #selector(self.reachabilityChanged(_:)), name: kReachabilityChangedNotification,object: nil)
         
         if self.reach!.isReachableViaWiFi() || self.reach!.isReachableViaWWAN() {
             self.isNetworkReachable = true

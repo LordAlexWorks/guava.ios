@@ -62,11 +62,11 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
     func loadDataSource(_ card : Card) {
         // process data with UI logic
         let realm = try! Realm()
-        let user = realm.objects(Client).first
+        let user = realm.allObjects(ofType: Client.self).first
         if user != nil {
             self.dataSource = user!.myCards
         }
-        self.currentIndex = self.dataSource.indexOf(card)!
+        self.currentIndex = self.dataSource.index(of: card)!
     }
     //MARK: Page Control Data Source
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -115,7 +115,7 @@ class MainVC: UIViewController,UIPageViewControllerDataSource {
             if isFinishedLogout {
                 let realm = try! Realm()
                 try! realm.write {
-                    realm.deleteAll()
+                    realm.deleteAllObjects()
                 }
                 DispatchQueue.main.async {
                     let appDelegate = UIApplication.shared().delegate as! AppDelegate

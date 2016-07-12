@@ -17,7 +17,7 @@ class ImageLoader: NSObject {
         return Static.instance
     }
     func imageForUrl(_ urlString: String, completionHandler:(image: UIImage?, url: String) -> ()) {
-        let downloadTask: URLSessionDataTask = URLSession.shared().dataTask(with: Foundation.URL(string: urlString)!, completionHandler: {(data: Data?, response: URLResponse?, error: NSError?) -> Void in
+        let downloadTask: URLSessionDataTask = URLSession.shared.dataTask(with: Foundation.URL(string: urlString)!, completionHandler: {(data: Data?, response: URLResponse?, error: NSError?) -> Void in
             if (error != nil) {
                 completionHandler(image: nil, url: urlString)
                 return

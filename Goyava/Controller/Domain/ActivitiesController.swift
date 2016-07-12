@@ -65,7 +65,7 @@ class ActivitiesController: NSObject {
         guard card.activities.count > 0 else {
             return 0
         }
-        let results = card.activities.filter("createdAt >= \(mondayTimeStamp)")
+        let results = card.activities.filter(using: "createdAt >= \(mondayTimeStamp)")
         var weeklyTotal = 0
         for item in results {
             let activity = item 
@@ -81,7 +81,7 @@ class ActivitiesController: NSObject {
         
         let mondayTimeStamp = Date().mondaysDate.timeIntervalSince1970
         let predicate = "createdAt >= \(mondayTimeStamp*day+startTimeDiffrecesInSeconds) AND createdAt <= \(mondayTimeStamp+endTimeDifferencesInSeconds)"
-        let results = card.activities.filter(predicate)
+        let results = card.activities.filter(using: predicate)
         for item in results {
             let activity = item
             dailyTotalPoitns = dailyTotalPoitns + activity.point

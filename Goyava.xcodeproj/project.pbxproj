@@ -15,6 +15,7 @@
 		1CA12C1B1CAE7AA100DFA0E3 /* AuthenticationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C191CAE7AA100DFA0E3 /* AuthenticationController.swift */; };
 		1CA12C1E1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
 		1CA12C1F1CAE835C00DFA0E3 /* UtilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA12C1D1CAE835C00DFA0E3 /* UtilityManager.swift */; };
+		31BF1449CF1BB211A377B559 /* Pods_Goyava_Beta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA8B8AC904789D72FFC0744 /* Pods_Goyava_Beta.framework */; };
 		B53267D71C60632B008297CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53267D61C60632B008297CF /* Assets.xcassets */; };
 		B53267ED1C606C78008297CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53267E51C606C78008297CF /* AppDelegate.swift */; };
 		B53267EE1C606C78008297CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B53267E81C606C78008297CF /* LaunchScreen.storyboard */; };
@@ -199,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA31DD711CD0086E00BA2A10 /* Reveal.framework in Frameworks */,
+				31BF1449CF1BB211A377B559 /* Pods_Goyava_Beta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1120,6 +1122,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6746655660D80488E218A39F /* Pods-Goyava-Beta.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1185,7 +1188,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
-				SWIFT_OBJC_BRIDGING_HEADER = "Goyava/Main/Guava-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1196,6 +1199,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1E43E83467141A6876468540 /* Pods-Goyava-Beta.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconBeta;
 				CLANG_OPTIMIZATION_PROFILE_FILE = "/OptimizationProfiles/$(PROJECT_NAME).profdata";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1260,7 +1264,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.proactives.guava-beta";
 				PRODUCT_NAME = Goyava;
-				SWIFT_OBJC_BRIDGING_HEADER = "Goyava/Main/Guava-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -29,7 +29,7 @@ public class SSHTTPClient : NSObject {
     //Get formatted JSON
     public func getJsonData(_ httpResponseHandler : SSHTTPResponseHandler) {
         if self.urlString != nil {
-            var request = URLRequest(url: URL(string:self.urlString! as String)!)
+            var request = URLRequest(url: URL(rawValue:self.urlString! as String)!)
             request.httpMethod =  self.httpMethod! as String
             self.headerFieldsAndValues?.enumerateKeysAndObjects({ (key, value, stop) -> Void in
                 request.setValue(value as! NSString as String, forHTTPHeaderField: key as! NSString as String)
@@ -86,7 +86,7 @@ public class SSHTTPClient : NSObject {
     //Cancel Request
     public func cancelRequest()->Void{
         let session = URLSession.shared
-        session().invalidateAndCancel()
+        session.invalidateAndCancel()
     }
     
 }
