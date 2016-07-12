@@ -96,6 +96,7 @@
 		3D294ED3BA7B0D2D4F61A9F10276C307 /* AWSExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B93D65E0B30E107E9A7A0D5B4C3E49 /* AWSExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D5C06DA8778F641E6CE35EFEB19619E /* AWSMobileAnalyticsErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB09B7B39CDF850E4CE0A9BAC7B9896 /* AWSMobileAnalyticsErrorUtils.m */; };
 		3DA3112E60B74C43385FAA3508BEE1A0 /* RLMObject_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8257464E6BA7B262BC0B214046E6984A /* RLMObject_Private.h */; };
+		3E5C5FFDFEB6D9CB0275611DD88AA2CE /* Pods-Goyava-Beta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 969959CE26130BA3E05393970EF7B78E /* Pods-Goyava-Beta-dummy.m */; };
 		3EC5938CD742511FCB19C90319DA51E3 /* RLMResults_Private.h in Copy . Private Headers */ = {isa = PBXBuildFile; fileRef = 918BC8E6532896F07C26CFC342C0FD56 /* RLMResults_Private.h */; };
 		3FEA78E8D798A0A9BF7891C54315614E /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A2BBBCBD032F2606BC25FE2414A46B /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */; };
 		42895D21BB4FCF9576F15E6FA8091E56 /* AWSCognitoIdentityService.h in Headers */ = {isa = PBXBuildFile; fileRef = E28EDE01EC3F042AF9B987B360D66A1D /* AWSCognitoIdentityService.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -145,6 +146,7 @@
 		5CA3363443EAA56CDD864F0FBCAFBE26 /* RLMUtil.mm in Sources */ = {isa = PBXBuildFile; fileRef = A19CBC06503887BE44A50051A03B91D3 /* RLMUtil.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.1\"' -D__ASSERTMACROS__"; }; };
 		5CBB5CBD49266CCEC217F57BF98B673D /* RLMMigration_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A054FF109838A651116E00A7B6FDC82 /* RLMMigration_Private.h */; };
 		5CCF6DF27D49C2AC6CCBC0AF53377783 /* ObjectSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E560A37227D796B6E2E4B6A1CC9C69C9 /* ObjectSchema.swift */; };
+		5DCDC57307F82B98800807644360D2D2 /* Pods-Goyava-Beta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EC68AACBF587889157530239F7EB933A /* Pods-Goyava-Beta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DF90A0B3C421FA3F29346022151454A /* RLMListBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1658DABE1C7DD6A07FE9093536195C4E /* RLMListBase.h */; };
 		5E355E37F5CEB38898A8CF858DB97EB8 /* AWSKSReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F3AD0E6A14167F7F3B44D7AC17CC5D /* AWSKSReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E5ECD5AD17A310B7CFDA6202D318198 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A03F9477A32F16F1AF5433E963E2730 /* Optional.swift */; };
@@ -187,8 +189,9 @@
 		75EAF3E0C3E90B0B98EF454A5961BB53 /* AWSMobileAnalyticsFileEventStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 380CEF4DBAC410149E004C6AA1D5DE59 /* AWSMobileAnalyticsFileEventStore.m */; };
 		76606207A9D5AB3FE4C2F9494AC05C3E /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = D390560EB7B72C5F59922B4C980679B2 /* ioapi.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		772469FE32D583BEA1AE5AF0B4C43CE8 /* RLMResults_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 918BC8E6532896F07C26CFC342C0FD56 /* RLMResults_Private.h */; };
+		77326F4D093FA38343759D18EC1216F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DD04395E64FE045305F56D5A454965 /* Foundation.framework */; };
 		77F8CC6C202D25182427649DB7ED5943 /* AWSMobileAnalyticsDefaultConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E3F514CDFEA8658E55674B88434ADF84 /* AWSMobileAnalyticsDefaultConfiguration.m */; };
-		7958A32EFB31FF9AA32B7CCD3923C1E6 /* Pods-Goyava-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E969E65E443FFD68871663CF66348030 /* Pods-Goyava-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7958A32EFB31FF9AA32B7CCD3923C1E6 /* Pods-Goyava-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 568BB68A009454A0C2FC6B74BFBBA456 /* Pods-Goyava-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		79FCB90ABC2527BD760EF60C42C4CECC /* AWSMobileAnalyticsDeliveryPolicyFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 36A3ECCA66A4078439C04CE1EF2DB7D1 /* AWSMobileAnalyticsDeliveryPolicyFactory.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7B329745A834E5ABCE4580872D6A9174 /* AWSMobileAnalyticsPrefsUniqueIdService.h in Headers */ = {isa = PBXBuildFile; fileRef = 74AEF1C28B3FBF5554A4D87BF7D1B5F4 /* AWSMobileAnalyticsPrefsUniqueIdService.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		7BBCA7B51055C83C30906B3BD027BF2C /* AWSMobileAnalyticsVirtualMonetizationEventBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = F5670671C1F30CC9F9E627C49161E675 /* AWSMobileAnalyticsVirtualMonetizationEventBuilder.m */; };
@@ -208,7 +211,7 @@
 		88051528F8E52EBB1032A8D2E9C319A7 /* AWSCancellationToken.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FC5C66E4C90B9B6271CEE9AB039095 /* AWSCancellationToken.m */; };
 		8810DEF54D0660B1A6A7120D5AB63A40 /* AWSMobileAnalyticsDeliveryClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E8F01CF8312360EAE1F6CF055C256D16 /* AWSMobileAnalyticsDeliveryClient.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		887A21FEEDE923CA721744F6C2A10054 /* AWSFMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A8F8DADAC280D21D9DE8E25FF4BE91 /* AWSFMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		889B78E9EC7F995DD29EBC900CA4F615 /* Pods-Goyava-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E11311E4A7011CEDAFF61674EEFC2 /* Pods-Goyava-dummy.m */; };
+		889B78E9EC7F995DD29EBC900CA4F615 /* Pods-Goyava-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 110D1429AAD9D56792555B7CCD7FA794 /* Pods-Goyava-dummy.m */; };
 		88B68D4326789654FA00A0428D18319A /* shared_realm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5810CC9162848DFBD98643A49693859D /* shared_realm.cpp */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.1\"' -D__ASSERTMACROS__"; }; };
 		8919CB0F89DA9F17DD2B8B97D4B27014 /* AWSService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E5FDC9EC31869FACEE2ECA4E9970CC6 /* AWSService.m */; };
 		8A0E30B6E4DC847F4E280C324AEDCCD5 /* RLMSchema.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4ED584AC5B879FE755EBA1282591E /* RLMSchema.mm */; settings = {COMPILER_FLAGS = "-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@\"1.0.1\"' -D__ASSERTMACROS__"; }; };
@@ -420,12 +423,40 @@
 			remoteGlobalIDString = CA9F14B873EF8494D89B19C05D712652;
 			remoteInfo = Realm;
 		};
+		1A180F396E4E918045FFBDC308289422 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7C577A782ECBFCC395DF4C6F01965C3;
+			remoteInfo = AWSMobileAnalytics;
+		};
+		3FABB0166496DD0AC96034D0D4E4C41E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD4C60D0C1ADF7586B8862EEA147DE00;
+			remoteInfo = AWSCore;
+		};
+		41977A700CD5587109CF6EC7566EF3DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D5056A18469CDC311105CA2E8E89B11C;
+			remoteInfo = PDKTZipArchive;
+		};
 		58E6AE1B173066843D7057CD26BCC6B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DD4C60D0C1ADF7586B8862EEA147DE00;
 			remoteInfo = AWSCore;
+		};
+		61C9B4D1EC521F8D3D327747AE4CCD23 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2DB207224AC7B3374239F3860AF2B9;
+			remoteInfo = RealmSwift;
 		};
 		73C1E6792941D13A5E5FA8D987F5F79A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -440,6 +471,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D5056A18469CDC311105CA2E8E89B11C;
 			remoteInfo = PDKTZipArchive;
+		};
+		9DECDC2DEA7B65FD1448C77D97A1B7F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA9F14B873EF8494D89B19C05D712652;
+			remoteInfo = Realm;
 		};
 		A4D40022D8DAB7A1153A1BAE77403A1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -468,6 +506,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D7C577A782ECBFCC395DF4C6F01965C3;
 			remoteInfo = AWSMobileAnalytics;
+		};
+		FE3871C2886590305890FC44DBF365FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 806B47FF9B545877E40EE873FB9272F0;
+			remoteInfo = Reachability;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -526,7 +571,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		001E11311E4A7011CEDAFF61674EEFC2 /* Pods-Goyava-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Goyava-dummy.m"; sourceTree = "<group>"; };
 		00A53EE4FE352C219899783D69434047 /* AWSMTLModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLModel.h; path = AWSCore/Mantle/AWSMTLModel.h; sourceTree = "<group>"; };
 		01571D45BAFAE529C8C29446CE275B15 /* AWSNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSNetworking.m; path = AWSCore/Networking/AWSNetworking.m; sourceTree = "<group>"; };
 		02742F4484574FE6505CED25A12433A2 /* AWSMobileAnalyticsDateUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDateUtils.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDateUtils.h; sourceTree = "<group>"; };
@@ -546,13 +590,12 @@
 		0E2132EFB580C0CCE7A29AE68477F754 /* AWSMobileAnalyticsEventConstraintDecorator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEventConstraintDecorator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventConstraintDecorator.h; sourceTree = "<group>"; };
 		0FEADC5B60BE0DC25B2E7306E48CBF7D /* PDKTZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDKTZipArchive-prefix.pch"; sourceTree = "<group>"; };
 		10E255A1B39D22FE8E2BA5D4EF86A7B8 /* AWSTMDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTMDiskCache.m; path = AWSCore/TMCache/AWSTMDiskCache.m; sourceTree = "<group>"; };
+		110D1429AAD9D56792555B7CCD7FA794 /* Pods-Goyava-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Goyava-dummy.m"; sourceTree = "<group>"; };
 		11B83C59D050F04E6B37E91B27223916 /* RLMMigration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration.h; path = include/RLMMigration.h; sourceTree = "<group>"; };
 		127920588FC2280822DFC1DBAFE70693 /* AWSCancellationTokenSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCancellationTokenSource.h; path = AWSCore/Bolts/AWSCancellationTokenSource.h; sourceTree = "<group>"; };
 		130F0E4A28223172846FAE13BDD30ED3 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = RealmSwift/Schema.swift; sourceTree = "<group>"; };
 		132DB1C699654CDB546F95D237406EDD /* AWSMobileAnalyticsDefaultEventClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultEventClient.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultEventClient.m; sourceTree = "<group>"; };
 		13546B090A3812554C00841A2D29404C /* AWSMobileAnalyticsFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsFile.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsFile.h; sourceTree = "<group>"; };
-		1442CD24455155C78DBEA29B796F4981 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1493DB18699D8974754CDC38EC5C0533 /* PDKTZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDKTZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C99C55394EF0D4F849ADFB7467F44C /* NSObject+AWSMTLComparisonAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+AWSMTLComparisonAdditions.h"; path = "AWSCore/Mantle/NSObject+AWSMTLComparisonAdditions.h"; sourceTree = "<group>"; };
 		14CECF455F3A86636E90F5673D93A245 /* AWSMobileAnalyticsFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsFileManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsFileManager.h; sourceTree = "<group>"; };
 		1516845B5668E66A1FE598949CD6829D /* AWSUICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSUICKeyChainStore.h; path = AWSCore/UICKeyChainStore/AWSUICKeyChainStore.h; sourceTree = "<group>"; };
@@ -596,6 +639,7 @@
 		2C06906B06D5B7DF8C73CC9FAFD644B0 /* AWSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AWSCore.modulemap; sourceTree = "<group>"; };
 		2C1001CF66D0FE6806905F2849997EBC /* AWSSTSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSTSModel.m; path = AWSCore/STS/AWSSTSModel.m; sourceTree = "<group>"; };
 		2CBB54AAF615F16C7932F6C1037C78E8 /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = RealmSwift/Property.swift; sourceTree = "<group>"; };
+		2CF609EC80E9483E2C1F311C24A7B3F5 /* Pods-Goyava-Beta-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-Beta-frameworks.sh"; sourceTree = "<group>"; };
 		2D0459FDEEF1D2B11450C79A5D5D28FB /* AWSMobileAnalyticsIOSSystem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsIOSSystem.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSSystem.m; sourceTree = "<group>"; };
 		2EBACB438523F22C9482AAA2B7D3C101 /* AWSValidation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSValidation.m; path = AWSCore/Serialization/AWSValidation.m; sourceTree = "<group>"; };
 		2ECAE20EB6AAD29997EAD84E07A88A9A /* AWSMobileAnalyticsDefaultOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultOptions.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultOptions.m; sourceTree = "<group>"; };
@@ -619,11 +663,14 @@
 		36E810694D422AD4E9E35AA4E9707686 /* schema.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = schema.cpp; path = Realm/ObjectStore/schema.cpp; sourceTree = "<group>"; };
 		36FD32DE0CEC976121DAEBD33AA5612B /* AWSMobileAnalyticsUniqueIdGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsUniqueIdGenerator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsUniqueIdGenerator.h; sourceTree = "<group>"; };
 		3724BFFD1FD64FE6B0DB56025AA6BDFD /* AWSMobileAnalyticsCountDownLatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsCountDownLatch.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsCountDownLatch.h; sourceTree = "<group>"; };
+		3728AE01003B07E3B9D18A90906F4D58 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37FCF239620F7ECB838EF6989A7F156B /* AWSMobileAnalyticsDefaultEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultEvent.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultEvent.m; sourceTree = "<group>"; };
 		380CEF4DBAC410149E004C6AA1D5DE59 /* AWSMobileAnalyticsFileEventStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsFileEventStore.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsFileEventStore.m; sourceTree = "<group>"; };
+		38252BCC633CA9540A1BF460C52B1B5E /* PDKTZipArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PDKTZipArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		399A10BF774A573DB436D2E66479782C /* AWSMobileAnalyticsSerializerFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSerializerFactory.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSerializerFactory.h; sourceTree = "<group>"; };
 		39FC77DE95F0F6AC62517024A6865563 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
 		3A054FF109838A651116E00A7B6FDC82 /* RLMMigration_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMMigration_Private.h; path = include/RLMMigration_Private.h; sourceTree = "<group>"; };
+		3A97F59536A6B3FD648387B0EDF0B01D /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
 		3AD8E389E7DB42E9FF5D0EF6ED667C20 /* LookbackRecordingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookbackRecordingViewController.h; path = lookback/Safe/Lookback.framework/Versions/A/Headers/LookbackRecordingViewController.h; sourceTree = "<group>"; };
 		3B76702184B0E380FF715CBD28F21D09 /* AWSCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCore-umbrella.h"; sourceTree = "<group>"; };
 		3BC03F057C001486DC42F9DD8F535541 /* RLMRealmConfiguration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmConfiguration.mm; path = Realm/RLMRealmConfiguration.mm; sourceTree = "<group>"; };
@@ -632,10 +679,10 @@
 		3D6781E0B5A52A7E60D36433CCB81D5F /* AWSMobileAnalyticsConfiguring.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConfiguring.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConfiguring.h; sourceTree = "<group>"; };
 		3E3D9EFB71C6289C563D0B6149270C74 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
 		3E6D8B6AA35687557D3F144023F302D5 /* AWSMTLManagedObjectAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLManagedObjectAdapter.h; path = AWSCore/Mantle/AWSMTLManagedObjectAdapter.h; sourceTree = "<group>"; };
-		3ED21F6C73F012C3BDD16D3C6C950816 /* Pods-Goyava-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Goyava-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3FD73E1CED3AD94FDD74CED747C636E8 /* AWSMobileAnalyticsAppleMonetizationEventBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsAppleMonetizationEventBuilder.h; path = AWSMobileAnalytics/AWSMobileAnalyticsAppleMonetizationEventBuilder.h; sourceTree = "<group>"; };
 		4025C5B20E7DD470AA4CBCCF6D2675B1 /* RLMRealmUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMRealmUtil.mm; path = Realm/RLMRealmUtil.mm; sourceTree = "<group>"; };
 		40312764114FDFE4BC59F2EB93D02829 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		407243D108FB06EA6A9A5D24B27A0CA1 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4074F454528ACDBDE8C68DA5F59E52FC /* RLMAnalytics.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMAnalytics.mm; path = Realm/RLMAnalytics.mm; sourceTree = "<group>"; };
 		4189F8E3AD216930A75D5620E51E05DB /* AWSMTLValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLValueTransformer.m; path = AWSCore/Mantle/AWSMTLValueTransformer.m; sourceTree = "<group>"; };
 		4353AC657AAD84B038F4281602357677 /* AWSMobileAnalyticsSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSystem.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSystem.h; sourceTree = "<group>"; };
@@ -651,6 +698,7 @@
 		479B47A71266D7A3E6FD62F5C2290196 /* AWSGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSGZIP.h; path = AWSCore/GZIP/AWSGZIP.h; sourceTree = "<group>"; };
 		47B69680E7D226D7C1310BB5ABAD2119 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACE8BD70CDD19AA8D124A4CEB1BD9B9 /* RealmSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-prefix.pch"; sourceTree = "<group>"; };
+		4C6AF78FE4773F05853CC82C049A867D /* Pods-Goyava-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Goyava-acknowledgements.plist"; sourceTree = "<group>"; };
 		4C9C8167BE7D5395E2620500F5D1940F /* AWSMobileAnalyticsDefaultEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultEvent.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultEvent.h; sourceTree = "<group>"; };
 		4CE3AD3094BB157509E8194FDDCF9860 /* AWSFMDatabaseQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSFMDatabaseQueue.m; path = AWSCore/FMDB/AWSFMDatabaseQueue.m; sourceTree = "<group>"; };
 		4CE4ED584AC5B879FE755EBA1282591E /* RLMSchema.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMSchema.mm; path = Realm/RLMSchema.mm; sourceTree = "<group>"; };
@@ -658,12 +706,12 @@
 		4D3904BB470490F0E69A3F595EE2CCF2 /* AWSCredentialsProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCredentialsProvider.m; path = AWSCore/Authentication/AWSCredentialsProvider.m; sourceTree = "<group>"; };
 		4D58BD5E8EB95B605C25D168B462B4C3 /* AWSMobileAnalyticsAppleMonetizationEventBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsAppleMonetizationEventBuilder.m; path = AWSMobileAnalytics/AWSMobileAnalyticsAppleMonetizationEventBuilder.m; sourceTree = "<group>"; };
 		4D90CBA8B800CF38CD45F20A75B3B2EA /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		4DE3FD15087404A856164C68F3993F47 /* Pods-Goyava-Beta-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Goyava-Beta-acknowledgements.plist"; sourceTree = "<group>"; };
 		4E5FDC9EC31869FACEE2ECA4E9970CC6 /* AWSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSService.m; path = AWSCore/Service/AWSService.m; sourceTree = "<group>"; };
 		4EA67BBB6D27B39A73383141059CD807 /* RLMRealm_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm_Private.h; path = include/RLMRealm_Private.h; sourceTree = "<group>"; };
 		4F021249899712E571006B4E62682947 /* RLMObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject.h; path = include/RLMObject.h; sourceTree = "<group>"; };
 		4F2B3CE0A3FC04A3E1098BEDE8038E7F /* AWSSTSResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSResources.h; path = AWSCore/STS/AWSSTSResources.h; sourceTree = "<group>"; };
 		4FF3091E5D83A7F475A8BEE63261E03A /* AWSMobileAnalyticsDelayedBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDelayedBlock.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDelayedBlock.m; sourceTree = "<group>"; };
-		502A7A3EC7D3DFB632D247B574BCD43E /* Pods_Goyava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D5E53463927F0847BF1DFCFC3DC5B5 /* RLMResults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMResults.h; path = include/RLMResults.h; sourceTree = "<group>"; };
 		50DCADF6BD12BF5A0098556EC5328B51 /* AWSMobileAnalyticsConnectivityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConnectivityPolicy.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConnectivityPolicy.h; sourceTree = "<group>"; };
 		51C3166EB6D0CDA104211A4CD56C5827 /* AWSMobileAnalyticsDefaultContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultContext.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultContext.m; sourceTree = "<group>"; };
@@ -673,6 +721,7 @@
 		53E1F03EA349E6507900F793F1F01E60 /* AWSTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTaskCompletionSource.h; path = AWSCore/Bolts/AWSTaskCompletionSource.h; sourceTree = "<group>"; };
 		559C3C251062763AF6E37233EB0F27F0 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
 		559F39D972454CBBF25E7BF948D64B40 /* Util.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Util.swift; path = RealmSwift/Util.swift; sourceTree = "<group>"; };
+		568BB68A009454A0C2FC6B74BFBBA456 /* Pods-Goyava-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Goyava-umbrella.h"; sourceTree = "<group>"; };
 		570825A772B930855C0BB436A39BBFC5 /* AWSNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSNetworking.h; path = AWSCore/Networking/AWSNetworking.h; sourceTree = "<group>"; };
 		57130BF7790DAA7172A02693181A2C82 /* Results.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Results.swift; path = RealmSwift/Results.swift; sourceTree = "<group>"; };
 		57309AA2A74E200632F3FB5741752791 /* FABKitProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABKitProtocol.h; path = AWSCore/Fabric/FABKitProtocol.h; sourceTree = "<group>"; };
@@ -688,6 +737,7 @@
 		5D5BD8EE16DD0EF4D3E9F4FB032F2493 /* Lookback.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Lookback.bundle; path = "lookback/Lookback-Resources/Lookback.bundle"; sourceTree = "<group>"; };
 		5DE4D07EFE22EAF5C6CE623D5F03C700 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		5FC6B134398673D9A0B0A66BE9CDF848 /* AWSMobileAnalyticsBufferedReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsBufferedReader.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsBufferedReader.h; sourceTree = "<group>"; };
+		5FF3369450C012D310FA4709AA442813 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FFD248CC5549819D9054E49D07A3619 /* AWSMobileAnalyticsEventConstraintDecorator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsEventConstraintDecorator.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventConstraintDecorator.m; sourceTree = "<group>"; };
 		60DD8C6D516EB9F5B3A3D8B3A57DD187 /* AWSMobileAnalyticsInternalEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsInternalEvent.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsInternalEvent.h; sourceTree = "<group>"; };
 		623742B001D2BB880735ABF57E926B9C /* RLMMigration.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMMigration.mm; path = Realm/RLMMigration.mm; sourceTree = "<group>"; };
@@ -699,20 +749,20 @@
 		658E29FBA25421D8BEBCF6915442271A /* AWSSTS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTS.h; path = AWSCore/STS/AWSSTS.h; sourceTree = "<group>"; };
 		668096D93C41DFE10C736B4818F70758 /* AWSServiceEnum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSServiceEnum.h; path = AWSCore/Service/AWSServiceEnum.h; sourceTree = "<group>"; };
 		6805EC2B553574206B0859E4EEC115A6 /* AWSMobileAnalyticsPreferences.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsPreferences.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsPreferences.h; sourceTree = "<group>"; };
+		68ED23395C295815B0CA7C8E09B84F66 /* Pods-Goyava-Beta-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-Beta-resources.sh"; sourceTree = "<group>"; };
 		6A085AEB95DF71C9F8940CA7BB65E417 /* AWSCognitoIdentityResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoIdentityResources.h; path = AWSCore/CognitoIdentity/AWSCognitoIdentityResources.h; sourceTree = "<group>"; };
 		6A2B502C6F58A89E847B16696C03EAB4 /* RLMResults.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMResults.mm; path = Realm/RLMResults.mm; sourceTree = "<group>"; };
 		6AFC0BF72EE9931E0D25548AD341AE2D /* AWSMobileAnalyticsDefaultOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultOptions.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultOptions.h; sourceTree = "<group>"; };
 		6B171170CB12FDAE54EE3ECF31BE628A /* Aliases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Aliases.swift; path = RealmSwift/Aliases.swift; sourceTree = "<group>"; };
-		6B565AD95C13F543BE5225857B5CBCB6 /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
 		6BB435692E032726DE89E51A3266BE2F /* RLMArray_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMArray_Private.h; path = include/RLMArray_Private.h; sourceTree = "<group>"; };
-		6BD01E41E09EB535BF9AF1E77CAC6ADB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BE35CAAFB18177454B8420B40471A27 /* AWSMobileAnalyticsFileEventStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsFileEventStore.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsFileEventStore.h; sourceTree = "<group>"; };
 		6D3C7DECE0DEABCCC52106E8A15E9932 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = PDKTZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
 		6E8C60741B8D54A9FC78EF7491CE8B1F /* AWSMobileAnalyticsDelayedBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDelayedBlock.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDelayedBlock.h; sourceTree = "<group>"; };
 		6ED1662AEEFE19D3B29D0C369132BB86 /* AWSMobileAnalyticsDefaultFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultFileManager.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultFileManager.m; sourceTree = "<group>"; };
+		6EE9EF039339B753AE87BEBFCD9F029B /* Pods_Goyava.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FA461550A2C209865BA8317EB7D59C9 /* AWSGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSGZIP.m; path = AWSCore/GZIP/AWSGZIP.m; sourceTree = "<group>"; };
+		7089BE9261A81547A6FAC9A976E6C430 /* Pods-Goyava-Beta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Goyava-Beta.modulemap"; sourceTree = "<group>"; };
 		70A9CBD7702C7012A8A058023DD89005 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = PDKTZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		71F7D5AC15D611FD480537306D62E1EC /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731BC749179EEC3876E5B31EA1C47550 /* AWSMobileAnalyticsERSResources.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsERSResources.h; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSResources.h; sourceTree = "<group>"; };
 		733CCA37C36169268F8B7BCC3A120142 /* AWSCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCategory.m; path = AWSCore/Utility/AWSCategory.m; sourceTree = "<group>"; };
 		738E5CA5EAE1F2EADEDC37780AD475C2 /* AWSMobileAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSMobileAnalytics-dummy.m"; sourceTree = "<group>"; };
@@ -740,6 +790,7 @@
 		7F273819ED7C7E56FC1055F2297A750C /* AWSCognitoIdentityService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSCognitoIdentityService.m; path = AWSCore/CognitoIdentity/AWSCognitoIdentityService.m; sourceTree = "<group>"; };
 		80625990EA064CDEBEE2FF8639881A88 /* SwiftVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftVersion.swift; path = RealmSwift/SwiftVersion.swift; sourceTree = "<group>"; };
 		80BAD4307361E725D4C649387C1155B3 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = PDKTZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		822EA7C7672ACC113CD8CF1C0B3EAAD0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8257464E6BA7B262BC0B214046E6984A /* RLMObject_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObject_Private.h; path = include/RLMObject_Private.h; sourceTree = "<group>"; };
 		833448F540E7EE011C85B7DB380E8477 /* AWSMobileAnalyticsLifeCycleManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsLifeCycleManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsLifeCycleManager.h; sourceTree = "<group>"; };
 		8355A515F2B1E1396FB955A0226BFB9F /* Fabric+FABKits.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Fabric+FABKits.h"; path = "AWSCore/Fabric/Fabric+FABKits.h"; sourceTree = "<group>"; };
@@ -747,17 +798,17 @@
 		83C8EE970C27E3D6AD8A8D5180375004 /* list.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = list.cpp; path = Realm/ObjectStore/list.cpp; sourceTree = "<group>"; };
 		83C94E7EABD25E38AA3CAE6108095D00 /* AWSMobileAnalyticsWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsWriter.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsWriter.h; sourceTree = "<group>"; };
 		842EB623B596DD559D07988C62105FCF /* AWSTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSTask.m; path = AWSCore/Bolts/AWSTask.m; sourceTree = "<group>"; };
-		84C531B16A526E313E556558EFAD2DAF /* Pods-Goyava-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-frameworks.sh"; sourceTree = "<group>"; };
 		84E7D91D73200EC6189D6A8C5BB8B6AA /* AWSMTLModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMTLModel.m; path = AWSCore/Mantle/AWSMTLModel.m; sourceTree = "<group>"; };
 		854B5F9B3F6B6C55BB3CEC8CF7986A08 /* AWSIdentityProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSIdentityProvider.m; path = AWSCore/Authentication/AWSIdentityProvider.m; sourceTree = "<group>"; };
 		8553B7572CF32D97FCFBA2EFFC31B13B /* AWSMobileAnalyticsJSONSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsJSONSerializer.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsJSONSerializer.m; sourceTree = "<group>"; };
 		85A0D3246FD47D28D78A901D639D0F02 /* RLMObject.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMObject.mm; path = Realm/RLMObject.mm; sourceTree = "<group>"; };
 		8830E758026BFE64D00ABBDC1114C944 /* PDKTZipArchive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PDKTZipArchive-umbrella.h"; sourceTree = "<group>"; };
+		8910A8E926852E4B5E1E711D7710EB70 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F6F39E95C554B77A2106CB66631051 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		8A3902BCF1E0F8996DC194709696BAC5 /* RLMObjectBase_Dynamic.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectBase_Dynamic.h; path = include/RLMObjectBase_Dynamic.h; sourceTree = "<group>"; };
 		8B08EE3DC65BE35D8160A0F4070A9DF7 /* results.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = results.cpp; path = Realm/ObjectStore/results.cpp; sourceTree = "<group>"; };
-		8B19825B9AF1314A73BD6F6CA2505F5F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B436CDA0C63A1C72E78CBEE0CC61D32 /* AWSMobileAnalyticsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConfiguration.h; path = AWSMobileAnalytics/AWSMobileAnalyticsConfiguration.h; sourceTree = "<group>"; };
+		8BC6969F339A221A40F917A6DBEE9E07 /* Pods_Goyava_Beta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Goyava_Beta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BF5E38B64FD2A3451AEE24BE02779D1 /* NSArray+AWSMTLManipulationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+AWSMTLManipulationAdditions.m"; path = "AWSCore/Mantle/NSArray+AWSMTLManipulationAdditions.m"; sourceTree = "<group>"; };
 		8D06229BCFD2CE555CE05F73163E4662 /* AWSClientContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSClientContext.m; path = AWSCore/Service/AWSClientContext.m; sourceTree = "<group>"; };
 		8DE69C06C60F535CEBD99391CFE98380 /* NSError+AWSMTLModelException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+AWSMTLModelException.h"; path = "AWSCore/Mantle/NSError+AWSMTLModelException.h"; sourceTree = "<group>"; };
@@ -778,6 +829,7 @@
 		94FF60B679F739F68FCECF9CE537294B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		966D60C4791B03E6A4CF67FAE6CBD3A0 /* Realm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Realm-dummy.m"; sourceTree = "<group>"; };
 		968E6EC33BBC57025994F5462C650E38 /* AWSMobileAnalyticsSerializerFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsSerializerFactory.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSerializerFactory.m; sourceTree = "<group>"; };
+		969959CE26130BA3E05393970EF7B78E /* Pods-Goyava-Beta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Goyava-Beta-dummy.m"; sourceTree = "<group>"; };
 		96AB908BF066E9DE0CE8F8BFEC5DD28A /* AWSMobileAnalyticsSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsSession.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSession.m; sourceTree = "<group>"; };
 		97BDA895C6987F89053C00E012A87469 /* index_set.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = index_set.cpp; path = Realm/ObjectStore/index_set.cpp; sourceTree = "<group>"; };
 		97BED92C947D5FEFA576D32F3DEB2BCE /* RLMProperty_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMProperty_Private.h; path = include/RLMProperty_Private.h; sourceTree = "<group>"; };
@@ -802,9 +854,9 @@
 		A0B963AC09B1EC6F3AA27160A09832AF /* AWSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSInfo.h; path = AWSCore/Service/AWSInfo.h; sourceTree = "<group>"; };
 		A19CBC06503887BE44A50051A03B91D3 /* RLMUtil.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMUtil.mm; path = Realm/RLMUtil.mm; sourceTree = "<group>"; };
 		A245D052E75FBA967E3BF760B16A91C1 /* collection_notifications.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = collection_notifications.cpp; path = Realm/ObjectStore/collection_notifications.cpp; sourceTree = "<group>"; };
-		A2E4F006E7642BC50E3ACF4A070CB8C7 /* Pods-Goyava-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Goyava-acknowledgements.plist"; sourceTree = "<group>"; };
 		A37C7DA1FE61EDBAFBDF728CAA48CFC3 /* LookbackRecordingSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookbackRecordingSession.h; path = lookback/Safe/Lookback.framework/Versions/A/Headers/LookbackRecordingSession.h; sourceTree = "<group>"; };
 		A401E26D2FAD98973F87E21AB2503692 /* AWSMobileAnalyticsDefaultSessionClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsDefaultSessionClient.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultSessionClient.m; sourceTree = "<group>"; };
+		A40660D29161F64CF3B395C7180732FD /* Pods-Goyava-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-resources.sh"; sourceTree = "<group>"; };
 		A4BD8374CDCE1FDEBD8B389E1C85CE70 /* AWSTMCacheBackgroundTaskManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMCacheBackgroundTaskManager.h; path = AWSCore/TMCache/AWSTMCacheBackgroundTaskManager.h; sourceTree = "<group>"; };
 		A59D219619D6825286AD101191034204 /* AWSMobileAnalyticsConnectivityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsConnectivityPolicy.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConnectivityPolicy.m; sourceTree = "<group>"; };
 		A631D9534EEA73C80C0294BEA29031C4 /* AWSSTSModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSModel.h; path = AWSCore/STS/AWSSTSModel.h; sourceTree = "<group>"; };
@@ -828,7 +880,6 @@
 		B1B79751BC7E50CF75D5737D7AF98CF0 /* AWSSynchronizedMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSSynchronizedMutableDictionary.m; path = AWSCore/Utility/AWSSynchronizedMutableDictionary.m; sourceTree = "<group>"; };
 		B29625199D3C02425C7DB107CCC09329 /* AWSEXTRuntimeExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTRuntimeExtensions.m; path = AWSCore/Mantle/extobjc/AWSEXTRuntimeExtensions.m; sourceTree = "<group>"; };
 		B2DE1FC227DD5BF8BD57383AA8B95744 /* RLMSwiftSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RLMSwiftSupport.m; path = Realm/RLMSwiftSupport.m; sourceTree = "<group>"; };
-		B2FD3484EF5D816BE8EEDD49A4A1C5D6 /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSMobileAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3CAD3738063DB8E01576F939F145787 /* RLMRealm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMRealm.h; path = include/RLMRealm.h; sourceTree = "<group>"; };
 		B4032126F91ABD072A6792E5381D5D8F /* AWSMobileAnalyticsSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSession.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSession.h; sourceTree = "<group>"; };
 		B44185820B15EA8102262BA82E25B330 /* AWSMobileAnalyticsRandomUUIDGenerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsRandomUUIDGenerator.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsRandomUUIDGenerator.h; sourceTree = "<group>"; };
@@ -843,6 +894,7 @@
 		BE3AD67F6313CD4900C222417CECBEF6 /* PDKTZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PDKTZipArchive.m; path = PDKTZipArchive/PDKTZipArchive.m; sourceTree = "<group>"; };
 		BE52531B7D0ED1B2C453490822632C14 /* AWSLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSLogging.m; path = AWSCore/Utility/AWSLogging.m; sourceTree = "<group>"; };
 		BF096BD82F90D01B831AE3476521504E /* Object.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Object.swift; path = RealmSwift/Object.swift; sourceTree = "<group>"; };
+		C068B6A77FDA10AB287D453B55D738CF /* AWSMobileAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSMobileAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AC44326E3619692DD31EB400AC7638 /* RLMObjectSchema_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMObjectSchema_Private.h; path = include/RLMObjectSchema_Private.h; sourceTree = "<group>"; };
 		C2ECBB62223673F62796738B950C34F0 /* AWSCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCore.h; path = AWSCore/AWSCore.h; sourceTree = "<group>"; };
 		C3394FF24916FAC1EEB9C191210D39DA /* Realm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Realm.modulemap; sourceTree = "<group>"; };
@@ -852,22 +904,25 @@
 		C4FA139350CFE912BD7933DBDBEA93F6 /* AWSMobileAnalyticsDefaultDeliveryClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultDeliveryClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultDeliveryClient.h; sourceTree = "<group>"; };
 		C527AA4DEC28CA525F81133461F8D8EB /* AWSMobileAnalyticsDefaultFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultFileManager.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultFileManager.h; sourceTree = "<group>"; };
 		C5A35D150FE340885E66E3B16D0DCAAD /* PDKTZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PDKTZipArchive-dummy.m"; sourceTree = "<group>"; };
-		C6479DE0A0BC624EC352C1FFC11888A9 /* Pods-Goyava-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-resources.sh"; sourceTree = "<group>"; };
 		C76B5BA7DB10980FC05F4C7664536394 /* AWSMobileAnalyticsSessionStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsSessionStore.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSessionStore.m; sourceTree = "<group>"; };
+		C7A42972EDAD527885E0105D856EE687 /* Pods-Goyava-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Goyava-frameworks.sh"; sourceTree = "<group>"; };
 		C7A5762E59DB2BB923C48CFFAE3571DC /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = PDKTZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
 		C8CDFA11A330A12BED1452335C5C8B2B /* AWSMobileAnalyticsSessionClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSessionClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSessionClient.h; sourceTree = "<group>"; };
 		C8F44CA14BBC0069262FC2A481423D50 /* AWSFMResultSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMResultSet.h; path = AWSCore/FMDB/AWSFMResultSet.h; sourceTree = "<group>"; };
+		C9D25C67CA66DBF81334CFDBA9A56D7F /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA78F9EF6C1BB4F7CED6646EEC07A096 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = AWSCore/Fabric/FABAttributes.h; sourceTree = "<group>"; };
-		CC90461BE342DBFFD350587C92BB8C03 /* Pods-Goyava.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava.release.xcconfig"; sourceTree = "<group>"; };
+		CD57A80999DE15795749C10D8F9EB559 /* Pods-Goyava.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava.debug.xcconfig"; sourceTree = "<group>"; };
 		CE9D2CE22229FC7371253FDDBB770575 /* external_commit_helper.cpp */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.cpp; name = external_commit_helper.cpp; path = Realm/ObjectStore/impl/apple/external_commit_helper.cpp; sourceTree = "<group>"; };
 		CEA6923CE1B9FA031CBDA4D615604C5B /* AWSMobileAnalyticsSubmissionTimePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsSubmissionTimePolicy.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsSubmissionTimePolicy.h; sourceTree = "<group>"; };
 		CFA525FBAD049FD674AB224597B00584 /* AWSMTLModel+NSCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "AWSMTLModel+NSCoding.h"; path = "AWSCore/Mantle/AWSMTLModel+NSCoding.h"; sourceTree = "<group>"; };
 		D02319D5614450F325AE87A38730B1C8 /* AWSMobileAnalyticsERSModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsERSModel.m; path = AWSMobileAnalytics/AWSMobileAnalyticsERS/AWSMobileAnalyticsERSModel.m; sourceTree = "<group>"; };
+		D056A156C5794E80A6C0D884D87090B3 /* Pods-Goyava-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Goyava-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D156DC6EEAD771460F50C700DA11A457 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
 		D3808966B7F89B5BC76F0830B6FA3F31 /* AWSMobileAnalyticsPausedSessionState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsPausedSessionState.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsPausedSessionState.m; sourceTree = "<group>"; };
 		D390560EB7B72C5F59922B4C980679B2 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = PDKTZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
 		D3CDCB6CFF77815742BB4EF43237809D /* Realm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Realm.swift; path = RealmSwift/Realm.swift; sourceTree = "<group>"; };
 		D3F5C3F77BAD14D9466D8DFC1AD2D248 /* AWSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSLogging.h; path = AWSCore/Utility/AWSLogging.h; sourceTree = "<group>"; };
+		D44D7EE08685FDC04FBB17040366AE51 /* Pods-Goyava-Beta-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Goyava-Beta-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D4956B7A6BE837A5ABBB652AF0BA5B1E /* RealmSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RealmSwift-umbrella.h"; sourceTree = "<group>"; };
 		D4A52C8EBC8707A8ED0C346D336E4506 /* AWSMobileAnalyticsConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsConnectivity.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsConnectivity.h; sourceTree = "<group>"; };
 		D4D30C339216CF7139AFD37278648A6F /* RLMCollection.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMCollection.mm; path = Realm/RLMCollection.mm; sourceTree = "<group>"; };
@@ -913,14 +968,16 @@
 		E8BF3550AFF47F8DEB8DC35F16BBB954 /* AWSMobileAnalyticsDefaultConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDefaultConfiguration.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDefaultConfiguration.h; sourceTree = "<group>"; };
 		E8F01CF8312360EAE1F6CF055C256D16 /* AWSMobileAnalyticsDeliveryClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsDeliveryClient.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsDeliveryClient.h; sourceTree = "<group>"; };
 		E9247FFAD9108D161557E94B53458928 /* AWSMobileAnalyticsIOSSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsIOSSystem.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSSystem.h; sourceTree = "<group>"; };
-		E969E65E443FFD68871663CF66348030 /* Pods-Goyava-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Goyava-umbrella.h"; sourceTree = "<group>"; };
 		E9D88C3D84A60616FA57A56242416551 /* AWSClientContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSClientContext.h; path = AWSCore/Service/AWSClientContext.h; sourceTree = "<group>"; };
+		EA029CDE0B9F72BD83DA15E25CF29634 /* Pods-Goyava-Beta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava-Beta.release.xcconfig"; sourceTree = "<group>"; };
 		EA22971E8FE561FED6F0816A3EC88074 /* LookbackRecordingOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookbackRecordingOptions.h; path = lookback/Safe/Lookback.framework/Versions/A/Headers/LookbackRecordingOptions.h; sourceTree = "<group>"; };
 		EA6AC869BE231669457E6B533D657642 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EACA7C864D9635391DA9F54FBA7DAF34 /* AWSMobileAnalyticsInactiveSessionState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsInactiveSessionState.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsInactiveSessionState.h; sourceTree = "<group>"; };
 		EB34FAAB627F2079BFF3B03BC283EAAE /* AWSMTLValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLValueTransformer.h; path = AWSCore/Mantle/AWSMTLValueTransformer.h; sourceTree = "<group>"; };
+		EB609622D491BE37CA23BF096985BFBC /* Pods-Goyava-Beta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Goyava-Beta.debug.xcconfig"; sourceTree = "<group>"; };
 		EB777F48A3261182F763C7C0190BF445 /* AWSSTSService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSSTSService.h; path = AWSCore/STS/AWSSTSService.h; sourceTree = "<group>"; };
 		EC0A931434F7B88C62B5C8BD796FB227 /* AWSCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AWSCore-dummy.m"; sourceTree = "<group>"; };
+		EC68AACBF587889157530239F7EB933A /* Pods-Goyava-Beta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Goyava-Beta-umbrella.h"; sourceTree = "<group>"; };
 		EE0D1AEDE9A363AF9A99A5BAA09CF84E /* AWSMobileAnalyticsEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEvent.h; path = AWSMobileAnalytics/AWSMobileAnalyticsEvent.h; sourceTree = "<group>"; };
 		EE3428AFCBF23D1E1137D5CEEA586753 /* AWSFMDatabaseQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSFMDatabaseQueue.h; path = AWSCore/FMDB/AWSFMDatabaseQueue.h; sourceTree = "<group>"; };
 		EF61A5E0BE8EEC34B7462405A4890A78 /* LookbackRecordingsTableViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LookbackRecordingsTableViewController.h; path = lookback/Safe/Lookback.framework/Versions/A/Headers/LookbackRecordingsTableViewController.h; sourceTree = "<group>"; };
@@ -938,12 +995,11 @@
 		F710DF4C9C68FA9FC4CA6E3DCC5E5157 /* AWSMobileAnalyticsEventObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMobileAnalyticsEventObserver.h; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsEventObserver.h; sourceTree = "<group>"; };
 		F8AB019C13676C4A7C9B846FF7B667D2 /* AWSMobileAnalyticsIOSPreferences.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsIOSPreferences.m; path = AWSMobileAnalytics/Internal/AWSMobileAnalyticsIOSPreferences.m; sourceTree = "<group>"; };
 		F977744415409E1C9906AEE9AC7264D0 /* AWSCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AWSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FACA59EE25A24FF412B5638EE04CD75D /* Pods-Goyava.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Goyava.modulemap"; sourceTree = "<group>"; };
+		F9AB2F2440258170D3A0DA79012BB1E4 /* Pods-Goyava.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Goyava.modulemap"; sourceTree = "<group>"; };
 		FAFBF69BB5D54ECB00DF45FF133F3AEE /* AWSMobileAnalyticsService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSMobileAnalyticsService.m; path = AWSMobileAnalytics/AWSMobileAnalyticsService.m; sourceTree = "<group>"; };
 		FB14AAAB9E7A66C5A3E65D761AA629B2 /* AWSEXTKeyPathCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSEXTKeyPathCoding.h; path = AWSCore/Mantle/extobjc/AWSEXTKeyPathCoding.h; sourceTree = "<group>"; };
 		FBA0CC875D7BB04A502CD14416C35469 /* AWSEXTScope.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSEXTScope.m; path = AWSCore/Mantle/extobjc/AWSEXTScope.m; sourceTree = "<group>"; };
 		FBA996B19DC1D7EA35A46C8EBCDBB8E5 /* AWSXMLWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSXMLWriter.h; path = AWSCore/XMLWriter/AWSXMLWriter.h; sourceTree = "<group>"; };
-		FC45D22BED1E29B20A35929745702A19 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC57E0C4ADDC672DBEF78E99EF6EA7FB /* AWSURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSURLRequestSerialization.m; path = AWSCore/Serialization/AWSURLRequestSerialization.m; sourceTree = "<group>"; };
 		FE00AD4B7444279E616AD9B6A26BC1AA /* RLMConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RLMConstants.h; path = include/RLMConstants.h; sourceTree = "<group>"; };
 		FE8774243B56810E5C1FE18DE4DE803F /* RLMListBase.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = RLMListBase.mm; path = Realm/RLMListBase.mm; sourceTree = "<group>"; };
@@ -1011,6 +1067,14 @@
 			files = (
 				30CA89279563765A4AF7A66E8B0AFF7F /* Foundation.framework in Frameworks */,
 				E7AAC4E843A5BE01184687118BE9A603 /* Realm.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFDA4622C40CDC169252B4A74D688E52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77326F4D093FA38343759D18EC1216F8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1181,6 +1245,15 @@
 				3382CD7FEB54D462947620E88F110FB0 /* Support Files */,
 			);
 			path = AWSMobileAnalytics;
+			sourceTree = "<group>";
+		};
+		26381360670B05936EE6FA5B0E5566F1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				88517D20AD1274F1FF1EE33768A4091D /* Pods-Goyava */,
+				8110727072BD8DB52AEA04C3A73A53A3 /* Pods-Goyava-Beta */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		3382CD7FEB54D462947620E88F110FB0 /* Support Files */ = {
@@ -1381,24 +1454,6 @@
 			path = AWSCore;
 			sourceTree = "<group>";
 		};
-		637962BF2A5B467C8E53FDD6DF63273C /* Pods-Goyava */ = {
-			isa = PBXGroup;
-			children = (
-				6BD01E41E09EB535BF9AF1E77CAC6ADB /* Info.plist */,
-				FACA59EE25A24FF412B5638EE04CD75D /* Pods-Goyava.modulemap */,
-				3ED21F6C73F012C3BDD16D3C6C950816 /* Pods-Goyava-acknowledgements.markdown */,
-				A2E4F006E7642BC50E3ACF4A070CB8C7 /* Pods-Goyava-acknowledgements.plist */,
-				001E11311E4A7011CEDAFF61674EEFC2 /* Pods-Goyava-dummy.m */,
-				84C531B16A526E313E556558EFAD2DAF /* Pods-Goyava-frameworks.sh */,
-				C6479DE0A0BC624EC352C1FFC11888A9 /* Pods-Goyava-resources.sh */,
-				E969E65E443FFD68871663CF66348030 /* Pods-Goyava-umbrella.h */,
-				6B565AD95C13F543BE5225857B5CBCB6 /* Pods-Goyava.debug.xcconfig */,
-				CC90461BE342DBFFD350587C92BB8C03 /* Pods-Goyava.release.xcconfig */,
-			);
-			name = "Pods-Goyava";
-			path = "Target Support Files/Pods-Goyava";
-			sourceTree = "<group>";
-		};
 		751965B9AEE38A370B09405E1B75CF54 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1409,29 +1464,51 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7934305E3629911F6C4C8FACAA96B159 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				71F7D5AC15D611FD480537306D62E1EC /* AWSCore.framework */,
-				B2FD3484EF5D816BE8EEDD49A4A1C5D6 /* AWSMobileAnalytics.framework */,
-				1493DB18699D8974754CDC38EC5C0533 /* PDKTZipArchive.framework */,
-				502A7A3EC7D3DFB632D247B574BCD43E /* Pods_Goyava.framework */,
-				1442CD24455155C78DBEA29B796F4981 /* Reachability.framework */,
-				FC45D22BED1E29B20A35929745702A19 /* Realm.framework */,
-				8B19825B9AF1314A73BD6F6CA2505F5F /* RealmSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				DAE367F310A9959725B95CE40D508065 /* Frameworks */,
 				C9F2992D3B99AE3DD7FC3C4D6E3FF0B3 /* Pods */,
-				7934305E3629911F6C4C8FACAA96B159 /* Products */,
-				9FF0331EAE90B620399BB2688599816A /* Targets Support Files */,
+				AFB148035567C52E1381959ACBC2D80E /* Products */,
+				26381360670B05936EE6FA5B0E5566F1 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8110727072BD8DB52AEA04C3A73A53A3 /* Pods-Goyava-Beta */ = {
+			isa = PBXGroup;
+			children = (
+				5FF3369450C012D310FA4709AA442813 /* Info.plist */,
+				7089BE9261A81547A6FAC9A976E6C430 /* Pods-Goyava-Beta.modulemap */,
+				D44D7EE08685FDC04FBB17040366AE51 /* Pods-Goyava-Beta-acknowledgements.markdown */,
+				4DE3FD15087404A856164C68F3993F47 /* Pods-Goyava-Beta-acknowledgements.plist */,
+				969959CE26130BA3E05393970EF7B78E /* Pods-Goyava-Beta-dummy.m */,
+				2CF609EC80E9483E2C1F311C24A7B3F5 /* Pods-Goyava-Beta-frameworks.sh */,
+				68ED23395C295815B0CA7C8E09B84F66 /* Pods-Goyava-Beta-resources.sh */,
+				EC68AACBF587889157530239F7EB933A /* Pods-Goyava-Beta-umbrella.h */,
+				EB609622D491BE37CA23BF096985BFBC /* Pods-Goyava-Beta.debug.xcconfig */,
+				EA029CDE0B9F72BD83DA15E25CF29634 /* Pods-Goyava-Beta.release.xcconfig */,
+			);
+			name = "Pods-Goyava-Beta";
+			path = "Target Support Files/Pods-Goyava-Beta";
+			sourceTree = "<group>";
+		};
+		88517D20AD1274F1FF1EE33768A4091D /* Pods-Goyava */ = {
+			isa = PBXGroup;
+			children = (
+				822EA7C7672ACC113CD8CF1C0B3EAAD0 /* Info.plist */,
+				F9AB2F2440258170D3A0DA79012BB1E4 /* Pods-Goyava.modulemap */,
+				D056A156C5794E80A6C0D884D87090B3 /* Pods-Goyava-acknowledgements.markdown */,
+				4C6AF78FE4773F05853CC82C049A867D /* Pods-Goyava-acknowledgements.plist */,
+				110D1429AAD9D56792555B7CCD7FA794 /* Pods-Goyava-dummy.m */,
+				C7A42972EDAD527885E0105D856EE687 /* Pods-Goyava-frameworks.sh */,
+				A40660D29161F64CF3B395C7180732FD /* Pods-Goyava-resources.sh */,
+				568BB68A009454A0C2FC6B74BFBBA456 /* Pods-Goyava-umbrella.h */,
+				CD57A80999DE15795749C10D8F9EB559 /* Pods-Goyava.debug.xcconfig */,
+				3A97F59536A6B3FD648387B0EDF0B01D /* Pods-Goyava.release.xcconfig */,
+			);
+			name = "Pods-Goyava";
+			path = "Target Support Files/Pods-Goyava";
 			sourceTree = "<group>";
 		};
 		894F8B69E4C38BB29F9CD460937C0486 /* Frameworks */ = {
@@ -1448,14 +1525,6 @@
 				5D5BD8EE16DD0EF4D3E9F4FB032F2493 /* Lookback.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		9FF0331EAE90B620399BB2688599816A /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				637962BF2A5B467C8E53FDD6DF63273C /* Pods-Goyava */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		A01529D50EEED29324180D4D9E8A06E6 /* Support Files */ = {
@@ -1483,6 +1552,21 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Realm";
+			sourceTree = "<group>";
+		};
+		AFB148035567C52E1381959ACBC2D80E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				407243D108FB06EA6A9A5D24B27A0CA1 /* AWSCore.framework */,
+				C068B6A77FDA10AB287D453B55D738CF /* AWSMobileAnalytics.framework */,
+				38252BCC633CA9540A1BF460C52B1B5E /* PDKTZipArchive.framework */,
+				6EE9EF039339B753AE87BEBFCD9F029B /* Pods_Goyava.framework */,
+				8BC6969F339A221A40F917A6DBEE9E07 /* Pods_Goyava_Beta.framework */,
+				3728AE01003B07E3B9D18A90906F4D58 /* Reachability.framework */,
+				8910A8E926852E4B5E1E711D7710EB70 /* Realm.framework */,
+				C9D25C67CA66DBF81334CFDBA9A56D7F /* RealmSwift.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B865124B05960FF86C6AA07DD5CEACAD /* PDKTZipArchive */ = {
@@ -1869,6 +1953,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6AB03C32A9E5CE2ECFE2493A0DD773F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCDC57307F82B98800807644360D2D2 /* Pods-Goyava-Beta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F1B51CF874DD8DCA2392133D2927AA66 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1902,6 +1994,29 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0D71F275A3E311C16568FE7F54E01F53 /* Pods-Goyava-Beta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D377E8E87823FEC0658B2D2539F4024C /* Build configuration list for PBXNativeTarget "Pods-Goyava-Beta" */;
+			buildPhases = (
+				C613E8DA36ED430982ABD80129AF9EC9 /* Sources */,
+				FFDA4622C40CDC169252B4A74D688E52 /* Frameworks */,
+				A6AB03C32A9E5CE2ECFE2493A0DD773F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8C9AE7035EF441BFFB7149AFC2304A2 /* PBXTargetDependency */,
+				4A8E49EA61B925BDBBED01F93EF4B91E /* PBXTargetDependency */,
+				E43DA20ABA3692E1488385B73047DAEC /* PBXTargetDependency */,
+				6E854BC26A3EAF6B0BA535CB146F7B73 /* PBXTargetDependency */,
+				C0AAEA1E63364782E7DF7BA244B3A8EB /* PBXTargetDependency */,
+				2821691E5828A941B567BF844972868C /* PBXTargetDependency */,
+			);
+			name = "Pods-Goyava-Beta";
+			productName = "Pods-Goyava-Beta";
+			productReference = 8BC6969F339A221A40F917A6DBEE9E07 /* Pods_Goyava_Beta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		4AA225B2B7A39730F44932A983F96817 /* Pods-Goyava */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8C9F00A0149FBC473E76C8CB3C664FA8 /* Build configuration list for PBXNativeTarget "Pods-Goyava" */;
@@ -1922,7 +2037,7 @@
 			);
 			name = "Pods-Goyava";
 			productName = "Pods-Goyava";
-			productReference = 502A7A3EC7D3DFB632D247B574BCD43E /* Pods_Goyava.framework */;
+			productReference = 6EE9EF039339B753AE87BEBFCD9F029B /* Pods_Goyava.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		5B2DB207224AC7B3374239F3860AF2B9 /* RealmSwift */ = {
@@ -1940,7 +2055,7 @@
 			);
 			name = RealmSwift;
 			productName = RealmSwift;
-			productReference = 8B19825B9AF1314A73BD6F6CA2505F5F /* RealmSwift.framework */;
+			productReference = C9D25C67CA66DBF81334CFDBA9A56D7F /* RealmSwift.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		806B47FF9B545877E40EE873FB9272F0 /* Reachability */ = {
@@ -1957,7 +2072,7 @@
 			);
 			name = Reachability;
 			productName = Reachability;
-			productReference = 1442CD24455155C78DBEA29B796F4981 /* Reachability.framework */;
+			productReference = 3728AE01003B07E3B9D18A90906F4D58 /* Reachability.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CA9F14B873EF8494D89B19C05D712652 /* Realm */ = {
@@ -1976,7 +2091,7 @@
 			);
 			name = Realm;
 			productName = Realm;
-			productReference = FC45D22BED1E29B20A35929745702A19 /* Realm.framework */;
+			productReference = 8910A8E926852E4B5E1E711D7710EB70 /* Realm.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D5056A18469CDC311105CA2E8E89B11C /* PDKTZipArchive */ = {
@@ -1993,7 +2108,7 @@
 			);
 			name = PDKTZipArchive;
 			productName = PDKTZipArchive;
-			productReference = 1493DB18699D8974754CDC38EC5C0533 /* PDKTZipArchive.framework */;
+			productReference = 38252BCC633CA9540A1BF460C52B1B5E /* PDKTZipArchive.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D7C577A782ECBFCC395DF4C6F01965C3 /* AWSMobileAnalytics */ = {
@@ -2011,7 +2126,7 @@
 			);
 			name = AWSMobileAnalytics;
 			productName = AWSMobileAnalytics;
-			productReference = B2FD3484EF5D816BE8EEDD49A4A1C5D6 /* AWSMobileAnalytics.framework */;
+			productReference = C068B6A77FDA10AB287D453B55D738CF /* AWSMobileAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DD4C60D0C1ADF7586B8862EEA147DE00 /* AWSCore */ = {
@@ -2028,7 +2143,7 @@
 			);
 			name = AWSCore;
 			productName = AWSCore;
-			productReference = 71F7D5AC15D611FD480537306D62E1EC /* AWSCore.framework */;
+			productReference = 407243D108FB06EA6A9A5D24B27A0CA1 /* AWSCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2048,7 +2163,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7934305E3629911F6C4C8FACAA96B159 /* Products */;
+			productRefGroup = AFB148035567C52E1381959ACBC2D80E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -2056,6 +2171,7 @@
 				D7C577A782ECBFCC395DF4C6F01965C3 /* AWSMobileAnalytics */,
 				D5056A18469CDC311105CA2E8E89B11C /* PDKTZipArchive */,
 				4AA225B2B7A39730F44932A983F96817 /* Pods-Goyava */,
+				0D71F275A3E311C16568FE7F54E01F53 /* Pods-Goyava-Beta */,
 				806B47FF9B545877E40EE873FB9272F0 /* Reachability */,
 				CA9F14B873EF8494D89B19C05D712652 /* Realm */,
 				5B2DB207224AC7B3374239F3860AF2B9 /* RealmSwift */,
@@ -2288,6 +2404,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C613E8DA36ED430982ABD80129AF9EC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E5C5FFDFEB6D9CB0275611DD88AA2CE /* Pods-Goyava-Beta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -2296,6 +2420,12 @@
 			name = Realm;
 			target = CA9F14B873EF8494D89B19C05D712652 /* Realm */;
 			targetProxy = 0DDA8DEA8DA4C21DB74EFFF7711B7FA4 /* PBXContainerItemProxy */;
+		};
+		2821691E5828A941B567BF844972868C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RealmSwift;
+			target = 5B2DB207224AC7B3374239F3860AF2B9 /* RealmSwift */;
+			targetProxy = 61C9B4D1EC521F8D3D327747AE4CCD23 /* PBXContainerItemProxy */;
 		};
 		2DB741E8388EA88051F577F2297DFF75 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2309,11 +2439,23 @@
 			target = D5056A18469CDC311105CA2E8E89B11C /* PDKTZipArchive */;
 			targetProxy = 954AA6FAEB820CA4BCA421600C57FB00 /* PBXContainerItemProxy */;
 		};
+		4A8E49EA61B925BDBBED01F93EF4B91E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSMobileAnalytics;
+			target = D7C577A782ECBFCC395DF4C6F01965C3 /* AWSMobileAnalytics */;
+			targetProxy = 1A180F396E4E918045FFBDC308289422 /* PBXContainerItemProxy */;
+		};
 		4F45056C617DE1C0ABE71EF9B3E7BDDB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AWSCore;
 			target = DD4C60D0C1ADF7586B8862EEA147DE00 /* AWSCore */;
 			targetProxy = A8B8BF623470AEA22595A87164D119C7 /* PBXContainerItemProxy */;
+		};
+		6E854BC26A3EAF6B0BA535CB146F7B73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 806B47FF9B545877E40EE873FB9272F0 /* Reachability */;
+			targetProxy = FE3871C2886590305890FC44DBF365FC /* PBXContainerItemProxy */;
 		};
 		84D9DC057FA8D38D8F990316DD08C482 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2333,11 +2475,29 @@
 			target = 806B47FF9B545877E40EE873FB9272F0 /* Reachability */;
 			targetProxy = ABF8718E35142F63557F1FE46EA614E6 /* PBXContainerItemProxy */;
 		};
+		A8C9AE7035EF441BFFB7149AFC2304A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AWSCore;
+			target = DD4C60D0C1ADF7586B8862EEA147DE00 /* AWSCore */;
+			targetProxy = 3FABB0166496DD0AC96034D0D4E4C41E /* PBXContainerItemProxy */;
+		};
 		AF8DF6222AD8FB4E073DFB9C0B0C0B48 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AWSCore;
 			target = DD4C60D0C1ADF7586B8862EEA147DE00 /* AWSCore */;
 			targetProxy = 58E6AE1B173066843D7057CD26BCC6B5 /* PBXContainerItemProxy */;
+		};
+		C0AAEA1E63364782E7DF7BA244B3A8EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Realm;
+			target = CA9F14B873EF8494D89B19C05D712652 /* Realm */;
+			targetProxy = 9DECDC2DEA7B65FD1448C77D97A1B7F0 /* PBXContainerItemProxy */;
+		};
+		E43DA20ABA3692E1488385B73047DAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PDKTZipArchive;
+			target = D5056A18469CDC311105CA2E8E89B11C /* PDKTZipArchive */;
+			targetProxy = 41977A700CD5587109CF6EC7566EF3DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2475,6 +2635,40 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		68F7DEB3DFEBEC294A3E4FA672C56D59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA029CDE0B9F72BD83DA15E25CF29634 /* Pods-Goyava-Beta.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Goyava-Beta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Goyava_Beta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		7EB36761935DFC2587DE5FA8140ECA25 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2697,9 +2891,44 @@
 			};
 			name = Debug;
 		};
+		D71620ACBFB6C908D47BDFADDDC22E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB609622D491BE37CA23BF096985BFBC /* Pods-Goyava-Beta.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Goyava-Beta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Goyava-Beta/Pods-Goyava-Beta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Goyava_Beta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		DBCECCCEE443A9C9BA90693D5D942065 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC90461BE342DBFFD350587C92BB8C03 /* Pods-Goyava.release.xcconfig */;
+			baseConfigurationReference = 3A97F59536A6B3FD648387B0EDF0B01D /* Pods-Goyava.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2823,7 +3052,7 @@
 		};
 		FE36B80D1137545A87633CD247579DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B565AD95C13F543BE5225857B5CBCB6 /* Pods-Goyava.debug.xcconfig */;
+			baseConfigurationReference = CD57A80999DE15795749C10D8F9EB559 /* Pods-Goyava.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2900,6 +3129,15 @@
 			buildConfigurations = (
 				C30E44F167A21B4D8C5E68FB888D5B26 /* Debug */,
 				F3DF168547A5F2C9DE6C2C136099BC09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D377E8E87823FEC0658B2D2539F4024C /* Build configuration list for PBXNativeTarget "Pods-Goyava-Beta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D71620ACBFB6C908D47BDFADDDC22E39 /* Debug */,
+				68F7DEB3DFEBEC294A3E4FA672C56D59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
